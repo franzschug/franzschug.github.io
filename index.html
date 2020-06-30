@@ -1,0 +1,76 @@
+
+<html lang="en">
+<head>
+  <title>Mapping urban-rural gradients of settlements and vegetation at national scale using <br> Sentinel-2 STM and regression-based unmixing with synthetic training data</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="National-scale building height estimates from Sentinel-1 and Sentinel-2 time series">
+  <meta name="keywords" content="Schug, Frantz, Humboldt, Berlin, Building Height, Sentinel-1, Sentinel-2, Sentinel, Texture, Germany, Remote Sensing">
+  <meta name="author" content="Franz Schug">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src='js/mapbox3.js'></script>
+  <script src="js/easy-button.js"></script>
+  <script src="js/leaflet.ajax.min.js"></script>
+  <script src="js/styles.js"></script>
+</head>
+
+<body>
+  <div class="mapper no-padding">
+      <div id="map" class="map">
+	    <div class="btn-group" style="z-index: 1001"> <!-- Use 401 to be between map and controls -->
+		</div>
+	  </div>
+	
+    <div class='map-overlay top'>
+        <div class='map-overlay-inner'>
+
+			<label class="switch">
+				<input id = "toggle" class="switch-input" type="checkbox" />
+				<span class="switch-label" data-off="no" data-on="yes"></span> 
+				<span class="switch-handle"></span> 
+				<span id="name" class="switch-name">Enhanced</span> 
+			</label>
+
+            <label>Layer Opacity: <span id='slider-value'>100%</span></label>
+            <input id='slider' type='range' min='0' max='100' step='0' value='100' />
+            <div id="infoText" class="infohidden"><b>Mapping urban-rural gradients of settlements and vegetation at national scale using <br> Sentinel-2 STM and regression-based unmixing with synthetic training data</b></br>
+                                                  Data: <a target="_blank" href="https://www.geographie.hu-berlin.de/en/professorships/eol/people/labmembers/schugfranz">Schug, F.</a> et al. (accepted). doi: <a target="_blank" href="">tbd</a></br>
+                                                  Web: <a target="_blank" href="https://www.geographie.hu-berlin.de/en/professorships/geomatics/people/labmembers/schugfranz">Schug, F.</a> // franz.schug@geo.hu-berlin.de</br>
+                                                  <a target="_blank" href="http://www.hu-berlin.de">Humboldt-Universität zu Berlin</a> // <a target="_blank" href="https://hu.berlin/eo-lab">Earth Observation Lab</a></br>
+                                                  Last Update: 02 April 2020<br>
+												  <b>Enhanced</b>: Additional features and enhanced training compared to in doi.</div>
+        </div>
+        <div id="hulogo"><img src="img/hu.png"></div>
+    </div>
+	
+	
+	<div class='map-overlay-left' id="exmpl">
+        <div class='map-overlay-inner'>
+            <div><u>Zoom to examples:</u></br>
+				<img src="img/ex1.PNG" onclick="zoomTo('ex1')"><br>
+				<img src="img/ex2.PNG" onclick="zoomTo('ex2')"><br>
+				<img src="img/ex3.PNG" onclick="zoomTo('ex3')"><br>
+				<img src="img/ex4.PNG" onclick="zoomTo('ex4')"><br>
+            </div>
+        </div>
+    </div>
+	<div id="showExamples">
+        Examples
+    </div>
+
+    <div id="legend"></div>
+    <div id="showLegend">
+        Legend
+    </div>
+  </div>
+
+<script src="js/landcover.js"></script>
+
+</body>
+</html>
