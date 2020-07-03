@@ -10,7 +10,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
@@ -22,12 +22,140 @@
 
 <body>
 
-<h2> Hyper Text Markup Language (HTML) </h2>
+<h1> An Introduction to Webmapping with Javascript and Hyper Text Markup Language (HTML) </h1>
 
-what is html, css 
+<p> This tutorial will provide a short introduction into presenting Geographic Research, particularly originating from GIS or Remote Sensing, in a webmap format using static and dynamic components. This tutorial was designed for the Q-Team course <i>Remote Sensing for Settlement Mapping</i> and teaches basic features.</p>
 
-text, headers, bold, italic, bullet points, underline
-paragraphs
+<p>
+The tutorial is divided into .... major parts:<br>
+1) HTML and CSS for website design<br>
+2) Static and interactive webmapping <br>
+3) Javascript for computation <br>
+4) Interactive illustrations<br>
+</p>
+
+<p>
+This tutorial site is kept simple, as it only uses those elements that are introduced in the code examples. For additional information, please refer to further resources provided.</p>
+
+
+<h1> HTML and CSS for website design</h1>
+
+<p>HTML is a <i>markup language</i>. That means that it is basically a design language. It is a descriptions of how things should look like and be organised on a webpage. It is NOT considered a programming language, because it cannot <i>process</i> anything. Here, we will see some basic aspects of HTML, including:</p>
+
+<ul>
+<li>Text, Elements and Layout</li>
+<li>Tables and Lists</li>
+<li>Links and Images</li>
+<li>Divs and Website Layout</li>
+</ul>
+
+<p> Cascading Style Sheets (CSS) is a stylesheet language to specific the layout of HTML websites. It is used to give style orders. We will have a look at:</p>
+ 
+<ul>
+<li>The CSS File</li>
+<li>Classes</li>
+<li>IDs</li>
+<li>Inline, Internal and External CSS</li>
+</ul>
+
+<h3> HTML - Text, Elements and Layout</h3>
+
+<p> HTML consists of a series of elements that describe the layout of a website. Text elements have pre-made styles that make them easy to introduce a simple structure. Elements have a start tag, content, and end tag:
+<pre>
+  <code>
+    &#60;tagname>Content ...&#60;/tagname>
+  </code>
+</pre>
+ 
+There is a selection of text-related elements that can be used, for example:</p>
+
+<pre>
+  <code>
+    &#60;h1>This is a text header&#60;/h1>
+    &#60;h3>This is a smaller text header&#60;/h3>
+    &#60;p>A paragraph separates a text block from the previous and the following text block.&#60;/p>
+    You can use &#60;br>
+    to create line breaks.
+  </code>
+</pre>
+
+This is how it looks:
+
+<pre>
+  <present>
+    <h1>  This is a text header</h1>
+    <h3>    This is a smaller text header</h3>
+    <p>    A paragraph separates a text block from the previous and the following text block.</p>
+    You can use <br>
+    to create line breaks.
+  </present>
+</pre>
+
+<p> There is a variety of tags that add a specific character to a text, for example:
+
+<pre>
+  <code>
+    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u>
+    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.
+    It can be &#60;del> deleted &#60;/del>, &#60;sub> subscript &#60;/sub> or &#60;sup> superscript &#60;/sup>.
+  </code>
+</pre>
+
+This is how it looks:
+
+<pre>
+  <present>
+    Text can be <i>italic</i>, <b>bold</b> or <u>underlined</u>
+    It can be <em> emphasized </em>, <mark> marked </mark> or <small> smaller than regular text </small>.
+    It can be <del> deleted </del>, <sub> subscript </sub> or <sup> superscript </sup>.
+  </present>
+</pre>
+
+<p> Further elements are lists or tables: </p>
+
+<pre>
+  <code>
+    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u>
+    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.
+    It can be &#60;del> deleted &#60;/del>, &#60;sub> subscript &#60;/sub> or &#60;sup> superscript &#60;/sup>.
+  </code>
+</pre>
+
+This is how it looks:
+
+<pre>
+  <present>
+    This is a list...
+	<ul><li> ...with one point,</li>
+	<li> and another one, </li>
+	<li> and then a last point.</li></ul>
+	
+    This is a table. The example is from w3school.com.
+	 <table style="width:30%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table> 
+  </present>
+</pre>
+
+<h1> Static and interactive webmapping.</h1>
+<h1> Javascript for computation.</h1>
+<h1> Interactive illustrations.</h1>
+
+bullet points, 
 colors
 
 
@@ -60,7 +188,13 @@ hover, click (interaction)
 interaction between html and map
 
 graphs
-slider
+sliders
+
+
+javascript and debugging
+
+your setup!
+again: examples
 
 
 
