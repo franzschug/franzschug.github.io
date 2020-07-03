@@ -1,0 +1,15 @@
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  line-height: 1;
+}
+
+pre present {
+  background-color: #efddb7;
+  border: 1px solid #999;
+  display: block;
+  padding: 5px;
+  line-height: 1;
+}
