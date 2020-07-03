@@ -61,27 +61,24 @@ This tutorial site is kept simple, as it only uses those elements that are intro
 <h3> HTML - Text, Elements and Layout</h3>
 
 <p> HTML consists of a series of elements that describe the layout of a website. Text elements have pre-made styles that make them easy to introduce a simple structure. Elements have a start tag, content, and end tag:
-<pre>
+
   <code>
     &#60;tagname>Content ...&#60;/tagname>
   </code>
-</pre>
  
 There is a selection of text-related elements that can be used, for example:</p>
 
-<pre>
+
   <code>
-    &#60;h1>This is a text header&#60;/h1>
-    &#60;h3>This is a smaller text header&#60;/h3>
-    &#60;p>A paragraph separates a text block from the previous and the following text block.&#60;/p>
+    &#60;h1>This is a text header&#60;/h1><br>
+    &#60;h3>This is a smaller text header&#60;/h3><br>
+    &#60;p>A paragraph separates a text block from the previous and the following text block.&#60;/p><br>
     You can use &#60;br>
     to create line breaks.
   </code>
-</pre>
 
 This is how it looks:
 
-<pre>
   <present>
     <h1>  This is a text header</h1>
     <h3>    This is a smaller text header</h3>
@@ -89,49 +86,60 @@ This is how it looks:
     You can use <br>
     to create line breaks.
   </present>
-</pre>
 
 <p> There is a variety of tags that add a specific character to a text, for example:
 
-<pre>
   <code>
-    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u>
-    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.
+    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u><br>
+    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.<br>
     It can be &#60;del> deleted &#60;/del>, &#60;sub> subscript &#60;/sub> or &#60;sup> superscript &#60;/sup>.
   </code>
-</pre>
 
 This is how it looks:
 
-<pre>
   <present>
-    Text can be <i>italic</i>, <b>bold</b> or <u>underlined</u>
-    It can be <em> emphasized </em>, <mark> marked </mark> or <small> smaller than regular text </small>.
+    Text can be <i>italic</i>, <b>bold</b> or <u>underlined</u><br>
+    It can be <em> emphasized </em>, <mark> marked </mark> or <small> smaller than regular text </small>.<br>
     It can be <del> deleted </del>, <sub> subscript </sub> or <sup> superscript </sup>.
   </present>
-</pre>
 
 <p> Further elements are lists or tables: </p>
 
-<pre>
   <code>
-    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u>
-    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.
-    It can be &#60;del> deleted &#60;/del>, &#60;sub> subscript &#60;/sub> or &#60;sup> superscript &#60;/sup>.
+    This is a list...<br>
+	&#60;ul>&#60;li> ...with one point,&#60;/li><br>
+	&#60;li> and another one, &#60;/li><br>
+	&#60;li> and then a last point.&#60;/li>&#60;/ul><br>
+	<br>
+    This is a table. The example is from w3school.com.<br>
+	<br>
+    &#60;table style="width:30%"><br>
+      &#60;tr><br>
+        &#60;th>Firstname&#60;/th><br>
+        &#60;th>Lastname&#60;/th><br>
+        &#60;th>Age&#60;/th><br>
+      &#60;/tr><br>
+      &#60;tr><br>
+        &#60;td>Jill&#60;/td><br>
+        &#60;td>Smith&#60;/td><br>
+        &#60;td>50&#60;/td><br>
+      &#60;/tr><br>
+      &#60;tr><br>
+        &#60;td>Eve&#60;/td><br>
+        &#60;td>Jackson&#60;/td><br>
+        &#60;td>94&#60;/td><br>
+      &#60;/tr><br>
+    &#60;/table> 
   </code>
-</pre>
 
 This is how it looks:
 
-<pre>
   <present>
     This is a list...
-	<ul><li> ...with one point,</li>
-	<li> and another one, </li>
-	<li> and then a last point.</li></ul>
-	
+	<ul><li> ...with one point,</li><li> and another one, </li><li> and then a last point.</li></ul>
     This is a table. The example is from w3school.com.
-	 <table style="width:30%">
+	
+<table style="width:30%">
   <tr>
     <th>Firstname</th>
     <th>Lastname</th>
@@ -149,13 +157,51 @@ This is how it looks:
   </tr>
 </table> 
   </present>
-</pre>
 
+In your website, you might want to use hyperlinks or images. Both elements require a reference to a source (image or other content). 
+
+  <code>
+    This is a &#60;a href="http://hu-geomatics.de" target="_blank">link to the Earth Observation Lab website.&#60;/a><br>
+	Links have the following parameters:<br><br>
+	<i>href</i> indicates the address of the target.<br>
+	<i>target</i> indicates how the respective source is opened. "_blank" opens the source in a new tab.
+  </code>
+  
+  This is how it looks:
+  
+  <present>
+    This is a <a href="http://hu-geomatics.de" target="_blank">link to the Earth Observation Lab website.</a><br>
+	Links have the following parameters:<br><br>
+	<i>href</i> indicates the address of the target.<br>
+	<i>target</i> indicates how the respective source is opened. "_blank" opens the source in a new tab.
+  </present>
+  
+  Images:
+  
+   <code>
+    Let us display an image from the Earth Observation Lab website.<br><br>
+	&#60;img src=https://www.geographie.hu-berlin.de/en/professorships/eol/images/education/edulanding alt="LS8 Turkey"><br><br>
+	
+	Of course, you can also use relative links to images in your folder.<br><br>
+	&#60;img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
+  </code>
+  
+  This is how it looks:
+  
+  <present>
+    Let us display an image from the Earth Observation Lab website.<br><br>
+	<img src=https://www.geographie.hu-berlin.de/en/professorships/eol/images/education/edulanding alt="LS8 Turkey"><br><br>
+	
+	Of course, you can also use relative links to images in your folder.<br><br>
+	<img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
+  </present>
+  
 <h1> Static and interactive webmapping.</h1>
 <h1> Javascript for computation.</h1>
 <h1> Interactive illustrations.</h1>
 
-bullet points, 
+
+
 colors
 
 
@@ -166,11 +212,9 @@ colors
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-links
+
 make styles interactive
 
-images
-tables
 
 webmap
 - leaflet
@@ -189,7 +233,6 @@ interaction between html and map
 
 graphs
 sliders
-
 
 javascript and debugging
 
