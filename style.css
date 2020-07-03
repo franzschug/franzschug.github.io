@@ -1,15 +1,23 @@
-pre code {
+
+body {
+	padding: 20px;
+	width: 70%;
+}
+
+code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
-  padding: 5px;
-  line-height: 1;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.2;
 }
 
-pre present {
+present {
   background-color: #efddb7;
   border: 1px solid #999;
   display: block;
-  padding: 5px;
-  line-height: 1;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.2;
 }
