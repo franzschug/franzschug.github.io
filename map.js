@@ -154,7 +154,7 @@ function getColor(d) {
 
 var regularStyle = {
 	stroke: true,
-	fillOpacity: 0,
+	fillOpacity: 1,
 	color: '#847c7b',
 	opacity: 0.7,
 	weight: 1
