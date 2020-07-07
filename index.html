@@ -467,7 +467,7 @@ var highlightStyle = {<br>
   
   <code>
 	function checkHover(feature, layer) {<br>
-	<span style="color:blue";>layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);</span><br>
+	<span style="color:blue";>layer.bindTooltip("&#60;b>" + layer.feature.properties.GEN + '&#60;/b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);</span><br>
 	layer.on({<br>
   		mouseover: function(e) {<br>
 			layer.setStyle(highlightStyle)<br>
