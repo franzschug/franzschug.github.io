@@ -21,3 +21,6 @@ present {
   margin: 20px;
   line-height: 1.2;
 }
+
+#map { height: 300px; }
+#map2 { height: 300px; }
