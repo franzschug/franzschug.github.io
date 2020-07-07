@@ -53,3 +53,62 @@ vector.addTo(map3);
 vector.on('data:loaded', function() {
   vector.bringToFront()
 }.bind(this));
+
+
+
+
+var satellite4 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+var streets4 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseMaps4 = {
+    "Satellite": satellite4,
+    "Streets": streets4
+};
+
+var map4 = L.map('map4', {
+    center: [52.4319, 13.5342],
+    zoom: 13,
+    layers: [satellite4, streets4]
+	});
+L.control.layers(baseMaps3).addTo(map4);
+
+vector = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover});
+vector.addTo(map4);
+vector.on('data:loaded', function() {
+  vector.setStyle(regularStyle);
+  vector.bringToFront()
+}.bind(this));
+
+function checkHover(feature, layer) {
+  	layer.on({
+  		mouseover: function(e) {
+			layer.setStyle(highlightStyle)
+  		},
+  		mouseout: function(e) {
+			layer.setStyle(regularStyle)
+  		},
+      click: function(e) {
+	  }
+  	});
+  }
+
+
+var regularStyle = {
+	stroke: true,
+	fillOpacity: 0,
+	color: '#847c7b',
+	opacity: 0.7,
+	weight: 1
+};
+
+var highlightStyle = {
+	stroke: true,
+	fillOpacity: 0,
+	color: '#b52020',
+	opacity: 1,
+	weight: 2.5
+};
