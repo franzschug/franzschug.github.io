@@ -446,8 +446,25 @@ var highlightStyle = {<br>
    </div>
   </present>
   
-<p>We want to add some styling. In a first step, we add color to the polygons. Be aware that you cannot see the map below it anymore. Howevfer, opacity can be altered.</p>
+<p>We want to add some styling. In a first step, we add color to the polygons. Be aware that you cannot see the map below it anymore. Howevfer, opacity can be altered. In map.js, we modify the checkHover function that is executed on each feature, because we need a feature-wise color assignment.</p>
 
+  <code>
+	function checkHover(feature, layer) {<br>
+	layer.on({<br>
+  		mouseover: function(e) {<br>
+			layer.setStyle(highlightStyle)<br>
+  		},<br>
+  		mouseout: function(e) {<br>
+			layer.setStyle(regularStyle)<br>
+  		},<br>
+      click: function(e) {<br>
+	  }<br>
+  	});<br>
+  }
+  </code>
+  
+<p>As population density information is also feature-dependent, we, again, modify the checkHover function to create popups upon hover:</p>
+  
   <present>
    <div id='map5'>
    </div>
