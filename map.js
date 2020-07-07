@@ -126,9 +126,9 @@ vector2.on('data:loaded', function() {
 
 function checkHover2(feature, layer) {
 	layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);
-	//col = getColor(layer.feature.properties.EW_Dens);
-	//layer.setStyle({fillColor:col});
-	layer.setStyle({fillColor:'#800026'});
+	col = getColor(layer.feature.properties.EW_Dens);
+	layer.setStyle({fillColor:col});
+	//layer.setStyle({fillColor:'#800026'});
 	//layer.setStyle({fillOpacity:0.5});
   	layer.on({
   		mouseover: function(e) {
