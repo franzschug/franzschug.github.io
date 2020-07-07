@@ -43,7 +43,7 @@ var baseMaps3 = {
 
 var map3 = L.map('map3', {
     center: [52.4319, 13.5342],
-    zoom: 13,
+    zoom: 6,
     layers: [satellite3, streets3]
 	});
 L.control.layers(baseMaps3).addTo(map3);
@@ -71,7 +71,7 @@ var baseMaps4 = {
 
 var map4 = L.map('map4', {
     center: [52.4319, 13.5342],
-    zoom: 13,
+    zoom: 6,
     layers: [satellite4, streets4]
 	});
 L.control.layers(baseMaps3).addTo(map4);
