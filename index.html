@@ -315,12 +315,67 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 	<img src="img/prepare_vector.png" alt="Prepare Vector"><br><br>
   </code>
   
+  <code style="background-color: #f7ffb3;">
+	<h3>Prepare raster file</h3>
+	A raster file for webmapping needs to be projected in EPSG: 4326. Usually, a raster file is too large to load it as a whole. This is why <i>webtiling</i> is used. A raster file is divided into numerous jpeg image tiles, each a few kiloybtes in size, using a hierarchical archive structure.<br><br>
+	
+	In a first step, we need to export the raster file as RGB composite with a maximum of 3 bands.<br><br>
+	<img src="img/createRGB.png" alt="Prepare Vector"><br><br>
+	
+	Tiling can be performed using <i>gdal2tiles</i>, also applicable within QGIS.<br><br>
+	<img src="img/createTiles.png" alt="Prepare Vector"><br><br>
+	
+	The tile structure is hiararchical, starting with the <i>zoom level</i>. <br><br>
+	<img src="img/tileStructure.png" alt="Prepare Vector"><br><br>
+	
+	The higher the zoom level, the more tile files need to be created and the overall file size increases. You can select which zoom level to compute. Other zoom levels will not be visible online. Zoom levels range form 1 (global) to 20 (highly local).
+	<table style="width:30%">
+	<tr>
+    <th>Zoom Level</th>
+    <th>Total File Size</th>
+	</tr>
+	<tr>
+    <td>6</td>
+    <td>2.0 kB</td>
+	</tr>
+	<tr>
+    <td>7</td>
+    <td>5.1 kB</td>
+	</tr>
+	<tr>
+    <td>8</td>
+    <td>16 kB</td>
+	</tr>
+	<tr>
+    <td>9</td>
+    <td>57 kB</td>
+	</tr>
+	<tr>
+    <td>10</td>
+    <td>209 kB</td>
+	</tr>
+	<tr>
+    <td>11</td>
+    <td>772 kB</td>
+	</tr>
+	<tr>
+    <td>12</td>
+    <td>2,600 kB</td>
+	</tr>
+	<tr>
+    <td>13</td>
+    <td>4,800 kB</td>
+	</tr>
+</table> 
+  </code>
   
-  A raster file for webmapping needs to be projected in EPSG: 4326. Usually, a raster file is too large to load it as a whole. This is why webtiling is used. A raster file is divided into numerous jpeg image tiles, each a few kiloybtes in size, using a hierarchical archive structure.
+  
+  
+   
   
   
   
-raster
+  
 
 we upload: a polygon shapefile with 
 
