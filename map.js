@@ -170,7 +170,7 @@ var highlightStyle = {
 
 var regularStyle2 = {
 	stroke: true,
-	fillOpacity: 1,
+	fillOpacity: 0.5,
 	color: '#847c7b',
 	opacity: 0.7,
 	weight: 1
