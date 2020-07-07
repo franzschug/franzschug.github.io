@@ -42,7 +42,7 @@ var baseMaps3 = {
 };
 
 var map3 = L.map('map3', {
-    center: [52.4319, 13.5342],
+    center: [52.4319, 11.5342],
     zoom: 6,
     layers: [satellite3, streets3]
 	});
@@ -70,7 +70,7 @@ var baseMaps4 = {
 };
 
 var map4 = L.map('map4', {
-    center: [52.4319, 13.5342],
+    center: [52.4319, 11.5342],
     zoom: 6,
     layers: [satellite4, streets4]
 	});
