@@ -465,6 +465,23 @@ var highlightStyle = {<br>
   
 <p>As population density information is also feature-dependent, we, again, modify the checkHover function to create popups upon hover:</p>
   
+  <code>
+	function checkHover(feature, layer) {<br>
+	<span style="color:blue";>layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);</span>
+	layer.on({<br>
+  		mouseover: function(e) {<br>
+			layer.setStyle(highlightStyle)<br>
+  		},<br>
+  		mouseout: function(e) {<br>
+			layer.setStyle(regularStyle)<br>
+  		},<br>
+      click: function(e) {<br>
+	  }<br>
+  	});<br>
+  }
+  </code>
+
+<p>This is how it now looks:</p>
   <present>
    <div id='map5'>
    </div>
