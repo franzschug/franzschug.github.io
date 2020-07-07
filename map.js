@@ -120,7 +120,7 @@ L.control.layers(baseMaps4).addTo(map5);
 vector2 = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
 vector2.addTo(map5);
 vector2.on('data:loaded', function() {
-  vector2.setStyle(regularStyle);
+  vector2.setStyle(regularStyleFilled);
   vector2.bringToFront()
 }.bind(this));
 
@@ -142,6 +142,14 @@ function checkHover2(feature, layer) {
 var regularStyle = {
 	stroke: true,
 	fillOpacity: 0,
+	color: '#847c7b',
+	opacity: 0.7,
+	weight: 1
+};
+
+var regularStyleFilled = {
+	stroke: true,
+	fillOpacity: 1,
 	color: '#847c7b',
 	opacity: 0.7,
 	weight: 1
