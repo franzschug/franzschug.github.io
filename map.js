@@ -128,6 +128,7 @@ function checkHover2(feature, layer) {
 	
 	
 	layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);
+	layer.setStyle(highlightStyle2)
   	layer.on({
   		mouseover: function(e) {
 			layer.setStyle(highlightStyle2)
