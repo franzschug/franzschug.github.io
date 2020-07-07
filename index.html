@@ -73,7 +73,6 @@ This tutorial site is kept simple, as it only uses those elements that are intro
  
 There is a selection of text-related elements that can be used, for example:</p>
 
-
   <code>
     &#60;h1>This is a text header&#60;/h1><br>
     &#60;h3>This is a smaller text header&#60;/h3><br>
@@ -107,6 +106,8 @@ This is how it looks:
     It can be <em> emphasized </em>, <mark> marked </mark> or <small> smaller than regular text </small>.<br>
     It can be <del> deleted </del>, <sub> subscript </sub> or <sup> superscript </sup>.
   </present>
+
+<h3> Tables and Lists</h3>
 
 <p> Further elements are lists or tables: </p>
 
@@ -163,6 +164,8 @@ This is how it looks:
 </table> 
   </present>
 
+<h3> Links and Images</h3>
+
 In your website, you might want to use hyperlinks or images. Both elements require a reference to a source (image or other content). 
 
   <code>
@@ -201,17 +204,30 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 	<img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
   </present>
   
+ <h3> Divs and Website Layout</h3>
+ 
+ <h3> Cascading Style Sheets (CSS)</h3>
+  
 <h1> Static and interactive webmapping.</h1>
 
 <p>We will now add a map to our webpage. The map is based on an open source package called <a href="https://leafletjs.com/" target="_blank">Leaflet</a>. We <a href="https://leafletjs.com/download.html" target="_blank">download the latest stable version</a> and unpack it into a sub-folder of our project, e.g. /packages/leaflet/. Please refer to the Leaflet homepage for further tutorials.</p>
 
-<p>You will notice that the package, once downloaded, contains ... </p>
+<p>We will look at:</p>
+<ul>
+<li>Create a basic map</li>
+<li>Prepare and use custom content</li>
+<li>Interact with content</li>
+</ul>
+
+<p>You will notice that the leaflet package, once downloaded, contains ... </p>
 <ul>
 <li>... a leaflet.js file which contains the package functionalities</li>
 <li>... a leaflet.css style file which contains basic map styles</li>
 <li>... a folder that contains images required, e.g. button images.</li>
 </ul>
 
+ <h3> Create a basic map</h3>
+ 
 <p>Leaflet is based on JavaScript. JavaScript is a scripting language that was originally developed to allow for dynamic HTML. It is closely linked to Java and it is the standard scripting language for interactive web design.</p>
 
 <p>We also create a file where we define the functionalities of our webmap. We call it map.js. This is how our folder structure looks like:</p>
@@ -281,13 +297,33 @@ In your website, you might want to use hyperlinks or images. Both elements requi
    <div id='map2'>
    </div>
   </present>
-  
-  
- create and prepare own content
  
-how to own content
+  <h3> Prepare and use custom content</h3>
+  
+ <p>We now would like to add user content - your content - to the webpage. There are two major things to consider:</p>
+<ul>
+<li>Content needs to be as small as possible - the user needs to download it upon site request.</li>
+<li>Content needs to be in EPSG 4326, as this is the standard CRS for webmapping.</li>
+</ul>
+
+<p>We will have two use cases: <b>Display population counts in all Germany NUTS-3 units</b> and <b>Visualise change using two Landsat scenes</b>.<p/>
+
+  <code style="background-color: #f7ffb3;">
+	<h3>Prepare vector file</h3>
+	A vector file for webmapping needs to be projected in EPSG: 4326. The required file format is <i>.geojson</i>. You can easily export a vector file as .geojson with EPSG 436 in QGIS.<br><br>
+	Be sure that during the exportation process, you deselect all attributes that will not be visualised, in order to decrease size. Also, reduce the number of digits in coordinate precision (e.g. to 5, default is 15). This largely reduces file size.<br><br>
+	<img src="img/prepare_vector.png" alt="Prepare Vector"><br><br>
+  </code>
+  
+  
+  A raster file for webmapping needs to be projected in EPSG: 4326. Usually, a raster file is too large to load it as a whole. This is why webtiling is used. A raster file is divided into numerous jpeg image tiles, each a few kiloybtes in size, using a hierarchical archive structure.
+  
+  
+  
 raster
-vector
+
+we upload: a polygon shapefile with 
+
 how to prepare
 upload, strucutre, usage
 hover, click (interaction)
