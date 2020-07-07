@@ -450,6 +450,8 @@ var highlightStyle = {<br>
 
   <code>
 	function checkHover(feature, layer) {<br>
+	<span style="color:blue";>col = getColor(layer.feature.properties.EW_Dens);</span><br>
+	<span style="color:blue";>layer.setStyle({fillColor:col});</span><br>
 	layer.on({<br>
   		mouseover: function(e) {<br>
 			layer.setStyle(highlightStyle)<br>
@@ -460,6 +462,8 @@ var highlightStyle = {<br>
       click: function(e) {<br>
 	  }<br>
   	});<br>
+	
+
   }
   </code>
   
