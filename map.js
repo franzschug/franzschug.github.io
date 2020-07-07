@@ -130,7 +130,7 @@ function checkHover2(feature, layer) {
 	layer.setStyle({fillColor:col});
   	layer.on({
   		mouseover: function(e) {
-			layer.setStyle(highlightStyle2)
+			layer.setStyle(highlightStyle)
   		},
   		mouseout: function(e) {
 			layer.setStyle(regularStyle2)
@@ -174,11 +174,4 @@ var regularStyle2 = {
 	color: '#847c7b',
 	opacity: 0.7,
 	weight: 1
-};
-
-var highlightStyle2 = {
-	stroke: true,
-	color: '#b52020',
-	opacity: 1,
-	weight: 2.5
 };
