@@ -117,11 +117,11 @@ var map5 = L.map('map5', {
 	});
 L.control.layers(baseMaps4).addTo(map5);
 
-vector = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
-vector.addTo(map5);
-vector.on('data:loaded', function() {
-  vector.setStyle(regularStyle);
-  vector.bringToFront()
+vector2 = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
+vector2.addTo(map5);
+vector2.on('data:loaded', function() {
+  vector2.setStyle(regularStyle);
+  vector2.bringToFront()
 }.bind(this));
 
 function checkHover2(feature, layer) {
