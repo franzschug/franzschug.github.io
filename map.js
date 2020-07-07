@@ -120,21 +120,20 @@ L.control.layers(baseMaps5).addTo(map5);
 vector2 = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
 vector2.addTo(map5);
 vector2.on('data:loaded', function() {
-  vector2.setStyle(regularStyle2);
+  vector2.setStyle(regularStyle);
   vector2.bringToFront()
 }.bind(this));
 
 function checkHover2(feature, layer) {
 	layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);
 	col = getColor(layer.feature.properties.EW_Dens)
-	layer.setStyle({fillColor:col})
+	layer.setStyle({fillColor:col; fillOpacity: 0.5})
   	layer.on({
   		mouseover: function(e) {
 			layer.setStyle(highlightStyle2)
-			console.log(feature.properties.EW_Dens)
   		},
   		mouseout: function(e) {
-			layer.setStyle(regularStyle2)
+			layer.setStyle(regularStyle)
   		},
       click: function(e) {
 	  }
@@ -156,7 +155,7 @@ function getColor(d) {
 
 var regularStyle = {
 	stroke: true,
-	fillOpacity: 1,
+	fillOpacity: 0,
 	color: '#847c7b',
 	opacity: 0.7,
 	weight: 1
@@ -180,7 +179,6 @@ var regularStyle2 = {
 
 var highlightStyle2 = {
 	stroke: true,
-	fillOpacity: 0,
 	color: '#b52020',
 	opacity: 1,
 	weight: 2.5
