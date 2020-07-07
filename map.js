@@ -84,6 +84,7 @@ vector.on('data:loaded', function() {
 }.bind(this));
 
 function checkHover(feature, layer) {
+	layer.bindTooltip('Pop. Density: '+ layer.feature.properties.popdens);
   	layer.on({
   		mouseover: function(e) {
 			layer.setStyle(highlightStyle)
