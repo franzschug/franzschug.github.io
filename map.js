@@ -175,3 +175,11 @@ var highlightStyle = {
 	opacity: 1,
 	weight: 2.5
 };
+
+var highlightStyleFilled = {
+	stroke: true,
+	fillOpacity: 0.5,
+	color: getColor(feature.properties.EW_Dens),
+	opacity: 1,
+	weight: 2.5
+};
