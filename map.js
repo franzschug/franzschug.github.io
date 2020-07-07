@@ -120,7 +120,7 @@ L.control.layers(baseMaps5).addTo(map5);
 vector2 = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
 vector2.addTo(map5);
 vector2.on('data:loaded', function() {
-  vector2.setStyle(regularStyle2);
+  //vector2.setStyle(regularStyle2);
   vector2.bringToFront()
 }.bind(this));
 
