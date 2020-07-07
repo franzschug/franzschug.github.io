@@ -1,23 +1,28 @@
 
 <html lang="en">
 <head>
-  <title>Mapping urban-rural gradients of settlements and vegetation at national scale using <br> Sentinel-2 STM and regression-based unmixing with synthetic training data</title>
+  <title>An Introduction to Webmapping with Javascript and Hyper Text Markup Language (HTML)</title>
   <meta charset="UTF-8">
-  <meta name="description" content="National-scale building height estimates from Sentinel-1 and Sentinel-2 time series">
-  <meta name="keywords" content="Schug, Frantz, Humboldt, Berlin, Building Height, Sentinel-1, Sentinel-2, Sentinel, Texture, Germany, Remote Sensing">
+  <meta name="description" content="Q-Team Remote Sensing for Settlement Mapping">
+  <!--<meta name="keywords" content="">-->
   <meta name="author" content="Franz Schug">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">-->
 
   <!-- Scripts -->
-  <script src="js/jquery.min.js"></script>
+  <!--<script src="js/jquery.min.js"></script>
   <script src='js/mapbox3.js'></script>
   <script src="js/easy-button.js"></script>
   <script src="js/leaflet.ajax.min.js"></script>
-  <script src="js/styles.js"></script>
+  <script src="js/styles.js"></script>-->
+  
+  <link rel="stylesheet" href="packages/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="packages/leaflet/leaflet.js"></script>
+	
 </head>
 
 <body>
@@ -197,10 +202,102 @@ In your website, you might want to use hyperlinks or images. Both elements requi
   </present>
   
 <h1> Static and interactive webmapping.</h1>
+
+<p>We will now add a map to our webpage. The map is based on an open source package called <a href="https://leafletjs.com/" target="_blank">Leaflet</a>. We <a href="https://leafletjs.com/download.html" target="_blank">download the latest stable version</a> and unpack it into a sub-folder of our project, e.g. /packages/leaflet/. Please refer to the Leaflet homepage for further tutorials.</p>
+
+<p>You will notice that the package, once downloaded, contains ... </p>
+<ul>
+<li>... a leaflet.js file which contains the package functionalities</li>
+<li>... a leaflet.css style file which contains basic map styles</li>
+<li>... a folder that contains images required, e.g. button images.</li>
+</ul>
+
+<p>Leaflet is based on JavaScript. JavaScript is a scripting language that was originally developed to allow for dynamic HTML. It is closely linked to Java and it is the standard scripting language for interactive web design.</p>
+
+<p>We also create a file where we define the functionalities of our webmap. We call it map.js. This is how our folder structure looks like:</p>
+  <present>
+	<img src="img/structure.png" alt="Folder Structure"><br><br>
+  </present>
+  
+<p>The HTML file needs to import all external scripts and styles:</p>
+  <code>
+    &#60;link rel="stylesheet" href="packages/leaflet/leaflet.css"><br>
+    &#60;link rel="stylesheet" href="style.css"><br>
+    &#60;script src="packages/leaflet/leaflet.js">&#60;/script><br>
+  </code>
+ 
+ <p>and, in the very end of the file,</p>
+   <code>
+    &#60;script src="map.js">&#60;/script>
+  </code>
+ 
+
+ <p>In the html file, we add... </p>
+   <code>
+	&#60;div id='map'>
+	&#60;/div>
+  </code>
+  
+ <p>In the map.js file, we add </p>
+  <code>
+	var map = L.map('map', {<br>
+      center: [52.4319, 13.5342],<br>
+      zoom: 13<br>
+	});<br>
+	<br>
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+  </code>
+ 
+ <p>In the style.css file, we add </p>
+  <code>
+	#map { height: 300px; }
+  </code>
+  
+  <present>
+   <div id='map'>
+   </div>
+  </present>
+  
+<p>In the next step, we will add a base layer selection. This is our only example, but there are <a href="https://leafletjs.com/reference-1.6.0.html#map-option">plenty of options</a> you can use to enhance your map, e.g. with regard to zoom. You can find basemap providers for leaflet <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">here</a></p>
+ 
+  <code>
+	var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'),<br><br>
+    var streets   = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});<br> <br>
+	
+	var map = L.map('map', {<br>
+    center: [52.4319, 13.5342],<br>
+    zoom: 13,<br>
+    layers: [satellite, streets]<br>
+	});<br><br>
+	
+	L.control.layers(baseMaps).addTo(map2);
+  </code>
+  
+  <present>
+   <div id='map2'>
+   </div>
+  </present>
+  
+  
+ create and prepare own content
+ 
+how to own content
+raster
+vector
+how to prepare
+upload, strucutre, usage
+hover, click (interaction)
+
 <h1> Javascript for computation.</h1>
 <h1> Interactive illustrations.</h1>
 
 
+<script src="map.js"></script>
+  
 
 colors
 
@@ -217,17 +314,10 @@ make styles interactive
 
 
 webmap
-- leaflet
-- js
+add controls
 examples
 background maps etc.
 
-how to own content
-raster
-vector
-how to prepare
-upload, strucutre, usage
-hover, click (interaction)
 
 interaction between html and map
 
