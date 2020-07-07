@@ -125,7 +125,7 @@ vector2.on('data:loaded', function() {
 }.bind(this));
 
 function checkHover2(feature, layer) {
-	layer.bindTooltip(layer.feature.properties.GEN + '<br>Pop. Density: '+ layer.feature.properties.EW_Dens);
+	layer.bindTooltip("<b>"layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);
   	layer.on({
   		mouseover: function(e) {
 			layer.setStyle(highlightStyle)
@@ -139,6 +139,19 @@ function checkHover2(feature, layer) {
   }
   
 
+
+function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+
+
 var regularStyle = {
 	stroke: true,
 	fillOpacity: 0,
@@ -149,8 +162,8 @@ var regularStyle = {
 
 var regularStyleFilled = {
 	stroke: true,
-	fillOpacity: 1,
-	color: '#847c7b',
+	fillOpacity: 0.5,
+	color: getColor(feature.properties.EW_Dens),
 	opacity: 0.7,
 	weight: 1
 };
