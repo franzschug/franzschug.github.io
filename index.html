@@ -370,27 +370,31 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 </table> 
   </code>
   
-<p>We now need to implement the prepared data into the webmap script. This is entirely done within the map.js file.</p>
+<p>We now need to implement the prepared data into the webmap script.</p>
 
-<p>First, we need to add an addtional package that allows leaflet to parse .geojson vector files from <a href="https://github.com/Dominique92/Leaflet.GeoJSON.Ajax">here</a>.</p>
+<p>First, we need to add an addtional package to the html file that allows leaflet to parse .geojson vector files from <a href="https://github.com/Dominique92/Leaflet.GeoJSON.Ajax">here</a>.</p>
   <code>
     &#60;script src="packages/leaflet.ajax.min.js">&#60;/script><br>
   </code>
- 
+  
+<p>Within the map.js file, we add the following lines:</p>
+
+  <code>
+    vector = new L.GeoJSON.AJAX("data/vector.geojson", {});<br>
+	vector.addTo(map3);<br>
+	vector.on('data:loaded', function() {<br>
+	vector.bringToFront()<br>
+	}.bind(this));<br>
+  </code>
 
   <present>
    <div id='map3'>
    </div>
   </present>
   
-<p>
+layer styling
   
-  <script src="packages/leaflet.ajax.min.js"></script>
-   
-  
-  
-  
-usage
+ 
 hover, click (interaction)
 
 <h1> Javascript for computation.</h1>
