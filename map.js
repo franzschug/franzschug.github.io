@@ -163,11 +163,12 @@ L.control.layers(baseMaps6).addTo(map6);
 
 tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer2018);
-tileLayer2018.bringToFront();
+
 
 tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer1986);
 tileLayer1986.bringToFront();
+tileLayer2018.bringToFront();
 
 function getColor(d) {
     return d > 1000 ? '#800026' :
