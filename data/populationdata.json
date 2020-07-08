@@ -1,2809 +1,2809 @@
 [
   {
-    "GEN": "Hameln-Pyrmont",
-    "EWZ": 148296,
-    "area": 797890089.6,
-    "EW_Dens": 185.8601854,
-    "srkm": 28.247
-  },
-  {
-    "GEN": "Nienburg (Weser)",
-    "EWZ": 121470,
-    "area": 1401337131,
-    "EW_Dens": 86.68149677,
-    "srkm": 37.434
-  },
-  {
-    "GEN": "Holzminden",
-    "EWZ": 71144,
-    "area": 694525788.4,
-    "EW_Dens": 102.4353612,
-    "srkm": 26.354
-  },
-  {
-    "GEN": "Nordhausen",
-    "EWZ": 84697,
-    "area": 714223182.1,
-    "EW_Dens": 118.5861816,
-    "srkm": 26.725
-  },
-  {
-    "GEN": "Eichsfeld",
-    "EWZ": 100645,
-    "area": 942539616.6,
-    "EW_Dens": 106.7806575,
-    "srkm": 30.701
-  },
-  {
-    "GEN": "Unstrut-Hainich-Kreis",
-    "EWZ": 103504,
-    "area": 979202475.4,
-    "EW_Dens": 105.7023472,
-    "srkm": 31.292
-  },
-  {
-    "GEN": "Wartburgkreis",
-    "EWZ": 123764,
-    "area": 1306121500,
-    "EW_Dens": 94.75688135,
-    "srkm": 36.14
-  },
-  {
-    "GEN": "Schmalkalden-Meiningen",
-    "EWZ": 122952,
-    "area": 1210932186,
-    "EW_Dens": 101.5350004,
-    "srkm": 34.798
-  },
-  {
-    "GEN": "Kyffhäuserkreis",
-    "EWZ": 75818,
-    "area": 1037927608,
-    "EW_Dens": 73.04748367,
-    "srkm": 32.217
-  },
-  {
-    "GEN": "Sömmerda",
-    "EWZ": 70027,
-    "area": 806931722,
-    "EW_Dens": 86.78181572,
-    "srkm": 28.407
-  },
-  {
-    "GEN": "Gotha",
-    "EWZ": 135521,
-    "area": 936019314.1,
-    "EW_Dens": 144.7844056,
-    "srkm": 30.594
-  },
-  {
-    "GEN": "Ilm-Kreis",
-    "EWZ": 108830,
-    "area": 843436994.3,
-    "EW_Dens": 129.0315705,
-    "srkm": 29.042
-  },
-  {
-    "GEN": "Hildburghausen",
-    "EWZ": 63923,
-    "area": 937682144.5,
-    "EW_Dens": 68.17128851,
-    "srkm": 30.622
-  },
-  {
-    "GEN": "Sonneberg",
-    "EWZ": 56361,
-    "area": 433099795.3,
-    "EW_Dens": 130.1339798,
-    "srkm": 20.811
-  },
-  {
-    "GEN": "Weimarer Land",
-    "EWZ": 82131,
-    "area": 804425449.5,
-    "EW_Dens": 102.0989578,
-    "srkm": 28.362
-  },
-  {
-    "GEN": "Saale-Holzland-Kreis",
-    "EWZ": 82990,
-    "area": 815554571.5,
-    "EW_Dens": 101.7589784,
-    "srkm": 28.558
-  },
-  {
-    "GEN": "Saalfeld-Rudolstadt",
-    "EWZ": 107368,
-    "area": 1036381668,
-    "EW_Dens": 103.5988992,
-    "srkm": 32.193
+    "GEN": "Altenburger Land",
+    "EWZ": 90650,
+    "EW_Dens": 159.081,
+    "area": 569494603.7,
+    "id": 400
   },
   {
     "GEN": "Greiz",
     "EWZ": 99275,
+    "EW_Dens": 117.27,
     "area": 846251295.9,
-    "EW_Dens": 117.3114895,
-    "srkm": 29.09
+    "id": 399
   },
   {
     "GEN": "Saale-Orla-Kreis",
     "EWZ": 81501,
+    "EW_Dens": 70.761,
     "area": 1151650411,
-    "EW_Dens": 70.76887154,
-    "srkm": 33.936
+    "id": 398
   },
   {
-    "GEN": "Altenburger Land",
-    "EWZ": 90650,
-    "area": 569494603.7,
-    "EW_Dens": 159.1762229,
-    "srkm": 23.864
+    "GEN": "Saale-Holzland-Kreis",
+    "EWZ": 82990,
+    "EW_Dens": 101.748,
+    "area": 815554571.5,
+    "id": 397
   },
   {
-    "GEN": "Mittelsachsen",
-    "EWZ": 308153,
-    "area": 2114375310,
-    "EW_Dens": 145.7418645,
-    "srkm": 45.982
+    "GEN": "Saalfeld-Rudolstadt",
+    "EWZ": 107368,
+    "EW_Dens": 103.614,
+    "area": 1036381668,
+    "id": 396
   },
   {
-    "GEN": "Erzgebirgskreis",
-    "EWZ": 340373,
-    "area": 1827042653,
-    "EW_Dens": 186.297238,
-    "srkm": 42.744
+    "GEN": "Sonneberg",
+    "EWZ": 56361,
+    "EW_Dens": 130.165,
+    "area": 433099795.3,
+    "id": 395
   },
   {
-    "GEN": "Zwickau",
-    "EWZ": 319988,
-    "area": 949647860.8,
-    "EW_Dens": 336.9543735,
-    "srkm": 30.816
+    "GEN": "Weimarer Land",
+    "EWZ": 82131,
+    "EW_Dens": 102.111,
+    "area": 804425449.5,
+    "id": 394
   },
   {
-    "GEN": "Vogtlandkreis",
-    "EWZ": 229584,
-    "area": 1412334510,
-    "EW_Dens": 162.5563904,
-    "srkm": 37.581
+    "GEN": "Ilm-Kreis",
+    "EWZ": 108830,
+    "EW_Dens": 129.074,
+    "area": 843436994.3,
+    "id": 393
   },
   {
-    "GEN": "Bautzen",
-    "EWZ": 302634,
-    "area": 2395564926,
-    "EW_Dens": 126.330953,
-    "srkm": 48.945
+    "GEN": "Hildburghausen",
+    "EWZ": 63923,
+    "EW_Dens": 68.2,
+    "area": 937682144.5,
+    "id": 392
   },
   {
-    "GEN": "Dresden",
-    "EWZ": 551072,
-    "area": 327932405.7,
-    "EW_Dens": 1680.443867,
-    "srkm": 18.109
+    "GEN": "Sömmerda",
+    "EWZ": 70027,
+    "EW_Dens": 86.803,
+    "area": 806931722,
+    "id": 391
   },
   {
-    "GEN": "Meißen",
-    "EWZ": 242862,
-    "area": 1457712116,
-    "EW_Dens": 166.6049128,
-    "srkm": 38.18
+    "GEN": "Gotha",
+    "EWZ": 135521,
+    "EW_Dens": 144.85,
+    "area": 936019314.1,
+    "id": 390
   },
   {
-    "GEN": "Görlitz",
-    "EWZ": 256587,
-    "area": 2111238663,
-    "EW_Dens": 121.5338675,
-    "srkm": 45.948
+    "GEN": "Schmalkalden-Meiningen",
+    "EWZ": 122952,
+    "EW_Dens": 101.591,
+    "area": 1210932186,
+    "id": 389
   },
   {
-    "GEN": "Leipzig",
-    "EWZ": 581980,
-    "area": 299059049.5,
-    "EW_Dens": 1946.037082,
-    "srkm": 17.293
+    "GEN": "Kyffhäuserkreis",
+    "EWZ": 75818,
+    "EW_Dens": 73.071,
+    "area": 1037927608,
+    "id": 388
   },
   {
-    "GEN": "Sächsische Schweiz-Osterzgebirge",
-    "EWZ": 245418,
-    "area": 1653702188,
-    "EW_Dens": 148.4051976,
-    "srkm": 40.666
+    "GEN": "Unstrut-Hainich-Kreis",
+    "EWZ": 103504,
+    "EW_Dens": 105.756,
+    "area": 979202475.4,
+    "id": 387
   },
   {
-    "GEN": "Nordsachsen",
-    "EWZ": 197794,
-    "area": 2027558462,
-    "EW_Dens": 97.55279747,
-    "srkm": 45.028
+    "GEN": "Wartburgkreis",
+    "EWZ": 123764,
+    "EW_Dens": 94.816,
+    "area": 1306121500,
+    "id": 386
   },
   {
-    "GEN": "Leipzig",
-    "EWZ": 258008,
-    "area": 1651456340,
-    "EW_Dens": 156.230591,
-    "srkm": 40.638
+    "GEN": "Nordhausen",
+    "EWZ": 84697,
+    "EW_Dens": 118.639,
+    "area": 714223182.1,
+    "id": 385
   },
   {
-    "GEN": "Halle (Saale)",
-    "EWZ": 239173,
-    "area": 135724786,
-    "EW_Dens": 1762.191027,
-    "srkm": 11.65
-  },
-  {
-    "GEN": "Dessau-Roßlau",
-    "EWZ": 82111,
-    "area": 246255989.5,
-    "EW_Dens": 333.4375751,
-    "srkm": 15.693
-  },
-  {
-    "GEN": "Altmarkkreis Salzwedel",
-    "EWZ": 84457,
-    "area": 2303989448,
-    "EW_Dens": 36.65685191,
-    "srkm": 48
-  },
-  {
-    "GEN": "Magdeburg",
-    "EWZ": 238478,
-    "area": 200560611.6,
-    "EW_Dens": 1189.057004,
-    "srkm": 14.162
-  },
-  {
-    "GEN": "Börde",
-    "EWZ": 172619,
-    "area": 2377109018,
-    "EW_Dens": 72.61719959,
-    "srkm": 48.756
-  },
-  {
-    "GEN": "Anhalt-Bitterfeld",
-    "EWZ": 161264,
-    "area": 1460828658,
-    "EW_Dens": 110.3921388,
-    "srkm": 38.221
-  },
-  {
-    "GEN": "Harz",
-    "EWZ": 216299,
-    "area": 2107942945,
-    "EW_Dens": 102.6114111,
-    "srkm": 45.912
-  },
-  {
-    "GEN": "Burgenlandkreis",
-    "EWZ": 181968,
-    "area": 1418918438,
-    "EW_Dens": 128.2441578,
-    "srkm": 37.669
-  },
-  {
-    "GEN": "Mansfeld-Südharz",
-    "EWZ": 138013,
-    "area": 1456325720,
-    "EW_Dens": 94.76794793,
-    "srkm": 38.162
-  },
-  {
-    "GEN": "Jerichower Land",
-    "EWZ": 90465,
-    "area": 1589447163,
-    "EW_Dens": 56.9160159,
-    "srkm": 39.868
-  },
-  {
-    "GEN": "Salzlandkreis",
-    "EWZ": 192739,
-    "area": 1435132047,
-    "EW_Dens": 134.3005338,
-    "srkm": 37.883
-  },
-  {
-    "GEN": "Saalekreis",
-    "EWZ": 185494,
-    "area": 1440241895,
-    "EW_Dens": 128.7936427,
-    "srkm": 37.951
-  },
-  {
-    "GEN": "Wittenberg",
-    "EWZ": 126815,
-    "area": 1943011238,
-    "EW_Dens": 65.26724989,
-    "srkm": 44.08
-  },
-  {
-    "GEN": "Stendal",
-    "EWZ": 113186,
-    "area": 2436892320,
-    "EW_Dens": 46.44686147,
-    "srkm": 49.365
-  },
-  {
-    "GEN": "Gera",
-    "EWZ": 94859,
-    "area": 152278412.7,
-    "EW_Dens": 622.9313684,
-    "srkm": 12.34
-  },
-  {
-    "GEN": "Erfurt",
-    "EWZ": 212988,
-    "area": 270403761.2,
-    "EW_Dens": 787.6665585,
-    "srkm": 16.444
-  },
-  {
-    "GEN": "Suhl",
-    "EWZ": 35166,
-    "area": 102502658.3,
-    "EW_Dens": 343.0740293,
-    "srkm": 10.124
-  },
-  {
-    "GEN": "Jena",
-    "EWZ": 111099,
-    "area": 114833104.9,
-    "EW_Dens": 967.482331,
-    "srkm": 10.716
+    "GEN": "Eichsfeld",
+    "EWZ": 100645,
+    "EW_Dens": 106.846,
+    "area": 942539616.6,
+    "id": 384
   },
   {
     "GEN": "Eisenach",
     "EWZ": 42710,
+    "EW_Dens": 408.991,
     "area": 104489829.9,
-    "EW_Dens": 408.7479139,
-    "srkm": 10.222
+    "id": 383
   },
   {
     "GEN": "Weimar",
     "EWZ": 64426,
+    "EW_Dens": 763.368,
     "area": 84409651.05,
-    "EW_Dens": 763.253955,
-    "srkm": 9.187
+    "id": 382
   },
   {
-    "GEN": "Saarlouis",
-    "EWZ": 195815,
-    "area": 459065842.5,
-    "EW_Dens": 426.5510127,
-    "srkm": 21.426
+    "GEN": "Suhl",
+    "EWZ": 35166,
+    "EW_Dens": 343.228,
+    "area": 102502658.3,
+    "id": 381
   },
   {
-    "GEN": "Neunkirchen",
-    "EWZ": 133297,
-    "area": 248162263.8,
-    "EW_Dens": 537.1364605,
-    "srkm": 15.753
+    "GEN": "Jena",
+    "EWZ": 111099,
+    "EW_Dens": 967.472,
+    "area": 114833104.9,
+    "id": 380
   },
   {
-    "GEN": "St. Wendel",
-    "EWZ": 87867,
-    "area": 476424473,
-    "EW_Dens": 184.4300723,
-    "srkm": 21.827
+    "GEN": "Gera",
+    "EWZ": 94859,
+    "EW_Dens": 622.711,
+    "area": 152278412.7,
+    "id": 379
   },
   {
-    "GEN": "Saarpfalz-Kreis",
-    "EWZ": 143402,
-    "area": 419066259.2,
-    "EW_Dens": 342.1940966,
-    "srkm": 20.471
+    "GEN": "Erfurt",
+    "EWZ": 212988,
+    "EW_Dens": 787.907,
+    "area": 270403761.2,
+    "id": 378
   },
   {
-    "GEN": "Brandenburg an der Havel",
-    "EWZ": 71886,
-    "area": 229319642.6,
-    "EW_Dens": 313.4751092,
-    "srkm": 15.143
+    "GEN": "Wittenberg",
+    "EWZ": 126815,
+    "EW_Dens": 65.215,
+    "area": 1943011238,
+    "id": 377
   },
   {
-    "GEN": "Berlin",
-    "EWZ": 3613495,
-    "area": 891802755.7,
-    "EW_Dens": 4051.899343,
-    "srkm": 29.863
+    "GEN": "Stendal",
+    "EWZ": 113186,
+    "EW_Dens": 46.442,
+    "area": 2436892320,
+    "id": 376
   },
   {
-    "GEN": "Frankfurt (Oder)",
-    "EWZ": 58237,
-    "area": 147721495,
-    "EW_Dens": 394.2351111,
-    "srkm": 12.154
+    "GEN": "Salzlandkreis",
+    "EWZ": 192739,
+    "EW_Dens": 134.298,
+    "area": 1435132047,
+    "id": 375
   },
   {
-    "GEN": "Cottbus",
-    "EWZ": 101036,
-    "area": 165105223.8,
-    "EW_Dens": 611.9491417,
-    "srkm": 12.849
+    "GEN": "Saalekreis",
+    "EWZ": 185494,
+    "EW_Dens": 128.771,
+    "area": 1440241895,
+    "id": 374
   },
   {
-    "GEN": "Barnim",
-    "EWZ": 180864,
-    "area": 1480850272,
-    "EW_Dens": 122.1352377,
-    "srkm": 38.482
+    "GEN": "Mansfeld-Südharz",
+    "EWZ": 138013,
+    "EW_Dens": 94.781,
+    "area": 1456325720,
+    "id": 373
   },
   {
-    "GEN": "Potsdam",
-    "EWZ": 175710,
-    "area": 186969761.2,
-    "EW_Dens": 939.777635,
-    "srkm": 13.674
+    "GEN": "Jerichower Land",
+    "EWZ": 90465,
+    "EW_Dens": 56.902,
+    "area": 1589447163,
+    "id": 372
   },
   {
-    "GEN": "Elbe-Elster",
-    "EWZ": 103455,
-    "area": 1900262169,
-    "EW_Dens": 54.44248782,
-    "srkm": 43.592
+    "GEN": "Harz",
+    "EWZ": 216299,
+    "EW_Dens": 102.647,
+    "area": 2107942945,
+    "id": 371
   },
   {
-    "GEN": "Dahme-Spreewald",
-    "EWZ": 167319,
-    "area": 2275759923,
-    "EW_Dens": 73.52225439,
-    "srkm": 47.705
+    "GEN": "Burgenlandkreis",
+    "EWZ": 181968,
+    "EW_Dens": 128.218,
+    "area": 1418918438,
+    "id": 370
   },
   {
-    "GEN": "Märkisch-Oderland",
-    "EWZ": 192921,
-    "area": 2157678584,
-    "EW_Dens": 89.41137083,
-    "srkm": 46.451
+    "GEN": "Börde",
+    "EWZ": 172619,
+    "EW_Dens": 72.629,
+    "area": 2377109018,
+    "id": 369
   },
   {
-    "GEN": "Havelland",
-    "EWZ": 160710,
-    "area": 1727508201,
-    "EW_Dens": 93.02994909,
-    "srkm": 41.563
+    "GEN": "Anhalt-Bitterfeld",
+    "EWZ": 161264,
+    "EW_Dens": 110.353,
+    "area": 1460828658,
+    "id": 368
   },
   {
-    "GEN": "Oberspreewald-Lausitz",
-    "EWZ": 111122,
-    "area": 1222989358,
-    "EW_Dens": 90.86097052,
-    "srkm": 34.971
+    "GEN": "Altmarkkreis Salzwedel",
+    "EWZ": 84457,
+    "EW_Dens": 36.666,
+    "area": 2303989448,
+    "id": 367
   },
   {
-    "GEN": "Oberhavel",
-    "EWZ": 209893,
-    "area": 1808002331,
-    "EW_Dens": 116.0911114,
-    "srkm": 42.521
+    "GEN": "Magdeburg",
+    "EWZ": 238478,
+    "EW_Dens": 1189.053,
+    "area": 200560611.6,
+    "id": 366
   },
   {
-    "GEN": "Ostprignitz-Ruppin",
-    "EWZ": 99368,
-    "area": 2525941625,
-    "EW_Dens": 39.33899304,
-    "srkm": 50.259
+    "GEN": "Halle (Saale)",
+    "EWZ": 239173,
+    "EW_Dens": 1761.761,
+    "area": 135724786,
+    "id": 365
   },
   {
-    "GEN": "Oder-Spree",
-    "EWZ": 178347,
-    "area": 2257259994,
-    "EW_Dens": 79.01039334,
-    "srkm": 47.511
+    "GEN": "Dessau-Roßlau",
+    "EWZ": 82111,
+    "EW_Dens": 333.3,
+    "area": 246255989.5,
+    "id": 364
   },
   {
-    "GEN": "Prignitz",
-    "EWZ": 77263,
-    "area": 2138824760,
-    "EW_Dens": 36.12404412,
-    "srkm": 46.247
+    "GEN": "Nordsachsen",
+    "EWZ": 197794,
+    "EW_Dens": 97.465,
+    "area": 2027558462,
+    "id": 363
   },
   {
-    "GEN": "Potsdam-Mittelmark",
-    "EWZ": 213214,
-    "area": 2593081757,
-    "EW_Dens": 82.22417185,
-    "srkm": 50.922
+    "GEN": "Leipzig",
+    "EWZ": 258008,
+    "EW_Dens": 156.113,
+    "area": 1651456340,
+    "id": 362
   },
   {
-    "GEN": "Teltow-Fläming",
-    "EWZ": 166890,
-    "area": 2103985627,
-    "EW_Dens": 79.32088407,
-    "srkm": 45.869
+    "GEN": "Leipzig",
+    "EWZ": 581980,
+    "EW_Dens": 1944.953,
+    "area": 299059049.5,
+    "id": 361
   },
   {
-    "GEN": "Spree-Neiße",
-    "EWZ": 115456,
-    "area": 1657104284,
-    "EW_Dens": 69.67334592,
-    "srkm": 40.708
+    "GEN": "Sächsische Schweiz-Osterzgebirge",
+    "EWZ": 245418,
+    "EW_Dens": 148.096,
+    "area": 1653702188,
+    "id": 360
   },
   {
-    "GEN": "Rostock",
-    "EWZ": 208409,
-    "area": 169356773.3,
-    "EW_Dens": 1230.591466,
-    "srkm": 13.014
+    "GEN": "Meißen",
+    "EWZ": 242862,
+    "EW_Dens": 166.337,
+    "area": 1457712116,
+    "id": 359
   },
   {
-    "GEN": "Uckermark",
-    "EWZ": 120349,
-    "area": 3075953067,
-    "EW_Dens": 39.12575952,
-    "srkm": 55.461
+    "GEN": "Görlitz",
+    "EWZ": 256587,
+    "EW_Dens": 121.151,
+    "area": 2111238663,
+    "id": 358
   },
   {
-    "GEN": "Mecklenburgische Seenplatte",
-    "EWZ": 260574,
-    "area": 5495404451,
-    "EW_Dens": 47.41671015,
-    "srkm": 74.131
+    "GEN": "Bautzen",
+    "EWZ": 302634,
+    "EW_Dens": 126.019,
+    "area": 2395564926,
+    "id": 357
   },
   {
-    "GEN": "Schwerin",
-    "EWZ": 95797,
-    "area": 130062869.5,
-    "EW_Dens": 736.5437989,
-    "srkm": 11.405
+    "GEN": "Dresden",
+    "EWZ": 551072,
+    "EW_Dens": 1677.157,
+    "area": 327932405.7,
+    "id": 356
   },
   {
-    "GEN": "Vorpommern-Rügen",
-    "EWZ": 225123,
-    "area": 3163045477,
-    "EW_Dens": 71.17286224,
-    "srkm": 56.241
+    "GEN": "Zwickau",
+    "EWZ": 319988,
+    "EW_Dens": 336.712,
+    "area": 949647860.8,
+    "id": 355
   },
   {
-    "GEN": "Rostock",
-    "EWZ": 214635,
-    "area": 3429008706,
-    "EW_Dens": 62.59389182,
-    "srkm": 58.558
+    "GEN": "Vogtlandkreis",
+    "EWZ": 229584,
+    "EW_Dens": 162.475,
+    "area": 1412334510,
+    "id": 354
   },
   {
-    "GEN": "Vorpommern-Greifswald",
-    "EWZ": 237066,
-    "area": 3793951741,
-    "EW_Dens": 62.48524393,
-    "srkm": 61.595
+    "GEN": "Mittelsachsen",
+    "EWZ": 308153,
+    "EW_Dens": 145.555,
+    "area": 2114375310,
+    "id": 353
   },
   {
-    "GEN": "Nordwestmecklenburg",
-    "EWZ": 156993,
-    "area": 2124678717,
-    "EW_Dens": 73.89023044,
-    "srkm": 46.094
+    "GEN": "Erzgebirgskreis",
+    "EWZ": 340373,
+    "EW_Dens": 186.089,
+    "area": 1827042653,
+    "id": 352
   },
   {
     "GEN": "Chemnitz",
     "EWZ": 246855,
+    "EW_Dens": 1114.997,
     "area": 221159662.2,
-    "EW_Dens": 1116.184559,
-    "srkm": 14.871
+    "id": 351
   },
   {
     "GEN": "Ludwigslust-Parchim",
     "EWZ": 212522,
+    "EW_Dens": 44.581,
     "area": 4767473241,
-    "EW_Dens": 44.57749195,
-    "srkm": 69.047
+    "id": 350
   },
   {
-    "GEN": "Neustadt a.d. Aisch-Bad Windsheim",
-    "EWZ": 99641,
-    "area": 1267826660,
-    "EW_Dens": 78.59197408,
-    "srkm": 35.607
+    "GEN": "Vorpommern-Greifswald",
+    "EWZ": 237066,
+    "EW_Dens": 62.382,
+    "area": 3793951741,
+    "id": 349
   },
   {
-    "GEN": "Nürnberger Land",
-    "EWZ": 169752,
-    "area": 797751881.1,
-    "EW_Dens": 212.7879658,
-    "srkm": 28.245
+    "GEN": "Nordwestmecklenburg",
+    "EWZ": 156993,
+    "EW_Dens": 73.909,
+    "area": 2124678717,
+    "id": 348
   },
   {
-    "GEN": "Weißenburg-Gunzenhausen",
-    "EWZ": 94208,
-    "area": 970365513.9,
-    "EW_Dens": 97.08506604,
-    "srkm": 31.151
+    "GEN": "Vorpommern-Rügen",
+    "EWZ": 225123,
+    "EW_Dens": 71.111,
+    "area": 3163045477,
+    "id": 347
   },
   {
-    "GEN": "Roth",
-    "EWZ": 126101,
-    "area": 895096740.9,
-    "EW_Dens": 140.8797443,
-    "srkm": 29.918
+    "GEN": "Rostock",
+    "EWZ": 214635,
+    "EW_Dens": 62.575,
+    "area": 3429008706,
+    "id": 346
   },
   {
-    "GEN": "Schweinfurt",
-    "EWZ": 53437,
-    "area": 35492595.48,
-    "EW_Dens": 1505.581637,
-    "srkm": 5.958
+    "GEN": "Mecklenburgische Seenplatte",
+    "EWZ": 260574,
+    "EW_Dens": 47.372,
+    "area": 5495404451,
+    "id": 345
   },
   {
-    "GEN": "Aschaffenburg",
-    "EWZ": 69928,
-    "area": 61957063.22,
-    "EW_Dens": 1128.652592,
-    "srkm": 7.871
+    "GEN": "Schwerin",
+    "EWZ": 95797,
+    "EW_Dens": 736.672,
+    "area": 130062869.5,
+    "id": 344
   },
   {
-    "GEN": "Aschaffenburg",
-    "EWZ": 173969,
-    "area": 699139075.1,
-    "EW_Dens": 248.833181,
-    "srkm": 26.441
+    "GEN": "Rostock",
+    "EWZ": 208409,
+    "EW_Dens": 1230.305,
+    "area": 169356773.3,
+    "id": 343
   },
   {
-    "GEN": "Würzburg",
-    "EWZ": 126635,
-    "area": 87775310.77,
-    "EW_Dens": 1442.717763,
-    "srkm": 9.369
+    "GEN": "Uckermark",
+    "EWZ": 120349,
+    "EW_Dens": 39.056,
+    "area": 3075953067,
+    "id": 342
   },
   {
-    "GEN": "Rhön-Grabfeld",
-    "EWZ": 79796,
-    "area": 1021626003,
-    "EW_Dens": 78.10686079,
-    "srkm": 31.963
+    "GEN": "Teltow-Fläming",
+    "EWZ": 166890,
+    "EW_Dens": 79.217,
+    "area": 2103985627,
+    "id": 341
   },
   {
-    "GEN": "Bad Kissingen",
-    "EWZ": 103265,
-    "area": 1137752580,
-    "EW_Dens": 90.76226397,
-    "srkm": 33.731
+    "GEN": "Spree-Neiße",
+    "EWZ": 115456,
+    "EW_Dens": 69.489,
+    "area": 1657104284,
+    "id": 340
   },
   {
-    "GEN": "Kitzingen",
-    "EWZ": 90429,
-    "area": 683898589.6,
-    "EW_Dens": 132.2257442,
-    "srkm": 26.151
+    "GEN": "Prignitz",
+    "EWZ": 77263,
+    "EW_Dens": 36.118,
+    "area": 2138824760,
+    "id": 339
   },
   {
-    "GEN": "Haßberge",
-    "EWZ": 84464,
-    "area": 956485683.2,
-    "EW_Dens": 88.30660143,
-    "srkm": 30.927
+    "GEN": "Potsdam-Mittelmark",
+    "EWZ": 213214,
+    "EW_Dens": 82.161,
+    "area": 2593081757,
+    "id": 338
   },
   {
-    "GEN": "Main-Spessart",
-    "EWZ": 126523,
-    "area": 1321886532,
-    "EW_Dens": 95.71396405,
-    "srkm": 36.358
+    "GEN": "Ostprignitz-Ruppin",
+    "EWZ": 99368,
+    "EW_Dens": 39.313,
+    "area": 2525941625,
+    "id": 337
   },
   {
-    "GEN": "Miltenberg",
-    "EWZ": 128484,
-    "area": 715175552.7,
-    "EW_Dens": 179.653792,
-    "srkm": 26.743
+    "GEN": "Oder-Spree",
+    "EWZ": 178347,
+    "EW_Dens": 78.827,
+    "area": 2257259994,
+    "id": 336
   },
   {
-    "GEN": "Würzburg",
-    "EWZ": 161340,
-    "area": 967095261.8,
-    "EW_Dens": 166.8294804,
-    "srkm": 31.098
+    "GEN": "Oberspreewald-Lausitz",
+    "EWZ": 111122,
+    "EW_Dens": 90.673,
+    "area": 1222989358,
+    "id": 335
   },
   {
-    "GEN": "Schweinfurt",
-    "EWZ": 115105,
-    "area": 841448211.3,
-    "EW_Dens": 136.7939208,
-    "srkm": 29.008
+    "GEN": "Oberhavel",
+    "EWZ": 209893,
+    "EW_Dens": 115.956,
+    "area": 1808002331,
+    "id": 334
   },
   {
-    "GEN": "Kaufbeuren",
-    "EWZ": 43478,
-    "area": 40451973.2,
-    "EW_Dens": 1074.805419,
-    "srkm": 6.36
+    "GEN": "Märkisch-Oderland",
+    "EWZ": 192921,
+    "EW_Dens": 89.216,
+    "area": 2157678584,
+    "id": 333
   },
   {
-    "GEN": "Augsburg",
-    "EWZ": 292851,
-    "area": 146451217.5,
-    "EW_Dens": 1999.648791,
-    "srkm": 12.102
+    "GEN": "Havelland",
+    "EWZ": 160710,
+    "EW_Dens": 92.966,
+    "area": 1727508201,
+    "id": 332
   },
   {
-    "GEN": "Memmingen",
-    "EWZ": 43470,
-    "area": 69852131.8,
-    "EW_Dens": 622.3145791,
-    "srkm": 8.358
+    "GEN": "Elbe-Elster",
+    "EWZ": 103455,
+    "EW_Dens": 54.358,
+    "area": 1900262169,
+    "id": 331
   },
   {
-    "GEN": "Kempten (Allgäu)",
-    "EWZ": 68330,
-    "area": 63252562.29,
-    "EW_Dens": 1080.272443,
-    "srkm": 7.953
+    "GEN": "Dahme-Spreewald",
+    "EWZ": 167319,
+    "EW_Dens": 73.384,
+    "area": 2275759923,
+    "id": 330
   },
   {
-    "GEN": "Augsburg",
-    "EWZ": 249838,
-    "area": 1071539491,
-    "EW_Dens": 233.1579957,
-    "srkm": 32.734
+    "GEN": "Barnim",
+    "EWZ": 180864,
+    "EW_Dens": 121.932,
+    "area": 1480850272,
+    "id": 329
   },
   {
-    "GEN": "Aichach-Friedberg",
-    "EWZ": 132596,
-    "area": 779821256.7,
-    "EW_Dens": 170.0338364,
-    "srkm": 27.925
+    "GEN": "Potsdam",
+    "EWZ": 175710,
+    "EW_Dens": 938.799,
+    "area": 186969761.2,
+    "id": 328
   },
   {
-    "GEN": "Günzburg",
-    "EWZ": 124519,
-    "area": 763499497.6,
-    "EW_Dens": 163.0898257,
-    "srkm": 27.631
+    "GEN": "Frankfurt (Oder)",
+    "EWZ": 58237,
+    "EW_Dens": 393.198,
+    "area": 147721495,
+    "id": 327
   },
   {
-    "GEN": "Dillingen a.d. Donau",
-    "EWZ": 95159,
-    "area": 791482171.1,
-    "EW_Dens": 120.2288611,
-    "srkm": 28.133
+    "GEN": "Cottbus",
+    "EWZ": 101036,
+    "EW_Dens": 610.382,
+    "area": 165105223.8,
+    "id": 326
   },
   {
-    "GEN": "Lindau (Bodensee)",
-    "EWZ": 81148,
-    "area": 323188008.3,
-    "EW_Dens": 251.0860487,
-    "srkm": 17.977
+    "GEN": "Brandenburg an der Havel",
+    "EWZ": 71886,
+    "EW_Dens": 313.285,
+    "area": 229319642.6,
+    "id": 325
   },
   {
-    "GEN": "Neu-Ulm",
-    "EWZ": 172546,
-    "area": 515699258,
-    "EW_Dens": 334.586481,
-    "srkm": 22.709
+    "GEN": "Berlin",
+    "EWZ": 3613495,
+    "EW_Dens": 4046.259,
+    "area": 891802755.7,
+    "id": 324
   },
   {
-    "GEN": "Unterallgäu",
-    "EWZ": 142544,
-    "area": 1229853868,
-    "EW_Dens": 115.9032009,
-    "srkm": 35.069
+    "GEN": "St. Wendel",
+    "EWZ": 87867,
+    "EW_Dens": 184.492,
+    "area": 476424473,
+    "id": 323
   },
   {
-    "GEN": "Ostallgäu",
-    "EWZ": 139278,
-    "area": 1393226051,
-    "EW_Dens": 99.96798431,
-    "srkm": 37.326
+    "GEN": "Saarpfalz-Kreis",
+    "EWZ": 143402,
+    "EW_Dens": 342.33,
+    "area": 419066259.2,
+    "id": 322
   },
   {
-    "GEN": "Oberallgäu",
-    "EWZ": 154568,
-    "area": 1528384601,
-    "EW_Dens": 101.131613,
-    "srkm": 39.095
+    "GEN": "Saarlouis",
+    "EWZ": 195815,
+    "EW_Dens": 426.618,
+    "area": 459065842.5,
+    "id": 321
   },
   {
-    "GEN": "Donau-Ries",
-    "EWZ": 133043,
-    "area": 1274327707,
-    "EW_Dens": 104.4025012,
-    "srkm": 35.698
+    "GEN": "Neunkirchen",
+    "EWZ": 133297,
+    "EW_Dens": 537.319,
+    "area": 248162263.8,
+    "id": 320
   },
   {
     "GEN": "Merzig-Wadern",
     "EWZ": 103656,
+    "EW_Dens": 186.221,
     "area": 556687561.1,
-    "EW_Dens": 186.2013942,
-    "srkm": 23.594
+    "id": 319
   },
   {
     "GEN": "Regionalverband Saarbrücken",
     "EWZ": 330150,
+    "EW_Dens": 802.42,
     "area": 411548294.6,
-    "EW_Dens": 802.2144772,
-    "srkm": 20.287
+    "id": 318
   },
   {
-    "GEN": "Amberg",
-    "EWZ": 42248,
-    "area": 50436319.69,
-    "EW_Dens": 837.6503333,
-    "srkm": 7.102
+    "GEN": "Oberallgäu",
+    "EWZ": 154568,
+    "EW_Dens": 101.19,
+    "area": 1528384601,
+    "id": 317
   },
   {
-    "GEN": "Dingolfing-Landau",
-    "EWZ": 95831,
-    "area": 877447201.7,
-    "EW_Dens": 109.2156882,
-    "srkm": 29.622
+    "GEN": "Donau-Ries",
+    "EWZ": 133043,
+    "EW_Dens": 104.445,
+    "area": 1274327707,
+    "id": 316
   },
   {
-    "GEN": "Weiden i.d. OPf.",
-    "EWZ": 42543,
-    "area": 70593243.06,
-    "EW_Dens": 602.649746,
-    "srkm": 8.402
+    "GEN": "Unterallgäu",
+    "EWZ": 142544,
+    "EW_Dens": 115.965,
+    "area": 1229853868,
+    "id": 315
   },
   {
-    "GEN": "Regensburg",
-    "EWZ": 150894,
-    "area": 79674015.02,
-    "EW_Dens": 1893.892255,
-    "srkm": 8.926
+    "GEN": "Ostallgäu",
+    "EWZ": 139278,
+    "EW_Dens": 100.011,
+    "area": 1393226051,
+    "id": 314
   },
   {
-    "GEN": "Cham",
-    "EWZ": 127339,
-    "area": 1527024187,
-    "EW_Dens": 83.39029669,
-    "srkm": 39.077
+    "GEN": "Lindau (Bodensee)",
+    "EWZ": 81148,
+    "EW_Dens": 251.259,
+    "area": 323188008.3,
+    "id": 313
   },
   {
-    "GEN": "Amberg-Sulzbach",
-    "EWZ": 102836,
-    "area": 1255016931,
-    "EW_Dens": 81.93993042,
-    "srkm": 35.426
+    "GEN": "Neu-Ulm",
+    "EWZ": 172546,
+    "EW_Dens": 334.795,
+    "area": 515699258,
+    "id": 312
   },
   {
-    "GEN": "Neustadt a.d. Waldnaab",
-    "EWZ": 94486,
-    "area": 1428183262,
-    "EW_Dens": 66.15817627,
-    "srkm": 37.791
+    "GEN": "Günzburg",
+    "EWZ": 124519,
+    "EW_Dens": 163.178,
+    "area": 763499497.6,
+    "id": 311
   },
   {
-    "GEN": "Neumarkt i.d. OPf.",
-    "EWZ": 132644,
-    "area": 1344604041,
-    "EW_Dens": 98.64911599,
-    "srkm": 36.669
+    "GEN": "Dillingen a.d. Donau",
+    "EWZ": 95159,
+    "EW_Dens": 120.287,
+    "area": 791482171.1,
+    "id": 310
   },
   {
-    "GEN": "Schwandorf",
-    "EWZ": 146487,
-    "area": 1458305206,
-    "EW_Dens": 100.450166,
-    "srkm": 38.188
+    "GEN": "Augsburg",
+    "EWZ": 249838,
+    "EW_Dens": 233.25,
+    "area": 1071539491,
+    "id": 309
   },
   {
-    "GEN": "Regensburg",
-    "EWZ": 192200,
-    "area": 1393097547,
-    "EW_Dens": 137.965931,
-    "srkm": 37.324
+    "GEN": "Aichach-Friedberg",
+    "EWZ": 132596,
+    "EW_Dens": 170.073,
+    "area": 779821256.7,
+    "id": 308
   },
   {
-    "GEN": "Bamberg",
-    "EWZ": 77179,
-    "area": 54973551.31,
-    "EW_Dens": 1403.929675,
-    "srkm": 7.414
+    "GEN": "Memmingen",
+    "EWZ": 43470,
+    "EW_Dens": 622.697,
+    "area": 69852131.8,
+    "id": 307
   },
   {
-    "GEN": "Tirschenreuth",
-    "EWZ": 72730,
-    "area": 1084542458,
-    "EW_Dens": 67.06053734,
-    "srkm": 32.932
+    "GEN": "Kempten (Allgäu)",
+    "EWZ": 68330,
+    "EW_Dens": 1080.882,
+    "area": 63252562.29,
+    "id": 306
   },
   {
-    "GEN": "Coburg",
-    "EWZ": 41236,
-    "area": 48149499.52,
-    "EW_Dens": 856.415963,
-    "srkm": 6.939
+    "GEN": "Kaufbeuren",
+    "EWZ": 43478,
+    "EW_Dens": 1075.28,
+    "area": 40451973.2,
+    "id": 305
   },
   {
-    "GEN": "Bayreuth",
-    "EWZ": 73999,
-    "area": 66998622.46,
-    "EW_Dens": 1104.485395,
-    "srkm": 8.185
+    "GEN": "Augsburg",
+    "EWZ": 292851,
+    "EW_Dens": 2000.289,
+    "area": 146451217.5,
+    "id": 304
   },
   {
-    "GEN": "Bamberg",
-    "EWZ": 146584,
-    "area": 1166985560,
-    "EW_Dens": 125.6090949,
-    "srkm": 34.161
+    "GEN": "Würzburg",
+    "EWZ": 161340,
+    "EW_Dens": 166.944,
+    "area": 967095261.8,
+    "id": 303
   },
   {
-    "GEN": "Hof",
-    "EWZ": 45950,
-    "area": 58214764.59,
-    "EW_Dens": 789.3186604,
-    "srkm": 7.63
+    "GEN": "Schweinfurt",
+    "EWZ": 115105,
+    "EW_Dens": 136.876,
+    "area": 841448211.3,
+    "id": 302
   },
   {
-    "GEN": "Coburg",
-    "EWZ": 86885,
-    "area": 590924384.1,
-    "EW_Dens": 147.0323485,
-    "srkm": 24.309
+    "GEN": "Main-Spessart",
+    "EWZ": 126523,
+    "EW_Dens": 95.785,
+    "area": 1321886532,
+    "id": 301
   },
   {
-    "GEN": "Bayreuth",
-    "EWZ": 103805,
-    "area": 1273517872,
-    "EW_Dens": 81.51043836,
-    "srkm": 35.686
+    "GEN": "Miltenberg",
+    "EWZ": 128484,
+    "EW_Dens": 179.796,
+    "area": 715175552.7,
+    "id": 300
   },
   {
-    "GEN": "Hof",
-    "EWZ": 95773,
-    "area": 893492792.8,
-    "EW_Dens": 107.1894488,
-    "srkm": 29.891
+    "GEN": "Kitzingen",
+    "EWZ": 90429,
+    "EW_Dens": 132.305,
+    "area": 683898589.6,
+    "id": 299
   },
   {
-    "GEN": "Forchheim",
-    "EWZ": 115681,
-    "area": 642904864.5,
-    "EW_Dens": 179.934865,
-    "srkm": 25.356
+    "GEN": "Haßberge",
+    "EWZ": 84464,
+    "EW_Dens": 88.348,
+    "area": 956485683.2,
+    "id": 298
   },
   {
-    "GEN": "Kulmbach",
-    "EWZ": 72012,
-    "area": 658028589,
-    "EW_Dens": 109.4359747,
-    "srkm": 25.652
+    "GEN": "Rhön-Grabfeld",
+    "EWZ": 79796,
+    "EW_Dens": 78.154,
+    "area": 1021626003,
+    "id": 297
   },
   {
-    "GEN": "Kronach",
-    "EWZ": 67474,
-    "area": 651492298.8,
-    "EW_Dens": 103.568377,
-    "srkm": 25.524
+    "GEN": "Bad Kissingen",
+    "EWZ": 103265,
+    "EW_Dens": 90.824,
+    "area": 1137752580,
+    "id": 296
   },
   {
-    "GEN": "Wunsiedel i. Fichtelgebirge",
-    "EWZ": 73485,
-    "area": 606189176.8,
-    "EW_Dens": 121.2245332,
-    "srkm": 24.621
+    "GEN": "Aschaffenburg",
+    "EWZ": 173969,
+    "EW_Dens": 249.03,
+    "area": 699139075.1,
+    "id": 295
   },
   {
-    "GEN": "Lichtenfels",
-    "EWZ": 66777,
-    "area": 519750043.3,
-    "EW_Dens": 128.4790658,
-    "srkm": 22.798
+    "GEN": "Würzburg",
+    "EWZ": 126635,
+    "EW_Dens": 1443.71,
+    "area": 87775310.77,
+    "id": 294
   },
   {
-    "GEN": "Erlangen",
-    "EWZ": 110998,
-    "area": 78000837.88,
-    "EW_Dens": 1423.035996,
-    "srkm": 8.832
+    "GEN": "Schweinfurt",
+    "EWZ": 53437,
+    "EW_Dens": 1506.504,
+    "area": 35492595.48,
+    "id": 293
   },
   {
-    "GEN": "Ansbach",
-    "EWZ": 41652,
-    "area": 99815192.03,
-    "EW_Dens": 417.2911874,
-    "srkm": 9.991
+    "GEN": "Aschaffenburg",
+    "EWZ": 69928,
+    "EW_Dens": 1129.553,
+    "area": 61957063.22,
+    "id": 292
   },
   {
-    "GEN": "Nürnberg",
-    "EWZ": 515201,
-    "area": 187694845.2,
-    "EW_Dens": 2744.886251,
-    "srkm": 13.7
+    "GEN": "Weißenburg-Gunzenhausen",
+    "EWZ": 94208,
+    "EW_Dens": 97.117,
+    "area": 970365513.9,
+    "id": 291
   },
   {
-    "GEN": "Fürth",
-    "EWZ": 126526,
-    "area": 63304665.3,
-    "EW_Dens": 1998.683658,
-    "srkm": 7.956
+    "GEN": "Roth",
+    "EWZ": 126101,
+    "EW_Dens": 140.909,
+    "area": 895096740.9,
+    "id": 290
   },
   {
-    "GEN": "Ansbach",
-    "EWZ": 183256,
-    "area": 1972844057,
-    "EW_Dens": 92.88924756,
-    "srkm": 44.417
+    "GEN": "Neustadt a.d. Aisch-Bad Windsheim",
+    "EWZ": 99641,
+    "EW_Dens": 78.633,
+    "area": 1267826660,
+    "id": 289
   },
   {
-    "GEN": "Schwabach",
-    "EWZ": 40781,
-    "area": 40710438.73,
-    "EW_Dens": 1001.733248,
-    "srkm": 6.38
+    "GEN": "Nürnberger Land",
+    "EWZ": 169752,
+    "EW_Dens": 212.804,
+    "area": 797751881.1,
+    "id": 288
   },
   {
     "GEN": "Fürth",
     "EWZ": 116193,
+    "EW_Dens": 378.415,
     "area": 307161300.6,
-    "EW_Dens": 378.2800756,
-    "srkm": 17.526
+    "id": 287
   },
   {
     "GEN": "Erlangen-Höchstadt",
     "EWZ": 135334,
+    "EW_Dens": 239.814,
     "area": 564513154.3,
-    "EW_Dens": 239.7357776,
-    "srkm": 23.759
+    "id": 286
   },
   {
-    "GEN": "Altötting",
-    "EWZ": 110338,
-    "area": 569372196.9,
-    "EW_Dens": 193.7888794,
-    "srkm": 23.862
+    "GEN": "Ansbach",
+    "EWZ": 183256,
+    "EW_Dens": 92.937,
+    "area": 1972844057,
+    "id": 285
   },
   {
-    "GEN": "Rosenheim",
-    "EWZ": 63080,
-    "area": 36588865.09,
-    "EW_Dens": 1724.021771,
-    "srkm": 6.049
+    "GEN": "Schwabach",
+    "EWZ": 40781,
+    "EW_Dens": 1002.003,
+    "area": 40710438.73,
+    "id": 284
   },
   {
-    "GEN": "Bad Tölz-Wolfratshausen",
-    "EWZ": 126572,
-    "area": 1111692597,
-    "EW_Dens": 113.8552153,
-    "srkm": 33.342
+    "GEN": "Nürnberg",
+    "EWZ": 515201,
+    "EW_Dens": 2745.544,
+    "area": 187694845.2,
+    "id": 283
   },
   {
-    "GEN": "Berchtesgadener Land",
-    "EWZ": 105052,
-    "area": 839814089,
-    "EW_Dens": 125.0895899,
-    "srkm": 28.98
+    "GEN": "Fürth",
+    "EWZ": 126526,
+    "EW_Dens": 1999.288,
+    "area": 63304665.3,
+    "id": 282
   },
   {
-    "GEN": "Ebersberg",
-    "EWZ": 140800,
-    "area": 549839987.5,
-    "EW_Dens": 256.0745002,
-    "srkm": 23.449
+    "GEN": "Erlangen",
+    "EWZ": 110998,
+    "EW_Dens": 1423.46,
+    "area": 78000837.88,
+    "id": 281
   },
   {
-    "GEN": "Dachau",
-    "EWZ": 152703,
-    "area": 579535905.2,
-    "EW_Dens": 263.491871,
-    "srkm": 24.074
+    "GEN": "Ansbach",
+    "EWZ": 41652,
+    "EW_Dens": 417.493,
+    "area": 99815192.03,
+    "id": 280
   },
   {
-    "GEN": "Erding",
-    "EWZ": 136884,
-    "area": 870830631,
-    "EW_Dens": 157.1878562,
-    "srkm": 29.51
+    "GEN": "Wunsiedel i. Fichtelgebirge",
+    "EWZ": 73485,
+    "EW_Dens": 121.18,
+    "area": 606189176.8,
+    "id": 279
   },
   {
-    "GEN": "Eichstätt",
-    "EWZ": 131646,
-    "area": 1214497857,
-    "EW_Dens": 108.3954156,
-    "srkm": 34.85
+    "GEN": "Lichtenfels",
+    "EWZ": 66777,
+    "EW_Dens": 128.509,
+    "area": 519750043.3,
+    "id": 278
   },
   {
-    "GEN": "Fürstenfeldbruck",
-    "EWZ": 217831,
-    "area": 434655920.4,
-    "EW_Dens": 501.1573288,
-    "srkm": 20.848
+    "GEN": "Kulmbach",
+    "EWZ": 72012,
+    "EW_Dens": 109.439,
+    "area": 658028589,
+    "id": 277
   },
   {
-    "GEN": "Freising",
-    "EWZ": 177997,
-    "area": 798405847.9,
-    "EW_Dens": 222.9405013,
-    "srkm": 28.256
+    "GEN": "Kronach",
+    "EWZ": 67474,
+    "EW_Dens": 103.579,
+    "area": 651492298.8,
+    "id": 276
   },
   {
-    "GEN": "Landsberg am Lech",
-    "EWZ": 119141,
-    "area": 803629181.8,
-    "EW_Dens": 148.2537005,
-    "srkm": 28.348
+    "GEN": "Hof",
+    "EWZ": 95773,
+    "EW_Dens": 107.169,
+    "area": 893492792.8,
+    "id": 275
   },
   {
-    "GEN": "Garmisch-Partenkirchen",
-    "EWZ": 88155,
-    "area": 1011904283,
-    "EW_Dens": 87.11792358,
-    "srkm": 31.81
+    "GEN": "Forchheim",
+    "EWZ": 115681,
+    "EW_Dens": 179.97,
+    "area": 642904864.5,
+    "id": 274
   },
   {
-    "GEN": "Mühldorf a. Inn",
-    "EWZ": 114486,
-    "area": 805169238.4,
-    "EW_Dens": 142.1887406,
-    "srkm": 28.376
+    "GEN": "Coburg",
+    "EWZ": 86885,
+    "EW_Dens": 147.081,
+    "area": 590924384.1,
+    "id": 273
   },
   {
-    "GEN": "Miesbach",
-    "EWZ": 99189,
-    "area": 866788265.4,
-    "EW_Dens": 114.4327905,
-    "srkm": 29.441
+    "GEN": "Bayreuth",
+    "EWZ": 103805,
+    "EW_Dens": 81.508,
+    "area": 1273517872,
+    "id": 272
   },
   {
-    "GEN": "Neuburg-Schrobenhausen",
-    "EWZ": 96164,
-    "area": 740046224.8,
-    "EW_Dens": 129.9432343,
-    "srkm": 27.204
+    "GEN": "Bamberg",
+    "EWZ": 146584,
+    "EW_Dens": 125.653,
+    "area": 1166985560,
+    "id": 271
   },
   {
-    "GEN": "München",
-    "EWZ": 346433,
-    "area": 664041842,
-    "EW_Dens": 521.7035706,
-    "srkm": 25.769
+    "GEN": "Hof",
+    "EWZ": 45950,
+    "EW_Dens": 789.125,
+    "area": 58214764.59,
+    "id": 270
   },
   {
-    "GEN": "Rosenheim",
-    "EWZ": 259449,
-    "area": 1440592155,
-    "EW_Dens": 180.0988566,
-    "srkm": 37.955
+    "GEN": "Coburg",
+    "EWZ": 41236,
+    "EW_Dens": 856.689,
+    "area": 48149499.52,
+    "id": 269
   },
   {
-    "GEN": "Pfaffenhofen a.d. Ilm",
-    "EWZ": 126244,
-    "area": 760725655.5,
-    "EW_Dens": 165.9520736,
-    "srkm": 27.581
+    "GEN": "Bayreuth",
+    "EWZ": 73999,
+    "EW_Dens": 1104.435,
+    "area": 66998622.46,
+    "id": 268
   },
   {
-    "GEN": "Traunstein",
-    "EWZ": 176290,
-    "area": 1532950352,
-    "EW_Dens": 115.0004628,
-    "srkm": 39.153
+    "GEN": "Bamberg",
+    "EWZ": 77179,
+    "EW_Dens": 1404.411,
+    "area": 54973551.31,
+    "id": 267
   },
   {
-    "GEN": "Starnberg",
-    "EWZ": 135545,
-    "area": 486840824.7,
-    "EW_Dens": 278.4174891,
-    "srkm": 22.064
+    "GEN": "Tirschenreuth",
+    "EWZ": 72730,
+    "EW_Dens": 67.027,
+    "area": 1084542458,
+    "id": 266
   },
   {
-    "GEN": "Landshut",
-    "EWZ": 71193,
-    "area": 66158790.58,
-    "EW_Dens": 1076.092827,
-    "srkm": 8.134
+    "GEN": "Schwandorf",
+    "EWZ": 146487,
+    "EW_Dens": 100.393,
+    "area": 1458305206,
+    "id": 265
   },
   {
-    "GEN": "Weilheim-Schongau",
-    "EWZ": 134252,
-    "area": 967401995.2,
-    "EW_Dens": 138.7758147,
-    "srkm": 31.103
+    "GEN": "Regensburg",
+    "EWZ": 192200,
+    "EW_Dens": 137.899,
+    "area": 1393097547,
+    "id": 264
   },
   {
-    "GEN": "Straubing",
-    "EWZ": 47586,
-    "area": 67631592.78,
-    "EW_Dens": 703.6060818,
-    "srkm": 8.224
+    "GEN": "Neustadt a.d. Waldnaab",
+    "EWZ": 94486,
+    "EW_Dens": 66.129,
+    "area": 1428183262,
+    "id": 263
   },
   {
-    "GEN": "Passau",
-    "EWZ": 51781,
-    "area": 70219017.7,
-    "EW_Dens": 737.4213097,
-    "srkm": 8.38
+    "GEN": "Neumarkt i.d. OPf.",
+    "EWZ": 132644,
+    "EW_Dens": 98.643,
+    "area": 1344604041,
+    "id": 262
   },
   {
-    "GEN": "Freyung-Grafenau",
-    "EWZ": 78345,
-    "area": 983941244.6,
-    "EW_Dens": 79.62365683,
-    "srkm": 31.368
+    "GEN": "Cham",
+    "EWZ": 127339,
+    "EW_Dens": 83.308,
+    "area": 1527024187,
+    "id": 261
   },
   {
-    "GEN": "Deggendorf",
-    "EWZ": 118741,
-    "area": 861202459.2,
-    "EW_Dens": 137.8781479,
-    "srkm": 29.346
+    "GEN": "Amberg-Sulzbach",
+    "EWZ": 102836,
+    "EW_Dens": 81.922,
+    "area": 1255016931,
+    "id": 260
   },
   {
-    "GEN": "Landshut",
-    "EWZ": 157239,
-    "area": 1347457386,
-    "EW_Dens": 116.6931152,
-    "srkm": 36.708
+    "GEN": "Weiden i.d. OPf.",
+    "EWZ": 42543,
+    "EW_Dens": 602.365,
+    "area": 70593243.06,
+    "id": 259
   },
   {
-    "GEN": "Kelheim",
-    "EWZ": 121119,
-    "area": 1064733091,
-    "EW_Dens": 113.7552698,
-    "srkm": 32.63
+    "GEN": "Regensburg",
+    "EWZ": 150894,
+    "EW_Dens": 1892.996,
+    "area": 79674015.02,
+    "id": 258
   },
   {
-    "GEN": "Regen",
-    "EWZ": 77489,
-    "area": 974861376.2,
-    "EW_Dens": 79.48719879,
-    "srkm": 31.223
+    "GEN": "Amberg",
+    "EWZ": 42248,
+    "EW_Dens": 837.445,
+    "area": 50436319.69,
+    "id": 257
   },
   {
-    "GEN": "Passau",
-    "EWZ": 190504,
-    "area": 1530046161,
-    "EW_Dens": 124.5086618,
-    "srkm": 39.116
+    "GEN": "Dingolfing-Landau",
+    "EWZ": 95831,
+    "EW_Dens": 109.113,
+    "area": 877447201.7,
+    "id": 256
   },
   {
     "GEN": "Straubing-Bogen",
     "EWZ": 99838,
+    "EW_Dens": 83.054,
     "area": 1201004599,
-    "EW_Dens": 83.12874079,
-    "srkm": 34.656
+    "id": 255
   },
   {
     "GEN": "Rottal-Inn",
     "EWZ": 120371,
+    "EW_Dens": 93.852,
     "area": 1280999602,
-    "EW_Dens": 93.96646167,
-    "srkm": 35.791
+    "id": 254
   },
   {
-    "GEN": "Karlsruhe",
-    "EWZ": 442673,
-    "area": 1084490291,
-    "EW_Dens": 408.1853048,
-    "srkm": 32.932
+    "GEN": "Regen",
+    "EWZ": 77489,
+    "EW_Dens": 79.375,
+    "area": 974861376.2,
+    "id": 253
   },
   {
-    "GEN": "Karlsruhe",
-    "EWZ": 311919,
-    "area": 173953556.6,
-    "EW_Dens": 1793.116543,
-    "srkm": 13.189
+    "GEN": "Passau",
+    "EWZ": 190504,
+    "EW_Dens": 124.291,
+    "area": 1530046161,
+    "id": 252
   },
   {
-    "GEN": "Heidelberg",
-    "EWZ": 160601,
-    "area": 109290320.3,
-    "EW_Dens": 1469.4897,
-    "srkm": 10.454
+    "GEN": "Landshut",
+    "EWZ": 157239,
+    "EW_Dens": 116.627,
+    "area": 1347457386,
+    "id": 251
   },
   {
-    "GEN": "Rastatt",
-    "EWZ": 230216,
-    "area": 738611280.5,
-    "EW_Dens": 311.6876307,
-    "srkm": 27.177
+    "GEN": "Kelheim",
+    "EWZ": 121119,
+    "EW_Dens": 113.723,
+    "area": 1064733091,
+    "id": 250
   },
   {
-    "GEN": "Neckar-Odenwald-Kreis",
-    "EWZ": 143376,
-    "area": 1125446447,
-    "EW_Dens": 127.3947778,
-    "srkm": 33.548
+    "GEN": "Freyung-Grafenau",
+    "EWZ": 78345,
+    "EW_Dens": 79.473,
+    "area": 983941244.6,
+    "id": 249
   },
   {
-    "GEN": "Mannheim",
-    "EWZ": 307997,
-    "area": 145097802.5,
-    "EW_Dens": 2122.68549,
-    "srkm": 12.046
+    "GEN": "Deggendorf",
+    "EWZ": 118741,
+    "EW_Dens": 137.696,
+    "area": 861202459.2,
+    "id": 248
   },
   {
-    "GEN": "Pforzheim",
-    "EWZ": 124289,
-    "area": 98197712.34,
-    "EW_Dens": 1265.701583,
-    "srkm": 9.909
+    "GEN": "Straubing",
+    "EWZ": 47586,
+    "EW_Dens": 702.982,
+    "area": 67631592.78,
+    "id": 247
   },
   {
-    "GEN": "Rhein-Neckar-Kreis",
-    "EWZ": 546745,
-    "area": 1060650467,
-    "EW_Dens": 515.480846,
-    "srkm": 32.568
+    "GEN": "Passau",
+    "EWZ": 51781,
+    "EW_Dens": 736.092,
+    "area": 70219017.7,
+    "id": 246
   },
   {
-    "GEN": "Enzkreis",
-    "EWZ": 198369,
-    "area": 573314914.2,
-    "EW_Dens": 346.0035577,
-    "srkm": 23.944
+    "GEN": "Landshut",
+    "EWZ": 71193,
+    "EW_Dens": 1075.513,
+    "area": 66158790.58,
+    "id": 245
   },
   {
-    "GEN": "Calw",
-    "EWZ": 157424,
-    "area": 797319669.9,
-    "EW_Dens": 197.4415105,
-    "srkm": 28.237
+    "GEN": "Weilheim-Schongau",
+    "EWZ": 134252,
+    "EW_Dens": 138.806,
+    "area": 967401995.2,
+    "id": 244
   },
   {
-    "GEN": "Freiburg im Breisgau",
-    "EWZ": 229636,
-    "area": 154200509.7,
-    "EW_Dens": 1489.203897,
-    "srkm": 12.418
+    "GEN": "Traunstein",
+    "EWZ": 176290,
+    "EW_Dens": 114.89,
+    "area": 1532950352,
+    "id": 243
   },
   {
-    "GEN": "Freudenstadt",
-    "EWZ": 117456,
-    "area": 871120309.7,
-    "EW_Dens": 134.8332701,
-    "srkm": 29.515
+    "GEN": "Starnberg",
+    "EWZ": 135545,
+    "EW_Dens": 278.442,
+    "area": 486840824.7,
+    "id": 242
   },
   {
-    "GEN": "Emmendingen",
-    "EWZ": 164712,
-    "area": 680418665.4,
-    "EW_Dens": 242.0744879,
-    "srkm": 26.085
+    "GEN": "Rosenheim",
+    "EWZ": 259449,
+    "EW_Dens": 179.995,
+    "area": 1440592155,
+    "id": 241
   },
   {
-    "GEN": "Breisgau-Hochschwarzwald",
-    "EWZ": 262405,
-    "area": 1376934073,
-    "EW_Dens": 190.5719418,
-    "srkm": 37.107
+    "GEN": "Pfaffenhofen a.d. Ilm",
+    "EWZ": 126244,
+    "EW_Dens": 165.943,
+    "area": 760725655.5,
+    "id": 240
   },
   {
-    "GEN": "Rottweil",
-    "EWZ": 138858,
-    "area": 769603597.5,
-    "EW_Dens": 180.4279508,
-    "srkm": 27.742
+    "GEN": "Neuburg-Schrobenhausen",
+    "EWZ": 96164,
+    "EW_Dens": 129.963,
+    "area": 740046224.8,
+    "id": 239
   },
   {
-    "GEN": "Ortenaukreis",
-    "EWZ": 425932,
-    "area": 1859669689,
-    "EW_Dens": 229.0363727,
-    "srkm": 43.124
+    "GEN": "München",
+    "EWZ": 346433,
+    "EW_Dens": 521.627,
+    "area": 664041842,
+    "id": 238
   },
   {
-    "GEN": "Tuttlingen",
-    "EWZ": 139397,
-    "area": 733977009.4,
-    "EW_Dens": 189.9201177,
-    "srkm": 27.092
+    "GEN": "Mühldorf a. Inn",
+    "EWZ": 114486,
+    "EW_Dens": 142.082,
+    "area": 805169238.4,
+    "id": 237
   },
   {
-    "GEN": "Schwarzwald-Baar-Kreis",
-    "EWZ": 211207,
-    "area": 1026020904,
-    "EW_Dens": 205.8505818,
-    "srkm": 32.032
+    "GEN": "Miesbach",
+    "EWZ": 99189,
+    "EW_Dens": 114.399,
+    "area": 866788265.4,
+    "id": 236
   },
   {
-    "GEN": "Lörrach",
-    "EWZ": 228314,
-    "area": 807255141.6,
-    "EW_Dens": 282.8275575,
-    "srkm": 28.412
+    "GEN": "Landsberg am Lech",
+    "EWZ": 119141,
+    "EW_Dens": 148.295,
+    "area": 803629181.8,
+    "id": 235
   },
   {
-    "GEN": "Konstanz",
-    "EWZ": 284015,
-    "area": 817344697.2,
-    "EW_Dens": 347.484973,
-    "srkm": 28.589
+    "GEN": "Garmisch-Partenkirchen",
+    "EWZ": 88155,
+    "EW_Dens": 87.132,
+    "area": 1011904283,
+    "id": 234
   },
   {
-    "GEN": "Reutlingen",
-    "EWZ": 285754,
-    "area": 1092220364,
-    "EW_Dens": 261.6266913,
-    "srkm": 33.049
+    "GEN": "Fürstenfeldbruck",
+    "EWZ": 217831,
+    "EW_Dens": 501.228,
+    "area": 434655920.4,
+    "id": 233
   },
   {
-    "GEN": "Waldshut",
-    "EWZ": 170198,
-    "area": 1130966653,
-    "EW_Dens": 150.4889641,
-    "srkm": 33.63
+    "GEN": "Freising",
+    "EWZ": 177997,
+    "EW_Dens": 222.893,
+    "area": 798405847.9,
+    "id": 232
   },
   {
-    "GEN": "Zollernalbkreis",
-    "EWZ": 188170,
-    "area": 917159628.6,
-    "EW_Dens": 205.1660301,
-    "srkm": 30.285
+    "GEN": "Erding",
+    "EWZ": 136884,
+    "EW_Dens": 157.122,
+    "area": 870830631,
+    "id": 231
   },
   {
-    "GEN": "Tübingen",
-    "EWZ": 225755,
-    "area": 520063978.9,
-    "EW_Dens": 434.0908218,
-    "srkm": 22.805
+    "GEN": "Eichstätt",
+    "EWZ": 131646,
+    "EW_Dens": 108.401,
+    "area": 1214497857,
+    "id": 230
   },
   {
-    "GEN": "Alb-Donau-Kreis",
-    "EWZ": 194629,
-    "area": 1357315161,
-    "EW_Dens": 143.3926369,
-    "srkm": 36.842
+    "GEN": "Ebersberg",
+    "EWZ": 140800,
+    "EW_Dens": 255.983,
+    "area": 549839987.5,
+    "id": 229
   },
   {
-    "GEN": "Ulm",
-    "EWZ": 125596,
-    "area": 119327847.5,
-    "EW_Dens": 1052.528832,
-    "srkm": 10.924
+    "GEN": "Dachau",
+    "EWZ": 152703,
+    "EW_Dens": 263.505,
+    "area": 579535905.2,
+    "id": 228
   },
   {
-    "GEN": "Bodenseekreis",
-    "EWZ": 214655,
-    "area": 665300598.4,
-    "EW_Dens": 322.6436298,
-    "srkm": 25.793
+    "GEN": "Bad Tölz-Wolfratshausen",
+    "EWZ": 126572,
+    "EW_Dens": 113.849,
+    "area": 1111692597,
+    "id": 227
   },
   {
-    "GEN": "Biberach",
-    "EWZ": 198265,
-    "area": 1409863251,
-    "EW_Dens": 140.6271139,
-    "srkm": 37.548
+    "GEN": "Berchtesgadener Land",
+    "EWZ": 105052,
+    "EW_Dens": 124.926,
+    "area": 839814089,
+    "id": 226
   },
   {
-    "GEN": "Sigmaringen",
-    "EWZ": 130192,
-    "area": 1204547660,
-    "EW_Dens": 108.0837266,
-    "srkm": 34.707
+    "GEN": "Altötting",
+    "EWZ": 110338,
+    "EW_Dens": 193.583,
+    "area": 569372196.9,
+    "id": 225
   },
   {
-    "GEN": "Ravensburg",
-    "EWZ": 283264,
-    "area": 1632069660,
-    "EW_Dens": 173.5612192,
-    "srkm": 40.399
+    "GEN": "Rosenheim",
+    "EWZ": 63080,
+    "EW_Dens": 1723.11,
+    "area": 36588865.09,
+    "id": 224
   },
   {
     "GEN": "München",
     "EWZ": 1456039,
+    "EW_Dens": 4675.239,
     "area": 311410446.9,
-    "EW_Dens": 4675.626699,
-    "srkm": 17.647
+    "id": 223
   },
   {
     "GEN": "Ingolstadt",
     "EWZ": 135244,
+    "EW_Dens": 1012.811,
     "area": 133538457.4,
-    "EW_Dens": 1012.771921,
-    "srkm": 11.556
+    "id": 222
   },
   {
-    "GEN": "Ludwigshafen am Rhein",
-    "EWZ": 168497,
-    "area": 77881656.18,
-    "EW_Dens": 2163.500473,
-    "srkm": 8.825
+    "GEN": "Sigmaringen",
+    "EWZ": 130192,
+    "EW_Dens": 108.169,
+    "area": 1204547660,
+    "id": 221
   },
   {
-    "GEN": "Landau in der Pfalz",
-    "EWZ": 46292,
-    "area": 82980357.52,
-    "EW_Dens": 557.8669625,
-    "srkm": 9.109
+    "GEN": "Ravensburg",
+    "EWZ": 283264,
+    "EW_Dens": 173.685,
+    "area": 1632069660,
+    "id": 220
   },
   {
-    "GEN": "Neustadt an der Weinstraße",
-    "EWZ": 53353,
-    "area": 117328442,
-    "EW_Dens": 454.7320248,
-    "srkm": 10.832
+    "GEN": "Bodenseekreis",
+    "EWZ": 214655,
+    "EW_Dens": 322.894,
+    "area": 665300598.4,
+    "id": 219
   },
   {
-    "GEN": "Mainz",
-    "EWZ": 215110,
-    "area": 97660137.37,
-    "EW_Dens": 2202.63872,
-    "srkm": 9.882
+    "GEN": "Biberach",
+    "EWZ": 198265,
+    "EW_Dens": 140.727,
+    "area": 1409863251,
+    "id": 218
   },
   {
-    "GEN": "Speyer",
-    "EWZ": 50931,
-    "area": 42834566.96,
-    "EW_Dens": 1189.016339,
-    "srkm": 6.545
+    "GEN": "Alb-Donau-Kreis",
+    "EWZ": 194629,
+    "EW_Dens": 143.494,
+    "area": 1357315161,
+    "id": 217
   },
   {
-    "GEN": "Pirmasens",
-    "EWZ": 40632,
-    "area": 61485509.49,
-    "EW_Dens": 660.8386323,
-    "srkm": 7.841
+    "GEN": "Ulm",
+    "EWZ": 125596,
+    "EW_Dens": 1053.243,
+    "area": 119327847.5,
+    "id": 216
   },
   {
-    "GEN": "Zweibrücken",
-    "EWZ": 34270,
-    "area": 70875253.39,
-    "EW_Dens": 483.5256082,
-    "srkm": 8.419
+    "GEN": "Zollernalbkreis",
+    "EWZ": 188170,
+    "EW_Dens": 205.33,
+    "area": 917159628.6,
+    "id": 215
   },
   {
-    "GEN": "Worms",
-    "EWZ": 83081,
-    "area": 108758967,
-    "EW_Dens": 763.9002309,
-    "srkm": 10.429
+    "GEN": "Tübingen",
+    "EWZ": 225755,
+    "EW_Dens": 434.438,
+    "area": 520063978.9,
+    "id": 214
   },
   {
-    "GEN": "Bad Dürkheim",
-    "EWZ": 132739,
-    "area": 593956875.3,
-    "EW_Dens": 223.4825549,
-    "srkm": 24.371
+    "GEN": "Reutlingen",
+    "EWZ": 285754,
+    "EW_Dens": 261.831,
+    "area": 1092220364,
+    "id": 213
   },
   {
-    "GEN": "Alzey-Worms",
-    "EWZ": 128519,
-    "area": 588000564.9,
-    "EW_Dens": 218.5695179,
-    "srkm": 24.249
+    "GEN": "Waldshut",
+    "EWZ": 170198,
+    "EW_Dens": 150.596,
+    "area": 1130966653,
+    "id": 212
   },
   {
-    "GEN": "Germersheim",
-    "EWZ": 128477,
-    "area": 463410911.3,
-    "EW_Dens": 277.2420693,
-    "srkm": 21.527
+    "GEN": "Lörrach",
+    "EWZ": 228314,
+    "EW_Dens": 282.994,
+    "area": 807255141.6,
+    "id": 211
   },
   {
-    "GEN": "Donnersbergkreis",
-    "EWZ": 75102,
-    "area": 644647304.6,
-    "EW_Dens": 116.5009137,
-    "srkm": 25.39
+    "GEN": "Konstanz",
+    "EWZ": 284015,
+    "EW_Dens": 347.762,
+    "area": 817344697.2,
+    "id": 210
   },
   {
-    "GEN": "Kusel",
-    "EWZ": 70764,
-    "area": 573007409.1,
-    "EW_Dens": 123.4957854,
-    "srkm": 23.938
+    "GEN": "Tuttlingen",
+    "EWZ": 139397,
+    "EW_Dens": 190.071,
+    "area": 733977009.4,
+    "id": 209
   },
   {
-    "GEN": "Kaiserslautern",
-    "EWZ": 105649,
-    "area": 640786948.9,
-    "EW_Dens": 164.8738324,
-    "srkm": 25.314
+    "GEN": "Schwarzwald-Baar-Kreis",
+    "EWZ": 211207,
+    "EW_Dens": 206.005,
+    "area": 1026020904,
+    "id": 208
   },
   {
-    "GEN": "Rhein-Pfalz-Kreis",
-    "EWZ": 153629,
-    "area": 304582206.4,
-    "EW_Dens": 504.3925639,
-    "srkm": 17.452
+    "GEN": "Rottweil",
+    "EWZ": 138858,
+    "EW_Dens": 180.567,
+    "area": 769603597.5,
+    "id": 207
   },
   {
-    "GEN": "Südliche Weinstraße",
-    "EWZ": 110622,
-    "area": 639564722.3,
-    "EW_Dens": 172.9645119,
-    "srkm": 25.29
+    "GEN": "Ortenaukreis",
+    "EWZ": 425932,
+    "EW_Dens": 229.189,
+    "area": 1859669689,
+    "id": 206
   },
   {
-    "GEN": "Südwestpfalz",
-    "EWZ": 95474,
-    "area": 954226082.9,
-    "EW_Dens": 100.053857,
-    "srkm": 30.891
+    "GEN": "Emmendingen",
+    "EWZ": 164712,
+    "EW_Dens": 242.227,
+    "area": 680418665.4,
+    "id": 205
   },
   {
-    "GEN": "Mainz-Bingen",
-    "EWZ": 209785,
-    "area": 605681557.1,
-    "EW_Dens": 346.3618754,
-    "srkm": 24.611
+    "GEN": "Breisgau-Hochschwarzwald",
+    "EWZ": 262405,
+    "EW_Dens": 190.693,
+    "area": 1376934073,
+    "id": 204
   },
   {
-    "GEN": "Böblingen",
-    "EWZ": 389548,
-    "area": 617220446,
-    "EW_Dens": 631.1326893,
-    "srkm": 24.844
+    "GEN": "Freiburg im Breisgau",
+    "EWZ": 229636,
+    "EW_Dens": 1490.11,
+    "area": 154200509.7,
+    "id": 203
   },
   {
-    "GEN": "Stuttgart",
-    "EWZ": 632743,
-    "area": 209786452.3,
-    "EW_Dens": 3016.128988,
-    "srkm": 14.484
+    "GEN": "Freudenstadt",
+    "EWZ": 117456,
+    "EW_Dens": 134.936,
+    "area": 871120309.7,
+    "id": 202
   },
   {
-    "GEN": "Göppingen",
-    "EWZ": 256345,
-    "area": 642616732.4,
-    "EW_Dens": 398.9080693,
-    "srkm": 25.35
+    "GEN": "Enzkreis",
+    "EWZ": 198369,
+    "EW_Dens": 346.277,
+    "area": 573314914.2,
+    "id": 201
   },
   {
-    "GEN": "Esslingen",
-    "EWZ": 532447,
-    "area": 639798239.4,
-    "EW_Dens": 832.2107927,
-    "srkm": 25.294
+    "GEN": "Calw",
+    "EWZ": 157424,
+    "EW_Dens": 197.596,
+    "area": 797319669.9,
+    "id": 200
   },
   {
-    "GEN": "Rems-Murr-Kreis",
-    "EWZ": 424878,
-    "area": 857341284.9,
-    "EW_Dens": 495.5762746,
-    "srkm": 29.28
+    "GEN": "Pforzheim",
+    "EWZ": 124289,
+    "EW_Dens": 1266.7,
+    "area": 98197712.34,
+    "id": 199
   },
   {
-    "GEN": "Ludwigsburg",
-    "EWZ": 542630,
-    "area": 686736507.5,
-    "EW_Dens": 790.1574972,
-    "srkm": 26.206
+    "GEN": "Rhein-Neckar-Kreis",
+    "EWZ": 546745,
+    "EW_Dens": 515.888,
+    "area": 1060650467,
+    "id": 198
   },
   {
-    "GEN": "Heilbronn",
-    "EWZ": 340772,
-    "area": 1098864009,
-    "EW_Dens": 310.1129869,
-    "srkm": 33.149
+    "GEN": "Neckar-Odenwald-Kreis",
+    "EWZ": 143376,
+    "EW_Dens": 127.495,
+    "area": 1125446447,
+    "id": 197
   },
   {
-    "GEN": "Heilbronn",
-    "EWZ": 125113,
-    "area": 100620579,
-    "EW_Dens": 1243.413636,
-    "srkm": 10.031
+    "GEN": "Mannheim",
+    "EWZ": 307997,
+    "EW_Dens": 2124.32,
+    "area": 145097802.5,
+    "id": 196
   },
   {
-    "GEN": "Schwäbisch Hall",
-    "EWZ": 194203,
-    "area": 1484087346,
-    "EW_Dens": 130.8568532,
-    "srkm": 38.524
+    "GEN": "Heidelberg",
+    "EWZ": 160601,
+    "EW_Dens": 1470.647,
+    "area": 109290320.3,
+    "id": 195
   },
   {
-    "GEN": "Hohenlohekreis",
-    "EWZ": 111392,
-    "area": 777114318.9,
-    "EW_Dens": 143.3405579,
-    "srkm": 27.877
+    "GEN": "Rastatt",
+    "EWZ": 230216,
+    "EW_Dens": 311.913,
+    "area": 738611280.5,
+    "id": 194
   },
   {
-    "GEN": "Heidenheim",
-    "EWZ": 132006,
-    "area": 627405084.7,
-    "EW_Dens": 210.3999525,
-    "srkm": 25.048
+    "GEN": "Karlsruhe",
+    "EWZ": 442673,
+    "EW_Dens": 408.501,
+    "area": 1084490291,
+    "id": 193
   },
   {
-    "GEN": "Main-Tauber-Kreis",
-    "EWZ": 132189,
-    "area": 1304986731,
-    "EW_Dens": 101.2952828,
-    "srkm": 36.125
+    "GEN": "Karlsruhe",
+    "EWZ": 311919,
+    "EW_Dens": 1794.47,
+    "area": 173953556.6,
+    "id": 192
   },
   {
     "GEN": "Baden-Baden",
     "EWZ": 54718,
+    "EW_Dens": 391.138,
     "area": 139995095.5,
-    "EW_Dens": 390.8565497,
-    "srkm": 11.832
+    "id": 191
   },
   {
     "GEN": "Ostalbkreis",
     "EWZ": 312422,
+    "EW_Dens": 206.973,
     "area": 1510442275,
-    "EW_Dens": 206.8414035,
-    "srkm": 38.864
+    "id": 190
   },
   {
-    "GEN": "Wetteraukreis",
-    "EWZ": 305312,
-    "area": 1100810669,
-    "EW_Dens": 277.3519631,
-    "srkm": 33.178
+    "GEN": "Heidenheim",
+    "EWZ": 132006,
+    "EW_Dens": 210.529,
+    "area": 627405084.7,
+    "id": 189
   },
   {
-    "GEN": "Rheingau-Taunus-Kreis",
-    "EWZ": 186602,
-    "area": 811959627.3,
-    "EW_Dens": 229.8168452,
-    "srkm": 28.495
+    "GEN": "Main-Tauber-Kreis",
+    "EWZ": 132189,
+    "EW_Dens": 101.369,
+    "area": 1304986731,
+    "id": 188
   },
   {
-    "GEN": "Lahn-Dill-Kreis",
-    "EWZ": 254164,
-    "area": 1065259648,
-    "EW_Dens": 238.5934739,
-    "srkm": 32.638
+    "GEN": "Schwäbisch Hall",
+    "EWZ": 194203,
+    "EW_Dens": 130.947,
+    "area": 1484087346,
+    "id": 187
   },
   {
-    "GEN": "Gießen",
-    "EWZ": 267056,
-    "area": 855384991.7,
-    "EW_Dens": 312.205618,
-    "srkm": 29.247
+    "GEN": "Hohenlohekreis",
+    "EWZ": 111392,
+    "EW_Dens": 143.448,
+    "area": 777114318.9,
+    "id": 186
   },
   {
-    "GEN": "Marburg-Biedenkopf",
-    "EWZ": 246165,
-    "area": 1262048482,
-    "EW_Dens": 195.0519362,
-    "srkm": 35.525
+    "GEN": "Heilbronn",
+    "EWZ": 340772,
+    "EW_Dens": 310.359,
+    "area": 1098864009,
+    "id": 185
   },
   {
-    "GEN": "Limburg-Weilburg",
-    "EWZ": 171971,
-    "area": 739119155.4,
-    "EW_Dens": 232.6701977,
-    "srkm": 27.187
+    "GEN": "Heilbronn",
+    "EWZ": 125113,
+    "EW_Dens": 1244.403,
+    "area": 100620579,
+    "id": 184
   },
   {
-    "GEN": "Kassel",
-    "EWZ": 200736,
-    "area": 104466086.3,
-    "EW_Dens": 1921.542264,
-    "srkm": 10.221
+    "GEN": "Rems-Murr-Kreis",
+    "EWZ": 424878,
+    "EW_Dens": 495.956,
+    "area": 857341284.9,
+    "id": 183
   },
   {
-    "GEN": "Vogelsbergkreis",
-    "EWZ": 106451,
-    "area": 1458244350,
-    "EW_Dens": 72.99942564,
-    "srkm": 38.187
+    "GEN": "Ludwigsburg",
+    "EWZ": 542630,
+    "EW_Dens": 790.787,
+    "area": 686736507.5,
+    "id": 182
   },
   {
-    "GEN": "Hersfeld-Rotenburg",
-    "EWZ": 121101,
-    "area": 1097911778,
-    "EW_Dens": 110.3012122,
-    "srkm": 33.135
+    "GEN": "Göppingen",
+    "EWZ": 256345,
+    "EW_Dens": 399.199,
+    "area": 642616732.4,
+    "id": 181
   },
   {
-    "GEN": "Fulda",
-    "EWZ": 221783,
-    "area": 1381533261,
-    "EW_Dens": 160.5339562,
-    "srkm": 37.169
+    "GEN": "Esslingen",
+    "EWZ": 532447,
+    "EW_Dens": 832.86,
+    "area": 639798239.4,
+    "id": 180
   },
   {
-    "GEN": "Schwalm-Eder-Kreis",
-    "EWZ": 180754,
-    "area": 1539531108,
-    "EW_Dens": 117.4084753,
-    "srkm": 39.237
+    "GEN": "Böblingen",
+    "EWZ": 389548,
+    "EW_Dens": 631.637,
+    "area": 617220446,
+    "id": 179
   },
   {
-    "GEN": "Kassel",
-    "EWZ": 236674,
-    "area": 1295296586,
-    "EW_Dens": 182.7179988,
-    "srkm": 35.99
+    "GEN": "Stuttgart",
+    "EWZ": 632743,
+    "EW_Dens": 3018.531,
+    "area": 209786452.3,
+    "id": 178
   },
   {
-    "GEN": "Werra-Meißner-Kreis",
-    "EWZ": 101101,
-    "area": 1024530345,
-    "EW_Dens": 98.68033728,
-    "srkm": 32.008
+    "GEN": "Südwestpfalz",
+    "EWZ": 95474,
+    "EW_Dens": 100.11,
+    "area": 954226082.9,
+    "id": 177
   },
   {
-    "GEN": "Waldeck-Frankenberg",
-    "EWZ": 157256,
-    "area": 1847826063,
-    "EW_Dens": 85.10324816,
-    "srkm": 42.986
+    "GEN": "Mainz-Bingen",
+    "EWZ": 209785,
+    "EW_Dens": 346.6,
+    "area": 605681557.1,
+    "id": 176
   },
   {
-    "GEN": "Ahrweiler",
-    "EWZ": 128914,
-    "area": 786985059,
-    "EW_Dens": 163.80743,
-    "srkm": 28.053
+    "GEN": "Rhein-Pfalz-Kreis",
+    "EWZ": 153629,
+    "EW_Dens": 504.769,
+    "area": 304582206.4,
+    "id": 175
   },
   {
-    "GEN": "Koblenz",
-    "EWZ": 113844,
-    "area": 105963635.8,
-    "EW_Dens": 1074.368571,
-    "srkm": 10.294
+    "GEN": "Südliche Weinstraße",
+    "EWZ": 110622,
+    "EW_Dens": 173.082,
+    "area": 639564722.3,
+    "id": 174
   },
   {
-    "GEN": "Bad Kreuznach",
-    "EWZ": 157549,
-    "area": 864087519.8,
-    "EW_Dens": 182.3299103,
-    "srkm": 29.395
+    "GEN": "Kusel",
+    "EWZ": 70764,
+    "EW_Dens": 123.557,
+    "area": 573007409.1,
+    "id": 173
   },
   {
-    "GEN": "Altenkirchen (Westerwald)",
-    "EWZ": 128791,
-    "area": 641166744.9,
-    "EW_Dens": 200.8697441,
-    "srkm": 25.321
+    "GEN": "Kaiserslautern",
+    "EWZ": 105649,
+    "EW_Dens": 164.968,
+    "area": 640786948.9,
+    "id": 172
   },
   {
-    "GEN": "Cochem-Zell",
-    "EWZ": 61662,
-    "area": 693087990,
-    "EW_Dens": 88.96705886,
-    "srkm": 26.327
+    "GEN": "Germersheim",
+    "EWZ": 128477,
+    "EW_Dens": 277.443,
+    "area": 463410911.3,
+    "id": 171
   },
   {
-    "GEN": "Birkenfeld",
-    "EWZ": 80728,
-    "area": 777181158,
-    "EW_Dens": 103.8728219,
-    "srkm": 27.878
+    "GEN": "Donnersbergkreis",
+    "EWZ": 75102,
+    "EW_Dens": 116.576,
+    "area": 644647304.6,
+    "id": 170
   },
   {
-    "GEN": "Neuwied",
-    "EWZ": 181655,
-    "area": 627726332.2,
-    "EW_Dens": 289.3856617,
-    "srkm": 25.054
+    "GEN": "Bad Dürkheim",
+    "EWZ": 132739,
+    "EW_Dens": 223.638,
+    "area": 593956875.3,
+    "id": 169
   },
   {
-    "GEN": "Mayen-Koblenz",
-    "EWZ": 213554,
-    "area": 816556422.7,
-    "EW_Dens": 261.5299985,
-    "srkm": 28.575
+    "GEN": "Alzey-Worms",
+    "EWZ": 128519,
+    "EW_Dens": 218.724,
+    "area": 588000564.9,
+    "id": 168
   },
   {
-    "GEN": "Rhein-Lahn-Kreis",
-    "EWZ": 122381,
-    "area": 781556446.6,
-    "EW_Dens": 156.5862588,
-    "srkm": 27.956
+    "GEN": "Zweibrücken",
+    "EWZ": 34270,
+    "EW_Dens": 483.744,
+    "area": 70875253.39,
+    "id": 167
   },
   {
-    "GEN": "Rhein-Hunsrück-Kreis",
-    "EWZ": 102938,
-    "area": 991159878.6,
-    "EW_Dens": 103.8561005,
-    "srkm": 31.483
+    "GEN": "Worms",
+    "EWZ": 83081,
+    "EW_Dens": 764.466,
+    "area": 108758967,
+    "id": 166
   },
   {
-    "GEN": "Trier",
-    "EWZ": 110013,
-    "area": 115526992.4,
-    "EW_Dens": 952.2709604,
-    "srkm": 10.748
+    "GEN": "Speyer",
+    "EWZ": 50931,
+    "EW_Dens": 1189.92,
+    "area": 42834566.96,
+    "id": 165
   },
   {
-    "GEN": "Westerwaldkreis",
-    "EWZ": 201039,
-    "area": 990200700,
-    "EW_Dens": 203.0285375,
-    "srkm": 31.467
+    "GEN": "Pirmasens",
+    "EWZ": 40632,
+    "EW_Dens": 661.197,
+    "area": 61485509.49,
+    "id": 164
   },
   {
-    "GEN": "Eifelkreis Bitburg-Prüm",
-    "EWZ": 98213,
-    "area": 1627987556,
-    "EW_Dens": 60.32785671,
-    "srkm": 40.348
+    "GEN": "Neustadt an der Weinstraße",
+    "EWZ": 53353,
+    "EW_Dens": 455.053,
+    "area": 117328442,
+    "id": 163
   },
   {
-    "GEN": "Bernkastel-Wittlich",
-    "EWZ": 112134,
-    "area": 1168687435,
-    "EW_Dens": 95.94866569,
-    "srkm": 34.186
+    "GEN": "Mainz",
+    "EWZ": 215110,
+    "EW_Dens": 2204.241,
+    "area": 97660137.37,
+    "id": 162
   },
   {
-    "GEN": "Trier-Saarburg",
-    "EWZ": 148532,
-    "area": 1105437151,
-    "EW_Dens": 134.3649432,
-    "srkm": 33.248
+    "GEN": "Ludwigshafen am Rhein",
+    "EWZ": 168497,
+    "EW_Dens": 2165.119,
+    "area": 77881656.18,
+    "id": 161
   },
   {
-    "GEN": "Vulkaneifel",
-    "EWZ": 60705,
-    "area": 911616386.2,
-    "EW_Dens": 66.59050991,
-    "srkm": 30.193
+    "GEN": "Landau in der Pfalz",
+    "EWZ": 46292,
+    "EW_Dens": 558.247,
+    "area": 82980357.52,
+    "id": 160
   },
   {
     "GEN": "Kaiserslautern",
     "EWZ": 99684,
+    "EW_Dens": 711.436,
     "area": 140200866.7,
-    "EW_Dens": 711.0084434,
-    "srkm": 11.841
+    "id": 159
   },
   {
     "GEN": "Frankenthal (Pfalz)",
     "EWZ": 48417,
+    "EW_Dens": 1108.146,
     "area": 43724569.01,
-    "EW_Dens": 1107.317947,
-    "srkm": 6.612
+    "id": 158
   },
   {
-    "GEN": "Bielefeld",
-    "EWZ": 332552,
-    "area": 259063917.2,
-    "EW_Dens": 1283.667767,
-    "srkm": 16.095
+    "GEN": "Trier-Saarburg",
+    "EWZ": 148532,
+    "EW_Dens": 134.381,
+    "area": 1105437151,
+    "id": 157
   },
   {
-    "GEN": "Warendorf",
-    "EWZ": 277458,
-    "area": 1318701240,
-    "EW_Dens": 210.4024714,
-    "srkm": 36.314
+    "GEN": "Vulkaneifel",
+    "EWZ": 60705,
+    "EW_Dens": 66.601,
+    "area": 911616386.2,
+    "id": 156
   },
   {
-    "GEN": "Herford",
-    "EWZ": 251539,
-    "area": 450788411.6,
-    "EW_Dens": 557.9979288,
-    "srkm": 21.232
+    "GEN": "Eifelkreis Bitburg-Prüm",
+    "EWZ": 98213,
+    "EW_Dens": 60.325,
+    "area": 1627987556,
+    "id": 155
   },
   {
-    "GEN": "Gütersloh",
-    "EWZ": 363049,
-    "area": 969502692.2,
-    "EW_Dens": 374.4693057,
-    "srkm": 31.137
+    "GEN": "Bernkastel-Wittlich",
+    "EWZ": 112134,
+    "EW_Dens": 95.975,
+    "area": 1168687435,
+    "id": 154
   },
   {
-    "GEN": "Lippe",
-    "EWZ": 349069,
-    "area": 1245842691,
-    "EW_Dens": 280.1870593,
-    "srkm": 35.296
+    "GEN": "Trier",
+    "EWZ": 110013,
+    "EW_Dens": 952.367,
+    "area": 115526992.4,
+    "id": 153
   },
   {
-    "GEN": "Höxter",
-    "EWZ": 141565,
-    "area": 1200759802,
-    "EW_Dens": 117.8961852,
-    "srkm": 34.652
+    "GEN": "Westerwaldkreis",
+    "EWZ": 201039,
+    "EW_Dens": 203.158,
+    "area": 990200700,
+    "id": 152
   },
   {
-    "GEN": "Paderborn",
-    "EWZ": 305362,
-    "area": 1246826790,
-    "EW_Dens": 244.9113241,
-    "srkm": 35.31
+    "GEN": "Rhein-Lahn-Kreis",
+    "EWZ": 122381,
+    "EW_Dens": 156.685,
+    "area": 781556446.6,
+    "id": 151
   },
   {
-    "GEN": "Minden-Lübbecke",
-    "EWZ": 311207,
-    "area": 1152033973,
-    "EW_Dens": 270.1369988,
-    "srkm": 33.942
+    "GEN": "Rhein-Hunsrück-Kreis",
+    "EWZ": 102938,
+    "EW_Dens": 103.91,
+    "area": 991159878.6,
+    "id": 150
   },
   {
-    "GEN": "Dortmund",
-    "EWZ": 586600,
-    "area": 279699493,
-    "EW_Dens": 2097.250852,
-    "srkm": 16.724
+    "GEN": "Neuwied",
+    "EWZ": 181655,
+    "EW_Dens": 289.533,
+    "area": 627726332.2,
+    "id": 149
   },
   {
-    "GEN": "Bochum",
-    "EWZ": 365529,
-    "area": 144817078.2,
-    "EW_Dens": 2524.073849,
-    "srkm": 12.034
+    "GEN": "Mayen-Koblenz",
+    "EWZ": 213554,
+    "EW_Dens": 261.648,
+    "area": 816556422.7,
+    "id": 148
   },
   {
-    "GEN": "Hamm",
-    "EWZ": 179185,
-    "area": 227634594,
-    "EW_Dens": 787.1606721,
-    "srkm": 15.088
+    "GEN": "Cochem-Zell",
+    "EWZ": 61662,
+    "EW_Dens": 89.001,
+    "area": 693087990,
+    "id": 147
   },
   {
-    "GEN": "Hagen",
-    "EWZ": 187730,
-    "area": 160368600.2,
-    "EW_Dens": 1170.615693,
-    "srkm": 12.664
+    "GEN": "Birkenfeld",
+    "EWZ": 80728,
+    "EW_Dens": 103.916,
+    "area": 777181158,
+    "id": 146
   },
   {
-    "GEN": "Ennepe-Ruhr-Kreis",
-    "EWZ": 324670,
-    "area": 410935284.5,
-    "EW_Dens": 790.0757424,
-    "srkm": 20.272
+    "GEN": "Bad Kreuznach",
+    "EWZ": 157549,
+    "EW_Dens": 182.435,
+    "area": 864087519.8,
+    "id": 145
   },
   {
-    "GEN": "Herne",
-    "EWZ": 156490,
-    "area": 51502946.42,
-    "EW_Dens": 3038.46694,
-    "srkm": 7.177
+    "GEN": "Altenkirchen (Westerwald)",
+    "EWZ": 128791,
+    "EW_Dens": 200.991,
+    "area": 641166744.9,
+    "id": 144
   },
   {
-    "GEN": "Märkischer Kreis",
-    "EWZ": 413383,
-    "area": 1061165901,
-    "EW_Dens": 389.5554876,
-    "srkm": 32.576
+    "GEN": "Ahrweiler",
+    "EWZ": 128914,
+    "EW_Dens": 163.861,
+    "area": 786985059,
+    "id": 143
   },
   {
-    "GEN": "Hochsauerlandkreis",
-    "EWZ": 261591,
-    "area": 1959845528,
-    "EW_Dens": 133.4753154,
-    "srkm": 44.27
+    "GEN": "Koblenz",
+    "EWZ": 113844,
+    "EW_Dens": 1074.957,
+    "area": 105963635.8,
+    "id": 142
   },
   {
-    "GEN": "Siegen-Wittgenstein",
-    "EWZ": 277977,
-    "area": 1134028568,
-    "EW_Dens": 245.1234544,
-    "srkm": 33.675
+    "GEN": "Werra-Meißner-Kreis",
+    "EWZ": 101101,
+    "EW_Dens": 98.749,
+    "area": 1024530345,
+    "id": 141
   },
   {
-    "GEN": "Olpe",
-    "EWZ": 134808,
-    "area": 711670248,
-    "EW_Dens": 189.4248079,
-    "srkm": 26.677
+    "GEN": "Waldeck-Frankenberg",
+    "EWZ": 157256,
+    "EW_Dens": 85.171,
+    "area": 1847826063,
+    "id": 140
   },
   {
-    "GEN": "Unna",
-    "EWZ": 393934,
-    "area": 542791322.3,
-    "EW_Dens": 725.7558915,
-    "srkm": 23.298
+    "GEN": "Schwalm-Eder-Kreis",
+    "EWZ": 180754,
+    "EW_Dens": 117.5,
+    "area": 1539531108,
+    "id": 139
   },
   {
-    "GEN": "Soest",
-    "EWZ": 301693,
-    "area": 1329505817,
-    "EW_Dens": 226.9211583,
-    "srkm": 36.462
+    "GEN": "Kassel",
+    "EWZ": 236674,
+    "EW_Dens": 182.86,
+    "area": 1295296586,
+    "id": 138
   },
   {
-    "GEN": "Frankfurt am Main",
-    "EWZ": 746878,
-    "area": 248219915.7,
-    "EW_Dens": 3008.936644,
-    "srkm": 15.755
+    "GEN": "Hersfeld-Rotenburg",
+    "EWZ": 121101,
+    "EW_Dens": 110.382,
+    "area": 1097911778,
+    "id": 137
   },
   {
-    "GEN": "Darmstadt",
-    "EWZ": 158254,
-    "area": 123129811.1,
-    "EW_Dens": 1285.261454,
-    "srkm": 11.096
+    "GEN": "Fulda",
+    "EWZ": 221783,
+    "EW_Dens": 160.651,
+    "area": 1381533261,
+    "id": 136
   },
   {
-    "GEN": "Wiesbaden",
-    "EWZ": 278654,
-    "area": 203833002,
-    "EW_Dens": 1367.070088,
-    "srkm": 14.277
+    "GEN": "Kassel",
+    "EWZ": 200736,
+    "EW_Dens": 1923.032,
+    "area": 104466086.3,
+    "id": 135
   },
   {
-    "GEN": "Offenbach am Main",
-    "EWZ": 126658,
-    "area": 45349392.77,
-    "EW_Dens": 2792.937066,
-    "srkm": 6.734
+    "GEN": "Vogelsbergkreis",
+    "EWZ": 106451,
+    "EW_Dens": 73.057,
+    "area": 1458244350,
+    "id": 134
   },
   {
-    "GEN": "Darmstadt-Dieburg",
-    "EWZ": 296048,
-    "area": 657812650.6,
-    "EW_Dens": 450.0491131,
-    "srkm": 25.648
+    "GEN": "Marburg-Biedenkopf",
+    "EWZ": 246165,
+    "EW_Dens": 195.206,
+    "area": 1262048482,
+    "id": 133
   },
   {
-    "GEN": "Bergstraße",
-    "EWZ": 268780,
-    "area": 719054176.4,
-    "EW_Dens": 373.7965912,
-    "srkm": 26.815
+    "GEN": "Limburg-Weilburg",
+    "EWZ": 171971,
+    "EW_Dens": 232.838,
+    "area": 739119155.4,
+    "id": 132
   },
   {
-    "GEN": "Hochtaunuskreis",
-    "EWZ": 235995,
-    "area": 480834440.6,
-    "EW_Dens": 490.8030292,
-    "srkm": 21.928
+    "GEN": "Lahn-Dill-Kreis",
+    "EWZ": 254164,
+    "EW_Dens": 238.772,
+    "area": 1065259648,
+    "id": 131
   },
   {
-    "GEN": "Groß-Gerau",
-    "EWZ": 271403,
-    "area": 453391688.4,
-    "EW_Dens": 598.606033,
-    "srkm": 21.293
+    "GEN": "Gießen",
+    "EWZ": 267056,
+    "EW_Dens": 312.453,
+    "area": 855384991.7,
+    "id": 130
   },
   {
-    "GEN": "Main-Taunus-Kreis",
-    "EWZ": 236969,
-    "area": 221560520.6,
-    "EW_Dens": 1069.545239,
-    "srkm": 14.885
+    "GEN": "Wetteraukreis",
+    "EWZ": 305312,
+    "EW_Dens": 277.572,
+    "area": 1100810669,
+    "id": 129
   },
   {
-    "GEN": "Main-Kinzig-Kreis",
-    "EWZ": 418208,
-    "area": 1396967336,
-    "EW_Dens": 299.3684886,
-    "srkm": 37.376
+    "GEN": "Rheingau-Taunus-Kreis",
+    "EWZ": 186602,
+    "EW_Dens": 229.976,
+    "area": 811959627.3,
+    "id": 128
   },
   {
     "GEN": "Offenbach",
     "EWZ": 351692,
+    "EW_Dens": 988.442,
     "area": 356086833.9,
-    "EW_Dens": 987.6579714,
-    "srkm": 18.87
+    "id": 127
   },
   {
     "GEN": "Odenwaldkreis",
     "EWZ": 96597,
+    "EW_Dens": 154.7,
     "area": 624912621,
-    "EW_Dens": 154.5768108,
-    "srkm": 24.998
+    "id": 126
   },
   {
-    "GEN": "Essen",
-    "EWZ": 583393,
-    "area": 210506506.2,
-    "EW_Dens": 2771.377524,
-    "srkm": 14.509
+    "GEN": "Main-Taunus-Kreis",
+    "EWZ": 236969,
+    "EW_Dens": 1070.358,
+    "area": 221560520.6,
+    "id": 125
   },
   {
-    "GEN": "Duisburg",
-    "EWZ": 498110,
-    "area": 233089691.3,
-    "EW_Dens": 2136.988544,
-    "srkm": 15.267
+    "GEN": "Main-Kinzig-Kreis",
+    "EWZ": 418208,
+    "EW_Dens": 299.603,
+    "area": 1396967336,
+    "id": 124
   },
   {
-    "GEN": "Mönchengladbach",
-    "EWZ": 262188,
-    "area": 170738571.9,
-    "EW_Dens": 1535.610829,
-    "srkm": 13.067
+    "GEN": "Hochtaunuskreis",
+    "EWZ": 235995,
+    "EW_Dens": 491.18,
+    "area": 480834440.6,
+    "id": 123
   },
   {
-    "GEN": "Krefeld",
-    "EWZ": 226699,
-    "area": 136633094.7,
-    "EW_Dens": 1659.180746,
-    "srkm": 11.689
+    "GEN": "Groß-Gerau",
+    "EWZ": 271403,
+    "EW_Dens": 599.064,
+    "area": 453391688.4,
+    "id": 122
   },
   {
-    "GEN": "Oberhausen",
-    "EWZ": 211422,
-    "area": 77467412.14,
-    "EW_Dens": 2729.173393,
-    "srkm": 8.802
+    "GEN": "Darmstadt-Dieburg",
+    "EWZ": 296048,
+    "EW_Dens": 450.406,
+    "area": 657812650.6,
+    "id": 121
   },
   {
-    "GEN": "Mülheim an der Ruhr",
-    "EWZ": 171265,
-    "area": 91263032.1,
-    "EW_Dens": 1876.6087,
-    "srkm": 9.553
+    "GEN": "Bergstraße",
+    "EWZ": 268780,
+    "EW_Dens": 374.089,
+    "area": 719054176.4,
+    "id": 120
   },
   {
-    "GEN": "Solingen",
-    "EWZ": 158803,
-    "area": 88994488.48,
-    "EW_Dens": 1784.413875,
-    "srkm": 9.434
+    "GEN": "Wiesbaden",
+    "EWZ": 278654,
+    "EW_Dens": 1368.07,
+    "area": 203833002,
+    "id": 119
   },
   {
-    "GEN": "Remscheid",
-    "EWZ": 110584,
-    "area": 74074587.09,
-    "EW_Dens": 1492.873661,
-    "srkm": 8.607
+    "GEN": "Offenbach am Main",
+    "EWZ": 126658,
+    "EW_Dens": 2795.168,
+    "area": 45349392.77,
+    "id": 118
   },
   {
-    "GEN": "Kleve",
-    "EWZ": 311270,
-    "area": 1233397683,
-    "EW_Dens": 252.3679137,
-    "srkm": 35.12
+    "GEN": "Frankfurt am Main",
+    "EWZ": 746878,
+    "EW_Dens": 3011.295,
+    "area": 248219915.7,
+    "id": 117
   },
   {
-    "GEN": "Wuppertal",
-    "EWZ": 353590,
-    "area": 168392652.8,
-    "EW_Dens": 2099.794701,
-    "srkm": 12.977
+    "GEN": "Darmstadt",
+    "EWZ": 158254,
+    "EW_Dens": 1286.272,
+    "area": 123129811.1,
+    "id": 116
   },
   {
-    "GEN": "Rhein-Kreis Neuss",
-    "EWZ": 449408,
-    "area": 576723407.8,
-    "EW_Dens": 779.2435575,
-    "srkm": 24.015
+    "GEN": "Unna",
+    "EWZ": 393934,
+    "EW_Dens": 726.177,
+    "area": 542791322.3,
+    "id": 115
   },
   {
-    "GEN": "Mettmann",
-    "EWZ": 485409,
-    "area": 407841184.1,
-    "EW_Dens": 1190.191229,
-    "srkm": 20.195
+    "GEN": "Soest",
+    "EWZ": 301693,
+    "EW_Dens": 227.085,
+    "area": 1329505817,
+    "id": 114
   },
   {
-    "GEN": "Wesel",
-    "EWZ": 460666,
-    "area": 1042383012,
-    "EW_Dens": 441.9354447,
-    "srkm": 32.286
+    "GEN": "Siegen-Wittgenstein",
+    "EWZ": 277977,
+    "EW_Dens": 245.3,
+    "area": 1134028568,
+    "id": 113
   },
   {
-    "GEN": "Viersen",
-    "EWZ": 298733,
-    "area": 563573340,
-    "EW_Dens": 530.0694316,
-    "srkm": 23.74
+    "GEN": "Olpe",
+    "EWZ": 134808,
+    "EW_Dens": 189.552,
+    "area": 711670248,
+    "id": 112
   },
   {
-    "GEN": "Köln",
-    "EWZ": 1080394,
-    "area": 406599129.5,
-    "EW_Dens": 2657.147843,
-    "srkm": 20.164
+    "GEN": "Märkischer Kreis",
+    "EWZ": 413383,
+    "EW_Dens": 389.789,
+    "area": 1061165901,
+    "id": 111
   },
   {
-    "GEN": "Bonn",
-    "EWZ": 325490,
-    "area": 141632708.8,
-    "EW_Dens": 2298.127338,
-    "srkm": 11.901
+    "GEN": "Hochsauerlandkreis",
+    "EWZ": 261591,
+    "EW_Dens": 133.575,
+    "area": 1959845528,
+    "id": 110
   },
   {
-    "GEN": "Städteregion Aachen",
-    "EWZ": 554068,
-    "area": 704371622,
-    "EW_Dens": 786.6131779,
-    "srkm": 26.54
+    "GEN": "Ennepe-Ruhr-Kreis",
+    "EWZ": 324670,
+    "EW_Dens": 790.443,
+    "area": 410935284.5,
+    "id": 109
   },
   {
-    "GEN": "Leverkusen",
-    "EWZ": 163577,
-    "area": 78785879.36,
-    "EW_Dens": 2076.222304,
-    "srkm": 8.876
+    "GEN": "Herne",
+    "EWZ": 156490,
+    "EW_Dens": 3039.745,
+    "area": 51502946.42,
+    "id": 108
   },
   {
-    "GEN": "Rhein-Erft-Kreis",
-    "EWZ": 467209,
-    "area": 703161685.4,
-    "EW_Dens": 664.4403552,
-    "srkm": 26.517
+    "GEN": "Hamm",
+    "EWZ": 179185,
+    "EW_Dens": 787.662,
+    "area": 227634594,
+    "id": 107
   },
   {
-    "GEN": "Düren",
-    "EWZ": 262889,
-    "area": 940616862.1,
-    "EW_Dens": 279.4857403,
-    "srkm": 30.669
+    "GEN": "Hagen",
+    "EWZ": 187730,
+    "EW_Dens": 1171.237,
+    "area": 160368600.2,
+    "id": 106
   },
   {
-    "GEN": "Heinsberg",
-    "EWZ": 253106,
-    "area": 627205379.9,
-    "EW_Dens": 403.5456457,
-    "srkm": 25.044
+    "GEN": "Dortmund",
+    "EWZ": 586600,
+    "EW_Dens": 2098.35,
+    "area": 279699493,
+    "id": 105
   },
   {
-    "GEN": "Euskirchen",
-    "EWZ": 192127,
-    "area": 1250108491,
-    "EW_Dens": 153.688261,
-    "srkm": 35.357
+    "GEN": "Bochum",
+    "EWZ": 365529,
+    "EW_Dens": 2525.151,
+    "area": 144817078.2,
+    "id": 104
   },
   {
-    "GEN": "Rheinisch-Bergischer Kreis",
-    "EWZ": 283344,
-    "area": 438194692.8,
-    "EW_Dens": 646.6166858,
-    "srkm": 20.933
+    "GEN": "Paderborn",
+    "EWZ": 305362,
+    "EW_Dens": 245.105,
+    "area": 1246826790,
+    "id": 103
   },
   {
-    "GEN": "Oberbergischer Kreis",
-    "EWZ": 272968,
-    "area": 918236820.7,
-    "EW_Dens": 297.2740734,
-    "srkm": 30.302
+    "GEN": "Minden-Lübbecke",
+    "EWZ": 311207,
+    "EW_Dens": 270.35,
+    "area": 1152033973,
+    "id": 102
   },
   {
-    "GEN": "Bottrop",
-    "EWZ": 117364,
-    "area": 100250031.9,
-    "EW_Dens": 1170.712844,
-    "srkm": 10.012
+    "GEN": "Lippe",
+    "EWZ": 349069,
+    "EW_Dens": 280.41,
+    "area": 1245842691,
+    "id": 101
   },
   {
-    "GEN": "Rhein-Sieg-Kreis",
-    "EWZ": 599056,
-    "area": 1152316668,
-    "EW_Dens": 519.8709839,
-    "srkm": 33.946
+    "GEN": "Höxter",
+    "EWZ": 141565,
+    "EW_Dens": 117.99,
+    "area": 1200759802,
+    "id": 100
   },
   {
-    "GEN": "Münster",
-    "EWZ": 313559,
-    "area": 303551837.7,
-    "EW_Dens": 1032.966897,
-    "srkm": 17.423
+    "GEN": "Herford",
+    "EWZ": 251539,
+    "EW_Dens": 558.436,
+    "area": 450788411.6,
+    "id": 99
   },
   {
-    "GEN": "Gelsenkirchen",
-    "EWZ": 260305,
-    "area": 105301085.8,
-    "EW_Dens": 2472.006799,
-    "srkm": 10.262
+    "GEN": "Gütersloh",
+    "EWZ": 363049,
+    "EW_Dens": 374.75,
+    "area": 969502692.2,
+    "id": 98
   },
   {
-    "GEN": "Coesfeld",
-    "EWZ": 219360,
-    "area": 1112336696,
-    "EW_Dens": 197.2064761,
-    "srkm": 33.352
+    "GEN": "Bielefeld",
+    "EWZ": 332552,
+    "EW_Dens": 1284.664,
+    "area": 259063917.2,
+    "id": 97
   },
   {
-    "GEN": "Borken",
-    "EWZ": 369718,
-    "area": 1421297945,
-    "EW_Dens": 260.1270207,
-    "srkm": 37.7
+    "GEN": "Warendorf",
+    "EWZ": 277458,
+    "EW_Dens": 210.544,
+    "area": 1318701240,
+    "id": 96
   },
   {
     "GEN": "Steinfurt",
     "EWZ": 446565,
+    "EW_Dens": 248.865,
     "area": 1795416990,
-    "EW_Dens": 248.7249494,
-    "srkm": 42.372
+    "id": 95
   },
   {
     "GEN": "Recklinghausen",
     "EWZ": 616824,
+    "EW_Dens": 810.46,
     "area": 761383731.2,
-    "EW_Dens": 810.1355134,
-    "srkm": 27.593
+    "id": 94
   },
   {
-    "GEN": "Celle",
-    "EWZ": 178764,
-    "area": 1549926565,
-    "EW_Dens": 115.3370773,
-    "srkm": 39.369
+    "GEN": "Coesfeld",
+    "EWZ": 219360,
+    "EW_Dens": 197.302,
+    "area": 1112336696,
+    "id": 93
   },
   {
-    "GEN": "Schaumburg",
-    "EWZ": 157883,
-    "area": 676291507.7,
-    "EW_Dens": 233.4540626,
-    "srkm": 26.006
+    "GEN": "Borken",
+    "EWZ": 369718,
+    "EW_Dens": 260.201,
+    "area": 1421297945,
+    "id": 92
   },
   {
-    "GEN": "Harburg",
-    "EWZ": 251511,
-    "area": 1249135842,
-    "EW_Dens": 201.3479972,
-    "srkm": 35.343
+    "GEN": "Münster",
+    "EWZ": 313559,
+    "EW_Dens": 1033.566,
+    "area": 303551837.7,
+    "id": 91
   },
   {
-    "GEN": "Cuxhaven",
-    "EWZ": 198100,
-    "area": 2059459167,
-    "EW_Dens": 96.19030237,
-    "srkm": 45.381
+    "GEN": "Gelsenkirchen",
+    "EWZ": 260305,
+    "EW_Dens": 2472.898,
+    "area": 105301085.8,
+    "id": 90
   },
   {
-    "GEN": "Lüneburg",
-    "EWZ": 182930,
-    "area": 1327182198,
-    "EW_Dens": 137.8333738,
-    "srkm": 36.431
+    "GEN": "Bottrop",
+    "EWZ": 117364,
+    "EW_Dens": 1171.052,
+    "area": 100250031.9,
+    "id": 89
   },
   {
-    "GEN": "Lüchow-Dannenberg",
-    "EWZ": 48357,
-    "area": 1226457908,
-    "EW_Dens": 39.42817742,
-    "srkm": 35.021
+    "GEN": "Rhein-Sieg-Kreis",
+    "EWZ": 599056,
+    "EW_Dens": 520.086,
+    "area": 1152316668,
+    "id": 88
   },
   {
-    "GEN": "Rotenburg (Wümme)",
-    "EWZ": 163377,
-    "area": 2073809600,
-    "EW_Dens": 78.78109929,
-    "srkm": 45.539
+    "GEN": "Rheinisch-Bergischer Kreis",
+    "EWZ": 283344,
+    "EW_Dens": 646.879,
+    "area": 438194692.8,
+    "id": 87
   },
   {
-    "GEN": "Osterholz",
-    "EWZ": 113105,
-    "area": 653240134.2,
-    "EW_Dens": 173.1445973,
-    "srkm": 25.559
+    "GEN": "Oberbergischer Kreis",
+    "EWZ": 272968,
+    "EW_Dens": 297.432,
+    "area": 918236820.7,
+    "id": 86
   },
   {
-    "GEN": "Stade",
-    "EWZ": 201887,
-    "area": 1206354662,
-    "EW_Dens": 167.3529405,
-    "srkm": 34.733
+    "GEN": "Heinsberg",
+    "EWZ": 253106,
+    "EW_Dens": 403.476,
+    "area": 627205379.9,
+    "id": 85
   },
   {
-    "GEN": "Heidekreis",
-    "EWZ": 139099,
-    "area": 1882084266,
-    "EW_Dens": 73.90689275,
-    "srkm": 43.383
+    "GEN": "Euskirchen",
+    "EWZ": 192127,
+    "EW_Dens": 153.706,
+    "area": 1250108491,
+    "id": 84
   },
   {
-    "GEN": "Verden",
-    "EWZ": 136590,
-    "area": 789108650.9,
-    "EW_Dens": 173.0940344,
-    "srkm": 28.091
+    "GEN": "Rhein-Erft-Kreis",
+    "EWZ": 467209,
+    "EW_Dens": 664.55,
+    "area": 703161685.4,
+    "id": 83
   },
   {
-    "GEN": "Uelzen",
-    "EWZ": 92744,
-    "area": 1462369316,
-    "EW_Dens": 63.42036788,
-    "srkm": 38.241
+    "GEN": "Düren",
+    "EWZ": 262889,
+    "EW_Dens": 279.487,
+    "area": 940616862.1,
+    "id": 82
   },
   {
-    "GEN": "Emden",
-    "EWZ": 50607,
-    "area": 111240765.6,
-    "EW_Dens": 454.932144,
-    "srkm": 10.547
+    "GEN": "Städteregion Aachen",
+    "EWZ": 554068,
+    "EW_Dens": 786.496,
+    "area": 704371622,
+    "id": 81
   },
   {
-    "GEN": "Delmenhorst",
-    "EWZ": 77521,
-    "area": 62471540.39,
-    "EW_Dens": 1240.901049,
-    "srkm": 7.904
+    "GEN": "Leverkusen",
+    "EWZ": 163577,
+    "EW_Dens": 2076.899,
+    "area": 78785879.36,
+    "id": 80
   },
   {
-    "GEN": "Osnabrück",
-    "EWZ": 164374,
-    "area": 120246695.9,
-    "EW_Dens": 1366.973111,
-    "srkm": 10.966
+    "GEN": "Köln",
+    "EWZ": 1080394,
+    "EW_Dens": 2657.949,
+    "area": 406599129.5,
+    "id": 79
   },
   {
-    "GEN": "Oldenburg (Oldb)",
-    "EWZ": 167081,
-    "area": 103719563.7,
-    "EW_Dens": 1610.891851,
-    "srkm": 10.184
+    "GEN": "Bonn",
+    "EWZ": 325490,
+    "EW_Dens": 2298.96,
+    "area": 141632708.8,
+    "id": 78
   },
   {
-    "GEN": "Ammerland",
-    "EWZ": 123377,
-    "area": 729785353.9,
-    "EW_Dens": 169.0592985,
-    "srkm": 27.015
+    "GEN": "Wesel",
+    "EWZ": 460666,
+    "EW_Dens": 441.993,
+    "area": 1042383012,
+    "id": 77
   },
   {
-    "GEN": "Wilhelmshaven",
-    "EWZ": 76316,
-    "area": 107527540.8,
-    "EW_Dens": 709.7344497,
-    "srkm": 10.37
+    "GEN": "Viersen",
+    "EWZ": 298733,
+    "EW_Dens": 530.04,
+    "area": 563573340,
+    "id": 76
   },
   {
-    "GEN": "Cloppenburg",
-    "EWZ": 167925,
-    "area": 1421144487,
-    "EW_Dens": 118.1618066,
-    "srkm": 37.698
+    "GEN": "Rhein-Kreis Neuss",
+    "EWZ": 449408,
+    "EW_Dens": 779.349,
+    "area": 576723407.8,
+    "id": 75
   },
   {
-    "GEN": "Aurich",
-    "EWZ": 189949,
-    "area": 1294231396,
-    "EW_Dens": 146.7658725,
-    "srkm": 35.975
+    "GEN": "Mettmann",
+    "EWZ": 485409,
+    "EW_Dens": 1190.556,
+    "area": 407841184.1,
+    "id": 74
   },
   {
-    "GEN": "Friesland",
-    "EWZ": 98509,
-    "area": 617782247.9,
-    "EW_Dens": 159.4558606,
-    "srkm": 24.855
+    "GEN": "Kleve",
+    "EWZ": 311270,
+    "EW_Dens": 252.347,
+    "area": 1233397683,
+    "id": 73
   },
   {
-    "GEN": "Emsland",
-    "EWZ": 323636,
-    "area": 2883872247,
-    "EW_Dens": 112.2227243,
-    "srkm": 53.702
+    "GEN": "Wuppertal",
+    "EWZ": 353590,
+    "EW_Dens": 2100.632,
+    "area": 168392652.8,
+    "id": 72
   },
   {
-    "GEN": "Leer",
-    "EWZ": 168946,
-    "area": 1064850772,
-    "EW_Dens": 158.6569728,
-    "srkm": 32.632
+    "GEN": "Solingen",
+    "EWZ": 158803,
+    "EW_Dens": 1785.039,
+    "area": 88994488.48,
+    "id": 71
   },
   {
-    "GEN": "Grafschaft Bentheim",
-    "EWZ": 135859,
-    "area": 982013815.7,
-    "EW_Dens": 138.3473408,
-    "srkm": 31.337
+    "GEN": "Remscheid",
+    "EWZ": 110584,
+    "EW_Dens": 1493.503,
+    "area": 74074587.09,
+    "id": 70
   },
   {
-    "GEN": "Osnabrück",
-    "EWZ": 356140,
-    "area": 2121037286,
-    "EW_Dens": 167.9084108,
-    "srkm": 46.055
+    "GEN": "Oberhausen",
+    "EWZ": 211422,
+    "EW_Dens": 2729.863,
+    "area": 77467412.14,
+    "id": 69
   },
   {
-    "GEN": "Oldenburg",
-    "EWZ": 129924,
-    "area": 1065100903,
-    "EW_Dens": 121.982809,
-    "srkm": 32.636
+    "GEN": "Mülheim an der Ruhr",
+    "EWZ": 171265,
+    "EW_Dens": 1877.107,
+    "area": 91263032.1,
+    "id": 68
   },
   {
-    "GEN": "Wesermarsch",
-    "EWZ": 89022,
-    "area": 828452604.6,
-    "EW_Dens": 107.4557549,
-    "srkm": 28.783
+    "GEN": "Mönchengladbach",
+    "EWZ": 262188,
+    "EW_Dens": 1535.601,
+    "area": 170738571.9,
+    "id": 67
   },
   {
-    "GEN": "Vechta",
-    "EWZ": 140540,
-    "area": 813873521.5,
-    "EW_Dens": 172.6803936,
-    "srkm": 28.528
+    "GEN": "Krefeld",
+    "EWZ": 226699,
+    "EW_Dens": 1659.353,
+    "area": 136633094.7,
+    "id": 66
   },
   {
-    "GEN": "Bremen",
-    "EWZ": 568006,
-    "area": 325653373,
-    "EW_Dens": 1744.204259,
-    "srkm": 18.046
+    "GEN": "Essen",
+    "EWZ": 583393,
+    "EW_Dens": 2772.301,
+    "area": 210506506.2,
+    "id": 65
   },
   {
-    "GEN": "Wittmund",
-    "EWZ": 56731,
-    "area": 659485927.3,
-    "EW_Dens": 86.0230638,
-    "srkm": 25.68
+    "GEN": "Duisburg",
+    "EWZ": 498110,
+    "EW_Dens": 2137.397,
+    "area": 233089691.3,
+    "id": 64
   },
   {
     "GEN": "Düsseldorf",
     "EWZ": 617280,
+    "EW_Dens": 2838.901,
     "area": 217485276,
-    "EW_Dens": 2838.261106,
-    "srkm": 14.747
+    "id": 63
   },
   {
     "GEN": "Bremerhaven",
     "EWZ": 113026,
+    "EW_Dens": 1475.017,
     "area": 76686771.7,
-    "EW_Dens": 1473.865668,
-    "srkm": 8.757
+    "id": 62
   },
   {
-    "GEN": "Kiel",
-    "EWZ": 247943,
-    "area": 112298146.8,
-    "EW_Dens": 2207.899303,
-    "srkm": 10.597
+    "GEN": "Bremen",
+    "EWZ": 568006,
+    "EW_Dens": 1745.589,
+    "area": 325653373,
+    "id": 61
   },
   {
-    "GEN": "Flensburg",
-    "EWZ": 88519,
-    "area": 49221574.98,
-    "EW_Dens": 1798.378049,
-    "srkm": 7.016
+    "GEN": "Wittmund",
+    "EWZ": 56731,
+    "EW_Dens": 86.076,
+    "area": 659485927.3,
+    "id": 60
   },
   {
-    "GEN": "Neumünster",
-    "EWZ": 79335,
-    "area": 71450101.91,
-    "EW_Dens": 1110.355309,
-    "srkm": 8.453
+    "GEN": "Wesermarsch",
+    "EWZ": 89022,
+    "EW_Dens": 107.537,
+    "area": 828452604.6,
+    "id": 59
   },
   {
-    "GEN": "Lübeck",
-    "EWZ": 216318,
-    "area": 211804335.4,
-    "EW_Dens": 1021.310539,
-    "srkm": 14.553
+    "GEN": "Vechta",
+    "EWZ": 140540,
+    "EW_Dens": 172.807,
+    "area": 813873521.5,
+    "id": 58
   },
   {
-    "GEN": "Herzogtum Lauenburg",
-    "EWZ": 196074,
-    "area": 1262754931,
-    "EW_Dens": 155.2747847,
-    "srkm": 35.535
+    "GEN": "Osnabrück",
+    "EWZ": 356140,
+    "EW_Dens": 168.024,
+    "area": 2121037286,
+    "id": 57
   },
   {
-    "GEN": "Dithmarschen",
-    "EWZ": 133447,
-    "area": 1426447740,
-    "EW_Dens": 93.55197268,
-    "srkm": 37.768
+    "GEN": "Oldenburg",
+    "EWZ": 129924,
+    "EW_Dens": 122.075,
+    "area": 1065100903,
+    "id": 56
   },
   {
-    "GEN": "Ostholstein",
-    "EWZ": 200584,
-    "area": 1386460444,
-    "EW_Dens": 144.6734387,
-    "srkm": 37.235
+    "GEN": "Leer",
+    "EWZ": 168946,
+    "EW_Dens": 158.743,
+    "area": 1064850772,
+    "id": 55
   },
   {
-    "GEN": "Nordfriesland",
-    "EWZ": 165462,
-    "area": 2089364551,
-    "EW_Dens": 79.19249894,
-    "srkm": 45.71
+    "GEN": "Grafschaft Bentheim",
+    "EWZ": 135859,
+    "EW_Dens": 138.396,
+    "area": 982013815.7,
+    "id": 54
   },
   {
-    "GEN": "Plön",
-    "EWZ": 128842,
-    "area": 1083003352,
-    "EW_Dens": 118.9673141,
-    "srkm": 32.909
+    "GEN": "Friesland",
+    "EWZ": 98509,
+    "EW_Dens": 159.566,
+    "area": 617782247.9,
+    "id": 53
   },
   {
-    "GEN": "Pinneberg",
-    "EWZ": 312662,
-    "area": 637261334,
-    "EW_Dens": 490.6338786,
-    "srkm": 25.244
+    "GEN": "Emsland",
+    "EWZ": 323636,
+    "EW_Dens": 112.28,
+    "area": 2883872247,
+    "id": 52
   },
   {
-    "GEN": "Schleswig-Flensburg",
-    "EWZ": 199503,
-    "area": 1990873203,
-    "EW_Dens": 100.2087927,
-    "srkm": 44.619
+    "GEN": "Cloppenburg",
+    "EWZ": 167925,
+    "EW_Dens": 118.24,
+    "area": 1421144487,
+    "id": 51
   },
   {
-    "GEN": "Rendsburg-Eckernförde",
-    "EWZ": 273022,
-    "area": 2169314982,
-    "EW_Dens": 125.8563197,
-    "srkm": 46.576
+    "GEN": "Aurich",
+    "EWZ": 189949,
+    "EW_Dens": 146.841,
+    "area": 1294231396,
+    "id": 50
   },
   {
-    "GEN": "Steinburg",
-    "EWZ": 131613,
-    "area": 1018155781,
-    "EW_Dens": 129.2660735,
-    "srkm": 31.909
+    "GEN": "Ammerland",
+    "EWZ": 123377,
+    "EW_Dens": 169.176,
+    "area": 729785353.9,
+    "id": 49
   },
   {
-    "GEN": "Segeberg",
-    "EWZ": 274025,
-    "area": 1345945840,
-    "EW_Dens": 203.5928875,
-    "srkm": 36.687
+    "GEN": "Wilhelmshaven",
+    "EWZ": 76316,
+    "EW_Dens": 710.236,
+    "area": 107527540.8,
+    "id": 48
   },
   {
-    "GEN": "Hamburg",
-    "EWZ": 1830584,
-    "area": 739041321.8,
-    "EW_Dens": 2476.971106,
-    "srkm": 27.185
+    "GEN": "Osnabrück",
+    "EWZ": 164374,
+    "EW_Dens": 1367.925,
+    "area": 120246695.9,
+    "id": 47
   },
   {
-    "GEN": "Stormarn",
-    "EWZ": 242472,
-    "area": 766073394.5,
-    "EW_Dens": 316.5127542,
-    "srkm": 27.678
+    "GEN": "Oldenburg (Oldb)",
+    "EWZ": 167081,
+    "EW_Dens": 1612.076,
+    "area": 103719563.7,
+    "id": 46
   },
   {
-    "GEN": "Salzgitter",
-    "EWZ": 104548,
-    "area": 225019394.4,
-    "EW_Dens": 464.617729,
-    "srkm": 15.001
+    "GEN": "Emden",
+    "EWZ": 50607,
+    "EW_Dens": 455.132,
+    "area": 111240765.6,
+    "id": 45
   },
   {
-    "GEN": "Braunschweig",
-    "EWZ": 248023,
-    "area": 192350809.4,
-    "EW_Dens": 1289.430498,
-    "srkm": 13.869
+    "GEN": "Delmenhorst",
+    "EWZ": 77521,
+    "EW_Dens": 1241.878,
+    "area": 62471540.39,
+    "id": 44
   },
   {
-    "GEN": "Gifhorn",
-    "EWZ": 175079,
-    "area": 1569234510,
-    "EW_Dens": 111.569685,
-    "srkm": 39.614
+    "GEN": "Verden",
+    "EWZ": 136590,
+    "EW_Dens": 173.232,
+    "area": 789108650.9,
+    "id": 43
   },
   {
-    "GEN": "Wolfsburg",
-    "EWZ": 123914,
-    "area": 205003032.6,
-    "EW_Dens": 604.4495949,
-    "srkm": 14.318
+    "GEN": "Uelzen",
+    "EWZ": 92744,
+    "EW_Dens": 63.454,
+    "area": 1462369316,
+    "id": 42
   },
   {
-    "GEN": "Helmstedt",
-    "EWZ": 91720,
-    "area": 675629564.1,
-    "EW_Dens": 135.7548646,
-    "srkm": 25.993
+    "GEN": "Stade",
+    "EWZ": 201887,
+    "EW_Dens": 167.483,
+    "area": 1206354662,
+    "id": 41
   },
   {
-    "GEN": "Goslar",
-    "EWZ": 137563,
-    "area": 968987550.9,
-    "EW_Dens": 141.9657042,
-    "srkm": 31.129
+    "GEN": "Heidekreis",
+    "EWZ": 139099,
+    "EW_Dens": 73.961,
+    "area": 1882084266,
+    "id": 40
   },
   {
-    "GEN": "Peine",
-    "EWZ": 133368,
-    "area": 536300113.1,
-    "EW_Dens": 248.6816556,
-    "srkm": 23.158
+    "GEN": "Rotenburg (Wümme)",
+    "EWZ": 163377,
+    "EW_Dens": 78.843,
+    "area": 2073809600,
+    "id": 39
   },
   {
-    "GEN": "Northeim",
-    "EWZ": 133046,
-    "area": 1269785163,
-    "EW_Dens": 104.7783545,
-    "srkm": 35.634
+    "GEN": "Osterholz",
+    "EWZ": 113105,
+    "EW_Dens": 173.282,
+    "area": 653240134.2,
+    "id": 38
   },
   {
-    "GEN": "Göttingen",
-    "EWZ": 328036,
-    "area": 1754938867,
-    "EW_Dens": 186.9216109,
-    "srkm": 41.892
+    "GEN": "Lüneburg",
+    "EWZ": 182930,
+    "EW_Dens": 137.905,
+    "area": 1327182198,
+    "id": 37
   },
   {
-    "GEN": "Wolfenbüttel",
-    "EWZ": 120437,
-    "area": 724276323.4,
-    "EW_Dens": 166.2859824,
-    "srkm": 26.912
+    "GEN": "Lüchow-Dannenberg",
+    "EWZ": 48357,
+    "EW_Dens": 39.44,
+    "area": 1226457908,
+    "id": 36
   },
   {
-    "GEN": "Diepholz",
-    "EWZ": 216012,
-    "area": 1990706675,
-    "EW_Dens": 108.5102103,
-    "srkm": 44.617
+    "GEN": "Harburg",
+    "EWZ": 251511,
+    "EW_Dens": 201.488,
+    "area": 1249135842,
+    "id": 35
   },
   {
-    "GEN": "Region Hannover",
-    "EWZ": 1152675,
-    "area": 2297539890,
-    "EW_Dens": 501.699668,
-    "srkm": 47.933
+    "GEN": "Cuxhaven",
+    "EWZ": 198100,
+    "EW_Dens": 96.267,
+    "area": 2059459167,
+    "id": 34
+  },
+  {
+    "GEN": "Celle",
+    "EWZ": 178764,
+    "EW_Dens": 115.413,
+    "area": 1549926565,
+    "id": 33
+  },
+  {
+    "GEN": "Schaumburg",
+    "EWZ": 157883,
+    "EW_Dens": 233.639,
+    "area": 676291507.7,
+    "id": 32
+  },
+  {
+    "GEN": "Nienburg (Weser)",
+    "EWZ": 121470,
+    "EW_Dens": 86.75,
+    "area": 1401337131,
+    "id": 31
+  },
+  {
+    "GEN": "Holzminden",
+    "EWZ": 71144,
+    "EW_Dens": 102.514,
+    "area": 694525788.4,
+    "id": 30
   },
   {
     "GEN": "Hildesheim",
     "EWZ": 276640,
+    "EW_Dens": 229.233,
     "area": 1207647315,
-    "EW_Dens": 229.0735023,
-    "srkm": 34.751
+    "id": 29
+  },
+  {
+    "GEN": "Hameln-Pyrmont",
+    "EWZ": 148296,
+    "EW_Dens": 186.005,
+    "area": 797890089.6,
+    "id": 28
+  },
+  {
+    "GEN": "Diepholz",
+    "EWZ": 216012,
+    "EW_Dens": 108.596,
+    "area": 1990706675,
+    "id": 27
+  },
+  {
+    "GEN": "Region Hannover",
+    "EWZ": 1152675,
+    "EW_Dens": 502.069,
+    "area": 2297539890,
+    "id": 26
+  },
+  {
+    "GEN": "Göttingen",
+    "EWZ": 328036,
+    "EW_Dens": 187.043,
+    "area": 1754938867,
+    "id": 25
+  },
+  {
+    "GEN": "Wolfenbüttel",
+    "EWZ": 120437,
+    "EW_Dens": 166.37,
+    "area": 724276323.4,
+    "id": 24
+  },
+  {
+    "GEN": "Peine",
+    "EWZ": 133368,
+    "EW_Dens": 248.836,
+    "area": 536300113.1,
+    "id": 23
+  },
+  {
+    "GEN": "Northeim",
+    "EWZ": 133046,
+    "EW_Dens": 104.853,
+    "area": 1269785163,
+    "id": 22
+  },
+  {
+    "GEN": "Helmstedt",
+    "EWZ": 91720,
+    "EW_Dens": 135.808,
+    "area": 675629564.1,
+    "id": 21
+  },
+  {
+    "GEN": "Goslar",
+    "EWZ": 137563,
+    "EW_Dens": 142.047,
+    "area": 968987550.9,
+    "id": 20
+  },
+  {
+    "GEN": "Gifhorn",
+    "EWZ": 175079,
+    "EW_Dens": 111.626,
+    "area": 1569234510,
+    "id": 19
+  },
+  {
+    "GEN": "Wolfsburg",
+    "EWZ": 123914,
+    "EW_Dens": 604.714,
+    "area": 205003032.6,
+    "id": 18
+  },
+  {
+    "GEN": "Salzgitter",
+    "EWZ": 104548,
+    "EW_Dens": 464.889,
+    "area": 225019394.4,
+    "id": 17
+  },
+  {
+    "GEN": "Braunschweig",
+    "EWZ": 248023,
+    "EW_Dens": 1290.121,
+    "area": 192350809.4,
+    "id": 16
+  },
+  {
+    "GEN": "Hamburg",
+    "EWZ": 1830584,
+    "EW_Dens": 2478.669,
+    "area": 739041321.8,
+    "id": 15
+  },
+  {
+    "GEN": "Stormarn",
+    "EWZ": 242472,
+    "EW_Dens": 316.706,
+    "area": 766073394.5,
+    "id": 14
+  },
+  {
+    "GEN": "Steinburg",
+    "EWZ": 131613,
+    "EW_Dens": 129.366,
+    "area": 1018155781,
+    "id": 13
+  },
+  {
+    "GEN": "Segeberg",
+    "EWZ": 274025,
+    "EW_Dens": 203.727,
+    "area": 1345945840,
+    "id": 12
+  },
+  {
+    "GEN": "Schleswig-Flensburg",
+    "EWZ": 199503,
+    "EW_Dens": 100.286,
+    "area": 1990873203,
+    "id": 11
+  },
+  {
+    "GEN": "Rendsburg-Eckernförde",
+    "EWZ": 273022,
+    "EW_Dens": 125.949,
+    "area": 2169314982,
+    "id": 10
+  },
+  {
+    "GEN": "Plön",
+    "EWZ": 128842,
+    "EW_Dens": 119.039,
+    "area": 1083003352,
+    "id": 9
+  },
+  {
+    "GEN": "Pinneberg",
+    "EWZ": 312662,
+    "EW_Dens": 490.997,
+    "area": 637261334,
+    "id": 8
+  },
+  {
+    "GEN": "Ostholstein",
+    "EWZ": 200584,
+    "EW_Dens": 144.739,
+    "area": 1386460444,
+    "id": 7
+  },
+  {
+    "GEN": "Nordfriesland",
+    "EWZ": 165462,
+    "EW_Dens": 79.255,
+    "area": 2089364551,
+    "id": 6
+  },
+  {
+    "GEN": "Herzogtum Lauenburg",
+    "EWZ": 196074,
+    "EW_Dens": 155.356,
+    "area": 1262754931,
+    "id": 5
+  },
+  {
+    "GEN": "Dithmarschen",
+    "EWZ": 133447,
+    "EW_Dens": 93.627,
+    "area": 1426447740,
+    "id": 4
+  },
+  {
+    "GEN": "Neumünster",
+    "EWZ": 79335,
+    "EW_Dens": 1111.131,
+    "area": 71450101.91,
+    "id": 3
+  },
+  {
+    "GEN": "Lübeck",
+    "EWZ": 216318,
+    "EW_Dens": 1021.804,
+    "area": 211804335.4,
+    "id": 2
+  },
+  {
+    "GEN": "Kiel",
+    "EWZ": 247943,
+    "EW_Dens": 2209.372,
+    "area": 112298146.8,
+    "id": 1
+  },
+  {
+    "GEN": "Flensburg",
+    "EWZ": 88519,
+    "EW_Dens": 1799.783,
+    "area": 49221574.98,
+    "id": 0
   }
 ]
