@@ -140,6 +140,30 @@ function checkHover2(feature, layer) {
   	});
   }
   
+  
+  
+ var satellite6 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+var streets6 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseMaps6 = {
+    "Satellite": satellite6,
+    "Streets": streets6
+};
+
+var map6 = L.map('map6', {
+    center: [52.528, 13.3747],
+    zoom: 13,
+    layers: [satellite6, streets6]
+	});
+L.control.layers(baseMaps6).addTo(map6);
+
+tileLayer1986 = L.tileLayer('data/zz_extiles2018/{z}/{x}/{y}.png', {});
+map6.addLayer(tileLayer1986);
+tileLayer1986.bringToFront();
 
 
 function getColor(d) {
