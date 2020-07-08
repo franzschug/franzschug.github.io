@@ -169,6 +169,28 @@ map6.addLayer(tileLayer1986);
 tileLayer2018.bringToFront();
 tileLayer1986.bringToFront();
 
+
+ var satellite7 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+var streets7 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseMaps7 = {
+    "Satellite": satellite7,
+    "Streets": streets7
+};
+
+var map7 = L.map('map7', {
+    center: [52.562, 13.3747],
+    zoom: 13,
+    layers: [satellite7, streets7]
+	});
+L.control.layers(baseMaps7).addTo(map7);
+
+
+
 function getColor(d) {
     return d > 1000 ? '#800026' :
            d > 500  ? '#BD0026' :
