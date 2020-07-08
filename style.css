@@ -13,6 +13,22 @@ code {
   line-height: 1.2;
 }
 
+codeSmall {
+  background-color: #eee;
+  border: 1px solid #999;
+  height: 20px;
+  overflow: hidden;
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.2;
+}
+
+codeSmall:hover {
+  background-color: #eeffaa;
+  height: 3500px;
+}
+
 present {
   background-color: #efddb7;
   border: 1px solid #999;
