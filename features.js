@@ -80,30 +80,21 @@ function initChart(json) {
 				enabled: true,
 				callbacks: {
 				label: function(tooltipItems, data) {
-					console.log(tooltipItems)
-					console.log(data)
 					vector3.eachLayer(function(layer) {
+						
 						if (layer.feature.properties.EW_Dens === tooltipItems.yLabel) {
-							console.log(layer.feature.properties.GEN)
-							/*if(tooltipItems.yLabel == "Ouagadougou") {
-							  layer.setStyle(regularStyle)
-							  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouHighlight);
-							} else {
-							  layer.setStyle(highlightStyle);
-							  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouRegular);
-							}*/
+							//layer.setStyle(highlightStyle)
+							layer.setStyle("color: '#b52020'; opacity: 1;weight: 2.5)")
+							layer.fire("mouseover")
 
 						  } else {
-
-							/*if(tooltipItems.yLabel == "Ouagadougou") {
-							  layer.setStyle(ouagadougouRegular)
-							} else {
-							  layer.setStyle(regularStyle);
-							}*/
+							layer.fire("mouseout")
+							col = getColor(layer.feature.properties.EW_Dens);
+							layer.setStyle({fillColor:col});
 						  }
 						});
 
-						return tooltipItems.xLabel + " " + tooltipItems.yLabel;
+						return "Pop.: " + tooltipItems.xLabel + "; Density: " + tooltipItems.yLabel;
 					}
 				  }
 			  }
