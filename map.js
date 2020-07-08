@@ -233,8 +233,8 @@ map8.addLayer(tileLayer2018b);
 tileLayer1986b = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map8.addLayer(tileLayer1986b);
 
-tileLayer1986b.bringToFront();
 tileLayer2018b.bringToFront();
+tileLayer1986b.bringToFront();
 
 // Opacity Slider
 var slider = document.getElementById('slider');
