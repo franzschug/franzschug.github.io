@@ -76,37 +76,39 @@ function initChart(json) {
                     }
 				}]
 			},
-					tooltips: {
-            enabled: true,
-            callbacks: {
-            label: function(tooltipItems, data) {
-				vector3.eachLayer(function(layer) {
-					//console.log(layer.feature.properties.EW_Dens)
-					/*if (layer.feature.properties.id === tooltipItems.yLabel) {
-						if(tooltipItems.yLabel == "Ouagadougou") {
-						  layer.setStyle(regularStyle)
-						  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouHighlight);
-						} else {
-						  layer.setStyle(highlightStyle);
-						  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouRegular);
-						}
+			tooltips: {
+				enabled: true,
+				callbacks: {
+				label: function(tooltipItems, data) {
+					console.log(tooltipItems)
+					console.log(data)
+					vector3.eachLayer(function(layer) {
+						if (layer.feature.properties.EW_Dens === tooltipItems.yLabel) {
+							console.log(layer.feature.properties.GEN)
+							/*if(tooltipItems.yLabel == "Ouagadougou") {
+							  layer.setStyle(regularStyle)
+							  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouHighlight);
+							} else {
+							  layer.setStyle(highlightStyle);
+							  getFeatureByName(cities, "Ouagadougou", "nameascii").setStyle(ouagadougouRegular);
+							}*/
 
-					  } else {
+						  } else {
 
-						if(tooltipItems.yLabel == "Ouagadougou") {
-						  layer.setStyle(ouagadougouRegular)
-						} else {
-						  layer.setStyle(regularStyle);
-						}
-					  }*/
-					//});
+							/*if(tooltipItems.yLabel == "Ouagadougou") {
+							  layer.setStyle(ouagadougouRegular)
+							} else {
+							  layer.setStyle(regularStyle);
+							}*/
+						  }
+						});
 
-					return tooltipItems.xLabel + "%";
-				}
+						return tooltipItems.xLabel + " " + tooltipItems.yLabel;
+					}
+				  }
 			  }
-          }
-		}
-	});	
+			}
+		});	
 	
 	
 
