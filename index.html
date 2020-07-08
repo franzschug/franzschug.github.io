@@ -57,7 +57,6 @@ This tutorial site is kept simple, as it only uses those elements that are intro
 <p> Cascading Style Sheets (CSS) is a stylesheet language to specific the layout of HTML websites. It is used to give style orders. We will have a look at:</p>
  
 <ul>
-<li>The CSS File</li>
 <li>Classes</li>
 <li>IDs</li>
 <li>Inline, Internal and External CSS</li>
@@ -203,10 +202,152 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 	Of course, you can also use relative links to images in your folder.<br><br>
 	<img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
   </present>
-  
- <h3> Divs and Website Layout</h3>
  
  <h3> Cascading Style Sheets (CSS)</h3>
+
+ <p> CSS is used for styling html elements. Every aspect of appearance can be styled. A very simple way of styling is <b>inline CSS</b>. Let us create a blue heading with a border:</p>
+ 
+   <code>
+	&#60;h3 style="color:blue; border: solid 2px; display:inline; padding:2px;">A blue bordered heading&#60;/h3>
+  </code>
+  
+  <present>
+	<h3 style="color:blue; border: solid 2px; display:inline; padding:2px;">A blue bordered heading</h3>
+  </present>
+  
+ <p>However, we do not want to indicate style every time we want it applied. This is why styles can be implemented into the html file using the &#60;style> tag. We define a class that this style will always be applied to. We can then use this class in any number of divs:</p>
+    
+  <code>
+	&#60;style><br>
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br>
+	&#60;/style><br><br>
+	
+	&#60;body><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;h3 >Not a blue bordered heading&#60;/h3><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;/body>
+  </code>
+  
+  <present>	
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+	<h3 >Not a blue bordered heading</h3><br>
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+  </present>
+  
+  <p>An ID works similarly, but is only valid for a single element.</p>
+  
+   <code>
+	&#60;style><br>
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br>
+	
+	#specialHeading {<br>
+	text-align: right;<br>
+	}<br>
+	
+	&#60;/style><br><br>
+	
+	&#60;body><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;h3 id="specialHeading" class="blueHeading">A blue bordered special heading&#60;/h3><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;/body>
+  </code>
+  
+  <present>	
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+	<h3 id="specialHeading" class="blueHeading">A blue bordered heading</h3><br>
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+  </present>
+  
+  <p>In order to separate styles from the html file, we can write them in a separate .css file. We call it style.css. Currently, this looks like this:</p>
+     <code>
+	body {<br>
+		padding: 20px;<br>
+		width: 70%;<br>
+	}<br><br>
+
+	code {<br>
+	  background-color: #eee;<br>
+	  border: 1px solid #999;<br>
+	  display: block;<br>
+	  padding: 20px;<br>
+	  margin: 20px;<br>
+	  line-height: 1.2;<br>
+	}<br><br>
+
+	present {<br>
+	  background-color: #efddb7;<br>
+	  border: 1px solid #999;<br>
+	  display: block;<br>
+	  padding: 20px;<br>
+	  margin: 20px;<br>
+	  line-height: 1.2;<br>
+	}<br><br>
+	
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br><br>
+	
+	#specialHeading {<br>
+	text-align: right;<br>
+	}<br>
+  </code>
+ 
+ <h3> Divs and Website Layout</h3>
+ 
+ <p> html websites are organised in <i>divs</i>. A <i>div</i> is created and then layouted in the css file. We will only see one example, since html layout is not the focus here. There is a wide range of layout options that you can find online, and in the course of brining content to mobile devices, things become different and, sometime, also easier.</p>
+ 
+ <p>In the html file:</p>
+    <code>
+	&#60;div class="row"><br>
+	&#60;div class="column left">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;div class="column middle">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;div class="column right">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;/div> <br>
+  </code>
+ <p>In the CSS file:</p>
+   <code>
+	.row {<br>
+	  width: 100%;<br>
+	  display: inline-block;<br>
+	}<br><br>
+	
+	.column { <br>
+	  float: left; <br>
+	} <br> <br>
+
+	.left, .right { <br>
+	  width: 25%; <br>
+	  background-color: grey; <br>
+	} <br> <br>
+
+	.middle { <br>
+	  width: 50%; <br>
+	  background-color: white; <br>
+	} <br>
+  </code>
+  
+   <present>	
+	<div class="row">
+	<div class="column left"><p>Some content..</p></div>
+	<div class="column middle"><p>Some content..</p></div>
+	<div class="column right"><p>Some content..</p></div>
+	</div>
+  </present>
   
 <h1> Static and interactive webmapping.</h1>
 
@@ -307,6 +448,8 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 </ul>
 
 <p>We will have two use cases: <b>Display population counts in all Germany NUTS-3 units</b> and <b>Visualise change using two Landsat scenes</b>.<p/>
+
+<h3>Case 1: Vector Files</h3>
 
   <code style="background-color: #f7ffb3;">
 	<h3>Prepare vector file</h3>
@@ -490,7 +633,28 @@ var highlightStyle = {<br>
    </div>
   </present>
 
-Raster. load and display. turn on/off
+
+<h3>Case 2: Raster Files</h3>
+
+<p>We'd like to load tiles of the two Landsat scenes (1986 and 2018). Remember that we already loaded a tile layer, namely our base map layers:</p>
+  <code>
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+  </code>
+  
+ <p>We will load our custom tiles the same way, also in the map.js file:</p>
+  <code>
+	L.tileLayer('data/zz_extiles1986/{z}/{x}/{y}.png', {}).addTo(map);<br>
+	L.tileLayer('data/zz_extiles2018/{z}/{x}/{y}.png', {}).addTo(map);
+  </code>
+
+  <present>
+   <div id='map6'>
+   </div>
+  </present>
+
+ load and display. turn on/off
 
 
 <h1> Interactive illustrations - Using more external< packages</h1>
@@ -520,4 +684,17 @@ again: examples
 
 
 </body>
+  	<style>
+	.blueHeading {
+	color: blue;
+	border: solid 2px;
+	display:inline-block;
+	padding:2px;
+	}
+	
+	#specialHeading {
+	font-family: verdana;
+	}
+</style>
+	
 </html>
