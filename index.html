@@ -366,7 +366,7 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 
 <p>We also create a file where we define the functionalities of our webmap. We call it map.js. This is how our folder structure looks like:</p>
   <present>
-	<img src="https://franzschug.github.io/img/structure.PNG" alt="Folder Structure"><br><br>
+	<img src="img/structure.PNG" alt="Folder Structure"><br><br>
   </present>
   
 <p>The HTML file needs to import all external scripts and styles:</p>
@@ -448,7 +448,7 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 	<h3>Prepare vector file</h3>
 	A vector file for webmapping needs to be projected in EPSG: 4326. The required file format is <i>.geojson</i>. You can easily export a vector file as .geojson with EPSG 436 in QGIS.<br><br>
 	Be sure that during the exportation process, you deselect all attributes that will not be visualised, in order to decrease size. Also, reduce the number of digits in coordinate precision (e.g. to 5, default is 15). This largely reduces file size.<br><br>
-	<img src="img/prepare_vector.png" alt="Prepare Vector"><br><br>
+	<img src="img/prepare_vector.PNG" alt="Prepare Vector"><br><br>
   </code>
   
   <code style="background-color: #f7ffb3;">
@@ -456,13 +456,13 @@ In your website, you might want to use hyperlinks or images. Both elements requi
 	A raster file for webmapping needs to be projected in EPSG: 4326. Usually, a raster file is too large to load it as a whole. This is why <i>webtiling</i> is used. A raster file is divided into numerous jpeg image tiles, each a few kiloybtes in size, using a hierarchical archive structure.<br><br>
 	
 	In a first step, we need to export the raster file as RGB composite with a maximum of 3 bands.<br><br>
-	<img src="img/createRGB.png" alt="Prepare Vector"><br><br>
+	<img src="img/createRGB.PNG" alt="Prepare Vector"><br><br>
 	
 	Tiling can be performed using <i>gdal2tiles</i>, also applicable within QGIS.<br><br>
-	<img src="img/createTiles.png" alt="Prepare Vector"><br><br>
+	<img src="img/createTiles.PNG" alt="Prepare Vector"><br><br>
 	
 	The tile structure is hiararchical, starting with the <i>zoom level</i>. <br><br>
-	<img src="img/tileStructure.png" alt="Prepare Vector"><br><br>
+	<img src="img/tileStructure.PNG" alt="Prepare Vector"><br><br>
 	
 	The higher the zoom level, the more tile files need to be created and the overall file size increases. You can select which zoom level to compute. Other zoom levels will not be visible online. Zoom levels range form 1 (global) to 20 (highly local).
 	<table style="width:30%">
@@ -1105,7 +1105,7 @@ var highlightStyle = {<br>
 <h1> Find the error</h1>
 <p>Right click on your webpage and press Q. Under <i>console</i> you can find browser messages that might hint you towards possible errors:</p>
   <present>
-	<img src="img/console.png" style="height: 160px" alt="Console Error">
+	<img src="img/console.PNG" style="height: 160px" alt="Console Error">
   </present>
 
 <h1>Download</h1>
