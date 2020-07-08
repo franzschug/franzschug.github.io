@@ -189,7 +189,15 @@ var map7 = L.map('map7', {
 	});
 L.control.layers(baseMaps7).addTo(map7);
 
+var input = document.getElementById('toggle');
 
+input.addEventListener('change',function(){
+   if(this.checked) {
+	tileLayer2018.bringToFront()
+   } else {
+	tileLayer1986.bringToFront()
+   }
+});
 
 function getColor(d) {
     return d > 1000 ? '#800026' :
