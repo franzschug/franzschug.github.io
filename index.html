@@ -977,9 +977,13 @@ var highlightStyle = {<br>
 	</canvas >
   </present>
 
-<p>However, we want to use our own data, and we also do not want to insert that data manually. The data we use must be available in the .json format. <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation">JSON (JavaScript Object Notation)</a> is a standardized format to read objects with JavaScript. There are multiple online tools that translate, for example, csv files to json files (e.g. ...................)</p>
+<p>However, we want to use our own data, and we also do not want to insert that data manually. The data we use must be available in the .json format. <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation">JSON (JavaScript Object Notation)</a> is a standardized format to read objects with JavaScript. There are multiple online tools that translate, for example, csv files to json files (e.g. https://csvjson.com/csv2json)</p>
 
 <p>In the html file, we load jquery.js, a library for asynchonous the document using...</p>
+  <code>
+	&#60;script src="packages/jquery.min.js">&#60;/script>
+  </code>
+
 <p>In the features.js file, we load the document using...</p>
 
   <code>
@@ -988,19 +992,49 @@ var highlightStyle = {<br>
 	});
   </code>
   
+<p>initChart(json) calls a function in the same file that initialises the charts.</p>
   
-  <script src="packages/jquery.min.js"></script>
-  
-<p>As In the features.js file, we load the document using...
-Thus, we also modify the creation of our chart in the features.js file:</p>
+<p>As now, the chart initialisation is triggered by an actual function, we don't need the windows-onload function anymore. We modify the creation of our chart in the features.js file:</p>
 
 <code>
-	$.getJSON("data/populationdata.json", function(json) {
-	  initChart(json);
-	});
-	<span style="color:blue";>vector.setStyle(regularStyle);</span><br>
+	function initChart(json) {<br>
+	populations = [] // initialise lists<br>
+	densities = []<br><br>
+	
+	for (var i = 0; i < json.length; i++) { //for each json object, add population and density to the lists<br>
+		var object = json[i];<br>
+		populations.push(object['EWZ'])<br>
+		densities.push(object['EW_Dens'])<br>
+	}<br><br>
+
+	let coords = populations.map( (v,i) => ({ x: v, y: densities[i]}) ) //create a dictionary from two lists, as data for charts needs to have the following form:<br>
+	data = [{ x: -8, y: 3 }, { x: 2, y: 8 }, { x: 3, y: 9 }]<br><br>
+	
+	var ctx = document.getElementById("chart1");<br>
+	var scatterChart = new Chart(ctx, {<br>
+		type: 'scatter',<br>
+		data: {<br>
+			datasets: [{<br>
+				label: 'Population / Population Density',<br>
+				data: coords<br>
+			}]<br>
+		},<br>
+		options: {<br>
+			scales: {<br>
+				xAxes: [{<br>
+					type: 'linear',<br>
+					position: 'bottom'<br>
+				}]<br>
+			}<br>
+		}<br>
+	});<br>
+}
 </code>
-  
+    
+   <present>
+	<canvas  id='chart2'>
+	</canvas >
+  </present>
 
 
  show data
