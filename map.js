@@ -1,4 +1,4 @@
-
+ 
 var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 });
@@ -48,7 +48,7 @@ var map3 = L.map('map3', {
 	});
 L.control.layers(baseMaps3).addTo(map3);
 
-vector = new L.GeoJSON.AJAX("data/vector.geojson", {});
+vector = new L.GeoJSON.AJAX("https://franzschug.github.io/data/vector.geojson", {});
 vector.addTo(map3);
 vector.on('data:loaded', function() {
   vector.bringToFront()
@@ -76,7 +76,7 @@ var map4 = L.map('map4', {
 	});
 L.control.layers(baseMaps4).addTo(map4);
 
-vector = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover});
+vector = new L.GeoJSON.AJAX("https://franzschug.github.io/data/vector.geojson", {onEachFeature: checkHover});
 vector.addTo(map4);
 vector.on('data:loaded', function() {
   vector.setStyle(regularStyle);
@@ -117,7 +117,7 @@ var map5 = L.map('map5', {
 	});
 L.control.layers(baseMaps5).addTo(map5);
 
-vector2 = new L.GeoJSON.AJAX("data/vector.geojson", {onEachFeature: checkHover2});
+vector2 = new L.GeoJSON.AJAX("https://franzschug.github.io/data/vector.geojson", {onEachFeature: checkHover2});
 vector2.addTo(map5);
 vector2.on('data:loaded', function() {
   vector2.setStyle(regularStyle2);
@@ -161,9 +161,9 @@ var map6 = L.map('map6', {
 	});
 L.control.layers(baseMaps6).addTo(map6);
 
-tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+tileLayer2018 = L.tileLayer('https://franzschug.github.io/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer2018);
-tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+tileLayer1986 = L.tileLayer('https://franzschug.github.io/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer1986);
 
 tileLayer2018.bringToFront();
@@ -189,9 +189,9 @@ var map7 = L.map('map7', {
 	});
 L.control.layers(baseMaps7).addTo(map7);
 
-tileLayer2018a = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+tileLayer2018a = L.tileLayer('https://franzschug.github.io/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
 map7.addLayer(tileLayer2018a);
-tileLayer1986a = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+tileLayer1986a = L.tileLayer('https://franzschug.github.io/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map7.addLayer(tileLayer1986a);
 
 tileLayer1986a.bringToFront();
@@ -228,9 +228,9 @@ var map8 = L.map('map8', {
 	});
 L.control.layers(baseMaps8).addTo(map8);
 
-tileLayer2018b = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+tileLayer2018b = L.tileLayer('https://franzschug.github.io/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
 map8.addLayer(tileLayer2018b);
-tileLayer1986b = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+tileLayer1986b = L.tileLayer('https://franzschug.github.io/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map8.addLayer(tileLayer1986b);
 
 tileLayer2018b.bringToFront();
