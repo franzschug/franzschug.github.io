@@ -1026,8 +1026,71 @@ var highlightStyle = {<br>
 	</canvas >
   </present>
 
-<p>We can add multiple options to style the chart. Styling options are numerous and can be found, for example, <a href="https://www.chartjs.org/docs/latest/charts/line.html">here</a>. We will also see how to customize chart-webmap interaction. Interaction is not trivial to understand. In this case, we want that once the user hovers over a chart element, the respective element should be highlighted on the map.</p>
+<p>We can add multiple options to style the chart. Styling options are numerous and can be found, for example, <a href="https://www.chartjs.org/docs/latest/charts/line.html">here</a>. We will also see how to customize chart-webmap interaction. Interaction is not trivial to understand. In this case, we want that once the user hovers over a chart element, the respective element should be highlighted on the map. To enable this, we need to customize the tooltip of the chart data:</p>
   
+  <code>
+	var ctx = document.getElementById("chart");<br>
+	var scatterChart2 = new Chart(ctx, {<br>
+		type: 'scatter',<br>
+		data: {<br>
+			datasets: [{<br>
+				label: 'Population / Population Density',<br>
+                borderColor: "rgba(0,0,0,0)",<br>
+                pointBackgroundColor: "rgba(0,0,0,1)",<br>
+                pointBorderWidth: 0,<br>
+                pointHoverRadius: 4,<br>
+                pointHoverBackgroundColor: "rgba(0,0,0,0.3)",<br>
+                pointHoverBorderColor: "rgba(91,44,111,1)",<br>
+                pointHoverBorderWidth: 0,<br>
+                pointRadius: 1,<br>
+                pointHitRadius: 6,<br>
+				data: coords<br>
+			}]<br>
+		},<br>
+		options: {<br>
+			scales: {<br>
+				xAxes: [{<br>
+					position: 'bottom',<br>
+                    scaleLabel: {<br>
+                      display: true,<br>
+                      labelString: "Population"<br>
+                    }<br>
+				}],		<br>
+				yAxes: [{<br>
+					position: 'left',<br>
+                    scaleLabel: {<br>
+                      display: true,<br>
+                      labelString: "Population Density"<br>
+                    }<br>
+				}]<br>
+			},<br><br>
+			<span style="color:blue";>tooltips: {</span><br>
+				<span style="color:blue";>enabled: true,</span><br>
+				<span style="color:blue";>callbacks: {</span><br>
+				<span style="color:blue";>label: function(tooltipItems, data) {</span><br>
+				<span style="color:blue";>	vector.eachLayer(function(layer) {</span><br>
+				<span style="color:blue";>		
+				<span style="color:blue";>		if (layer.feature.properties.EW_Dens === tooltipItems.yLabel) {</span><br>
+				<span style="color:blue";>			//layer.setStyle(highlightStyle)</span><br>
+				<span style="color:blue";>			layer.setStyle("color: '#b52020'; opacity: 1;weight: 2.5)")</span><br>
+				<span style="color:blue";>			layer.fire("mouseover")</span><br>
+				<span style="color:blue";>
+				<span style="color:blue";>		  } else {</span><br>
+				<span style="color:blue";>			layer.fire("mouseout")</span><br>
+				<span style="color:blue";>			col = getColor(layer.feature.properties.EW_Dens);</span><br>
+				<span style="color:blue";>			layer.setStyle({fillColor:col});</span><br>
+				<span style="color:blue";>		  }</span><br>
+				<span style="color:blue";>		});</span><br>
+				<span style="color:blue";>
+				<span style="color:blue";>		return "Pop.: " + tooltipItems.xLabel + "; Density: " + tooltipItems.yLabel;</span><br>
+				<span style="color:blue";>	}</span><br>
+				<span style="color:blue";>  }</span><br>
+			  <span style="color:blue";>}<br>
+			}<br>
+		});	
+	<br>
+</code>
+
 	<present>
 	<div  id='mapL'>
 	</div >
