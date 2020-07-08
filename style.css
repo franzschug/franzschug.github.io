@@ -69,7 +69,7 @@ present {
 #map6 { height: 300px; }
 #map7 { height: 300px; z-index:1;}
 #map8 { height: 300px; z-index:1;}
-
+#mapL { height: 300px; z-index:1;}
 
 .map-overlay {
     font:bold 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
