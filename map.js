@@ -229,9 +229,9 @@ var map8 = L.map('map8', {
 L.control.layers(baseMaps8).addTo(map8);
 
 tileLayer2018b = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
-map7.addLayer(tileLayer2018b);
+map8.addLayer(tileLayer2018b);
 tileLayer1986b = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
-map7.addLayer(tileLayer1986b);
+map8.addLayer(tileLayer1986b);
 
 tileLayer1986b.bringToFront();
 tileLayer2018b.bringToFront();

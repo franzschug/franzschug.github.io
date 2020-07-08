@@ -873,9 +873,10 @@ var highlightStyle = {<br>
   </present>
 
 <p><b>Transparency Slider</b></p>
+<p>For a transparenty slider, we add this to the html file:</p>
   <present>
   <div id='mapWrapper'>
-   <div id='map8'>
+   <div id='map'>
    </div>
    
    <div class='map-overlay top'>
@@ -887,6 +888,20 @@ var highlightStyle = {<br>
   </div>
   </present>
 
+<p>This is the correspondingmap.js part:</p>
+  <present>
+  <div id='mapWrapper'>
+   <div id='map'>
+   </div>
+   
+   <div class='map-overlay top'>
+        <div class='map-overlay-inner'>
+            <label>Layer Opacity: <span id='slider-value'>100%</span></label>
+            <input id='slider' type='range' min='0' max='100' step='0' value='100' />
+        </div>
+    </div>
+  </div>
+  </present>
 
 
 <h1> Interactive illustrations - Using more external packages</h1>
