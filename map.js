@@ -161,7 +161,7 @@ var map6 = L.map('map6', {
 	});
 L.control.layers(baseMaps6).addTo(map6);
 
-tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+tileLayer1986 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer1986);
 tileLayer1986.bringToFront();
 
