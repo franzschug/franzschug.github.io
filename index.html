@@ -20,9 +20,13 @@
   <script src="js/styles.js"></script>-->
   
   <link rel="stylesheet" href="packages/leaflet/leaflet.css">
+  <link rel="stylesheet" href="packages/chart/Chart.css">
   <link rel="stylesheet" href="style.css">
   <script src="packages/leaflet/leaflet.js"></script>
   <script src="packages/leaflet.ajax.min.js"></script>
+  <script src="packages/jquery.min.js"></script>
+  <script src="packages/chart/Chart.js"></script>
+  <script src="features.js"></script>
 	
 </head>
 
@@ -899,7 +903,7 @@ var highlightStyle = {<br>
 	});<br>
   </code>
   
-   <code>
+   <present>
   <div id='mapWrapper'>
    <div id='map8'>
    </div>
@@ -911,12 +915,12 @@ var highlightStyle = {<br>
         </div>
     </div>
   </div>
-  </code>
+  </present>
 
 <h1> Interactive illustrations - Using more external packages</h1>
 
 
-<p>Until now, we have seen how to build and style a basic html webpage with an embedded webmap. We added vactor and raster data to this map and created basic interactivit. Now, we will see how to integrate further external packages to the site and create mutual interaction. We will see the following examples:</p>
+<p>Until now, we have seen how to build and style a basic html webpage with an embedded webmap. We added vactor and raster data to this map and created basic interactivity. Now, we will see how to integrate further external packages to the site and create mutual interaction. We will see the following examples:</p>
 
 <ul>
 <li>Find and load a suitable external package</li>
@@ -926,10 +930,80 @@ var highlightStyle = {<br>
 
 <h3>Find and load a suitable external package</h3>
 
-<p></p>
+<p>We are looking for a package that allows us to visualize data. Here, we will use the example of <a href="https://www.chartjs.org/">ChartJS</a>. There are other packages, such as <a href="https://d3js.org/">d3js</a>.
+</p>
 
-d3js
- embed graph in a div
+<p>Usually, a package brings both a .js file with its functionalities and a .css file with its standard styles. There are two ways to integrate an external package. You can import the online link to the package...</p>
+
+  <code>
+	&#60;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css"><br>
+	&#60;script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js">&#60;/script>
+  </code>
+  
+<p>... or you can download the respective files and use an internal import.</p>
+
+  <code>
+	&#60;link rel="stylesheet" href="packages/chart/Chart.css"><br>
+	&#60;script src="packages/chart/Chart.js">&#60;/script>
+  </code>
+  
+<p>The advantage AND disadvantage of the former is that for some packages, the link always refers to the most recent version.</p>
+
+<p>We create an additional features.js file besides our map.js file and import it into the html file.</p>
+<p>From the <a href="https://www.chartjs.org/docs/latest/charts/scatter.html">Chart.js documentation</a>, we use the template for a scatter plot and add it to the features.js file. We embed the example in a windows.onload function that makes sure that the chart is loaded once the website is loaded. If we do not do this, getting the html div id might result in an error.</p>
+
+  <code>
+	window.onload = function() {<br>
+	var scatterChart = new Chart(document.getElementById("chart"), {type: 'scatter',<br>
+    data: {<br>
+        datasets: [{<br>
+            label: 'Scatter Dataset',<br>
+            data: [{ x: -10, y: 0}, {x: 0, y: 10}, {x: 10, y: 5}]<br>
+        }]<br>
+    },<br>
+    options: {<br>
+        scales: {<br>
+            xAxes: [{<br>
+                type: 'linear',<br>
+                position: 'bottom'<br>
+            }]<br>
+        }<br>
+    }<br>
+});<br>
+}
+  </code>
+  
+   <present>
+	<canvas  id='chart1'>
+	</canvas >
+  </present>
+
+<p>However, we want to use our own data, and we also do not want to insert that data manually. The data we use must be available in the .json format. <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation">JSON (JavaScript Object Notation)</a> is a standardized format to read objects with JavaScript. There are multiple online tools that translate, for example, csv files to json files (e.g. ...................)</p>
+
+<p>In the html file, we load jquery.js, a library for asynchonous the document using...</p>
+<p>In the features.js file, we load the document using...</p>
+
+  <code>
+	$.getJSON("data/populationdata.json", function(json) {
+	  initChart(json);
+	});
+  </code>
+  
+  
+  <script src="packages/jquery.min.js"></script>
+  
+<p>As In the features.js file, we load the document using...
+Thus, we also modify the creation of our chart in the features.js file:</p>
+
+<code>
+	$.getJSON("data/populationdata.json", function(json) {
+	  initChart(json);
+	});
+	<span style="color:blue";>vector.setStyle(regularStyle);</span><br>
+</code>
+  
+
+
  show data
  interact with map using JS
  
@@ -943,8 +1017,8 @@ d3js
   
 <script src="map.js"></script>
   
-graphs
 your setup!
+file structure!
 
 
 </body>
