@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>rgb2018.tif</Title>
+      <Title>rgb1986.tif</Title>
       <Abstract></Abstract>
       <SRS>EPSG:3857</SRS>
       <BoundingBox minx="13.01085950900000" miny="52.35351503330229" maxx="13.47174051374071" maxy="52.63492205300000"/>
