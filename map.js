@@ -195,7 +195,7 @@ tileLayer1986a = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true})
 map7.addLayer(tileLayer1986a);
 
 tileLayer1986a.bringToFront();
-tileLayer2018a.bringToFront();
+tileLayer2018b.bringToFront();
 
 
 var input = document.getElementById('toggle');
