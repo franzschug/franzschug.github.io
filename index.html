@@ -890,8 +890,18 @@ var highlightStyle = {<br>
 
 <p>This is the correspondingmap.js part:</p>
   <code>
+	var slider = document.getElementById('slider');<br>
+	var sliderValue = document.getElementById('slider-value');<br><br>
+
+	slider.addEventListener('input', function(e) {<br>
+		tileLayer1986b.setOpacity(parseInt(e.target.value, 10) / 100)<br>
+		sliderValue.textContent = e.target.value + '%';<br>
+	});<br>
+  </code>
+  
+   <code>
   <div id='mapWrapper'>
-   <div id='map'>
+   <div id='map8'>
    </div>
    
    <div class='map-overlay top'>
@@ -901,16 +911,6 @@ var highlightStyle = {<br>
         </div>
     </div>
   </div>
-  </code>
-
-  <code>
-	var slider = document.getElementById('slider');<br>
-	var sliderValue = document.getElementById('slider-value');<br><br>
-
-	slider.addEventListener('input', function(e) {<br>
-		tileLayer1986b.setOpacity(parseInt(e.target.value, 10) / 100)<br>
-		sliderValue.textContent = e.target.value + '%';<br>
-	});<br>
   </code>
 
 <h1> Interactive illustrations - Using more external packages</h1>
