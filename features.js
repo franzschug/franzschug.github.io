@@ -40,9 +40,8 @@ function initChart(json) {
 	//}
 	
 	
-
-
-	var ctx = document.getElementById("chart1");
+	
+	var ctx = document.getElementById("chart3");
 	var scatterChart2 = new Chart(ctx, {
 		type: 'scatter',
 		data: {
@@ -55,18 +54,9 @@ function initChart(json) {
                 pointHoverBackgroundColor: "rgba(0,0,0,0.3)",
                 pointHoverBorderColor: "rgba(91,44,111,1)",
                 pointHoverBorderWidth: 0,
-                pointRadius: 2,
-                pointHitRadius: 8,
-				data: [{
-					x: -10,
-					y: 0
-				}, {
-					x: 0,
-					y: 10
-				}, {
-					x: 10,
-					y: 5
-				}]
+                pointRadius: 1,
+                pointHitRadius: 6,
+				data: coords
 			}]
 		},
 		options: {
@@ -84,6 +74,41 @@ function initChart(json) {
                       display: true,
                       labelString: "Population Density"
                     }
+				}]
+			}
+		}
+	});	
+	
+	
+
+
+	var ctx = document.getElementById("chart1");
+	var scatterChart2 = new Chart(ctx, {
+		type: 'scatter',
+		data: {
+			datasets: [{
+				label: 'Population / Population Density',
+				data: [{
+					x: -10,
+					y: 0
+				}, {
+					x: 0,
+					y: 10
+				}, {
+					x: 10,
+					y: 5
+				}]
+			}]
+		},
+		options: {
+			scales: {
+				xAxes: [{
+					type: 'linear',
+					position: 'bottom'
+				}],		
+				yAxes: [{
+					type: 'linear',
+					position: 'left',
 				}]
 			}
 		}
