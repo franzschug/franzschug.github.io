@@ -22,8 +22,28 @@ present {
   line-height: 1.2;
 }
 
+.row {
+  width: 100%;
+  display: inline-block;
+}
+
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+  background-color: grey;
+}
+
+.middle {
+  width: 50%;
+  background-color: white;
+}
+	
 #map { height: 300px; }
 #map2 { height: 300px; }
 #map3 { height: 300px; }
 #map4 { height: 300px; }
 #map5 { height: 300px; }
+#map6 { height: 300px; }
