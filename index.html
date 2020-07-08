@@ -875,21 +875,21 @@ var highlightStyle = {<br>
 <p><b>Transparency Slider</b></p>
 <p>For a transparenty slider, we add this to the html file:</p>
   <present>
-  <div id='mapWrapper'>
-   <div id='map'>
-   </div>
+  &#60;div id='mapWrapper'><br>
+   &#60;div id='map'><br>
+   &#60;/div><br><br>
    
-   <div class='map-overlay top'>
-        <div class='map-overlay-inner'>
-            <label>Layer Opacity: <span id='slider-value'>100%</span></label>
-            <input id='slider' type='range' min='0' max='100' step='0' value='100' />
-        </div>
-    </div>
-  </div>
+   &#60;div class='map-overlay top'><br>
+        &#60;div class='map-overlay-inner'><br>
+            &#60;label>Layer Opacity: &#60;span id='slider-value'>100%&#60;/span>&#60;/label><br>
+            &#60;input id='slider' type='range' min='0' max='100' step='0' value='100' /><br>
+        &#60;/div><br>
+    &#60;/div><br>
+  &#60;/div>
   </present>
 
 <p>This is the correspondingmap.js part:</p>
-  <present>
+  <code>
   <div id='mapWrapper'>
    <div id='map'>
    </div>
@@ -901,8 +901,17 @@ var highlightStyle = {<br>
         </div>
     </div>
   </div>
-  </present>
+  </code>
 
+  <code>
+	var slider = document.getElementById('slider');<br>
+	var sliderValue = document.getElementById('slider-value');<br><br>
+
+	slider.addEventListener('input', function(e) {<br>
+		tileLayer1986b.setOpacity(parseInt(e.target.value, 10) / 100)<br>
+		sliderValue.textContent = e.target.value + '%';<br>
+	});<br>
+  </code>
 
 <h1> Interactive illustrations - Using more external packages</h1>
 d3js
