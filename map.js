@@ -189,13 +189,22 @@ var map7 = L.map('map7', {
 	});
 L.control.layers(baseMaps7).addTo(map7);
 
+tileLayer2018a = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+map7.addLayer(tileLayer2018a);
+tileLayer1986a = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+map7.addLayer(tileLayer1986a);
+
+tileLayer2018a.bringToFront();
+tileLayer1986a.bringToFront();
+
+
 var input = document.getElementById('toggle');
 
 input.addEventListener('change',function(){
    if(this.checked) {
-	tileLayer2018.bringToFront()
+	tileLayer2018a.bringToFront()
    } else {
-	tileLayer1986.bringToFront()
+	tileLayer1986a.bringToFront()
    }
 });
 
