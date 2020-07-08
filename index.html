@@ -645,8 +645,12 @@ var highlightStyle = {<br>
   
  <p>We will load our custom tiles the same way, also in the map.js file:</p>
   <code>
-	L.tileLayer('data/zz_extiles1986/{z}/{x}/{y}.png', {}).addTo(map);<br>
-	L.tileLayer('data/zz_extiles2018/{z}/{x}/{y}.png', {}).addTo(map);
+	tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});<br>
+	map.addLayer(tileLayer1986);<br>
+	tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});<br>
+	map.addLayer(tileLayer2018);
+	tileLayer2018.bringToFront();
+	tileLayer1986.bringToFront();
   </code>
 
   <present>
@@ -654,7 +658,10 @@ var highlightStyle = {<br>
    </div>
   </present>
 
+<p>This is not entirely what we want, because both layers overlay. There are multiple options now. We could <b>build a switch</b> that brings the background layer to the front.
+
  load and display. turn on/off
+  switch between raster 1986 2018 with slider
 
 
 <h1> Interactive illustrations - Using more external< packages</h1>
@@ -663,7 +670,7 @@ d3js
  show data
  interact with map using JS
  
- switch between raster 1986 2018 with slider
+
 
 
 <script src="map.js"></script>
