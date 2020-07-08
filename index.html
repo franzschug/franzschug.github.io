@@ -662,13 +662,23 @@ var highlightStyle = {<br>
 
 <p><b>Raster Switch</b></p>
 <p>In the html file, we create a map overlay div and include a <i>toogle input element</i>. This does not require external packages:</p>
+<p>However, input elements require a complicated set of styling. Once established, this styling can be reused, and often, you find code examples on the internet.</p>
+<p>In the html file:</p>
   <code>
-	tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});<br>
-	map.addLayer(tileLayer1986);<br>
-	tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});<br>
-	map.addLayer(tileLayer2018);
-	tileLayer2018.bringToFront();
-	tileLayer1986.bringToFront();
+	  &#60;div id='mapWrapper'><br>
+	   &#60;div id='map'><br>
+	   &#60;/div><br><br>
+	   
+	   &#60;div class='map-overlay top'><br>
+			&#60;div class='map-overlay-inner'><br>
+			&#60;label class="switch"><br>
+				&#60;input id = "toggle" class="switch-input" type="checkbox" /><br>
+				&#60;span class="switch-label" data-off="1986" data-on="2018">&#60;/span> <br>
+				&#60;span class="switch-handle">&#60;/span> <br>
+			&#60;/label><br>
+		&#60;/div><br>
+		&#60;/div><br>
+	  &#60;/div><br>
   </code>
 
   <present>
@@ -686,8 +696,6 @@ var highlightStyle = {<br>
     </div>
     </div>
   </div>
-  
-
   </present>
 
 <p><b>Transparency Slider</b></p>
