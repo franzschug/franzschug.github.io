@@ -8,16 +8,6 @@
   <meta name="author" content="Franz Schug">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Styles -->
-  <!--<link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">-->
-
-  <!-- Scripts -->
-  <!--<script src="js/jquery.min.js"></script>
-  <script src='js/mapbox3.js'></script>
-  <script src="js/easy-button.js"></script>
-  
-  <script src="js/styles.js"></script>-->
   
   <link rel="stylesheet" href="packages/leaflet/leaflet.css">
   <link rel="stylesheet" href="packages/chart/Chart.css">
@@ -1036,30 +1026,33 @@ var highlightStyle = {<br>
 	</canvas >
   </present>
 
-<p>We can add multiple options to style the chart. Styling options are numerous and can be found, for example, <a href="https://www.chartjs.org/docs/latest/charts/line.html">here</a></p>
-
+<p>We can add multiple options to style the chart. Styling options are numerous and can be found, for example, <a href="https://www.chartjs.org/docs/latest/charts/line.html">here</a>. We will also see how to customize chart-webmap interaction. Interaction is not trivial to understand. In this case, we want that once the user hovers over a chart element, the respective element should be highlighted on the map.</p>
+  
+	<present>
+	<div  id='mapL'>
+	</div >
+  </present>
+ 
    <present>
 	<canvas  id='chart3'>
 	</canvas >
   </present>
   
- interact with map using JS
- 
 
 <h1> Find the error</h1>
 <p>Right click on your webpage and press Q. Under <i>console</i> you can find browser messages that might hint you towards possible errors:</p>
   <present>
 	<img src="img/console.png" style="height: 160px" alt="Console Error">
   </present>
-  
+
+<h1>Download</h1>
+
+<p>Download the whole archive by <a href=""> clicking here</a>.</p>
+
   
 <script src="map.js"></script>
 <script src="features.js"></script>
   
-your setup!
-file structure!
-
-
 </body>
   	<style>
 	.blueHeading {
