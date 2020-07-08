@@ -195,8 +195,7 @@ tileLayer1986a = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true})
 map7.addLayer(tileLayer1986a);
 
 tileLayer1986a.bringToFront();
-tileLayer2018b.bringToFront();
-
+tileLayer2018a.bringToFront();
 
 var input = document.getElementById('toggle');
 
@@ -207,6 +206,46 @@ input.addEventListener('change',function(){
 	tileLayer2018a.bringToFront()
    }
 });
+
+
+
+ var satellite8 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+var streets8 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseMaps8 = {
+    "Satellite": satellite8,
+    "Streets": streets8
+};
+
+var map8 = L.map('map8', {
+    center: [52.562, 13.3747],
+    zoom: 13,
+    layers: [satellite8, streets8]
+	});
+L.control.layers(baseMaps8).addTo(map8);
+
+tileLayer2018b = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+map7.addLayer(tileLayer2018b);
+tileLayer1986b = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
+map7.addLayer(tileLayer1986b);
+
+tileLayer1986b.bringToFront();
+tileLayer2018b.bringToFront();
+
+// Opacity Slider
+var slider = document.getElementById('slider');
+var sliderValue = document.getElementById('slider-value');
+
+slider.addEventListener('input', function(e) {
+    tileLayer1986b.setOpacity(parseInt(e.target.value, 10) / 100)
+    sliderValue.textContent = e.target.value + '%';
+});
+
+
 
 function getColor(d) {
     return d > 1000 ? '#800026' :
