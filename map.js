@@ -155,16 +155,19 @@ var baseMaps6 = {
 };
 
 var map6 = L.map('map6', {
-    center: [52.528, 13.3747],
+    center: [52.562, 13.3747],
     zoom: 13,
     layers: [satellite6, streets6]
 	});
 L.control.layers(baseMaps6).addTo(map6);
 
-tileLayer1986 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});
+map6.addLayer(tileLayer2018);
+tileLayer2018.bringToFront();
+
+tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});
 map6.addLayer(tileLayer1986);
 tileLayer1986.bringToFront();
-
 
 function getColor(d) {
     return d > 1000 ? '#800026' :
