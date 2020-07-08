@@ -247,6 +247,50 @@ slider.addEventListener('input', function(e) {
 
 
 
+var satellite9 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+});
+var streets9 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+
+var baseMaps9 = {
+    "Satellite": satellite9,
+    "Streets": streets9
+};
+
+var map9 = L.map('mapL', {
+    center: [52.4319, 11.5342],
+    zoom: 6,
+    layers: [satellite9, streets9]
+	});
+L.control.layers(baseMaps9).addTo(map9);
+
+vector3 = new L.GeoJSON.AJAX("https://franzschug.github.io/data/vector.geojson", {onEachFeature: checkHover3});
+vector3.addTo(map9);
+vector3.on('data:loaded', function() {
+  vector3.setStyle(regularStyle2);
+  vector3.bringToFront()
+}.bind(this));
+
+function checkHover3(feature, layer) {
+	layer.bindTooltip("<b>" + layer.feature.properties.GEN + '</b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);
+	col = getColor(layer.feature.properties.EW_Dens);
+	layer.setStyle({fillColor:col});
+  	layer.on({
+  		mouseover: function(e) {
+			layer.setStyle(highlightStyle)
+  		},
+  		mouseout: function(e) {
+			layer.setStyle(regularStyle2)
+  		},
+      click: function(e) {
+	  }
+  	});
+  }
+
+
+
 function getColor(d) {
     return d > 1000 ? '#800026' :
            d > 500  ? '#BD0026' :
