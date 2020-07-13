@@ -971,7 +971,7 @@ var highlightStyle = {<br>
 		densities.push(object['EW_Dens'])<br>
 	}<br><br>
 
-	let coords = populations.map( (v,i) => ({ x: v, y: densities[i]}) ) //create a dictionary from two lists, as data for charts needs to have the following form:<br>
+	coords = populations.map( (v,i) => ({ x: v, y: densities[i]}) ) //create a dictionary from two lists, as data for charts needs to have the following form:<br>
 	data = [{ x: -8, y: 3 }, { x: 2, y: 8 }, { x: 3, y: 9 }]<br><br>
 	
 	var ctx = document.getElementById("chart1");<br>
