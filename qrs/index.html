@@ -1,0 +1,1103 @@
+
+<html lang="en">
+<head>
+  <title>An Introduction to Webmapping with Javascript and Hyper Text Markup Language (HTML)</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Q-Team Remote Sensing for Settlement Mapping">
+  <!--<meta name="keywords" content="">-->
+  <meta name="author" content="Franz Schug">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="packages/leaflet/leaflet.css">
+  <link rel="stylesheet" href="packages/chart/Chart.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="packages/leaflet/leaflet.js"></script>
+  <script src="packages/leaflet.ajax.min.js"></script>
+  <script src="packages/jquery.min.js"></script>
+  <script src="packages/chart/Chart.js"></script>
+	
+</head>
+
+<body>
+
+<h1> An Introduction to Webmapping with Javascript and Hyper Text Markup Language (HTML) </h1>
+
+<p> This tutorial will provide a short introduction into presenting Geographic Research, particularly originating from GIS or Remote Sensing, in a webmap format using static and dynamic components. This tutorial was designed for the Q-Team course <i>Remote Sensing for Settlement Mapping</i> and teaches basic features.</p>
+
+<p>
+The tutorial is divided into three major parts:<br>
+1) HTML and CSS for website design<br>
+2) Static and interactive webmapping <br>
+3) Interactive illustrations<br>
+</p>
+
+<p>
+This tutorial site is kept simple, as it only uses those elements that are introduced in the code examples. For additional information, please refer to further resources provided.</p>
+
+
+<h1> HTML and CSS for website design</h1>
+
+<p>HTML is a <i>markup language</i>. That means that it is basically a design language. It is a descriptions of how things should look like and be organised on a webpage. It is NOT considered a programming language, because it cannot <i>process</i> anything. Here, we will see some basic aspects of HTML, including:</p>
+
+<ul>
+<li>Text, Elements and Layout</li>
+<li>Tables and Lists</li>
+<li>Links and Images</li>
+<li>Divs and Website Layout</li>
+</ul>
+
+<p> Cascading Style Sheets (CSS) is a stylesheet language to specific the layout of HTML websites. It is used to give style orders. We will have a look at:</p>
+ 
+<ul>
+<li>Classes</li>
+<li>IDs</li>
+<li>Inline, Internal and External CSS</li>
+</ul>
+
+<h3> HTML - Text, Elements and Layout</h3>
+
+<p> HTML consists of a series of elements that describe the layout of a website. Text elements have pre-made styles that make them easy to introduce a simple structure. Elements have a start tag, content, and end tag:
+
+  <code>
+    &#60;tagname>Content ...&#60;/tagname>
+  </code>
+ 
+There is a selection of text-related elements that can be used, for example:</p>
+
+  <code>
+    &#60;h1>This is a text header&#60;/h1><br>
+    &#60;h3>This is a smaller text header&#60;/h3><br>
+    &#60;p>A paragraph separates a text block from the previous and the following text block.&#60;/p><br>
+    You can use &#60;br>
+    to create line breaks.
+  </code>
+
+This is how it looks:
+
+  <present>
+    <h1>  This is a text header</h1>
+    <h3>    This is a smaller text header</h3>
+    <p>    A paragraph separates a text block from the previous and the following text block.</p>
+    You can use <br>
+    to create line breaks.
+  </present>
+
+<p> There is a variety of tags that add a specific character to a text, for example:
+
+  <code>
+    Text can be &#60;i>italic&#60;/i>, &#60;b>bold&#60;/b> or &#60;u>underlined&#60;/u><br>
+    It can be &#60;em> emphasized &#60;/em>, &#60;mark> marked &#60;/mark> or &#60;small> smaller than regular text &#60;/small>.<br>
+    It can be &#60;del> deleted &#60;/del>, &#60;sub> subscript &#60;/sub> or &#60;sup> superscript &#60;/sup>.
+  </code>
+
+This is how it looks:
+
+  <present>
+    Text can be <i>italic</i>, <b>bold</b> or <u>underlined</u><br>
+    It can be <em> emphasized </em>, <mark> marked </mark> or <small> smaller than regular text </small>.<br>
+    It can be <del> deleted </del>, <sub> subscript </sub> or <sup> superscript </sup>.
+  </present>
+
+<h3> Tables and Lists</h3>
+
+<p> Further elements are lists or tables: </p>
+
+  <code>
+    This is a list...<br>
+	&#60;ul>&#60;li> ...with one point,&#60;/li><br>
+	&#60;li> and another one, &#60;/li><br>
+	&#60;li> and then a last point.&#60;/li>&#60;/ul><br>
+	<br>
+    This is a table. The example is from w3school.com.<br>
+	<br>
+    &#60;table style="width:30%"><br>
+      &#60;tr><br>
+        &#60;th>Firstname&#60;/th><br>
+        &#60;th>Lastname&#60;/th><br>
+        &#60;th>Age&#60;/th><br>
+      &#60;/tr><br>
+      &#60;tr><br>
+        &#60;td>Jill&#60;/td><br>
+        &#60;td>Smith&#60;/td><br>
+        &#60;td>50&#60;/td><br>
+      &#60;/tr><br>
+      &#60;tr><br>
+        &#60;td>Eve&#60;/td><br>
+        &#60;td>Jackson&#60;/td><br>
+        &#60;td>94&#60;/td><br>
+      &#60;/tr><br>
+    &#60;/table> 
+  </code>
+
+This is how it looks:
+
+  <present>
+    This is a list...
+	<ul><li> ...with one point,</li><li> and another one, </li><li> and then a last point.</li></ul>
+    This is a table. The example is from w3school.com.
+	
+<table style="width:30%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table> 
+  </present>
+
+<h3> Links and Images</h3>
+
+In your website, you might want to use hyperlinks or images. Both elements require a reference to a source (image or other content). 
+
+  <code>
+    This is a &#60;a href="http://hu-geomatics.de" target="_blank">link to the Earth Observation Lab website.&#60;/a><br>
+	Links have the following parameters:<br><br>
+	<i>href</i> indicates the address of the target.<br>
+	<i>target</i> indicates how the respective source is opened. "_blank" opens the source in a new tab.
+  </code>
+  
+  This is how it looks:
+  
+  <present>
+    This is a <a href="http://hu-geomatics.de" target="_blank">link to the Earth Observation Lab website.</a><br>
+	Links have the following parameters:<br><br>
+	<i>href</i> indicates the address of the target.<br>
+	<i>target</i> indicates how the respective source is opened. "_blank" opens the source in a new tab.
+  </present>
+  
+  Images:
+  
+   <code>
+    Let us display an image from the Earth Observation Lab website.<br><br>
+	&#60;img src=https://www.geographie.hu-berlin.de/en/professorships/eol/images/education/edulanding alt="LS8 Turkey"><br><br>
+	
+	Of course, you can also use relative links to images in your folder.<br><br>
+	&#60;img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
+  </code>
+  
+  This is how it looks:
+  
+  <present>
+    Let us display an image from the Earth Observation Lab website.<br><br>
+	<img src=https://www.geographie.hu-berlin.de/en/professorships/eol/images/education/edulanding alt="LS8 Turkey"><br><br>
+	
+	Of course, you can also use relative links to images in your folder.<br><br>
+	<img src="img/Istanbul.png" alt="LS8 Turkey"><br><br>
+  </present>
+ 
+ <h3> Cascading Style Sheets (CSS)</h3>
+
+ <p> CSS is used for styling html elements. Every aspect of appearance can be styled. A very simple way of styling is <b>inline CSS</b>. Let us create a blue heading with a border:</p>
+ 
+   <code>
+	&#60;h3 style="color:blue; border: solid 2px; display:inline; padding:2px;">A blue bordered heading&#60;/h3>
+  </code>
+  
+  <present>
+	<h3 style="color:blue; border: solid 2px; display:inline; padding:2px;">A blue bordered heading</h3>
+  </present>
+  
+ <p>However, we do not want to indicate style every time we want it applied. This is why styles can be implemented into the html file using the &#60;style> tag. We define a class that this style will always be applied to. We can then use this class in any number of divs:</p>
+    
+  <code>
+	&#60;style><br>
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br>
+	&#60;/style><br><br>
+	
+	&#60;body><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;h3 >Not a blue bordered heading&#60;/h3><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;/body>
+  </code>
+  
+  <present>	
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+	<h3 >Not a blue bordered heading</h3><br>
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+  </present>
+  
+  <p>An ID works similarly, but is only valid for a single element.</p>
+  
+   <code>
+	&#60;style><br>
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br>
+	
+	#specialHeading {<br>
+	font-family: verdana;<br>
+	}<br>
+	
+	&#60;/style><br><br>
+	
+	&#60;body><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;h3 id="specialHeading" class="blueHeading">A blue bordered special heading&#60;/h3><br>
+	&#60;h3 class="blueHeading">A blue bordered heading&#60;/h3><br>
+	&#60;/body>
+  </code>
+  
+  <present>	
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+	<h3 id="specialHeading" class="blueHeading">A blue bordered heading</h3><br>
+	<h3 class="blueHeading">A blue bordered heading</h3><br>
+  </present>
+  
+  <p>In order to separate styles from the html file, we can write them in a separate .css file. We call it style.css. Currently, this looks like this:</p>
+     <code>
+	body {<br>
+		padding: 20px;<br>
+		width: 70%;<br>
+	}<br><br>
+
+	code {<br>
+	  background-color: #eee;<br>
+	  border: 1px solid #999;<br>
+	  display: block;<br>
+	  padding: 20px;<br>
+	  margin: 20px;<br>
+	  line-height: 1.2;<br>
+	}<br><br>
+
+	present {<br>
+	  background-color: #efddb7;<br>
+	  border: 1px solid #999;<br>
+	  display: block;<br>
+	  padding: 20px;<br>
+	  margin: 20px;<br>
+	  line-height: 1.2;<br>
+	}<br><br>
+	
+	.blueHeading {<br>
+	color: blue;<br>
+	border: solid 2px;<br>
+	display:inline-block;<br>
+	padding:2px;<br>
+	}<br><br>
+	
+	#specialHeading {<br>
+	text-align: right;<br>
+	}<br>
+  </code>
+ 
+ <h3> Divs and Website Layout</h3>
+ 
+ <p> html websites are organised in <i>divs</i>. A <i>div</i> is created and then layouted in the css file. We will only see one example, since html layout is not the focus here. There is a wide range of layout options that you can find online, and in the course of brining content to mobile devices, things become different and, sometime, also easier.</p>
+ 
+ <p>In the html file:</p>
+    <code>
+	&#60;div class="row"><br>
+	&#60;div class="column left">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;div class="column middle">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;div class="column right">&#60;p>Some content..&#60;/p>&#60;/div><br>
+	&#60;/div> <br>
+  </code>
+ <p>In the CSS file:</p>
+   <code>
+	.row {<br>
+	  width: 100%;<br>
+	  display: inline-block;<br>
+	}<br><br>
+	
+	.column { <br>
+	  float: left; <br>
+	} <br> <br>
+
+	.left, .right { <br>
+	  width: 25%; <br>
+	  background-color: grey; <br>
+	} <br> <br>
+
+	.middle { <br>
+	  width: 50%; <br>
+	  background-color: white; <br>
+	} <br>
+  </code>
+  
+   <present>	
+	<div class="row">
+	<div class="column left"><p>Some content..</p></div>
+	<div class="column middle"><p>Some content..</p></div>
+	<div class="column right"><p>Some content..</p></div>
+	</div>
+  </present>
+  
+<h1> Static and interactive webmapping.</h1>
+
+<p>We will now add a map to our webpage. The map is based on an open source package called <a href="https://leafletjs.com/" target="_blank">Leaflet</a>. We <a href="https://leafletjs.com/download.html" target="_blank">download the latest stable version</a> and unpack it into a sub-folder of our project, e.g. /packages/leaflet/. Please refer to the Leaflet homepage for further tutorials.</p>
+
+<p>We will look at:</p>
+<ul>
+<li>Create a basic map</li>
+<li>Prepare and use custom content</li>
+<li>Interact with content</li>
+</ul>
+
+<p>You will notice that the leaflet package, once downloaded, contains ... </p>
+<ul>
+<li>... a leaflet.js file which contains the package functionalities</li>
+<li>... a leaflet.css style file which contains basic map styles</li>
+<li>... a folder that contains images required, e.g. button images.</li>
+</ul>
+
+ <h3> Create a basic map</h3>
+ 
+<p>Leaflet is based on JavaScript. JavaScript is a scripting language that was originally developed to allow for dynamic HTML. It is closely linked to Java and it is the standard scripting language for interactive web design.</p>
+
+<p>We also create a file where we define the functionalities of our webmap. We call it map.js. This is how our folder structure looks like:</p>
+  <present>
+	<img src="img/structure.PNG" alt="Folder Structure"><br><br>
+  </present>
+  
+<p>The HTML file needs to import all external scripts and styles:</p>
+  <code>
+    &#60;link rel="stylesheet" href="packages/leaflet/leaflet.css"><br>
+    &#60;link rel="stylesheet" href="style.css"><br>
+    &#60;script src="packages/leaflet/leaflet.js">&#60;/script><br>
+  </code>
+ 
+ <p>and, in the very end of the file,</p>
+   <code>
+    &#60;script src="map.js">&#60;/script>
+  </code>
+ 
+
+ <p>In the html file, we add... </p>
+   <code>
+	&#60;div id='map'>
+	&#60;/div>
+  </code>
+  
+ <p>In the map.js file, we add </p>
+  <code>
+	var map = L.map('map', {<br>
+      center: [52.4319, 13.5342],<br>
+      zoom: 13<br>
+	});<br>
+	<br>
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+  </code>
+ 
+ <p>In the style.css file, we add </p>
+  <code>
+	#map { height: 300px; }
+  </code>
+  
+  <present>
+   <div id='map'>
+   </div>
+  </present>
+  
+<p>In the next step, we will add a base layer selection. This is our only example, but there are <a href="https://leafletjs.com/reference-1.6.0.html#map-option">plenty of options</a> you can use to enhance your map, e.g. with regard to zoom. You can find basemap providers for leaflet <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">here</a></p>
+ 
+  <code>
+	var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'),<br><br>
+    var streets   = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});<br> <br>
+	
+	var map = L.map('map', {<br>
+    center: [52.4319, 13.5342],<br>
+    zoom: 13,<br>
+    layers: [satellite, streets]<br>
+	});<br><br>
+	
+	L.control.layers(baseMaps).addTo(map);
+  </code>
+  
+  <present>
+   <div id='map2'>
+   </div>
+  </present>
+ 
+  <h3> Prepare and use custom content</h3>
+  
+ <p>We now would like to add user content - your content - to the webpage. There are two major things to consider:</p>
+<ul>
+<li>Content needs to be as small as possible - the user needs to download it upon site request.</li>
+<li>Content needs to be in EPSG 4326, as this is the standard CRS for webmapping.</li>
+</ul>
+
+<p>We will have two use cases: <b>Display population counts in all Germany NUTS-3 units</b> and <b>Visualise change using two Landsat scenes</b>.<p/>
+
+<h3>Case 1: Vector Files</h3>
+
+  <code style="background-color: #f7ffb3;">
+	<h3>Prepare vector file</h3>
+	A vector file for webmapping needs to be projected in EPSG: 4326. The required file format is <i>.geojson</i>. You can easily export a vector file as .geojson with EPSG 436 in QGIS.<br><br>
+	Be sure that during the exportation process, you deselect all attributes that will not be visualised, in order to decrease size. Also, reduce the number of digits in coordinate precision (e.g. to 5, default is 15). This largely reduces file size.<br><br>
+	<img src="img/prepare_vector.PNG" alt="Prepare Vector"><br><br>
+  </code>
+  
+  <code style="background-color: #f7ffb3;">
+	<h3>Prepare raster file</h3>
+	A raster file for webmapping needs to be projected in EPSG: 4326. Usually, a raster file is too large to load it as a whole. This is why <i>webtiling</i> is used. A raster file is divided into numerous jpeg image tiles, each a few kiloybtes in size, using a hierarchical archive structure.<br><br>
+	
+	In a first step, we need to export the raster file as RGB composite with a maximum of 3 bands.<br><br>
+	<img src="img/createRGB.PNG" alt="Prepare Vector"><br><br>
+	
+	Tiling can be performed using <i>gdal2tiles</i>, also applicable within QGIS.<br><br>
+	<img src="img/createTiles.PNG" alt="Prepare Vector"><br><br>
+	
+	The tile structure is hiararchical, starting with the <i>zoom level</i>. <br><br>
+	<img src="img/tileStructure.PNG" alt="Prepare Vector"><br><br>
+	
+	The higher the zoom level, the more tile files need to be created and the overall file size increases. You can select which zoom level to compute. Other zoom levels will not be visible online. Zoom levels range form 1 (global) to 20 (highly local).
+	<table style="width:30%">
+	<tr>
+    <th>Zoom Level</th>
+    <th>Total File Size</th>
+	</tr>
+	<tr>
+    <td>6</td>
+    <td>2.0 kB</td>
+	</tr>
+	<tr>
+    <td>7</td>
+    <td>5.1 kB</td>
+	</tr>
+	<tr>
+    <td>8</td>
+    <td>16 kB</td>
+	</tr>
+	<tr>
+    <td>9</td>
+    <td>57 kB</td>
+	</tr>
+	<tr>
+    <td>10</td>
+    <td>209 kB</td>
+	</tr>
+	<tr>
+    <td>11</td>
+    <td>772 kB</td>
+	</tr>
+	<tr>
+    <td>12</td>
+    <td>2,600 kB</td>
+	</tr>
+	<tr>
+    <td>13</td>
+    <td>4,800 kB</td>
+	</tr>
+</table> 
+  </code>
+  
+<p>We now need to implement the prepared data into the webmap script.</p>
+
+<p>First, we need to add an addtional package to the html file that allows leaflet to parse .geojson vector files from <a href="https://github.com/Dominique92/Leaflet.GeoJSON.Ajax">here</a>.</p>
+  <code>
+    &#60;script src="packages/leaflet.ajax.min.js">&#60;/script><br>
+  </code>
+  
+<p>Within the map.js file, we add the following lines:</p>
+
+  <code>
+    vector = new L.GeoJSON.AJAX("data/vector.geojson", {});<br>
+	vector.addTo(map);<br>
+	vector.on('data:loaded', function() {<br>
+	vector.bringToFront()<br>
+	}.bind(this));<br>
+  </code>
+
+  <present>
+   <div id='map3'>
+   </div>
+  </present>
+
+<p>We might want to add a different style to the layer. We can add this in the map.js file. We create two styles: One regular style and one style that is used when the feature is hovered.</p>
+
+  <code>
+var regularStyle = {<br>
+	stroke: true,<br>
+	fillOpacity: 0,<br>
+	color: '#847c7b',<br>
+	opacity: 0.7,<br>
+	weight: 1<br>
+};<br><br>
+var highlightStyle = {<br>
+	stroke: true,<br>
+	fillOpacity: 0,<br>
+	color: '#b52020',<br>
+	opacity: 1,<br>
+	weight: 2.5<br>
+};
+  </code>
+ 
+<p>We modify the part where we loaded the .geojson file and add a line that sets one of the styles to our features. We also attach a function to each feature that checks if the feature is hovered.</p>
+
+  <code>
+    vector = new L.GeoJSON.AJAX("data/vector.geojson", {<span style="color:blue">onEachFeature: checkHover</span>});<br>
+	vector.addTo(map);<br>
+	vector.on('data:loaded', function() {<br>
+	<span style="color:blue";>vector.setStyle(regularStyle);</span><br>
+	vector.bringToFront()<br>
+	}.bind(this));<br>
+  </code>
+
+<p>The checkHover function is added to the map.js file:</p>
+
+  <code>
+	function checkHover(feature, layer) {<br>
+	layer.on({<br>
+  		mouseover: function(e) {<br>
+			layer.setStyle(highlightStyle)<br>
+  		},<br>
+  		mouseout: function(e) {<br>
+			layer.setStyle(regularStyle)<br>
+  		},<br>
+      click: function(e) {<br>
+	  }<br>
+  	});<br>
+  }
+  </code>
+
+<p>This is how it looks:</p>
+
+  <present>
+   <div id='map4'>
+   </div>
+  </present>
+  
+<p>We want to add some styling. In a first step, we add color to the polygons. Be aware that you cannot see the map below it anymore. However, opacity can be altered. In map.js, we modify the checkHover function that is executed on each feature, because we need a feature-wise color assignment.</p>
+
+  <code>
+	function checkHover(feature, layer) {<br>
+	<span style="color:blue";>col = getColor(layer.feature.properties.EW_Dens);</span><br>
+	<span style="color:blue";>layer.setStyle({fillColor:col});</span><br>
+	layer.on({<br>
+  		mouseover: function(e) {<br>
+			layer.setStyle(highlightStyle)<br>
+  		},<br>
+  		mouseout: function(e) {<br>
+			layer.setStyle(regularStyle)<br>
+  		},<br>
+      click: function(e) {<br>
+	  }<br>
+  	});<br><br>
+  }
+  
+  	function getColor(d) {<br>
+		return d > 1000 ? '#800026' :<br>
+			   d > 500  ? '#BD0026' :<br>
+			   d > 200  ? '#E31A1C' :<br>
+			   d > 100  ? '#FC4E2A' :<br>
+			   d > 50   ? '#FD8D3C' :<br>
+			   d > 20   ? '#FEB24C' :<br>
+			   d > 10   ? '#FED976' :<br>
+						  '#FFEDA0';<br>
+}
+  </code>
+  
+<p>As population density information is also feature-dependent, we, again, modify the checkHover function to create popups upon hover:</p>
+  
+  <code>
+	function checkHover(feature, layer) {<br>
+	<span style="color:blue";>layer.bindTooltip("&#60;b>" + layer.feature.properties.GEN + '&#60;/b><br>Pop. Density: '+ layer.feature.properties.EW_Dens);</span><br>
+	layer.on({<br>
+  		mouseover: function(e) {<br>
+			layer.setStyle(highlightStyle)<br>
+  		},<br>
+  		mouseout: function(e) {<br>
+			layer.setStyle(regularStyle)<br>
+  		},<br>
+      click: function(e) {<br>
+	  }<br>
+  	});<br>
+  }
+  </code>
+
+<p>This is how it now looks:</p>
+  <present>
+   <div id='map5'>
+   </div>
+  </present>
+
+
+<h3>Case 2: Raster Files</h3>
+
+<p>We'd like to load tiles of the two Landsat scenes (1986 and 2018). Remember that we already loaded a tile layer, namely our base map layers:</p>
+  <code>
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+  </code>
+  
+ <p>We will load our custom tiles the same way, also in the map.js file:</p>
+  <code>
+	tileLayer1986 = L.tileLayer('/data/zz_extiles1986/{z}/{x}/{y}.png', {tms:true});<br>
+	map.addLayer(tileLayer1986);<br>
+	tileLayer2018 = L.tileLayer('/data/zz_extiles2018/{z}/{x}/{y}.png', {tms:true});<br>
+	map.addLayer(tileLayer2018);<br>
+	tileLayer2018.bringToFront();<br>
+	tileLayer1986.bringToFront();
+  </code>
+
+  <present>
+   <div id='map6'>
+   </div>
+  </present>
+
+<p>This is not entirely what we want, because both layers overlay. There are multiple options now. We could <b>build a switch</b> that brings the background layer to the front. Or we could use a <b>transparency slider</b> for a smooth transition.</p>
+
+<p><b>Raster Switch</b></p>
+<p>In the html file, we create a map overlay div and include a <i>toogle input element</i>. This does not require external packages:</p>
+<p>However, input elements require a complicated set of styling. Once established, this styling can be reused, and often, you find code examples on the internet.</p>
+<p>In the html file:</p>
+  <code>
+	  &#60;div id='mapWrapper'><br>
+	   &#60;div id='map'><br>
+	   &#60;/div><br><br>
+	   
+	   &#60;div class='map-overlay top'><br>
+			&#60;div class='map-overlay-inner'><br>
+			&#60;label class="switch"><br>
+				&#60;input id = "toggle" class="switch-input" type="checkbox" /><br>
+				&#60;span class="switch-label" data-off="1986" data-on="2018">&#60;/span> <br>
+				&#60;span class="switch-handle">&#60;/span> <br>
+			&#60;/label><br>
+		&#60;/div><br>
+		&#60;/div><br>
+	  &#60;/div><br>
+  </code>
+
+<p>In the style.css file:</p>
+  <codeSmall>
+	.map-overlay {<br>
+		font:bold 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;<br>
+		position: absolute;<br>
+		width: 4%;<br>
+		min-width: 80px;<br>
+		top: 0;<br>
+		left: 35px;<br>
+		padding: 12px;<br>
+		z-index: 20;<br>
+	}<br><br>
+
+	.map-overlay .map-overlay-inner {<br>
+		/* background-color: #fff; */<br>
+		/* box-shadow:0 1px 2px rgba(0, 0, 0, 0.20); */<br>
+		/* border-radius: 3px; */<br>
+		padding: 6px;<br>
+		margin-bottom: 10px;<br>
+	}<br><br>
+
+	.map-overlay label {<br>
+		display: block;<br>
+		margin: 0 0 5px;<br>
+	}<br><br>
+
+	.map-overlay input {<br>
+		background-color: transparent;<br>
+		display: inline-block;<br>
+		width: 100%;<br>
+		position: relative;<br>
+		margin: 0;<br>
+		cursor: ew-resize;<br>
+	}<br><br>
+	/* --------------- switch  ----------- */<br><br>
+
+	.switch {<br>
+		position: relative;<br>
+		display: block;<br>
+		vertical-align: top;<br>
+		width: 60px;<br>
+		height: 18px;<br>
+		padding: 3px;<br>
+		margin: 0 10px 10px 0;<br>
+		background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);<br>
+		background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);<br>
+		border-radius: 18px;<br>
+		box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);<br>
+		cursor: pointer;<br>
+		box-sizing:content-box;<br>
+	}<br><br>
+	.switch-input {<br>
+		position: absolute;<br>
+		top: 0;<br>
+		left: 0;<br>
+		opacity: 0;<br>
+		box-sizing:content-box;<br>
+	}<br><br>
+	.switch-label {<br>
+		position: relative;<br>
+		display: block;<br>
+		top: -14px;<br>
+		height: inherit;<br>
+		font-size: 10px;<br>
+		text-transform: uppercase;<br>
+		background: #eceeef;<br>
+		border-radius: inherit;<br>
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);<br>
+		box-sizing:content-box;<br>
+	}<br><br>
+	.switch-label:before, .switch-label:after {<br>
+		position: absolute;<br>
+		top: 50%;<br>
+		margin-top: -.5em;<br>
+		line-height: 1;<br>
+		-webkit-transition: inherit;<br>
+		-moz-transition: inherit;<br>
+		-o-transition: inherit;<br>
+		transition: inherit;<br>
+		box-sizing:content-box;<br>
+	}<br><br>
+	.switch-label:before {<br>
+		content: attr(data-on);<br>
+		right: 11px;<br>
+		color: #000000;<br>
+		text-shadow: 0 1px rgba(0, 0, 0, 0.2);<br>
+	}<br><br>
+	.switch-label:after {<br>
+		content: attr(data-off);<br>
+		left: 11px;<br>
+		color: #000000;<br>
+		text-shadow: 0 1px rgba(255, 255, 255, 0.5);<br>
+		opacity: 0;<br>
+	}<br><br>
+	.switch-input:checked ~ .switch-label {<br>
+		background: #eceeef;<br>
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);<br>
+	}<br><br>
+	.switch-input:checked ~ .switch-label:before {<br>
+		opacity: 0;<br>
+	}<br><br>
+	.switch-input:checked ~ .switch-label:after {<br>
+		opacity: 1;<br>
+	}<br><br>
+	.switch-handle {<br>
+		position: absolute;<br>
+		top: 4px;<br>
+		left: 5px;<br>
+		width: 14px;<br>
+		height: 14px;<br>
+		background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);<br>
+		background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);<br>
+		border-radius: 100%;<br>
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);<br>
+	}<br><br>
+	.switch-handle:before {<br>
+		position: absolute;<br>
+		top: 50%;<br>
+		left: 50%;<br>
+		margin: -6px 0 0 -6px;<br>
+		width: 14px;<br>
+		height: 14px;<br>
+		background: linear-gradient(to bottom, #eeeeee, #FFFFFF);<br>
+		background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);<br>
+		border-radius: 6px;<br>
+		box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);<br>
+	}<br><br>
+	.switch-input:checked ~ .switch-handle {<br>
+		left: 47px;<br>
+		box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);<br>
+	}<br><br>
+
+	.switch-name {<br>
+		position: absolute;<br>
+		top: 4px;<br>
+		left: 58px;<br>
+	}
+  </codeSmall>
+  
+  <present>
+  <div id='mapWrapper'>
+   <div id='map7'>
+   </div>
+   
+   <div class='map-overlay top'>
+		<div class='map-overlay-inner'>
+		<label class="switch">
+			<input id = "toggle" class="switch-input" type="checkbox" />
+			<span class="switch-label" data-off="1986" data-on="2018"></span> 
+			<span class="switch-handle"></span> 
+		</label>
+    </div>
+    </div>
+  </div>
+  </present>
+
+<p><b>Transparency Slider</b></p>
+<p>For a transparenty slider, we add this to the html file:</p>
+  <present>
+  &#60;div id='mapWrapper'><br>
+   &#60;div id='map'><br>
+   &#60;/div><br><br>
+   
+   &#60;div class='map-overlay top'><br>
+        &#60;div class='map-overlay-inner'><br>
+            &#60;label>Layer Opacity: &#60;span id='slider-value'>100%&#60;/span>&#60;/label><br>
+            &#60;input id='slider' type='range' min='0' max='100' step='0' value='100' /><br>
+        &#60;/div><br>
+    &#60;/div><br>
+  &#60;/div>
+  </present>
+
+<p>This is the corresponding map.js part:</p>
+  <code>
+	var slider = document.getElementById('slider');<br>
+	var sliderValue = document.getElementById('slider-value');<br><br>
+
+	slider.addEventListener('input', function(e) {<br>
+		tileLayer1986.setOpacity(parseInt(e.target.value, 10) / 100)<br>
+		sliderValue.textContent = e.target.value + '%';<br>
+	});<br>
+  </code>
+  
+   <present>
+  <div id='mapWrapper'>
+   <div id='map8'>
+   </div>
+   
+   <div class='map-overlay top'>
+        <div class='map-overlay-inner'>
+            <label>Layer Opacity: <span id='slider-value'>100%</span></label>
+            <input id='slider' type='range' min='0' max='100' step='0' value='100' />
+        </div>
+    </div>
+  </div>
+  </present>
+
+<h1> Interactive illustrations - Using more external packages</h1>
+
+
+<p>Until now, we have seen how to build and style a basic html webpage with an embedded webmap. We added vactor and raster data to this map and created basic interactivity. Now, we will see how to integrate further external packages to the site and create mutual interaction. We will see the following examples:</p>
+
+<ul>
+<li>Find and load a suitable external package</li>
+<li>Use package with custom content - the example of a plot</li>
+<li>Webmap - Graph - Interaction</li>
+</ul>
+
+<h3>Find and load a suitable external package</h3>
+
+<p>We are looking for a package that allows us to visualize data. Here, we will use the example of <a href="https://www.chartjs.org/">ChartJS</a>. There are other packages, such as <a href="https://d3js.org/">d3js</a>.
+</p>
+
+<p>Usually, a package brings both a .js file with its functionalities and a .css file with its standard styles. There are two ways to integrate an external package. You can import the online link to the package...</p>
+
+  <code>
+	&#60;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css"><br>
+	&#60;script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js">&#60;/script>
+  </code>
+  
+<p>... or you can download the respective files and use an internal import.</p>
+
+  <code>
+	&#60;link rel="stylesheet" href="packages/chart/Chart.css"><br>
+	&#60;script src="packages/chart/Chart.js">&#60;/script>
+  </code>
+  
+<p>The advantage AND disadvantage of the former is that for some packages, the link always refers to the most recent version.</p>
+
+<p>We create an additional features.js file besides our map.js file and import it into the html file.</p>
+<p>From the <a href="https://www.chartjs.org/docs/latest/charts/scatter.html">Chart.js documentation</a>, we use the template for a scatter plot and add it to the features.js file. We embed the example in a window.onload function that makes sure that the chart is loaded once the website is loaded. If we do not do this, getting the html div id might result in an error.</p>
+
+  <code>
+	window.onload = function() {<br>
+	var scatterChart = new Chart(document.getElementById("chart"), {type: 'scatter',<br>
+    data: {<br>
+        datasets: [{<br>
+            label: 'Scatter Dataset',<br>
+            data: [{ x: -10, y: 0}, {x: 0, y: 10}, {x: 10, y: 5}]<br>
+        }]<br>
+    },<br>
+    options: {<br>
+        scales: {<br>
+            xAxes: [{<br>
+                type: 'linear',<br>
+                position: 'bottom'<br>
+            }]<br>
+        }<br>
+    }<br>
+});<br>
+}
+  </code>
+  
+   <present>
+	<canvas  id='chart1'>
+	</canvas >
+  </present>
+
+<p>However, we want to use our own data, and we also do not want to insert that data manually. The data we use must be available in the .json format. <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation">JSON (JavaScript Object Notation)</a> is a standardized format to read objects with JavaScript. There are multiple online tools that translate, for example, csv files to json files (e.g. https://csvjson.com/csv2json)</p>
+
+<p>In the html file, we load jquery.js, a library for asynchonous the document using...</p>
+  <code>
+	&#60;script src="packages/jquery.min.js">&#60;/script>
+  </code>
+
+<p>In the features.js file, we load the document using...</p>
+
+  <code>
+	$.getJSON("data/populationdata.json", function(json) {
+	  initChart(json);
+	});
+  </code>
+  
+<p>initChart(json) calls a function in the same file that initialises the charts.</p>
+  
+<p>As now, the chart initialisation is triggered by an actual function, we don't need the windows-onload function anymore. We modify the creation of our chart in the features.js file:</p>
+
+<code>
+	function initChart(json) {<br>
+	populations = [] // initialise lists<br>
+	densities = []<br><br>
+	
+	for (var i = 0; i < json.length; i++) { //for each json object, add population and density to the lists<br>
+		var object = json[i];<br>
+		populations.push(object['EWZ'])<br>
+		densities.push(object['EW_Dens'])<br>
+	}<br><br>
+
+	coords = populations.map( (v,i) => ({ x: v, y: densities[i]}) ) //create a dictionary from two lists, as data for charts needs to have the following form:<br>
+	data = [{ x: -8, y: 3 }, { x: 2, y: 8 }, { x: 3, y: 9 }]<br><br>
+	
+	To each element v, now x, in population at position i, we map the corresponding density value at position i as y.<br><br>
+	
+	var ctx = document.getElementById("chart1");<br>
+	var scatterChart = new Chart(ctx, {<br>
+		type: 'scatter',<br>
+		data: {<br>
+			datasets: [{<br>
+				label: 'Population / Population Density',<br>
+				data: coords<br>
+			}]<br>
+		},<br>
+		options: {<br>
+			scales: {<br>
+				xAxes: [{<br>
+					type: 'linear',<br>
+					position: 'bottom'<br>
+				}]<br>
+			}<br>
+		}<br>
+	});<br>
+}
+</code>
+    
+   <present>
+	<canvas  id='chart2'>
+	</canvas >
+  </present>
+
+<p>We can add multiple options to style the chart. Styling options are numerous and can be found, for example, <a href="https://www.chartjs.org/docs/latest/charts/line.html">here</a>. We will also see how to customize chart-webmap interaction. Interaction is not trivial to understand. In this case, we want that once the user hovers over a chart element, the respective element should be highlighted on the map. To enable this, we need to customize the tooltip of the chart data:</p>
+  
+  <code>
+	var ctx = document.getElementById("chart");<br>
+	var scatterChart2 = new Chart(ctx, {<br>
+		type: 'scatter',<br>
+		data: {<br>
+			datasets: [{<br>
+				label: 'Population / Population Density',<br>
+                borderColor: "rgba(0,0,0,0)",<br>
+                pointBackgroundColor: "rgba(0,0,0,1)",<br>
+                pointBorderWidth: 0,<br>
+                pointHoverRadius: 4,<br>
+                pointHoverBackgroundColor: "rgba(0,0,0,0.3)",<br>
+                pointHoverBorderColor: "rgba(91,44,111,1)",<br>
+                pointHoverBorderWidth: 0,<br>
+                pointRadius: 1,<br>
+                pointHitRadius: 6,<br>
+				data: coords<br>
+			}]<br>
+		},<br>
+		options: {<br>
+			scales: {<br>
+				xAxes: [{<br>
+					position: 'bottom',<br>
+                    scaleLabel: {<br>
+                      display: true,<br>
+                      labelString: "Population"<br>
+                    }<br>
+				}],		<br>
+				yAxes: [{<br>
+					position: 'left',<br>
+                    scaleLabel: {<br>
+                      display: true,<br>
+                      labelString: "Population Density"<br>
+                    }<br>
+				}]<br>
+			},<br><br>
+			<span style="color:blue";>tooltips: {</span><br>
+				<span style="color:blue";>enabled: true,</span><br>
+				<span style="color:blue";>callbacks: {</span><br>
+				<span style="color:blue";>label: function(tooltipItems, data) {</span><br>
+				<span style="color:blue";>	vector.eachLayer(function(layer) {</span><br>
+				<span style="color:blue";>		
+				<span style="color:blue";>		if (layer.feature.properties.EW_Dens === tooltipItems.yLabel) {</span><br>
+				<span style="color:blue";>			layer.fire("mouseover")</span><br>
+				<span style="color:blue";>
+				<span style="color:blue";>		  } else {</span><br>
+				<span style="color:blue";>			layer.fire("mouseout")</span><br>
+				<span style="color:blue";>		  }</span><br>
+				<span style="color:blue";>		});</span><br>
+				<span style="color:blue";>
+				<span style="color:blue";>		return "Pop.: " + tooltipItems.xLabel + "; Density: " + tooltipItems.yLabel;</span><br>
+				<span style="color:blue";>	}</span><br>
+				<span style="color:blue";>  }</span><br>
+			  <span style="color:blue";>}<br>
+			}<br>
+		});	
+	<br>
+</code>
+
+	<present>
+	<div  id='mapL'>
+	</div >
+  </present>
+ 
+   <present>
+	<canvas  id='chart3'>
+	</canvas >
+  </present>
+  
+
+<h1> Find the error</h1>
+<p>Right click on your webpage and press Q. Under <i>console</i> you can find browser messages that might hint you towards possible errors:</p>
+  <present>
+	<img src="img/console.PNG" style="height: 160px" alt="Console Error">
+  </present>
+  
+ <p>In your map.js file, you can use <b>console.log(txt)</b> to print things in the console.</p>
+
+  
+<script src="map.js"></script>
+<script src="features.js"></script>
+  
+</body>
+  	<style>
+	.blueHeading {
+	color: blue;
+	border: solid 2px;
+	display:inline-block;
+	padding:2px;
+	}
+	
+	#specialHeading {
+	font-family: verdana;
+	}
+</style>
+	
+</html>
