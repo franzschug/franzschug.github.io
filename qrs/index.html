@@ -60,7 +60,266 @@
 
                 <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>Introduction</strong></span></p>
+
+<p><span style="font-weight: 400; color: #003366;">Urban vegetation is an important contributor to the quality of urban environments. It has a positive effect on biodiversity and air quality and provides recreation for citizens. This is why we were interested in developing an approach to measure urban greenness.</span></p>
+
+<p><span style="font-weight: 400; color: #003366;">There is a promising method called "<a style="color: #003366;" href="http://senseable.mit.edu/treepedia" target="_blank" rel="noopener">Treepedia</a>" [1] that derives the greenness of cities from Google Street View imagery data. The authors made the code available to the public but the required Google Street View data recently got a payment fee. Hence our goal was to develop a fee-free method using remote sensing data.</span></p>
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>Research question</strong></span></p>
+
+<p><span style="font-weight: 400; color: #003366;">As the method of Treepedia is now too costly for our purpose, we didn't carry it out ourselves. But as the ranking of 30 cities is still online, we can use it to compare it with the results of our approach.</span></p>
+
+<p><span style="font-weight: 400; color: #003366;">Our research questions are:</span></p>
+
+<ol>
+
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">Is freely available Remote Sensing imagery a reasonable alternative to the Green View Index in mapping urban street greenery in multiple cities?</span></li>
+
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">Can the product be compared to existing Green View Index maps from ground-sampled imagery (Street View)?</span></li>
+
+</ol>
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>Methodology</strong></span></p>
+
+<p><span style="color: #003366;"><span style="font-weight: 400;">For acquiring the Sentinel 2 data, the library </span><a style="color: #003366;" href="https://github.com/ranghetti/sen2r"><span style="font-weight: 400;">Sen2r</span></a><span style="font-weight: 400;"> [2] was used. To quantify city greenness we used Tasseled Cap Greenness (TCG).&nbsp; Depending on the climate zone of the city we obtained satellite images in summer periods from 2018 to 2020. Usually multiple Satellite images could be obtained. From these, we took the images with the highest average TCG values. To calculate the area around streets we obtained the street networks by using the </span><a style="color: #003366;" href="https://github.com/gboeing/osmnx"><span style="font-weight: 400;">OSMnx</span></a><span style="font-weight: 400;"> package [3]. Depending on the street level we calculated a buffer of 15 meters additional to the estimated street width. The Sentinel image was then masked with the buffered street network. The final score of each city represents the average GVI value of the masked Sentinel image.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>Results</strong></span></p>
+
+<table style="border-color: Black; background-color: lightblue;" cellspacing="12"><caption>&nbsp;</caption>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">City</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Treepedia GVI</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Our approach (avg TCG)</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Paris</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">8.8%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">1.5%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Turin</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">16.2%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">4.6%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Tel Aviv</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">17.5%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">1.3%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Amsterdam</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">20.6%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">5.2%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Geneva</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">21.5%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">3.2%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Frankfurt</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">21.5%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">6.6%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Vancouver</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">25.9%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">7%</span></p>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">Oslo</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">28.8%</span></p>
+
+</td>
+
+<td>
+
+<p><span style="font-weight: 400; color: #003366;">9.7%</span></p>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p><span style="color: #003366;"><span style="font-weight: 400;"> Values from Treepedia and from our approach had a Pearson correlation of 0.88 (</span><em><span style="font-weight: 400;">p = &lt;0.01</span></em><span style="font-weight: 400;">)</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>Conclusion</strong></span></p>
+
+<p><span style="font-weight: 400; color: #003366;">Results of our approach show a strong correlation with the results by Treepedia. It suggests that our methodology has a high potential to accurately quantify urban street greenery. Therefore, it can be presumed that Remote Sensing imagery represents a reasonable alternative to the Green View Index in mapping urban street greenery. Yet to verify which approach is more accurate, ground truth data would be necessary.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="text-decoration: underline; color: #003366;"><strong>References</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="color: #003366;"><span style="font-weight: 400;">[1] X Li, C Zhang, W Li, R Ricard, Q Meng, W Zhang (2015).</span><a style="color: #003366;" href="http://senseable.mit.edu/treepedia/treepedia_publication.pdf"> <span style="font-weight: 400;">Assessing street-level urban greenery using Google Street View and a modified green view index.</span></a><span style="font-weight: 400;"> Urban Forestry &amp; Urban Greening 14 (3), 675-685</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="color: #003366;"><span style="font-weight: 400;">[2] L. Ranghetti, M. Boschetti, F. Nutini, L. Busetto (2020). &ldquo;sen2r: An R toolbox for automatically downloading and preprocessing Sentinel-2 satellite data&rdquo;. Computers &amp; Geosciences, 139, 104473. DOI: 10.1016/j.cageo.2020.104473, URL: </span><a style="color: #003366;" href="http://sen2r.ranghetti.info"><span style="font-weight: 400;">http://sen2r.ranghetti.info</span></a><span style="font-weight: 400;">.&nbsp;</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-weight: 400; color: #003366;">[3] Boeing, G. 2017. &ldquo;OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks.&rdquo; Computers, Environment and Urban Systems. 65, 126-139. doi:10.1016/j.compenvurbsys.2017.05.004&nbsp;</span></p>
+
             </div>
 
             <div class="sidebar-pane" id="profile">
