@@ -25,7 +25,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	};
 
   map = L.map('map', {
-		center: [50.08, 10.13],
+		center: [30.08, 0],
 		zoom: 2,
         minZoom: 2,
         maxZoom: 13,
@@ -47,7 +47,9 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	}).addTo(map);
 	
 	ar = new L.GeoJSON.AJAX("data/places1.geojson", { pointToLayer: function (feature, latlng) {
-		return L.circleMarker(latlng, regularStyle);
+		cm = L.circleMarker(latlng, regularStyle);
+		cm.bindTooltip("my tooltip text")
+		return cm
     }, onEachFeature: onEachPlace});  
   
 	ar.addTo(map);
