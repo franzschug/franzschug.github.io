@@ -261,9 +261,14 @@
 
 <script>
 function nextTour(id) {
-	console.log("test")
-	console.log(cityIterator)
 	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 12)
+	if(cityIterator === 0)  {
+		map.removeLayer(tileCollection[9])
+	} else {
+		map.removeLayer(tileCollection[cityIterator - 1])
+	}
+		
+	map.removeLayer
 	tileCollection[cityIterator].addTo(map)
 	tileCollection[cityIterator].bringToFront()
 	
