@@ -46,7 +46,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	position: 'topright'
 	}).addTo(map);
 	
-	ar = new L.GeoJSON.AJAX("data/places1.geojson", {onEachFeature: onEachPlace});
+	ar = new L.GeoJSON.AJAX("data/places.geojson", {onEachFeature: onEachPlace});
 	ar.addTo(map);
 	
 	ar.on('data:loaded', function() {

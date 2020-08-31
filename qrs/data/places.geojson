@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "Stadte_Lissy_Lasse",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "address": "Amsterdam, North Holland, Netherlands, The Netherlands" }, "geometry": { "type": "Point", "coordinates": [ 4.8936, 52.37276 ] } },
+{ "type": "Feature", "properties": { "address": "Boston, Suffolk County, Massachusetts, United States of America" }, "geometry": { "type": "Point", "coordinates": [ -71.05829, 42.36025 ] } },
+{ "type": "Feature", "properties": { "address": "Frankfurt, Hesse, Germany" }, "geometry": { "type": "Point", "coordinates": [ 8.68209, 50.11064 ] } },
+{ "type": "Feature", "properties": { "address": "Geneva, Switzerland" }, "geometry": { "type": "Point", "coordinates": [ 6.14392, 46.22565 ] } },
+{ "type": "Feature", "properties": { "address": "Kobe, Hyogo Prefecture, Japan" }, "geometry": { "type": "Point", "coordinates": [ 135.19438, 34.69324 ] } },
+{ "type": "Feature", "properties": { "address": "Oslo, Norway" }, "geometry": { "type": "Point", "coordinates": [ 10.77573, 59.9724 ] } },
+{ "type": "Feature", "properties": { "address": "Paris, Ile-de-France, Metropolitan France, France" }, "geometry": { "type": "Point", "coordinates": [ 2.32004, 48.85889 ] } },
+{ "type": "Feature", "properties": { "address": "Tel Aviv-Yafo, Tel Aviv District, Israel" }, "geometry": { "type": "Point", "coordinates": [ 34.78053, 32.08048 ] } },
+{ "type": "Feature", "properties": { "address": "Turin, Provincia di Torino, Piemont, Italy" }, "geometry": { "type": "Point", "coordinates": [ 7.68249, 45.06776 ] } },
+{ "type": "Feature", "properties": { "address": "Vancouver, Metro Vancouver Regional District, British Columbia, Canada" }, "geometry": { "type": "Point", "coordinates": [ -123.11395, 49.26087 ] } }
+]
+}
