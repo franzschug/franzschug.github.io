@@ -44,7 +44,17 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	}, 'Site Information', {
 	position: 'topright'
 	}).addTo(map);
+	
+	ar = new L.GeoJSON.AJAX("data/places1.geojson",{ pointToLayer: function(geoJsonPoint, latlng) {
+		return L.marker(latlng, { icon: greenIcon }); //options object for Marker
+	}, onEachFeature: onEachPlace});
+	ar.addTo(map);
+	ar.on('data:loaded', function() {
+		ar.bringToFront()
+		ar.setStyle(regularStyle);
+	}.bind(this));
 }
+
 
 function initSideBar() {
 	var sidebar = L.control.sidebar('sidebar').addTo(map);
@@ -56,6 +66,9 @@ function initSideBar() {
 function initInterface() {
 
   scale = L.control.scale({ position: 'bottomright' }).addTo(map);
+}
+
+function onEachPlace(feature, layer) {
 }
 
 
