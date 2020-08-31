@@ -26,8 +26,8 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
   map = L.map('map', {
 		center: [50.08, 10.13],
-		zoom: 6,
-        minZoom: 6,
+		zoom: 2,
+        minZoom: 2,
         maxZoom: 13,
 		layers: [satellite]
   });
@@ -46,7 +46,10 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	position: 'topright'
 	}).addTo(map);
 	
-	ar = new L.GeoJSON.AJAX("data/places1.geojson", {onEachFeature: onEachPlace});
+	ar = new L.GeoJSON.AJAX("data/places1.geojson", { pointToLayer: function (feature, latlng) {
+		return L.circleMarker(latlng, regularStyle);
+    }, onEachFeature: onEachPlace});  
+  
 	ar.addTo(map);
 	
 	ar.on('data:loaded', function() {
