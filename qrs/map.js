@@ -67,7 +67,6 @@ function initSideBar() {
 }
 
 function initInterface() {
-
   scale = L.control.scale({ position: 'bottomright' }).addTo(map);
 }
 
