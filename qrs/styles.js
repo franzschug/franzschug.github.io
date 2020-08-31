@@ -13,7 +13,7 @@
 		color: 'white',
 		weight: 1,
 		fillColor: "#d8dc00",
-		radius: 6,
+		radius: 4,
 		fill: true,
 		fillOpacity: 0.7
 	};
