@@ -71,7 +71,7 @@ function initInterface() {
 }
 
 function onEachPlace(feature, layer) {
-	console.log(
+	console.log(latlng)
 	return L.marker(latlng, {riseOnHover: true});
 }
 
