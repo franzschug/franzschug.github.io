@@ -54,6 +54,15 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	}.bind(this));
 	
 	tiles01Ams = L.tileLayer('data/topic1/AMSTERDAM/{z}/{x}/{y}.png', {tms:true});
+	tiles01Bos = L.tileLayer('data/topic1/BOSTON/{z}/{x}/{y}.png', {tms:true});
+	tiles01Fra = L.tileLayer('data/topic1/FRANKFURT/{z}/{x}/{y}.png', {tms:true});
+	tiles01Gen = L.tileLayer('data/topic1/GENEVA/{z}/{x}/{y}.png', {tms:true});
+	tiles01Kob = L.tileLayer('data/topic1/KOBE/{z}/{x}/{y}.png', {tms:true});
+	tiles01Osl = L.tileLayer('data/topic1/OSLO/{z}/{x}/{y}.png', {tms:true});
+	tiles01Par = L.tileLayer('data/topic1/PARIS/{z}/{x}/{y}.png', {tms:true});
+	tiles01Tel = L.tileLayer('data/topic1/TEL_AVIV/{z}/{x}/{y}.png', {tms:true});
+	tiles01Tur = L.tileLayer('data/topic1/TURIN/{z}/{x}/{y}.png', {tms:true});
+	tiles01Van = L.tileLayer('data/topic1/VANCOUVER/{z}/{x}/{y}.png', {tms:true});
 }
 
 
@@ -71,7 +80,7 @@ function initInterface() {
 function onEachPlace(feature, layer) {
 	console.log(feature)
 	console.log(latlng)
-	return L.marker(latlng);
+	L.marker(latlng);
 }
 
 
