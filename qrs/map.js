@@ -80,7 +80,8 @@ function initInterface() {
 function onEachPlace(feature, layer) {
 	console.log(feature)
 	console.log(latlng)
-	L.marker(latlng);
+	L.marker([50.5, 30.5]).addTo(map)
+	L.marker(latlng).addTo(map);
 }
 
 

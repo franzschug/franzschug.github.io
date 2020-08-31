@@ -108,12 +108,16 @@ $(document).ready( function() {
 
 function loadContent(id) {
 	$("#mr").load("data/" + id + ".html");
+	sidebar.open('description');
 }
 
 function hover(id) {
+	console.log("hovered")
+	console.log(id)
+	
 	ar.eachLayer(function(layer) {
     if (layer.feature.properties['topic'] === id) {
-        match.push(layer);
+        //match.push(layer);
       } else {
       }
     });
