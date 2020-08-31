@@ -67,6 +67,27 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	tiles01Tel = L.tileLayer('data/topic1/TEL_AVIV/{z}/{x}/{y}.png', {tms:true});
 	tiles01Tur = L.tileLayer('data/topic1/TURIN/{z}/{x}/{y}.png', {tms:true});
 	tiles01Van = L.tileLayer('data/topic1/VANCOUVER/{z}/{x}/{y}.png', {tms:true});
+	
+	map.addLayer(tiles01Ams)
+	map.addLayer(tiles01Bos)
+	map.addLayer(tiles01Fra)
+	map.addLayer(tiles01Gen)
+	map.addLayer(tiles01Kob)
+	map.addLayer(tiles01Osl)
+	map.addLayer(tiles01Par)
+	map.addLayer(tiles01Tel)
+	map.addLayer(tiles01Tur)
+	map.addLayer(tiles01Van)
+	tiles01Ams.bringToFront();
+	tiles01Bos.bringToFront();
+	tiles01Fra.bringToFront();
+	tiles01Gen.bringToFront();
+	tiles01Kob.bringToFront();
+	tiles01Osl.bringToFront();
+	tiles01Par.bringToFront();
+	tiles01Tel.bringToFront();
+	tiles01Tur.bringToFront();
+	tiles01Van.bringToFront();
 }
 
 
