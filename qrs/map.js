@@ -46,7 +46,6 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	}).addTo(map);
 	
 	ar = new L.GeoJSON.AJAX("data/places1.geojson",{ pointToLayer: function(geoJsonPoint, latlng) {
-		L.marker(latlng); //options object for Marker
 	}, onEachFeature: onEachPlace});
 	ar.addTo(map);
 	
