@@ -257,3 +257,19 @@
 </div>
 
 </html>
+
+<script>
+function nextTour(id) {
+	console.log("test")
+	console.log(cityIterator)
+	map.setView([xCoords[cityIterator], yCoords[cityIterator]], 9)
+	tileCollection[cityIterator].addTo(map)
+	tileCollection[cityIterator].bringToFront()
+	
+	if(cityIterator === 9) {
+		cityIterator = cityIterator + 1
+	} else {
+		cityIterator = 0;
+	}
+}   
+</script>
