@@ -79,7 +79,7 @@
 
             <div class="sidebar-pane" id="info">
                 <h1 class="sidebar-header">Information<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-				<p>This website presents projects conducted by students of the Q-Team <i>Remote Sensing for Settlement Mapping</i> in Summer 2020 at the <a target="_blank" href="https://www.geographie.hu-berlin.de/en/professorships/eol">Earth Observation Lab</a> of <a target="_blank" href="https://www.geographie.hu-berlin.de">Humboldt-Universität zu Berlin</a></p>
+				<p>This website presents projects conducted by students of the Q-Team <i>Remote Sensing for Settlement Mapping</i> in Summer 2020 at the <a target="_blank" href="https://www.geographie.hu-berlin.de/en/professorships/eol">Earth Observation Lab</a> of <a target="_blank" href="https://www.hu-berlin.de">Humboldt-Universität zu Berlin</a></p>
 				<p>The course was funded by the <a target="_blank" href="https://bolognalab.hu-berlin.de/de/projekte-des-bologna.labs/q-programm/q-teams/standardseite">Bologna.Lab at HU Berlin.</a></p>
                 <p><b>Click on a project to display methods and results.</b></p>
             </div>
@@ -106,6 +106,12 @@
 </html>
 
 <script>
+
+cityIterator = 0
+xCoords = [4.8936, -71.05829, 8.68209, 6.14392, 135.19438, 10.77573, 2.32004, 34.78053, 7.68249, -123.11395]
+yCoords = [52.37276, 42.36025, 50.11064, 46.22565, 34.69324, 59.9724, 48.85889, 32.08048, 45.06776, 49.26087]
+
+
 function loadContent(id) {
 	$("#mr").load("data/" + id + ".html");
 	sidebar.open('description');
