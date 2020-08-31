@@ -57,11 +57,17 @@
 				<div class="topic" onclick="loadContent(1)" onmouseover="hover(1)">
 					<b>Ranking urban environments by street greenery</b>
 					<p>A comparison of Sentinel-2 and Google Street for Green View Index assessment</p>
-					<p><i>Elisabeth Bauer & Lasse Harkort</i></p>
+					<p><i>by Elisabeth Bauer & Lasse Harkort</i></p>
 				
 				</div>
 				<div class="topic" onclick="loadContent(2)">
-					<b>Project 2</b>
+					<b>This is Project 2</b>
+					<p>With a short descirption</p>
+					<p><i>and authors</i></p>
+				</div>
+				
+				<div class="topic" onclick="loadContent(3)">
+					<b>and so on</b>
 				</div>
 
             </div>
@@ -107,7 +113,9 @@ $(document).ready( function() {
 	$("#nextCity").on("click", function() {
 	console.log("test")
 	console.log(cityIterator)
-        map.setView([xCoords[cityIterator], yCoords[cityIterator]])
+        map.setView([xCoords[cityIterator], yCoords[cityIterator]], 9)
+		tileCollection[cityIterator].addTo(map)
+		tileCollection{cityIterator].bringToFront();
 		
 		if(cityIterator === 9) {
 			cityIterator = cityIterator + 1
