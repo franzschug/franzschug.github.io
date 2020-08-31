@@ -139,6 +139,7 @@ body {
 
 .topic {
 	border-top: black 1px solid;
+	margin-top: 20px;
 }
 
 .topic:hover {
