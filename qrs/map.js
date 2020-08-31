@@ -70,6 +70,7 @@ function initInterface() {
 
 function onEachPlace(feature, layer) {
 	console.log(latlng)
+	console.log(feature)
 	return L.marker(latlng);
 }
 
