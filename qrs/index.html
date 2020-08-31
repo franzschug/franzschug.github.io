@@ -109,6 +109,7 @@ $(document).ready( function() {
     });
 	
 	$("#nextCity").on("click", function() {
+	console.log(cityIterator)
         map.setView([xCoords[cityIterator], yCoords[cityIterator]])
 		
 		if(cityIterator === 9) {
