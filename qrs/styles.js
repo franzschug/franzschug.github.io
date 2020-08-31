@@ -3,17 +3,17 @@
 		color: 'white',
 		weight: 1,
 		fillColor: "#941616",
-		radius: 6,
+		radius: 4,
 		fill: true,
-		fillOpacity: 0.6
+		fillOpacity: 0.7
 	};
 
 	var highlightStyle = {
 		stroke: true,
 		color: 'white',
-		weight: 0.5,
-		fillColor: "#941616",
-		radius: 7,
+		weight: 1,
+		fillColor: "#d8dc00",
+		radius: 6,
 		fill: true,
-		fillOpacity: 0.6
+		fillOpacity: 0.7
 	};
