@@ -103,12 +103,9 @@ cityIterator = 0
 xCoords = []
 yCoords = []
 
-$(document).ready( function() {
-    $("#load_home").on("click", function() {
-        $("#mr").load("data/content.html");
-    });
-	
+$(document).ready( function() {	
 	$("#nextCity").on("click", function() {
+	console.log("test")
 	console.log(cityIterator)
         map.setView([xCoords[cityIterator], yCoords[cityIterator]])
 		
