@@ -86,7 +86,7 @@ function initInterface() {
 }
 
 function onEachPlace(feature, layer) {
-	console.log(feature)
+	//console.log(feature)
 }
 
 
