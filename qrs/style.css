@@ -136,6 +136,26 @@ body {
 	box-shadow: 0 1px 5px rgba(0,0,0,65);
 }
 
+.topic {
+	border-top: black 1px solid;
+	border-bottom: black 1px solid;
+}
+
+.topic:hover {
+	background-color: #c8e0c2;
+}
+
+.topic img {
+	width: 50px;
+	float: left;
+	margin-right: 5px;
+}
+
+#hidden {
+	display: none;
+}
+
+
 
 
 /* --------------- map  ----------- */
