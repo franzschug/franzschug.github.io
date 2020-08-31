@@ -53,7 +53,7 @@
                     <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
 
-				<div class="topic" onclick="loadContent(1)">
+				<div class="topic" onclick="loadContent(1)" onmouseover="hover(1)">
 					<img src="img/info.png"></img>
 					<b>Ranking urban environments by street greenery</b>
 					<p>A comparison of Sentinel-2 and Google Street for Green View Index assessment</p>
@@ -109,5 +109,14 @@ $(document).ready( function() {
 
 function loadContent(id) {
 	$("#mr").load("data/" + id + ".html");
+}
+
+function hover(id) {
+	ar.eachLayer(function(layer) {
+    if (layer.feature.properties['topic'] === id) {
+        match.push(layer);
+      } else {
+      }
+    });
 }
 </script>
