@@ -68,6 +68,7 @@
 
             <div class="sidebar-pane" id="description">
                 <h1 class="sidebar-header">Methods & Results<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+				<div id ="mr"></div>
             </div>
 
             <div class="sidebar-pane" id="info">
@@ -95,8 +96,7 @@
 <div id="topBar">
     <a href ="#" id="load_home"> HOME </a>
 </div>
-<div id ="content">        
-</div>
+
 
 
 
@@ -111,7 +111,7 @@
 <script>
 $(document).ready( function() {
     $("#load_home").on("click", function() {
-        $("#content").load("data/content.html");
+        $("#mr").load("data/content.html");
     });
 });
 
