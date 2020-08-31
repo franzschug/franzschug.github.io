@@ -71,6 +71,7 @@ body {
 
 .sidebar {
 	top: 50px;
+	z-index: 1000;
 }
 
 /* --------------- features  ----------- */
@@ -138,7 +139,6 @@ body {
 
 .topic {
 	border-top: black 1px solid;
-	border-bottom: black 1px solid;
 }
 
 .topic:hover {
@@ -165,7 +165,8 @@ body {
     font:bold 12px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: absolute;
     width: 6%;
-    min-width: 160px;
+    min-width: 
+	400px;
     top: 0;
     left: 0;
     padding: 12px;

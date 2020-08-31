@@ -48,6 +48,9 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
 function initSideBar() {
 	var sidebar = L.control.sidebar('sidebar').addTo(map);
+	setTimeout(function () {
+		sidebar.open('info');
+	}, 500);
 }
 
 function initInterface() {

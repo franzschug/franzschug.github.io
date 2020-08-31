@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<p><b>Ranking urban environments by street greenery - A comparison of Sentinel-2 and Google Street for Green View Index assessment</b></p>
+<p><i>Elisabeth Bauer & Lasse Harkort</i></p>
+					
+
 <div id="project1" class="hidden">
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Introduction</strong></span></p>
@@ -26,8 +30,6 @@
 <p><span style="text-decoration: underline; color: #003366;"><strong>Methodology</strong></span></p>
 
 <p><span style="color: #003366;"><span style="font-weight: 400;">For acquiring the Sentinel 2 data, the library </span><a style="color: #003366;" href="https://github.com/ranghetti/sen2r"><span style="font-weight: 400;">Sen2r</span></a><span style="font-weight: 400;"> [2] was used. To quantify city greenness we used Tasseled Cap Greenness (TCG).&nbsp; Depending on the climate zone of the city we obtained satellite images in summer periods from 2018 to 2020. Usually multiple Satellite images could be obtained. From these, we took the images with the highest average TCG values. To calculate the area around streets we obtained the street networks by using the </span><a style="color: #003366;" href="https://github.com/gboeing/osmnx"><span style="font-weight: 400;">OSMnx</span></a><span style="font-weight: 400;"> package [3]. Depending on the street level we calculated a buffer of 15 meters additional to the estimated street width. The Sentinel image was then masked with the buffered street network. The final score of each city represents the average GVI value of the masked Sentinel image.</span></span></p>
-
-<p>&nbsp;</p>
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Results</strong></span></p>
 
@@ -239,25 +241,16 @@
 
 <p><span style="color: #003366;"><span style="font-weight: 400;"> Values from Treepedia and from our approach had a Pearson correlation of 0.88 (</span><em><span style="font-weight: 400;">p = &lt;0.01</span></em><span style="font-weight: 400;">)</span></span></p>
 
-<p>&nbsp;</p>
-
 <p><span style="text-decoration: underline; color: #003366;"><strong>Conclusion</strong></span></p>
 
 <p><span style="font-weight: 400; color: #003366;">Results of our approach show a strong correlation with the results by Treepedia. It suggests that our methodology has a high potential to accurately quantify urban street greenery. Therefore, it can be presumed that Remote Sensing imagery represents a reasonable alternative to the Green View Index in mapping urban street greenery. Yet to verify which approach is more accurate, ground truth data would be necessary.</span></p>
 
-<p>&nbsp;</p>
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>References</strong></span></p>
 
-<p>&nbsp;</p>
-
 <p><span style="color: #003366;"><span style="font-weight: 400;">[1] X Li, C Zhang, W Li, R Ricard, Q Meng, W Zhang (2015).</span><a style="color: #003366;" href="http://senseable.mit.edu/treepedia/treepedia_publication.pdf"> <span style="font-weight: 400;">Assessing street-level urban greenery using Google Street View and a modified green view index.</span></a><span style="font-weight: 400;"> Urban Forestry &amp; Urban Greening 14 (3), 675-685</span></span></p>
 
-<p>&nbsp;</p>
-
 <p><span style="color: #003366;"><span style="font-weight: 400;">[2] L. Ranghetti, M. Boschetti, F. Nutini, L. Busetto (2020). &ldquo;sen2r: An R toolbox for automatically downloading and preprocessing Sentinel-2 satellite data&rdquo;. Computers &amp; Geosciences, 139, 104473. DOI: 10.1016/j.cageo.2020.104473, URL: </span><a style="color: #003366;" href="http://sen2r.ranghetti.info"><span style="font-weight: 400;">http://sen2r.ranghetti.info</span></a><span style="font-weight: 400;">.&nbsp;</span></span></p>
-
-<p>&nbsp;</p>
 
 <p><span style="font-weight: 400; color: #003366;">[3] Boeing, G. 2017. &ldquo;OSMnx: New Methods for Acquiring, Constructing, Analyzing, and Visualizing Complex Street Networks.&rdquo; Computers, Environment and Urban Systems. 65, 126-139. doi:10.1016/j.compenvurbsys.2017.05.004&nbsp;</span></p>
 </div>
