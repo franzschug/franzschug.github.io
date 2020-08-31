@@ -262,11 +262,11 @@
 function nextTour(id) {
 	console.log("test")
 	console.log(cityIterator)
-	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 9)
+	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 12)
 	tileCollection[cityIterator].addTo(map)
 	tileCollection[cityIterator].bringToFront()
 	
-	if(cityIterator === 9) {
+	if(cityIterator < 9) {
 		cityIterator = cityIterator + 1
 	} else {
 		cityIterator = 0;
