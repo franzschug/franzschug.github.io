@@ -48,7 +48,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	
 	ar = new L.GeoJSON.AJAX("data/places1.geojson", { pointToLayer: function (feature, latlng) {
 		cm = L.circleMarker(latlng, regularStyle);
-		cm.bindTooltip("my tooltip text")
+		cm.bindTooltip(feature.properties.name)
 		return cm
     }, onEachFeature: onEachPlace});  
   
