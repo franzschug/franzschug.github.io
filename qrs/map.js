@@ -1,5 +1,6 @@
 
 var map; 
+var sidebar;
 
 initMap();
 initSideBar();
@@ -67,7 +68,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 
 
 function initSideBar() {
-	var sidebar = L.control.sidebar('sidebar').addTo(map);
+	sidebar = L.control.sidebar('sidebar').addTo(map);
 	setTimeout(function () {
 		sidebar.open('info');
 	}, 500);
@@ -79,7 +80,6 @@ function initInterface() {
 
 function onEachPlace(feature, layer) {
 	console.log(feature)
-	console.log(latlng)
 	L.marker([50.5, 30.5]).addTo(map)
 	L.marker(latlng).addTo(map);
 }
