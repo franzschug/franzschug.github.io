@@ -54,6 +54,8 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 		ar.bringToFront()
 		ar.setStyle(regularStyle);
 	}.bind(this));
+	
+	//tilesAT = L.tileLayer('data/tiles/AT/{z}/{x}/{y}.png', {tms:true});
 }
 
 
