@@ -51,6 +51,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 		return L.marker(latlng); //options object for Marker
 	}, onEachFeature: onEachPlace});
 	ar.addTo(map);
+	
 	ar.on('data:loaded', function() {
 		ar.bringToFront()
 		ar.setStyle(regularStyle);
@@ -71,6 +72,7 @@ function initInterface() {
 }
 
 function onEachPlace(feature, layer) {
+	return L.marker(latlng)
 }
 
 
