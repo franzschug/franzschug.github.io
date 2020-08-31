@@ -1,9 +1,9 @@
 	var regularStyle = {
 		stroke: true,
 		color: 'white',
-		weight: 0.5,
+		weight: 1,
 		fillColor: "#941616",
-		radius: 4,
+		radius: 10,
 		fill: true,
 		fillOpacity: 0.6
 	};

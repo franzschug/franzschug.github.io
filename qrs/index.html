@@ -100,9 +100,23 @@
 </html>
 
 <script>
+cityIterator = 0
+xCoords = []
+yCoords = []
+
 $(document).ready( function() {
     $("#load_home").on("click", function() {
         $("#mr").load("data/content.html");
+    });
+	
+	$("#nextCity").on("click", function() {
+        map.setView([xCoords[cityIterator], yCoords[cityIterator]])
+		
+		if(cityIterator === 9) {
+			cityIterator = cityIterator + 1
+		} else {
+			cityIterator = 0;
+		}
     });
 });
 
