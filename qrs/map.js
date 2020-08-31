@@ -25,7 +25,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	};
 
   map = L.map('map', {
-		center: [30.08, 0],
+		center: [0, 0],
 		zoom: 2,
         minZoom: 2,
         maxZoom: 13,
