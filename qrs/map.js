@@ -69,8 +69,8 @@ function initInterface() {
 }
 
 function onEachPlace(feature, layer) {
-	console.log(latlng)
 	console.log(feature)
+	console.log(latlng)
 	return L.marker(latlng);
 }
 
