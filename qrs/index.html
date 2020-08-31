@@ -7,12 +7,14 @@
   <!--<meta name="keywords" content="">-->
   <meta name="author" content="Franz Schug">
 
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+ <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="packages/leaflet/leaflet.css">
   <link rel="stylesheet" href="packages/sidebar-v2/css/leaflet-sidebar.css" />
   <link rel="stylesheet" href="packages/easybutton/easy-button.css">
   <link rel="stylesheet" href="style.css">
   
+  <script src="packages/jquery.min.js"></script>
   <script src="packages/leaflet/leaflet.js"></script>
   <script src="packages/sidebar-v2/js/leaflet-sidebar.js"></script>
   <script src="packages/easybutton/easy-button.js"></script>
@@ -33,32 +35,31 @@
         <!-- Nav tabs -->
         <div class="sidebar-tabs">
             <ul role="tablist">
-                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
-                <li><a href="#profile" role="tab"><i class="fa fa-user"></i></a></li>
-                <li class="disabled"><a href="#messages" role="tab"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="https://github.com/Turbo87/sidebar-v2" role="tab" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="#projects" role="tab"><i class="far fa-map"></i></a></li>
+                <li><a href="#description" role="tab"><i class="fas fa-file-alt"></i></a></li>
             </ul>
 
             <ul role="tablist">
-                <li><a href="#settings" role="tab"><i class="fa fa-gear"></i></a></li>
+                <li><a href="#info" role="tab"><i class="fas fa-info"></i></a></li>
             </ul>
         </div>
 
         <!-- Tab panes -->
         <div class="sidebar-content">
-            <div class="sidebar-pane" id="home">
+            <div class="sidebar-pane" id="projects">
                 <h1 class="sidebar-header">
-                    sidebar-v2
+                    Projects
                     <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
 
                 <p>A responsive sidebar for mapping libraries like <a href="http://leafletjs.com/">Leaflet</a> or <a href="http://openlayers.org/">OpenLayers</a>.</p>
 
-				<div class="topic">
-					<img src=""></img>
-					<h3>Test</h3>
+				<div class="topic" onclick="loadContent(1)">
+					<img src="img/info.png"></img>
+					<b>Test</b>
 					<p>Description</p>
 				</div>
+				
                 <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
                 <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -68,15 +69,11 @@
                 <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
 
-            <div class="sidebar-pane" id="profile">
+            <div class="sidebar-pane" id="description">
                 <h1 class="sidebar-header">Profile<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
             </div>
 
-            <div class="sidebar-pane" id="messages">
-                <h1 class="sidebar-header">Messages<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-            </div>
-
-            <div class="sidebar-pane" id="settings">
+            <div class="sidebar-pane" id="info">
                 <h1 class="sidebar-header">Settings<span class="sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
             </div>
         </div>
@@ -98,7 +95,30 @@
 
 <script src="map.js"></script>
 
-  
+<div id="topBar">
+    <a href ="#" id="load_home"> HOME </a>
+</div>
+<div id ="content">        
+</div>
+
+
+
+
+
+
 </body>
-	
+
+
 </html>
+
+<script>
+$(document).ready( function() {
+    $("#load_home").on("click", function() {
+        $("#content").load("content.html");
+    });
+});
+
+function loadContent(id) {
+	console.log(id)
+}
+</script>
