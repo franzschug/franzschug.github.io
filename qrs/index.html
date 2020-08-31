@@ -106,21 +106,6 @@
 </html>
 
 <script>
-$(document).ready( function() {
-	$("#nextCity").on("click", function() {
-		console.log("test")
-		console.log(cityIterator)
-		map.setView([xCoords[cityIterator], yCoords[cityIterator]], 9)
-		tileCollection[cityIterator].addTo(map)
-		tileCollection[cityIterator].bringToFront()
-	
-		if(cityIterator === 9) {
-			cityIterator = cityIterator + 1
-		} else {
-			cityIterator = 0;
-		}
-	});
-});
 
 function loadContent(id) {
 	$("#mr").load("data/" + id + ".html");
