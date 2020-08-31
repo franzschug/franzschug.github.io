@@ -132,9 +132,6 @@ function loadContent(id) {
 }
 
 function hover(id) {
-	console.log("hovered")
-	console.log(id)
-	
 	ar.eachLayer(function(layer) {
     if (layer.feature.properties['topic'] === id) {
         layer.setStyle(highlightStyle)
