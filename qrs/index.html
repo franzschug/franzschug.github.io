@@ -55,21 +55,21 @@
                 </h1>
 
 				<div class="topic" onclick="loadContent(1)" onmouseover="hover(1)" onmouseout="out(1)">
-					<b>Ranking urban environments by street greenery</b>
+					<b>Ranking Urban Environments by Street Greenery</b>
 					<p>A comparison of Sentinel-2 and Google Street for Green View Index assessment across 10 cities</p>
 					<p><i>by Elisabeth Bauer & Lasse Harkort</i></p>
 				
 				</div>
 				<div class="topic" onclick="loadContent(2)">
-					<b>This is Project 2</b>
-					<p>With a short descirption</p>
-					<p><i>and authors</i></p>
+					<b>Urban Expansion of Addis Ababa</b>
+					<p>Mapping fractional build-up, vegetation and water from 1985-2020</p>
+					<p><i>by Leon Nill, Simon Spengler & Vincent Hanuschik</i></p>
 				</div>
 				
 				<div class="topic" onclick="loadContent(3)">
-					<b>This is Project 2</b>
-					<p>With a short descirption</p>
-					<p><i>and authors</i></p>
+					<b>Urban Expansion of Dubai</b>
+					<p>This study investigates the urban expansion of greater Dubai between 1990 - 2020</p>
+					<p><i>by Julian Anders, Christopher Will & Niklas Richter</i></p>
 				</div>
 				
 				<div class="topic" onclick="loadContent(4)">
@@ -85,15 +85,14 @@
 				</div>
 				
 				<div class="topic" onclick="loadContent(6)">
-					<b>This is Project 2</b>
-					<p>With a short descirption</p>
-					<p><i>and authors</i></p>
+					<b>Mapping Urban Expansion in Greater Port of Spain (Trinidad and Tobago) between 1997 and 2020</b>
+					<p><i>by Tillman Schmitz & Ainka Douglas</i></p>
 				</div>
 				
 				<div class="topic" onclick="loadContent(7)">
-					<b>This is Project 2</b>
-					<p>With a short descirption</p>
-					<p><i>and authors</i></p>
+					<b>Mapping Fast Urbanization Using Remote Sensing Methods</b>
+					<p>The case of Mexico City</p>
+					<p><i>by Lysianne Wolf & Christina Himmelsbach</i></p>
 				</div>
             </div>
 
@@ -145,29 +144,6 @@ function loadContent(id) {
 	
 	$("#mr").load("data/" + id + ".html");
 	sidebar.open('description');
-	
-	if(id==1) {
-		map.setView([0, 0], 2);
-	}
-	if(id==1) {
-	
-	}
-	if(id==1) {
-	
-	}
-	if(id==4) {
-
-	}
-		 
-	if(id==1) {
-	
-	}
-	if(id==1) {
-	
-	}
-	if(id==1) {
-	
-	}
 }
 
 function hover(id) {
