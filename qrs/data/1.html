@@ -5,7 +5,9 @@
 <p><i>Elisabeth Bauer & Lasse Harkort</i></p>
 				
 <span> Discover all ten cities:</span>
-<button type="button" id="nextCity" onclick="nextTour()">Start Tour / Next City</button>				
+<button type="button" id="nextCity" onclick="nextTour()">Start Tour / Next City</button>		
+
+<p id="city"></p>		
 
 <div id="project1" class="hidden">
 
@@ -275,6 +277,7 @@ function nextTour(id) {
 	tileCollection[cityIterator].addTo(map)
 	tileCollection[cityIterator].bringToFront()
 	
+	document.getElementById("city").innerHTML = "This is " + names[cityIterator]
 	if(cityIterator < 9) {
 		cityIterator = cityIterator + 1
 	} else {
