@@ -141,6 +141,12 @@ function loadContent(id) {
 	$("#mr").load("data/" + id + ".html");
 	sidebar.open('description');
 	
+	if(id==1) {
+	}
+	if(id==1) {
+	}
+	if(id==1) {
+	}
 	if(id==4) {
 		map.setView([-12, -77], 12);
 		vector = new L.GeoJSON.Ajax("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
@@ -149,6 +155,12 @@ function loadContent(id) {
 		  vector.setStyle(regularStyle);
 		  vector.bringToFront()
 		}.bind(this));
+	}
+	if(id==1) {
+	}
+	if(id==1) {
+	}
+	if(id==1) {
 	}
 }
 
