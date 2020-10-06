@@ -35,16 +35,16 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
     map.zoomControl.setPosition('topright');
     L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
 
-	L.easyButton('<img src="img/info_small.png" class="icon">', function(btn, map){
-		disp = document.getElementById("infoText").style.visibility
-		if(disp == "hidden") {
-			document.getElementById("infoText").style.visibility = "visible"
-		} else {
-			document.getElementById("infoText").style.visibility = "hidden"
-		}
-	}, 'Site Information', {
-	position: 'topright'
-	}).addTo(map);
+	/*L.easyButton('<img src="img/info_small.png" class="icon">', function(btn, map){
+	/*	disp = document.getElementById("infoText").style.visibility
+	/*	if(disp == "hidden") {
+	/*		document.getElementById("infoText").style.visibility = "visible"
+	/*	} else {
+	/*		document.getElementById("infoText").style.visibility = "hidden"
+	/*	}
+	/*}, 'Site Information', {
+	/*position: 'topright'
+	/*}).addTo(map);*/
 	
 	ar = new L.GeoJSON.AJAX("data/places1.geojson", { pointToLayer: function (feature, latlng) {
 		cm = L.circleMarker(latlng, regularStyle);
