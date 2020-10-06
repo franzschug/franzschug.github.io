@@ -28,7 +28,7 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 		center: [0, 0],
 		zoom: 2,
         minZoom: 2,
-        maxZoom: 13,
+        maxZoom: 16,
 		layers: [satellite]
   });
   
@@ -71,6 +71,8 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 	tiles01Van = L.tileLayer('data/topic1/VANCOUVER/{z}/{x}/{y}.png', {tms:true});
 	
 	tileCollection  = [tiles01Ams, tiles01Bos, tiles01Fra, tiles01Gen, tiles01Kob, tiles01Osl, tiles01Par, tiles01Tel, tiles01Tur, tiles01Van]
+	
+	names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", "Tel Aviv", "Turin", "Vancouver"]
 }
 
 
