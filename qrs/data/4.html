@@ -112,6 +112,8 @@
 
 <script>
 
+map.setView([-12, -77], 12);
+
 function unloadContent() {
 }
 
@@ -161,7 +163,6 @@ function checkHover(feature, layer) {
 			weight: 2.5
 		};
 		
-		map.setView([-12, -77], 12);
 		vector = new L.GeoJSON.AJAX("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
 		vector.addTo(map);
 		vector.on('data:loaded', function() {
