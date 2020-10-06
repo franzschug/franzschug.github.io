@@ -112,6 +112,35 @@
 </html>
 
 <script>
+
+/* id == 4 // Lima */
+function checkHover(feature, layer) {
+  layer.setStyle(regularStyle);
+  layer.bindTooltip(
+    "<b>" + layer.feature.properties.name + 
+    '</b><br>Total area (m²): '+ layer.feature.properties.totalarea +
+    '</b><br>Inhabitants: '+ layer.feature.properties.inhabitants +
+    '</b><br>HDI: '+ 
+    layer.feature.properties.HDI +
+	'</b><br>Median income: '+ 
+    layer.feature.properties.medianincome +
+'</b><br>Fraction of vegetation in % (NDVI 0.3): '+ 
+    layer.feature.properties.ndvithree +
+'</b><br>Fraction of vegetation in % (NDVI 0.6): '+ 
+    layer.feature.properties.ndvitsix
+
+);
+  layer.on({
+    mouseover: function(e) {
+      layer.setStyle(limaHighlight)
+    },
+    mouseout: function(e) {
+      layer.setStyle(limaStyle)
+    },
+    click: function(e) {
+    }
+  });
+}
 		//Control styles
 		var limaStyle = {
 			stroke: true,
@@ -157,33 +186,4 @@
 		  tileLayer06.bringToBack()
 		   }
 		});
-		
-/* id == 4 // Lima */
-function checkHover(feature, layer) {
-  layer.setStyle(regularStyle);
-  layer.bindTooltip(
-    "<b>" + layer.feature.properties.name + 
-    '</b><br>Total area (m²): '+ layer.feature.properties.totalarea +
-    '</b><br>Inhabitants: '+ layer.feature.properties.inhabitants +
-    '</b><br>HDI: '+ 
-    layer.feature.properties.HDI +
-	'</b><br>Median income: '+ 
-    layer.feature.properties.medianincome +
-'</b><br>Fraction of vegetation in % (NDVI 0.3): '+ 
-    layer.feature.properties.ndvithree +
-'</b><br>Fraction of vegetation in % (NDVI 0.6): '+ 
-    layer.feature.properties.ndvitsix
-
-);
-  layer.on({
-    mouseover: function(e) {
-      layer.setStyle(limaHighlight)
-    },
-    mouseout: function(e) {
-      layer.setStyle(limaStyle)
-    },
-    click: function(e) {
-    }
-  });
-}
 </script>
