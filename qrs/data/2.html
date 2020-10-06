@@ -363,50 +363,50 @@ function toggleOverlay(name)
 <script>
 map.setView([9,38.6], 11);
 
-var artificial_1985 = L.tileLayer('tiles/artificial/1985/{z}/{x}/{y}.png', {tms:true});
-var artificial_1990 = L.tileLayer('tiles/artificial/1990/{z}/{x}/{y}.png', {tms:true});
-var artificial_1995 = L.tileLayer('tiles/artificial/1995/{z}/{x}/{y}.png', {tms:true});
-var artificial_2000 = L.tileLayer('tiles/artificial/2000/{z}/{x}/{y}.png', {tms:true});
-var artificial_2005 = L.tileLayer('tiles/artificial/2005/{z}/{x}/{y}.png', {tms:true});
-var artificial_2010 = L.tileLayer('tiles/artificial/2010/{z}/{x}/{y}.png', {tms:true});
-var artificial_2015 = L.tileLayer('tiles/artificial/2015/{z}/{x}/{y}.png', {tms:true});
-var artificial_2020 = L.tileLayer('tiles/artificial/2020/{z}/{x}/{y}.png', {tms:true});
+var artificial_1985 = L.tileLayer('data/tiles/artificial/1985/{z}/{x}/{y}.png', {tms:true});
+var artificial_1990 = L.tileLayer('data/tiles/artificial/1990/{z}/{x}/{y}.png', {tms:true});
+var artificial_1995 = L.tileLayer('data/tiles/artificial/1995/{z}/{x}/{y}.png', {tms:true});
+var artificial_2000 = L.tileLayer('data/tiles/artificial/2000/{z}/{x}/{y}.png', {tms:true});
+var artificial_2005 = L.tileLayer('data/tiles/artificial/2005/{z}/{x}/{y}.png', {tms:true});
+var artificial_2010 = L.tileLayer('data/tiles/artificial/2010/{z}/{x}/{y}.png', {tms:true});
+var artificial_2015 = L.tileLayer('data/tiles/artificial/2015/{z}/{x}/{y}.png', {tms:true});
+var artificial_2020 = L.tileLayer('data/tiles/artificial/2020/{z}/{x}/{y}.png', {tms:true});
 
-var water_1985 = L.tileLayer('tiles/water/1985/{z}/{x}/{y}.png', {tms:true});
-var water_1990 = L.tileLayer('tiles/water/1990/{z}/{x}/{y}.png', {tms:true});
-var water_1995 = L.tileLayer('tiles/water/1995/{z}/{x}/{y}.png', {tms:true});
-var water_2000 = L.tileLayer('tiles/water/2000/{z}/{x}/{y}.png', {tms:true});
-var water_2005 = L.tileLayer('tiles/water/2005/{z}/{x}/{y}.png', {tms:true});
-var water_2010 = L.tileLayer('tiles/water/2010/{z}/{x}/{y}.png', {tms:true});
-var water_2015 = L.tileLayer('tiles/water/2015/{z}/{x}/{y}.png', {tms:true});
-var water_2020 = L.tileLayer('tiles/water/2020/{z}/{x}/{y}.png', {tms:true});
+var water_1985 = L.tileLayer('data/tiles/water/1985/{z}/{x}/{y}.png', {tms:true});
+var water_1990 = L.tileLayer('data/tiles/water/1990/{z}/{x}/{y}.png', {tms:true});
+var water_1995 = L.tileLayer('data/tiles/water/1995/{z}/{x}/{y}.png', {tms:true});
+var water_2000 = L.tileLayer('data/tiles/water/2000/{z}/{x}/{y}.png', {tms:true});
+var water_2005 = L.tileLayer('data/tiles/water/2005/{z}/{x}/{y}.png', {tms:true});
+var water_2010 = L.tileLayer('data/tiles/water/2010/{z}/{x}/{y}.png', {tms:true});
+var water_2015 = L.tileLayer('data/tiles/water/2015/{z}/{x}/{y}.png', {tms:true});
+var water_2020 = L.tileLayer('data/tiles/water/2020/{z}/{x}/{y}.png', {tms:true});
 
-var bare_1985 = L.tileLayer('tiles/bare/1985/{z}/{x}/{y}.png', {tms:true});
-var bare_1990 = L.tileLayer('tiles/bare/1990/{z}/{x}/{y}.png', {tms:true});
-var bare_1995 = L.tileLayer('tiles/bare/1995/{z}/{x}/{y}.png', {tms:true});
-var bare_2000 = L.tileLayer('tiles/bare/2000/{z}/{x}/{y}.png', {tms:true});
-var bare_2005 = L.tileLayer('tiles/bare/2005/{z}/{x}/{y}.png', {tms:true});
-var bare_2010 = L.tileLayer('tiles/bare/2010/{z}/{x}/{y}.png', {tms:true});
-var bare_2015 = L.tileLayer('tiles/bare/2015/{z}/{x}/{y}.png', {tms:true});
-var bare_2020 = L.tileLayer('tiles/bare/2020/{z}/{x}/{y}.png', {tms:true});
+var bare_1985 = L.tileLayer('data/tiles/bare/1985/{z}/{x}/{y}.png', {tms:true});
+var bare_1990 = L.tileLayer('data/tiles/bare/1990/{z}/{x}/{y}.png', {tms:true});
+var bare_1995 = L.tileLayer('data/tiles/bare/1995/{z}/{x}/{y}.png', {tms:true});
+var bare_2000 = L.tileLayer('data/tiles/bare/2000/{z}/{x}/{y}.png', {tms:true});
+var bare_2005 = L.tileLayer('data/tiles/bare/2005/{z}/{x}/{y}.png', {tms:true});
+var bare_2010 = L.tileLayer('data/tiles/bare/2010/{z}/{x}/{y}.png', {tms:true});
+var bare_2015 = L.tileLayer('data/tiles/bare/2015/{z}/{x}/{y}.png', {tms:true});
+var bare_2020 = L.tileLayer('data/tiles/bare/2020/{z}/{x}/{y}.png', {tms:true});
 
-var lowveg_1985 = L.tileLayer('tiles/lowveg/1985/{z}/{x}/{y}.png', {tms:true});
-var lowveg_1990 = L.tileLayer('tiles/lowveg/1990/{z}/{x}/{y}.png', {tms:true});
-var lowveg_1995 = L.tileLayer('tiles/lowveg/1995/{z}/{x}/{y}.png', {tms:true});
-var lowveg_2000 = L.tileLayer('tiles/lowveg/2000/{z}/{x}/{y}.png', {tms:true});
-var lowveg_2005 = L.tileLayer('tiles/lowveg/2005/{z}/{x}/{y}.png', {tms:true});
-var lowveg_2010 = L.tileLayer('tiles/lowveg/2010/{z}/{x}/{y}.png', {tms:true});
-var lowveg_2015 = L.tileLayer('tiles/lowveg/2015/{z}/{x}/{y}.png', {tms:true});
-var lowveg_2020 = L.tileLayer('tiles/lowveg/2020/{z}/{x}/{y}.png', {tms:true});
+var lowveg_1985 = L.tileLayer('data/tiles/lowveg/1985/{z}/{x}/{y}.png', {tms:true});
+var lowveg_1990 = L.tileLayer('data/tiles/lowveg/1990/{z}/{x}/{y}.png', {tms:true});
+var lowveg_1995 = L.tileLayer('data/tiles/lowveg/1995/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2000 = L.tileLayer('data/tiles/lowveg/2000/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2005 = L.tileLayer('data/tiles/lowveg/2005/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2010 = L.tileLayer('data/tiles/lowveg/2010/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2015 = L.tileLayer('data/tiles/lowveg/2015/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2020 = L.tileLayer('data/tiles/lowveg/2020/{z}/{x}/{y}.png', {tms:true});
 
-var highveg_1985 = L.tileLayer('tiles/highveg/1985/{z}/{x}/{y}.png', {tms:true});
-var highveg_1990 = L.tileLayer('tiles/highveg/1990/{z}/{x}/{y}.png', {tms:true});
-var highveg_1995 = L.tileLayer('tiles/highveg/1995/{z}/{x}/{y}.png', {tms:true});
-var highveg_2000 = L.tileLayer('tiles/highveg/2000/{z}/{x}/{y}.png', {tms:true});
-var highveg_2005 = L.tileLayer('tiles/highveg/2005/{z}/{x}/{y}.png', {tms:true});
-var highveg_2010 = L.tileLayer('tiles/highveg/2010/{z}/{x}/{y}.png', {tms:true});
-var highveg_2015 = L.tileLayer('tiles/highveg/2015/{z}/{x}/{y}.png', {tms:true});
-var highveg_2020 = L.tileLayer('tiles/highveg/2020/{z}/{x}/{y}.png', {tms:true});
+var highveg_1985 = L.tileLayer('data/tiles/highveg/1985/{z}/{x}/{y}.png', {tms:true});
+var highveg_1990 = L.tileLayer('data/tiles/highveg/1990/{z}/{x}/{y}.png', {tms:true});
+var highveg_1995 = L.tileLayer('data/tiles/highveg/1995/{z}/{x}/{y}.png', {tms:true});
+var highveg_2000 = L.tileLayer('data/tiles/highveg/2000/{z}/{x}/{y}.png', {tms:true});
+var highveg_2005 = L.tileLayer('data/tiles/highveg/2005/{z}/{x}/{y}.png', {tms:true});
+var highveg_2010 = L.tileLayer('data/tiles/highveg/2010/{z}/{x}/{y}.png', {tms:true});
+var highveg_2015 = L.tileLayer('data/tiles/highveg/2015/{z}/{x}/{y}.png', {tms:true});
+var highveg_2020 = L.tileLayer('data/tiles/highveg/2020/{z}/{x}/{y}.png', {tms:true});
 
 
 var artificial =
