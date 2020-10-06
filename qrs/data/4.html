@@ -112,6 +112,22 @@
 </html>
 
 <script>
+		//Control styles
+		var regularStyle = {
+			stroke: true,
+			fillOpacity: 0,
+			color: '#ffffff',
+			opacity: 0.7,
+			weight: 1
+		};
+
+		var highlightStyle = {
+			stroke: true,
+			color: '#b52020',
+			opacity: 1,
+			weight: 2.5
+		};
+		
 		map.setView([-12, -77], 12);
 		vector = new L.GeoJSON.AJAX("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
 		vector.addTo(map);
@@ -121,9 +137,9 @@
 		}.bind(this));
 		
 		//Adds NVDI tiles
-		tileLayer06 = L.tileLayer('data/zz_extiles_ndvi6/{z}/{x}/{y}.png', {tms:true});
+		tileLayer06 = L.tileLayer('data/topic4/zz_extiles_ndvi6/{z}/{x}/{y}.png', {tms:true});
 		map.addLayer(tileLayer06);
-		tileLayer03 = L.tileLayer('data/zz_extiles_ndvi3/{z}/{x}/{y}.png', {tms:true});
+		tileLayer03 = L.tileLayer('data/topic4/zz_extiles_ndvi3/{z}/{x}/{y}.png', {tms:true});
 		map.addLayer(tileLayer03);
 
 		tileLayer06.bringToFront();
@@ -141,20 +157,4 @@
 		  tileLayer06.bringToBack()
 		   }
 		});
-		
-		//Control styles
-		var regularStyle = {
-			stroke: true,
-			fillOpacity: 0,
-			color: '#ffffff',
-			opacity: 0.7,
-			weight: 1
-		};
-
-		var highlightStyle = {
-			stroke: true,
-			color: '#b52020',
-			opacity: 1,
-			weight: 2.5
-		};
 </script>
