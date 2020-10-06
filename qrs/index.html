@@ -149,13 +149,14 @@ function loadContent(id) {
 	}
 	if(id==4) {
 		map.setView([-12, -77], 12);
-		vector = new L.GeoJSON.Ajax("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
+		vector = new L.GeoJSON.AJAX("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
 		vector.addTo(map);
 		vector.on('data:loaded', function() {
 		  vector.setStyle(regularStyle);
 		  vector.bringToFront()
 		}.bind(this));
 	}
+		 
 	if(id==1) {
 	}
 	if(id==1) {
