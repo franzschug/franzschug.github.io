@@ -1012,4 +1012,106 @@ map.setView([25.10, 55.30], 10);
 			"1995": tileLayer1995, 
 			"1990": tileLayer1990
 };
+
+var skipSlider = document.getElementById('timewarp');
+noUiSlider.create(skipSlider, {
+    range: {
+        'min': 1990,
+        '17%': 1995,
+        '34%': 2000,
+        '51%': 2005,
+        '68%': 2010,
+        '85%': 2015,
+        'max': 2020
+    },
+    pips: {
+      mode: 'values',
+      values: [1990, 1995, 2000, 2005, 2010, 2015, 2020],
+      density: 100
+    },
+    snap: true,
+    start: 1990
+});
+
+skipSlider.noUiSlider.on("update", function(values, handle){
+showTile(values[handle])});
+
+function unloadTiles(){
+	map.removeLayer(tileLayer1990);
+	map.removeLayer(tileLayer1995);
+	map.removeLayer(tileLayer2000);
+	map.removeLayer(tileLayer2005);
+	map.removeLayer(tileLayer2010);
+	map.removeLayer(tileLayer2015);
+	map.removeLayer(tileLayer2020);
+};
+
+
+function showTile(year) {
+  document.getElementById('Dubai1990').style.display='none';
+  document.getElementById('Dubai1995').style.display='none';
+  document.getElementById('Dubai2000').style.display='none';
+  document.getElementById('Dubai2005').style.display='none';
+  document.getElementById('Dubai2010').style.display='none';
+  document.getElementById('Dubai2015').style.display='none';
+  document.getElementById('Dubai2020').style.display='none';
+
+  if(year == 1990) {
+   unloadTiles();
+   document.getElementById('Dubai1990').style.display='inline-block';
+   tileLayer1990.addTo(map);
+   tileLayer1990.bringToFront()
+  }
+  else if(year == 1995) {
+   unloadTiles();
+   document.getElementById('Dubai1995').style.display='inline-block';
+   tileLayer1995.addTo(map);
+   tileLayer1995.bringToFront()
+  }
+  else if (year == 2000) {
+   unloadTiles();
+   document.getElementById('Dubai2000').style.display='inline-block';
+   tileLayer2000.addTo(map);
+   tileLayer2000.bringToFront()
+  }
+  else if (year == 2005) {
+   unloadTiles();
+   document.getElementById('Dubai2005').style.display='inline-block';
+   tileLayer2005.addTo(map);
+   tileLayer2005.bringToFront()
+  }
+  else if (year == 2010) {
+   unloadTiles();
+   document.getElementById('Dubai2010').style.display='inline-block';
+   tileLayer2010.addTo(map);
+   tileLayer2010.bringToFront()
+  }
+  else if (year == 2015) {
+   unloadTiles();
+   document.getElementById('Dubai2015').style.display='inline-block';
+   tileLayer2015.addTo(map);
+   tileLayer2015.bringToFront()
+  }
+  else if (year == 2020) {
+   unloadTiles();
+   document.getElementById('Dubai2020').style.display='inline-block';
+   tileLayer2020.addTo(map);
+   tileLayer2020.bringToFront()
+  }
+}
+
+  // Opacity Slider
+  var slider = document.getElementById('slider');
+  var sliderValue = document.getElementById('slider-value');
+
+  slider.addEventListener('input', function(e) {
+      tileLayer2020.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer2015.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer2010.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer2005.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer2000.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer1995.setOpacity(parseInt(e.target.value, 10) / 100)
+      tileLayer1990.setOpacity(parseInt(e.target.value, 10) / 100)
+      sliderValue.textContent = e.target.value + '%';
+  });
 </script>
