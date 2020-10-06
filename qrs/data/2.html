@@ -1,4 +1,112 @@
 <!DOCTYPE html>
+
+<script>
+
+function toggleOverlay(name)
+{
+    map.removeLayer(artificial_1985);
+    map.removeLayer(artificial_1990);
+    map.removeLayer(artificial_1995);
+    map.removeLayer(artificial_2000);
+    map.removeLayer(artificial_2005);
+    map.removeLayer(artificial_2010);
+    map.removeLayer(artificial_2015);
+    map.removeLayer(artificial_2020);
+
+    map.removeLayer(water_1985);
+    map.removeLayer(water_1990);
+    map.removeLayer(water_1995);
+    map.removeLayer(water_2000);
+    map.removeLayer(water_2005);
+    map.removeLayer(water_2010);
+    map.removeLayer(water_2015);
+    map.removeLayer(water_2020);
+
+    map.removeLayer(bare_1985);
+    map.removeLayer(bare_1990);
+    map.removeLayer(bare_1995);
+    map.removeLayer(bare_2000);
+    map.removeLayer(bare_2005);
+    map.removeLayer(bare_2010);
+    map.removeLayer(bare_2015);
+    map.removeLayer(bare_2020);
+
+    map.removeLayer(lowveg_1985);
+    map.removeLayer(lowveg_1990);
+    map.removeLayer(lowveg_1995);
+    map.removeLayer(lowveg_2000);
+    map.removeLayer(lowveg_2005);
+    map.removeLayer(lowveg_2010);
+    map.removeLayer(lowveg_2015);
+    map.removeLayer(lowveg_2020);
+
+    map.removeLayer(highveg_1985);
+    map.removeLayer(highveg_1990);
+    map.removeLayer(highveg_1995);
+    map.removeLayer(highveg_2000);
+    map.removeLayer(highveg_2005);
+    map.removeLayer(highveg_2010);
+    map.removeLayer(highveg_2015);
+    map.removeLayer(highveg_2020);
+
+    if ( name == "artificial" )
+    {
+        map.addLayer(artificial_1985);
+        map.addLayer(artificial_1990);
+        map.addLayer(artificial_1995);
+        map.addLayer(artificial_2000);
+        map.addLayer(artificial_2005);
+        map.addLayer(artificial_2010);
+        map.addLayer(artificial_2015);
+        map.addLayer(artificial_2020);
+    }
+    else if ( name == "water" )
+    {
+        map.addLayer(water_1985);
+        map.addLayer(water_1990);
+        map.addLayer(water_1995);
+        map.addLayer(water_2000);
+        map.addLayer(water_2005);
+        map.addLayer(water_2010);
+        map.addLayer(water_2015);
+        map.addLayer(water_2020);
+    }
+    else if ( name == "bare" )
+    {
+        map.addLayer(bare_1985);
+        map.addLayer(bare_1990);
+        map.addLayer(bare_1995);
+        map.addLayer(bare_2000);
+        map.addLayer(bare_2005);
+        map.addLayer(bare_2010);
+        map.addLayer(bare_2015);
+        map.addLayer(bare_2020);
+    }
+    else if ( name == "lowveg" )
+    {
+        map.addLayer(lowveg_1985);
+        map.addLayer(lowveg_1990);
+        map.addLayer(lowveg_1995);
+        map.addLayer(lowveg_2000);
+        map.addLayer(lowveg_2005);
+        map.addLayer(lowveg_2010);
+        map.addLayer(lowveg_2015);
+        map.addLayer(lowveg_2020);
+    }
+    else if ( name == "highveg" )
+    {
+        map.addLayer(highveg_1985);
+        map.addLayer(highveg_1990);
+        map.addLayer(highveg_1995);
+        map.addLayer(highveg_2000);
+        map.addLayer(highveg_2005);
+        map.addLayer(highveg_2010);
+        map.addLayer(highveg_2015);
+        map.addLayer(highveg_2020);
+    }
+}
+</script>
+
 <html lang="en">
 
 <h3 class="title">Urban Form in Addis Abbaba</h3>
@@ -421,109 +529,5 @@ slider.addEventListener('input', function(e)
 
     document.getElementById('slider-value').textContent = e.target.value;
 } );
-
-function toggleOverlay(name)
-{
-    map.removeLayer(artificial_1985);
-    map.removeLayer(artificial_1990);
-    map.removeLayer(artificial_1995);
-    map.removeLayer(artificial_2000);
-    map.removeLayer(artificial_2005);
-    map.removeLayer(artificial_2010);
-    map.removeLayer(artificial_2015);
-    map.removeLayer(artificial_2020);
-
-    map.removeLayer(water_1985);
-    map.removeLayer(water_1990);
-    map.removeLayer(water_1995);
-    map.removeLayer(water_2000);
-    map.removeLayer(water_2005);
-    map.removeLayer(water_2010);
-    map.removeLayer(water_2015);
-    map.removeLayer(water_2020);
-
-    map.removeLayer(bare_1985);
-    map.removeLayer(bare_1990);
-    map.removeLayer(bare_1995);
-    map.removeLayer(bare_2000);
-    map.removeLayer(bare_2005);
-    map.removeLayer(bare_2010);
-    map.removeLayer(bare_2015);
-    map.removeLayer(bare_2020);
-
-    map.removeLayer(lowveg_1985);
-    map.removeLayer(lowveg_1990);
-    map.removeLayer(lowveg_1995);
-    map.removeLayer(lowveg_2000);
-    map.removeLayer(lowveg_2005);
-    map.removeLayer(lowveg_2010);
-    map.removeLayer(lowveg_2015);
-    map.removeLayer(lowveg_2020);
-
-    map.removeLayer(highveg_1985);
-    map.removeLayer(highveg_1990);
-    map.removeLayer(highveg_1995);
-    map.removeLayer(highveg_2000);
-    map.removeLayer(highveg_2005);
-    map.removeLayer(highveg_2010);
-    map.removeLayer(highveg_2015);
-    map.removeLayer(highveg_2020);
-
-    if ( name == "artificial" )
-    {
-        map.addLayer(artificial_1985);
-        map.addLayer(artificial_1990);
-        map.addLayer(artificial_1995);
-        map.addLayer(artificial_2000);
-        map.addLayer(artificial_2005);
-        map.addLayer(artificial_2010);
-        map.addLayer(artificial_2015);
-        map.addLayer(artificial_2020);
-    }
-    else if ( name == "water" )
-    {
-        map.addLayer(water_1985);
-        map.addLayer(water_1990);
-        map.addLayer(water_1995);
-        map.addLayer(water_2000);
-        map.addLayer(water_2005);
-        map.addLayer(water_2010);
-        map.addLayer(water_2015);
-        map.addLayer(water_2020);
-    }
-    else if ( name == "bare" )
-    {
-        map.addLayer(bare_1985);
-        map.addLayer(bare_1990);
-        map.addLayer(bare_1995);
-        map.addLayer(bare_2000);
-        map.addLayer(bare_2005);
-        map.addLayer(bare_2010);
-        map.addLayer(bare_2015);
-        map.addLayer(bare_2020);
-    }
-    else if ( name == "lowveg" )
-    {
-        map.addLayer(lowveg_1985);
-        map.addLayer(lowveg_1990);
-        map.addLayer(lowveg_1995);
-        map.addLayer(lowveg_2000);
-        map.addLayer(lowveg_2005);
-        map.addLayer(lowveg_2010);
-        map.addLayer(lowveg_2015);
-        map.addLayer(lowveg_2020);
-    }
-    else if ( name == "highveg" )
-    {
-        map.addLayer(highveg_1985);
-        map.addLayer(highveg_1990);
-        map.addLayer(highveg_1995);
-        map.addLayer(highveg_2000);
-        map.addLayer(highveg_2005);
-        map.addLayer(highveg_2010);
-        map.addLayer(highveg_2015);
-        map.addLayer(highveg_2020);
-    }
-}
 
 </script>
