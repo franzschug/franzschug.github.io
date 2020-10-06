@@ -1,8 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-This is a placeholder.
 
+<h3 class="title">Urban Form in Addis Abbaba</h3>
+                <p>Mapping fractional build-up, vegetation, soil and water from 1985-2020 in Addis Ababa.</p>
+                <p>
+                    <i>
+                        by Leon Nill, Simon Spengler, Vincent Hanuschik
+                        Geographisches Institut Humboldt University Berlin 2020
+                    </i>
+                </p>
+                <button class="buttonA button2" onclick="toggleOverlay(name)" name="artificial">Artifical</button>
+                <button class="buttonW button2" onclick="toggleOverlay(name)" name="water">Water</button>
+                <button class="buttonhveg button2" onclick="toggleOverlay(name)" name="highveg">High Vegetation</button>
+                <button class="buttonlveg button2" onclick="toggleOverlay(name)" name="lowveg">Low Vegetation</button>
+                <button class="buttonB button2" onclick="toggleOverlay(name)" name="bare">Bare soil</button>
+                <button class="buttonN button2" onclick="toggleOverlay(name)" name="none">Clear</button>
 
+                <div class="slidecontainer">
+                    <input type="range" min="1985" max="2020" step="5" value="1985" class="slider" id="slider">
+                    <label id="slider-value">1985</label>
+                </div>
+				<div style="text-align: justify">
+                <h4 class="title">Introduction</h4>
+                <p>
+                The population of sub-Saharan Africa is projected to double by 2050 (99%). 
+            	Ethiopia is among the nine countries that will make up more than 
+            	half the projected population growth between 2019 and 2050 (United
+            	Nations, 2019). The capital city Addis Ababa  has experienced significant 
+            	changes in land cover in recent history. 
+            	Most importantly, the capital city of Ethiopia 
+            	has increased in area extent due to the pressure of population increase.
+            	Through analyzing the changes in land cover  fractions over time we aimed to 
+				characterize the surface dynamics of Addis Ababa since 1985, in 
+				particular the urban expansion process with regards to urban area and 
+				structure density. Furthermore, our goal was to relate the suspected area 
+				increase with the population increase of Addis Ababa.               
+                </p>
+                
+                <h4 class="title">Methods</h4>
+                <p> 	
+                In this study we defined five classes of land cover that characterize the 
+				urban form of Addis Ababa: Artificial surface cover, high vegetation, 
+				low vegetation, soil and water. 
+                Multitemporal remotely sensed imagery between 1985 and 2020 was used for
+                this study within the Google Earth Engine (Gorelick et al., 2017).
+                For each target period in a five year  interval we created spatially 
+                and temporally consistent spectral- temporal metrics (STMs) derived 
+                from all available Landsat-5, -7 and -8 data which served as 
+                predictor variables of fraction cover. Mapping fraction cover was
+                achieved through a regression based spectral unmixing approach which 
+                relies on creating synthetic training data from homogenous land cover 
+                pixels. This approach has been widely used in various contexts 
+                including urban studies and has  shown to be very efficient and accurate 
+                (Okujeni et al., 2013, Okujeni et al., 2014, Schug et al., 2018, 
+                Schug et al., 2020, Cooper et al., 2020). The homogenous training data was
+                sampled in an expert-based fashion relying on very-high resolution imagery 
+                and the interpretation of STMs over time. After splitting the data into a
+				train/test set the mapping was performed using Support Vector Regression. 
+				We analysed results based on the application of the trained model on the 
+				test set. 
+                </p>
+                <h4 class = "title">Results</h4>
+                In Figure 1 the population increase is depicted along with the increase 
+                of artificial surfaces during the study period. Both show a similar 
+                trajectory over time.                 
+                <figure>
+                    <img src="plots/pop_art.png" alt="pop_art" width="100%" height="100%">
+                    <figcaption style="font-size:12px;">Figure 1: Observed vs. Predicted 
+                    fractions – Artificial, 
+                    Bare soil, High vegetation, low vegetation and water.</figcaption>
+                </figure>
+                <p>
+                The proportions of the land cover classes and their changes 
+                over time are shown in Figure 2. Although artificial surfaces increased in 
+                total size the proportion of artificial surfaces to the whole study area
+                remains rather small. No fraction significantly increased or decreased 
+                from 1985 to 2020.
+                </p>
+                 <figure>
+                    <img src="plots/fractions_addis.png" alt="fractions_addis" 
+                    width="100%" height="100%">
+                    <figcaption style="font-size:12px;">Figure 2: Class proportions of the
+                    study area.</figcaption>
+                </figure>
+				<p>
+				In Figure 3 model performance for each class can be derived. 
+                The trained model has been  applied to the separate test set (prediction) 
+                and is compared to the true values (observed). All classes
+                exhibit R^2 values of 0.9 and above and RMSE values of 0.1 or smaller.
+                </p>
+                <figure>
+                    <img src="plots/predobs_svr_test_artificial.png" 
+                    alt="SVR_test_artificial" width="100%" height="100%">
+                </figure>
+
+                <figure>
+                    <img src="plots/predobs_svr_test_bare.png" alt="SVR_test_bare" 
+                    width="100%" height="100%">
+                </figure>
+
+                <figure>
+                    <img src="plots/predobs_svr_test_highveg.png" alt="SVR_test_highveg" 
+                    width="100%" height="100%">
+                </figure>
+                
+                <figure>
+                    <img src="plots/predobs_svr_test_lowveg.png" alt="SVR_test_lowveg" 
+                    width="100%" height="100%">
+                </figure>
+
+                <figure>
+                    <img src="plots/predobs_svr_test_water.png" alt="SVR_test_water" 
+                    	width="100%" height="100%">
+                    <figcaption style="font-size:12px;">Figure 3: Observed vs. Predicted fractions: Artificial, 
+                    Bare soil, High vegetation, low vegetation and water.</figcaption>
+                </figure>
+                <h4 class="title">References</h4>
+                <p style="font-size:12px;">
+                Cooper et al. (2020): Disentangling fractional vegetation cover: 
+                Regression-based unmixing of simulated spaceborne imaging spectroscopy 
+                data, Remote Sensing of Environment, 246.<br/>
+				<br/>
+				Gorelick, N. et al. (2017): Google Earth Engine: Planetary-scale 
+				geospatial analysis for everyone. Remote Sensing of Environment, 202, 
+				18-27.<br/>
+				<br/>
+				Okujeni et al. (2013): Support vector regression and synthetically mixed 
+				training data for quantifying urban land cover, Remote Sensing of 
+				Environment, 137, 184-197.<br/>
+				<br/>
+				Okujeni et al. (2014): A Comparison of Advanced Regression Algorithms
+				for Quantifying Urban Land Cover, Remote Sensing, 6(7).<br/>
+				<br/>
+				Schug et al. (2018): Mapping patterns of urban development in Ouagadougou,
+				Burkina Faso, using machine learning regression modeling with bi-seasonal
+				Landsat time series, Remote Sensing of Environment, 210, 217-228.<br/>
+				<br/>
+				Schug et al. (2020): Mapping urban-rural gradients of settlements and
+				vegetation at national scale using Sentinel-2 spectral-temporal metrics
+				and regression-based unmixing with synthetic training data, Remote Sensing
+				of Environment, 246.<br/>
+				<br/>
+				United Nations (2019): World Urbanization Prospects: The 2018 Revision.
+				United Nations - Department of Economic and Social Affairs, Population 
+				Division, New York, NY.
+				</p>
+				</div>
 </html>
 
 <script>
