@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+<p><b> Case Study of Fast Urbanization in Mexico City </b></p>
 
-<h2><u>The correlation between access to urban green and wealth distribution in the metropolitan districts of Lima</u></h2>
-                <h3> by Nicolas Leon and Justus Mennerich <h3>
+<p>Mapping Fast Urbanization using remote sensing methods</p>
 
-                <h2 class="Data and Methodology"> Data and Methodology </h2>
-                <ul><li> Sentinel 2B image (Level 2A) dated 17th of March 2019 </li>
-                <li> dataset from a study by the United Nations Development Programme (UNDP) with HDI values and median income for most of Limas districts (2018)   </li></ul>
+<p><i> by Lysianne & Christina </i></p>
 
-                <img src="https://nicolasleonri.github.io/pictures/workflow.jpeg" alt="workflow" width="350" height="457">
 
-                <h2 class="Results & Discussion"> Results</h2>
-                <u><b>Vegetation per Person</b></u>
-                <table>
-                  <tr>
-                    <th>Predictor Variable(s)</th>
-                    <th>NDVI 0.3</th>
-                    <th>NDVI 0.4</th>
-                    <th>NDVI 0.5</th>
-                    <th>NDVI 0.6</th>
-                  </tr>
-                  <tr>
-                    <td>Median Income</td>
-                    <td>-0.04845</td>
-                    <td>-0.04883</td>
-                    <td>-0.05138</td>
-                    <td>-0.03861</td>
-                  </tr>
-                  <tr>
-                    <td>HDI</td>
-                    <td>-0.04381</td>
-                    <td>-0.04241</td>
-                    <td>-0.03833</td>
-                    <td>-0.05294</td>
-                  </tr>
-                  <tr>
-                    <td>Income + HDI</td>
-                    <td>0.4169</td>
-                    <td>0.4393</td>
-                    <td>0.4359</td>
-                    <td>0.3576</td>
-                  </tr>
-                </table>
+<p><b> Mapping Fast Urbanization using remote sensing methods: A Case Study of Fast Urbanization in Mexico City </b></p>
+<p><i> Lysianne Wolf & Christina Himmelsbach </i></p>
 
-                <u><b>Proportion of district area covered with vegetation</b></u>
-                <table>
-                  <tr>
-                    <th>Predictor Variable(s)</th>
-                    <th>NDVI 0.3</th>
-                    <th>NDVI 0.4</th>
-                    <th>NDVI 0.5</th>
-                    <th>NDVI 0.6</th>
-                  </tr>
-                  <tr>
-                    <td>Income</td>
-                    <td>-0.04482</td>
-                    <td>-0.0414</td>
-                    <td>-0.03679</td>
-                    <td>-0.05306</td>
-                  </tr>
-                  <tr>
-                    <td>HDI</td>
-                    <td>0.01415</td>
-                    <td>0.02178</td>
-                    <td>0.02886</td>
-                    <td>-0.01504</td>
-                  </tr>
-                  <tr>
-                    <td>Income + HDI</td>
-                    <td>0.2892</td>
-                    <td>0.2894</td>
-                    <td>0.2711</td>
-                    <td>0.229</td>
-                  </tr>
-                </table>
-                <small class="table">*R²-Values range from -1 to 1. A value of 1 means that 100% of the variance of one variable is explained by the other variable. A perfect positive correlation.</small>
+???Click here to zoom to Mexico City???
 
-                <p class="Results & Discussion">The best single predictor model used the HDI values and the percentage of the total district area higher than a NDVI value of 0.5.</p>
-                <img src="https://nicolasleonri.github.io/pictures/HDI-medianincome.jpeg" alt="HDI ~ veg area %" width="350" height="216">
-                <p> The R²-value of this model is 0.029, which is much lower than we expected our models to perform. Overall HDI proved slightly better than median income to predict vegetation cover. Vegetation cover in percent "correlated" more with our predictor variables than vegetation per person did. As expected, the combination of HDI and income to predict vegetation cover both in percent and per person resulted in higher R²-values. The best performing multiple regression model used Income and HDI to predict vegetation per person in m² above NDVI 0.4. Its R²-value is 0.4393.</p>
+<br>
+<p style="color:#072B6B;"><b><u> Introduction </u></b></p>
 
-                <p class="Results & Discussion"> <b>For Comparison:</b> The R²-Value of the test model using income and HDI is 0.9238, which means that about 92% of the variance of HDI values can be explained by the income values. There is a strong correlation between the two variables. Not at all surprising considering that income is one of the variables used to calculate the Human Development Index.</p>
-                <img src="https://nicolasleonri.github.io/pictures/HDI-vegetationarea.jpeg" height="216">
+<p style="color:#072B6B;"> Fast urbanization as a constantly ongoing rapid process leads to the further spread of megacities like Mexico City. Even though the capital of Mexico has registered a slower population growth over the last 20 years, its urban area continues to expand (Aguilar, 2008).
+There are different reasons for population growth in big cities. There is an overlay of the growing urban population itself and new migration into the city. In this regard globalization plays a major role in making cities more appealing, because of the relocation of production sites for instance (Kraas 2016). 
+Monitoring processes such as rapid urbanization are of high importance in order to draw conclusions about the social, economic and ecological effects. For example, it causes a drastic loss of biodiversity (Pauchard, 2006), traffic and water are a growing problem for the population (URBANNET, 2019) and megacities often suffer from high emissions and socioeconomic disparities (Kraas 2016). Mexico City is challenged, like many other mega cities, with high air pollution (McNeill &amp; Engelke 2014).
+Since Mexico City is considered one of the most known examples of rapid urbanization, much research has been done on this topic. Nevertheless, it is important to monitor current developments with high resolution data because of the constantly changing process. The goal of this project is to create binary maps that show the changes in the urban expansion of Mexico City to provide up-to-date data.</p>
 
-                <h2 class="Conclusion"> Conclusion </h2>
-                <p class="Conclusion"> Overall the results were much poorer than we expected them to be. A different process to estimate vegetation cover, like a Random Forest Classifier, would probably perform better, although we think the main reason for our results ist the lack of input into our models. Not all of the 39 districts received HDI values and median income from the study by the UNDP.
-                Only 19 districts were input for our regression models. This study most likely would have profited from additional data. Another possible conclusion is that there just is no strong relationship between urban vegetation access and wealth distribution in Lima. Although, this goes against a study from 2019 were researchers from the University of British Columbia found a correlation between wealth and urban vegetation in ten US cities. Nevertheless, it is a possible scenario that the case is different in Lima. </p>
+<br>
+<p style="color:#072B6B;"><b><u> Research question </u></b></p>
+
+<ul style="color:#072B6B;"><li>How has Mexico City expanded in the last nineteen years (2000 - 2019)?</li>
+<li> How can you rate this change?</li></ul> 
+
+<br>
+<p style="color:#072B6B;"><b><u> Methodology </u></b></p>
+
+<p style="color:#072B6B;">In this study we used Landsat data from 2000 and 2019 covering the area of Mexico City. Satellite images from December were used in both years because of the low cloud coverage in that time of the year. To ensure a good classification around 2000 training pixels were independently selected – 1100 urban pixels and around 900 non-urban pixels. In addition to that 300 randomly created validation points were assigned to the different classes in order to determine the accuracy of the classification later. Afterwards a random forest classifier with 200 trees was performed and the change map created. The few pixels with the class &apos;urban to non-urban&apos; were reclassified as &apos;urban to urban&apos; because of the unlikelihood of an urban area turning back. The validation data was then used to review the accuracy. As a last step the pixel number for each class was calculated in order to compute the total area of change.<br>
+QGIS and its plug-in EnMapBox were used for the analysis.</p>
+
+<br>
+<p style="color:#072B6B;"><b><u> Results </u></b></p>
+
+<table style="width:70%">
+  <tr>
+    <th>Legend</th>
+    <th>Colour</th> 
+  </tr>
+  <tr>
+    <td>urban -&gt; urban</td>
+    <td bgcolor=#701D1E></td> 
+  </tr>
+  <tr>
+    <td>non urban -&gt; urban</td>
+    <td bgcolor=#ED9685></td> 
+  </tr>
+  <tr>
+    <td>non urban -&gt; non urban</td>
+    <td bgcolor=#339444></td> 
+  </tr>
+</table>
+
+<p style="color:#072B6B;">The urban area around Mexico City is constantly growing. That is why it does not make sense to define a fixed city boundary and analyze only within that area. Therefore the wider area of Mexico City was considered. <br>
+
+Within the selected area the urban area increase by about 51 percent between 2000 and 2019. The urban area grew from about 1260 km² in 2000 to about 1900 km² in 2019. The biggest growth area wise was in the North and East. <br>
+This method is not useful to estimate the density of housing. It is only possible to determine whether or not a pixel is urban or non-urban. If you want to assess the density of each pixel it is recommended to combine this approach with other methods. <br> <br>
+
+The results have an Overall Accuracy of 86.67 percent. <br>
+The Producer’s and User’s Accuracy of the classes are as follows:</p>
+
+<style>
+table, th, td {
+color:#072B6B;
+  border: 1px solid black;
+  border-collapse: collapse;}
+</style>
+<table style="width:100%">
+  <tr>
+    <th>Classtype</th>
+    <th>User&apos;s Accuracy</th> 
+    <th>Producers&apos;s Accuracy</th>
+  </tr>
+  <tr>
+    <td>Urban -&gt; Urban</td>
+    <td>89,0%</td> 
+    <td>84,76%</td>
+  </tr>
+  <tr>
+    <td>Non-Urban -&gt; Urban</td>
+    <td>75,0%</td> 
+    <td>93,75%</td>
+  </tr>
+  <tr>
+    <td>Non-Urban -&gt; Non-Urban</td>
+    <td>96,0%</td> 
+    <td>83,48%</td>
+  </tr>
+</table>
+
+<br><br>
+<p style="color:#072B6B;"><b><u> References </u></b></p>
+
+
+<p style="color:#072B6B;"> 
+Aguilar, A. G. (2008). Peri-urbanization, illegal settlements and environmental impact in Mexico City. Cities, 25(3), 133-145. <br><br>
+
+Kraas, F. (2016): Megastädte, In: Gebhardt, H., Glaser, R., Radtke, U., Reuber, P. (Hrsg.): Geographie – Physische Geographie und Humangeographie, Springer-Verlag, Berlin Heidelberg, 2.Auflage, 2016, S. 585-589, doi:10.1007/978-3-662-50391-1. <br><br>
+
+McNeill, J.R. & Engelke, P. (2014): The Great Acceleration – An Environmental History of the Antropocene since 1945. The Belknap Press of Harvard University Press, Cambridge Massachusetts. <br><br>
+
+Pucharad, A., Aguayo, M., Peña, E. & Urrutia, R. (2006): Multiple effects of urbanization on the biodiversity of developing countries: The case of a fast-growing metropolitan area (Concepción, Chile), Biological conservation 127, 2006, S.273-281 <br><br>
+
+URBANNET (2019): Infographics: Urbanisation and Urban Development in Mexico, [online, last access: 19.09.20] https://www.urbanet.info/urbanisation-and-urban-development-in-mexico/ <br><br>
+</p>
 
 
 </html>
+
+<script>
+mexicoTile = L.tileLayer('data/topic7/tiles/{z}/{x}/{y}.png', {tms:true});
+map.addLayer(mexicoTile);
+mexicoTile.bringToFront()
+
+function unloadContent() {
+	map.removeLayer(mexicoTile)
+}
+
+</script>

@@ -107,23 +107,12 @@
                 <h2 class="Conclusion"> Conclusion </h2>
                 <p class="Conclusion"> Overall the results were much poorer than we expected them to be. A different process to estimate vegetation cover, like a Random Forest Classifier, would probably perform better, although we think the main reason for our results ist the lack of input into our models. Not all of the 39 districts received HDI values and median income from the study by the UNDP.
                 Only 19 districts were input for our regression models. This study most likely would have profited from additional data. Another possible conclusion is that there just is no strong relationship between urban vegetation access and wealth distribution in Lima. Although, this goes against a study from 2019 were researchers from the University of British Columbia found a correlation between wealth and urban vegetation in ten US cities. Nevertheless, it is a possible scenario that the case is different in Lima. </p>
-        <div class='map-overlay top'>
-          <div class='map-overlay-inner'>Switch NDVI layers here
-          <div id="infoText" class="infohidden"><b>If you have any questions, contact us via Moodle!</br></div>
-          <label class="switch">
-            <input id = "toggle" class="switch-input" type="checkbox" />
-              <span class="switch-label" data-off="0.6" data-on="0.3"></span>
-              <span class="switch-handle"></span>
-          </label>
-
-        </div>
-    </div>
 
 </html>
 
 <script>
 
-document.getElementById("in").innerHTML = "test"
+document.getElementById("in").innerHTML = 'Switch NDVI layers here <div id="infoText" class="infohidden"><b>If you have any questions, contact us via Moodle!</br></div> <label class="switch"> <input id = "toggle" class="switch-input" type="checkbox" /> <span class="switch-label" data-off="0.6" data-on="0.3"></span> <span class="switch-handle"></span> </label>'
 
 /* id == 4 // Lima */
 function checkHover(feature, layer) {

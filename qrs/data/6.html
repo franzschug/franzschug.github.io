@@ -1,91 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+<h3>
+                Mapping urban expansion in Greater Port of Spain (Trinidad and Tobago) between 1997 and 2020
+                </h3>
 
-<h2><u>The correlation between access to urban green and wealth distribution in the metropolitan districts of Lima</u></h2>
-                <h3> by Nicolas Leon and Justus Mennerich <h3>
 
-                <h2 class="Data and Methodology"> Data and Methodology </h2>
-                <ul><li> Sentinel 2B image (Level 2A) dated 17th of March 2019 </li>
-                <li> dataset from a study by the United Nations Development Programme (UNDP) with HDI values and median income for most of Limas districts (2018)   </li></ul>
+                <p>Tillman Schmitz & Ainka Douglas</p>
 
-                <img src="https://nicolasleonri.github.io/pictures/workflow.jpeg" alt="workflow" width="350" height="457">
+                <p class="lorem"><b><u>Introduction</u></b></p>
+                
+                <p>Urban expansion refers to the rapid geographical extension of agglomerations which is in part caused by rising urban populations and the increased need for housing to facilitate people. Urban expansion can affect conditions for surrounding areas putting pressure on the natural environment and biodiversity.
+                The city of Port of Spain and its surrounding serve as the retail, administrative and political centre of the country of Trinidad and Tobago (Interplan 2010). During the last 40 years Greater Port of Spain, which extends into the neighbouring regional corporations of Diego Martin and San Juan/Laventille, experience an increase in population (Interplan 2010).Still, a detailed examination of land cover processes of urban expansion between the late 1990 and nowadays is missing.</p>
 
-                <h2 class="Results & Discussion"> Results</h2>
-                <u><b>Vegetation per Person</b></u>
-                <table>
-                  <tr>
-                    <th>Predictor Variable(s)</th>
-                    <th>NDVI 0.3</th>
-                    <th>NDVI 0.4</th>
-                    <th>NDVI 0.5</th>
-                    <th>NDVI 0.6</th>
-                  </tr>
-                  <tr>
-                    <td>Median Income</td>
-                    <td>-0.04845</td>
-                    <td>-0.04883</td>
-                    <td>-0.05138</td>
-                    <td>-0.03861</td>
-                  </tr>
-                  <tr>
-                    <td>HDI</td>
-                    <td>-0.04381</td>
-                    <td>-0.04241</td>
-                    <td>-0.03833</td>
-                    <td>-0.05294</td>
-                  </tr>
-                  <tr>
-                    <td>Income + HDI</td>
-                    <td>0.4169</td>
-                    <td>0.4393</td>
-                    <td>0.4359</td>
-                    <td>0.3576</td>
-                  </tr>
-                </table>
+                <p class="lorem"><i>Research Goal:</i></p>
+                
+                <p class="lorem">Contribute to understanding the expansion of urban built-up areas in the city of Port of Spain</p>
+                
+                <p class="lorem"><i>Research Question:</i></p>
+                <p class="lorem"> By how much did urban extend grow in Greater Port of Spain between 1997 and 2020?</p>
+                
+                <p class="lorem">For that purpose, we create land cover change maps to map urban expansion between 1997 and 2020 with the land cover classes: built-up, vegetation and water.</p>
 
-                <u><b>Proportion of district area covered with vegetation</b></u>
-                <table>
-                  <tr>
-                    <th>Predictor Variable(s)</th>
-                    <th>NDVI 0.3</th>
-                    <th>NDVI 0.4</th>
-                    <th>NDVI 0.5</th>
-                    <th>NDVI 0.6</th>
-                  </tr>
-                  <tr>
-                    <td>Income</td>
-                    <td>-0.04482</td>
-                    <td>-0.0414</td>
-                    <td>-0.03679</td>
-                    <td>-0.05306</td>
-                  </tr>
-                  <tr>
-                    <td>HDI</td>
-                    <td>0.01415</td>
-                    <td>0.02178</td>
-                    <td>0.02886</td>
-                    <td>-0.01504</td>
-                  </tr>
-                  <tr>
-                    <td>Income + HDI</td>
-                    <td>0.2892</td>
-                    <td>0.2894</td>
-                    <td>0.2711</td>
-                    <td>0.229</td>
-                  </tr>
-                </table>
-                <small class="table">*R²-Values range from -1 to 1. A value of 1 means that 100% of the variance of one variable is explained by the other variable. A perfect positive correlation.</small>
 
-                <p class="Results & Discussion">The best single predictor model used the HDI values and the percentage of the total district area higher than a NDVI value of 0.5.</p>
-                <img src="https://nicolasleonri.github.io/pictures/HDI-medianincome.jpeg" alt="HDI ~ veg area %" width="350" height="216">
-                <p> The R²-value of this model is 0.029, which is much lower than we expected our models to perform. Overall HDI proved slightly better than median income to predict vegetation cover. Vegetation cover in percent "correlated" more with our predictor variables than vegetation per person did. As expected, the combination of HDI and income to predict vegetation cover both in percent and per person resulted in higher R²-values. The best performing multiple regression model used Income and HDI to predict vegetation per person in m² above NDVI 0.4. Its R²-value is 0.4393.</p>
+                <p class="lorem"><b><u>Methods and Data</u></b></p>
+                
+                <p class="lorem"><i>Data</i></p>
 
-                <p class="Results & Discussion"> <b>For Comparison:</b> The R²-Value of the test model using income and HDI is 0.9238, which means that about 92% of the variance of HDI values can be explained by the income values. There is a strong correlation between the two variables. Not at all surprising considering that income is one of the variables used to calculate the Human Development Index.</p>
-                <img src="https://nicolasleonri.github.io/pictures/HDI-vegetationarea.jpeg" height="216">
+                <p class="lorem">We created Landsat composite images for the years 1997 and 2020. The following table gives an overview with the corresponding images used wtihin each time frame. </p>
+                
 
-                <h2 class="Conclusion"> Conclusion </h2>
-                <p class="Conclusion"> Overall the results were much poorer than we expected them to be. A different process to estimate vegetation cover, like a Random Forest Classifier, would probably perform better, although we think the main reason for our results ist the lack of input into our models. Not all of the 39 districts received HDI values and median income from the study by the UNDP.
-                Only 19 districts were input for our regression models. This study most likely would have profited from additional data. Another possible conclusion is that there just is no strong relationship between urban vegetation access and wealth distribution in Lima. Although, this goes against a study from 2019 were researchers from the University of British Columbia found a correlation between wealth and urban vegetation in ten US cities. Nevertheless, it is a possible scenario that the case is different in Lima. </p>
+                <table style="width:90%">
+                <tr>
+                <th>Target year</th>
+                <th>Dates</th>
+                </tr>
+                <tr>
+                <td>1997</td> 
+                <td>17-11-1997; 18-12-1997; 11-01-1998; 22-02-1998</td>
+                </tr>
+                <tr>
+                <td>2020</td>
+                <td>9-12-2019; 01-01-2020; 20-02-2020</td>
+                </tr>
+                </table> 
+                
+                <p class="lorem">The study area comprises the two regions Port of Spain and San Juan–Laventille, where big urban agglomerations are located. </p>
+
+                <p class="lorem"><i>Methods</i></p>
+
+                <p class="lorem">To create the land cover change maps, we used the approach of post-classification change detection, where first two land cover maps are produced independently. Then a land cover change map is created. The random forest (RF) algorithm is used to produce the land cover maps. The RF classifier is an ensemble classifier that uses a set of classification trees (CART) to make a prediction. Essentially, the classifier learns characteristics of the target class from training samples and identifies these characteristics in unclassified data. Training and validation data will be derived via GoogleEarth data from 1997 and 2020. </p>
+                
+                <p class="lorem">Workflow</p>
+
+                <p><img id="myImg", src="img/Folie1.png" alt="Workflow" width="100%"></p>
+                
+                <p class="lorem"><b><u>Results</u></b></p>
+
+                <p class="lorem">Accuracy Assesement</p>
+
+                <p><img id="myImg", src="img/acc_ass.png" alt="Acc. Assesment" width="100%"></p>
+                
+                <p class="lorem">Overall Accuracy: 67.2%</p>
+
+                <p class="lorem"><b><u>Conclusion</u></b></p>
+                As a small nation, Trinidad and Tobago only has only a single official area that is considered a “city,” this is the country’s capital of Port of Spain. Thus, Port of Spain and its environs is one of the most densely populated areas on the island. In 1997, Trinidad and Tobago had a population of approximately 1.26 million however, in 2020 current demographic data suggests the island has closer to 1.4 million individuals. 
+                
+                As expected, there has been an increase in urban areas due to an increase in population in the Port of Spain area. According to our map, the areas in which the population is highest and consequently, the areas where the urban population has expanded the most are highlighted in red. These areas where urban expansion is greatest include Diego Martin, Belmont/ East Downtown Port of Spain, Point Cumana, Carenage and Chaguaramas.
+                
+                
+                <p class="lorem"><b><u>Reference</u></b></p>
+
+<p class="lorem">Beard, T. (2012): Sustainable Cities: The Case of Greater Port of Spain, Trinidad. 48th ISOCARP Congress 2012</p>
+<p class="lorem">Interplan. (2010): Port of Spain City Corporation Implementation Plan. Online access: https://afraraymond.files.wordpress.com/2011/10/pos_may18.pdf </p>
+<p class="lorem">Inter-American Development Bank (2015): SUSTAINABLE PORT OF SPAIN. Online access:https://webimages.iadb.org/PDF/Port+of+Spain+Action+Plan.pdf </p>
 
 
 </html>
+
+<script>
+
+document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slider-value'>100%</span></label> <input id='slider' type='range' min='0' max='100' step='0' value='100' />"
+
+    ttTiles = L.tileLayer('data/topic6/zz_extileschangemapmasked/{z}/{x}/{y}.png', {tms:true});
+    map.addLayer(ttTiles);
+
+    ttTiles.bringToFront();
+	
+	var slider = document.getElementById('slider');
+var sliderValue = document.getElementById('slider-value');
+
+slider.addEventListener('input', function(e) {
+ttTiles.setOpacity(parseInt(e.target.value, 10) / 100)
+sliderValue.textContent = e.target.value + '%';
+});
+
+</script>

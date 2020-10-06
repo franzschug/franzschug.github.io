@@ -13,6 +13,11 @@
 { "type": "Feature", "properties": { "topic": 1, "name": "Tel Aviv" }, "geometry": { "type": "Point", "coordinates": [ 34.78053, 32.08048 ] } },
 { "type": "Feature", "properties": { "topic": 1, "name": "Turin" }, "geometry": { "type": "Point", "coordinates": [ 7.68249, 45.06776 ] } },
 { "type": "Feature", "properties": { "topic": 1, "name": "Vancouver" }, "geometry": { "type": "Point", "coordinates": [ -123.11395, 49.26087 ] } },
-{ "type": "Feature", "properties": { "topic": 4, "name": "Lima" }, "geometry": { "type": "Point", "coordinates": [ -77.070011149197754, -12.060653832674353 ] } }
+{ "type": "Feature", "properties": { "topic": 4, "name": "Lima" }, "geometry": { "type": "Point", "coordinates": [ -77.070011149197754, -12.060653832674353 ] } },
+{ "type": "Feature", "properties": { "topic": 5, "name": "Singapore" }, "geometry": { "type": "Point", "coordinates": [ 103.862325416590323, 1.349691591199883 ] } },
+{ "type": "Feature", "properties": { "topic": 2, "name": "Addis Ababa" }, "geometry": { "type": "Point", "coordinates": [ 38.7544397050873, 8.999888210075516 ] } },
+{ "type": "Feature", "properties": { "topic": 3, "name": "Dubai" }, "geometry": { "type": "Point", "coordinates": [ 55.278422796066714, 25.213268911287717 ] } },
+{ "type": "Feature", "properties": { "topic": 6, "name": "Port of Spain" }, "geometry": { "type": "Point", "coordinates": [ -61.52102727584645, 10.662319959601913 ] } },
+{ "type": "Feature", "properties": { "topic": 7, "name": "Mexico City" }, "geometry": { "type": "Point", "coordinates": [ -99.127885785001808, 19.465445776842046 ] } }
 ]
 }
