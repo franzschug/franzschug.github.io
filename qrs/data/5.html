@@ -6,12 +6,14 @@
 					
 <p class="lorem"><span class="font_bk">Discover the LU/LC changes between 2009 and 2019 by changing the map layers from the top-right layers botton.</span></p>
 
+<form name="y">
 <input type="radio" id="t2009" name="year" value="2009">
 <label for="t2009">2009</label><br>
 <input type="radio" id="t2019" name="year" value="2019">
 <label for="t2019">2019</label><br>
 <input type="radio" id="tChange" name="year" value="change">
 <label for="tChange">Change</label> 
+</form>
 
 </html>
 
@@ -23,11 +25,12 @@ var t2009 = L.tileLayer('data/topic5/2009/{z}/{x}/{y}.png', {tms:true});
 var t2019 = L.tileLayer('data/topic5/2019/{z}/{x}/{y}.png', {tms:true});
 var c = L.tileLayer('data/topic5/2019/{z}/{x}/{y}.png', {tms:true});
 
-var rad = document.myForm.myRadios;
+var rad = document.y.year;
     var prev = null;
     for(var i = 0; i < rad.length; i++) {
         rad[i].onclick = function () {
-		
+			console.log(rad[i])
+			console.log(i)
 			map.removeLayer(t2009)
 			map.removeLayer(t2019)
 			map.removeLayer(c)
@@ -36,10 +39,10 @@ var rad = document.myForm.myRadios;
 			  t2009.addTo(map)
               console.log(this.value)  
             }
-			if(prev === 1) {
+			if(prev === 2) {
 			  t2019.addTo(map)
 			}
-			if(prev === 1) {
+			if(prev === 3) {
 			  c.addTo(map)
 			}
 			
