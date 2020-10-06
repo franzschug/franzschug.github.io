@@ -175,7 +175,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif1990.png" alt="VarImp90">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif1990.png" alt="VarImp90">
 					</div>
 				</div>
 
@@ -305,7 +305,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif1995.png" alt="VarImp95">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif1995.png" alt="VarImp95">
 					</div>
 				</div>
 
@@ -435,7 +435,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif2000.png" alt="VarImp00">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif2000.png" alt="VarImp00">
 					</div>
 				</div>
 
@@ -564,7 +564,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif2005.png" alt="VarImp05">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif2005.png" alt="VarImp05">
 					</div>
 				</div>
 
@@ -694,7 +694,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif2010.png" alt="VarImp10">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif2010.png" alt="VarImp10">
 					</div>
 				</div>
 				
@@ -823,7 +823,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif2015.png" alt="VarImp15">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif2015.png" alt="VarImp15">
 					</div>
 				</div>
 				
@@ -954,7 +954,7 @@
 							</tbody>
 						</table>
 						</p>
-						<img style='height: 100%; width: 80%; object-fit: contain' src="img/vif2020.png" alt="VarImp20">
+						<img style='height: 100%; width: 80%; object-fit: contain' src="topic3/img/vif2020.png" alt="VarImp20">
 					</div>
 				</div>				
 
@@ -995,4 +995,21 @@
 
 <script>
 map.setView([25.10, 55.30], 10);
+
+	tileLayer2020 = L.tileLayer('topic3/data/class2020/{z}/{x}/{y}.png', {tms:true});
+	tileLayer2015 = L.tileLayer('topic3/data/class2015/{z}/{x}/{y}.png', {tms:true});
+	tileLayer2010 = L.tileLayer('topic3/data/class2010/{z}/{x}/{y}.png', {tms:true});
+	tileLayer2005 = L.tileLayer('topic3/data/class2005/{z}/{x}/{y}.png', {tms:true});
+	tileLayer2000 = L.tileLayer('topic3/data/class2000/{z}/{x}/{y}.png', {tms:true});
+	tileLayer1995 = L.tileLayer('topic3/data/class1995/{z}/{x}/{y}.png', {tms:true});
+	tileLayer1990 = L.tileLayer('topic3/data/class1990/{z}/{x}/{y}.png', {tms:true});
+	
+	var years = {"2020": tileLayer2020, 
+			"2015": tileLayer2015, 
+			"2010": tileLayer2010,
+			"2005": tileLayer2005,
+			"2000": tileLayer2000,
+			"1995": tileLayer1995, 
+			"1990": tileLayer1990
+};
 </script>
