@@ -12,6 +12,7 @@
 { "type": "Feature", "properties": { "topic": 1, "name": "Paris" }, "geometry": { "type": "Point", "coordinates": [ 2.32004, 48.85889 ] } },
 { "type": "Feature", "properties": { "topic": 1, "name": "Tel Aviv" }, "geometry": { "type": "Point", "coordinates": [ 34.78053, 32.08048 ] } },
 { "type": "Feature", "properties": { "topic": 1, "name": "Turin" }, "geometry": { "type": "Point", "coordinates": [ 7.68249, 45.06776 ] } },
-{ "type": "Feature", "properties": { "topic": 1, "name": "Vancouver" }, "geometry": { "type": "Point", "coordinates": [ -123.11395, 49.26087 ] } }
+{ "type": "Feature", "properties": { "topic": 1, "name": "Vancouver" }, "geometry": { "type": "Point", "coordinates": [ -123.11395, 49.26087 ] } },
+{ "type": "Feature", "properties": { "topic": 4, "name": "Lima" }, "geometry": { "type": "Point", "coordinates": [ -77.070011149197754, -12.060653832674353 ] } }
 ]
 }
