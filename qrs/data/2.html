@@ -51,58 +51,58 @@ function toggleOverlay(name)
 
     if ( name == "artificial" )
     {
-        map.addLayer(artificial_1985);
-        map.addLayer(artificial_1990);
-        map.addLayer(artificial_1995);
-        map.addLayer(artificial_2000);
-        map.addLayer(artificial_2005);
-        map.addLayer(artificial_2010);
-        map.addLayer(artificial_2015);
-        map.addLayer(artificial_2020);
+        map.addLayer(artificial_1985); artificial_1985.bringToFront();
+        map.addLayer(artificial_1990); artificial_1990.bringToFront();
+        map.addLayer(artificial_1995); artificial_1995.bringToFront();
+        map.addLayer(artificial_2000); artificial_2000.bringToFront();
+        map.addLayer(artificial_2005); artificial_2005.bringToFront();
+        map.addLayer(artificial_2010); artificial_2010.bringToFront();
+        map.addLayer(artificial_2015); artificial_2015.bringToFront();
+        map.addLayer(artificial_2020); artificial_2020.bringToFront();
     }
     else if ( name == "water" )
     {
-        map.addLayer(water_1985);
-        map.addLayer(water_1990);
-        map.addLayer(water_1995);
-        map.addLayer(water_2000);
-        map.addLayer(water_2005);
-        map.addLayer(water_2010);
-        map.addLayer(water_2015);
-        map.addLayer(water_2020);
+        map.addLayer(water_1985); water_1985.bringToFront();
+        map.addLayer(water_1990); water_1990.bringToFront();
+        map.addLayer(water_1995); water_1995.bringToFront();
+        map.addLayer(water_2000); water_2000.bringToFront();
+        map.addLayer(water_2005); water_2005.bringToFront();
+        map.addLayer(water_2010); water_2010.bringToFront();
+        map.addLayer(water_2015); water_2015.bringToFront();
+        map.addLayer(water_2020); water_2020.bringToFront();
     }
     else if ( name == "bare" )
     {
-        map.addLayer(bare_1985);
-        map.addLayer(bare_1990);
-        map.addLayer(bare_1995);
-        map.addLayer(bare_2000);
-        map.addLayer(bare_2005);
-        map.addLayer(bare_2010);
-        map.addLayer(bare_2015);
-        map.addLayer(bare_2020);
+        map.addLayer(bare_1985); bare_1985.bringToFront();
+        map.addLayer(bare_1990); bare_1990.bringToFront();
+        map.addLayer(bare_1995); bare_1995.bringToFront();
+        map.addLayer(bare_2000); bare_2000.bringToFront();
+        map.addLayer(bare_2005); bare_2005.bringToFront();
+        map.addLayer(bare_2010); bare_2010.bringToFront();
+        map.addLayer(bare_2015); bare_2015.bringToFront();
+        map.addLayer(bare_2020); bare_2020.bringToFront();
     }
     else if ( name == "lowveg" )
     {
-        map.addLayer(lowveg_1985);
-        map.addLayer(lowveg_1990);
-        map.addLayer(lowveg_1995);
-        map.addLayer(lowveg_2000);
-        map.addLayer(lowveg_2005);
-        map.addLayer(lowveg_2010);
-        map.addLayer(lowveg_2015);
-        map.addLayer(lowveg_2020);
+        map.addLayer(lowveg_1985); lowveg_1985.bringToFront();
+        map.addLayer(lowveg_1990); lowveg_1990.bringToFront();
+        map.addLayer(lowveg_1995); lowveg_1995.bringToFront();
+        map.addLayer(lowveg_2000); lowveg_2000.bringToFront();
+        map.addLayer(lowveg_2005); lowveg_2005.bringToFront();
+        map.addLayer(lowveg_2010); lowveg_2010.bringToFront();
+        map.addLayer(lowveg_2015); lowveg_2015.bringToFront();
+        map.addLayer(lowveg_2020); lowveg_2020.bringToFront();
     }
     else if ( name == "highveg" )
     {
-        map.addLayer(highveg_1985);
-        map.addLayer(highveg_1990);
-        map.addLayer(highveg_1995);
-        map.addLayer(highveg_2000);
-        map.addLayer(highveg_2005);
-        map.addLayer(highveg_2010);
-        map.addLayer(highveg_2015);
-        map.addLayer(highveg_2020);
+        map.addLayer(highveg_1985); highveg_1985.bringToFront();
+        map.addLayer(highveg_1990); highveg_1990.bringToFront();
+        map.addLayer(highveg_1995); highveg_1995.bringToFront();
+        map.addLayer(highveg_2000); highveg_2000.bringToFront();
+        map.addLayer(highveg_2005); highveg_2005.bringToFront();
+        map.addLayer(highveg_2010); highveg_2010.bringToFront();
+        map.addLayer(highveg_2015); highveg_2015.bringToFront();
+        map.addLayer(highveg_2020); highveg_2020.bringToFront();
     }
 }
 </script>
@@ -483,8 +483,6 @@ slider.addEventListener('input', function(e)
     var v_2015 = ( e.target.value == 2015 ) ? 1 : 0;
     var v_2020 = ( e.target.value == 2020 ) ? 1 : 0;
 	
-	artificial_2015.bringToFront()
-
     artificial_1985.setOpacity(v_1985);
     artificial_1990.setOpacity(v_1990);
     artificial_1995.setOpacity(v_1995);
