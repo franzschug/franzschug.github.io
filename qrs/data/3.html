@@ -994,6 +994,9 @@
 </html>
 
 <script>
+
+document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slider-value'>100%</span></label> <input id='slider' type='range' min='0' max='100' step='0' value='100' />"
+
 map.setView([25.10, 55.30], 10);
 
 	tileLayer2020 = L.tileLayer('topic3/data/class2020/{z}/{x}/{y}.png', {tms:true});
