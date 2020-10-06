@@ -142,6 +142,7 @@ function loadContent(id) {
 	sidebar.open('description');
 	
 	if(id==4) {
+		map.setView([-12, -77], 12);
 		vector = new L.GeoJSON.Ajax("data/topic4/vector_districts.geojson", {onEachFeature: checkHover});
 		vector.addTo(map);
 		vector.on('data:loaded', function() {
