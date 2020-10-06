@@ -150,4 +150,276 @@
 
 <script>
 map.setView([9,38.6], 11);
+
+var artificial_1985 = L.tileLayer('tiles/artificial/1985/{z}/{x}/{y}.png', {tms:true});
+var artificial_1990 = L.tileLayer('tiles/artificial/1990/{z}/{x}/{y}.png', {tms:true});
+var artificial_1995 = L.tileLayer('tiles/artificial/1995/{z}/{x}/{y}.png', {tms:true});
+var artificial_2000 = L.tileLayer('tiles/artificial/2000/{z}/{x}/{y}.png', {tms:true});
+var artificial_2005 = L.tileLayer('tiles/artificial/2005/{z}/{x}/{y}.png', {tms:true});
+var artificial_2010 = L.tileLayer('tiles/artificial/2010/{z}/{x}/{y}.png', {tms:true});
+var artificial_2015 = L.tileLayer('tiles/artificial/2015/{z}/{x}/{y}.png', {tms:true});
+var artificial_2020 = L.tileLayer('tiles/artificial/2020/{z}/{x}/{y}.png', {tms:true});
+
+var water_1985 = L.tileLayer('tiles/water/1985/{z}/{x}/{y}.png', {tms:true});
+var water_1990 = L.tileLayer('tiles/water/1990/{z}/{x}/{y}.png', {tms:true});
+var water_1995 = L.tileLayer('tiles/water/1995/{z}/{x}/{y}.png', {tms:true});
+var water_2000 = L.tileLayer('tiles/water/2000/{z}/{x}/{y}.png', {tms:true});
+var water_2005 = L.tileLayer('tiles/water/2005/{z}/{x}/{y}.png', {tms:true});
+var water_2010 = L.tileLayer('tiles/water/2010/{z}/{x}/{y}.png', {tms:true});
+var water_2015 = L.tileLayer('tiles/water/2015/{z}/{x}/{y}.png', {tms:true});
+var water_2020 = L.tileLayer('tiles/water/2020/{z}/{x}/{y}.png', {tms:true});
+
+var bare_1985 = L.tileLayer('tiles/bare/1985/{z}/{x}/{y}.png', {tms:true});
+var bare_1990 = L.tileLayer('tiles/bare/1990/{z}/{x}/{y}.png', {tms:true});
+var bare_1995 = L.tileLayer('tiles/bare/1995/{z}/{x}/{y}.png', {tms:true});
+var bare_2000 = L.tileLayer('tiles/bare/2000/{z}/{x}/{y}.png', {tms:true});
+var bare_2005 = L.tileLayer('tiles/bare/2005/{z}/{x}/{y}.png', {tms:true});
+var bare_2010 = L.tileLayer('tiles/bare/2010/{z}/{x}/{y}.png', {tms:true});
+var bare_2015 = L.tileLayer('tiles/bare/2015/{z}/{x}/{y}.png', {tms:true});
+var bare_2020 = L.tileLayer('tiles/bare/2020/{z}/{x}/{y}.png', {tms:true});
+
+var lowveg_1985 = L.tileLayer('tiles/lowveg/1985/{z}/{x}/{y}.png', {tms:true});
+var lowveg_1990 = L.tileLayer('tiles/lowveg/1990/{z}/{x}/{y}.png', {tms:true});
+var lowveg_1995 = L.tileLayer('tiles/lowveg/1995/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2000 = L.tileLayer('tiles/lowveg/2000/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2005 = L.tileLayer('tiles/lowveg/2005/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2010 = L.tileLayer('tiles/lowveg/2010/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2015 = L.tileLayer('tiles/lowveg/2015/{z}/{x}/{y}.png', {tms:true});
+var lowveg_2020 = L.tileLayer('tiles/lowveg/2020/{z}/{x}/{y}.png', {tms:true});
+
+var highveg_1985 = L.tileLayer('tiles/highveg/1985/{z}/{x}/{y}.png', {tms:true});
+var highveg_1990 = L.tileLayer('tiles/highveg/1990/{z}/{x}/{y}.png', {tms:true});
+var highveg_1995 = L.tileLayer('tiles/highveg/1995/{z}/{x}/{y}.png', {tms:true});
+var highveg_2000 = L.tileLayer('tiles/highveg/2000/{z}/{x}/{y}.png', {tms:true});
+var highveg_2005 = L.tileLayer('tiles/highveg/2005/{z}/{x}/{y}.png', {tms:true});
+var highveg_2010 = L.tileLayer('tiles/highveg/2010/{z}/{x}/{y}.png', {tms:true});
+var highveg_2015 = L.tileLayer('tiles/highveg/2015/{z}/{x}/{y}.png', {tms:true});
+var highveg_2020 = L.tileLayer('tiles/highveg/2020/{z}/{x}/{y}.png', {tms:true});
+
+
+var artificial =
+{
+    "artificial_1985": artificial_1985,
+    "artificial_1990": artificial_1990,
+    "artificial_1995": artificial_1995,
+    "artificial_2000": artificial_2000,
+    "artificial_2005": artificial_2005,
+    "artificial_2010": artificial_2010,
+    "artificial_2015": artificial_2015,
+    "artificial_2020": artificial_2020
+};
+
+var water =
+{
+    "water_1985": water_1985,
+    "water_1990": water_1990,
+    "water_1995": water_1995,
+    "water_2000": water_2000,
+    "water_2005": water_2005,
+    "water_2010": water_2010,
+    "water_2015": water_2015,
+    "water_2020": water_2020
+};
+
+var bare =
+{
+    "bare_1985": bare_1985,
+    "bare_1990": bare_1990,
+    "bare_1995": bare_1995,
+    "bare_2000": bare_2000,
+    "bare_2005": bare_2005,
+    "bare_2010": bare_2010,
+    "bare_2015": bare_2015,
+    "bare_2020": bare_2020
+};
+
+var lowveg =
+{
+    "lowveg_1985": lowveg_1985,
+    "lowveg_1990": lowveg_1990,
+    "lowveg_1995": lowveg_1995,
+    "lowveg_2000": lowveg_2000,
+    "lowveg_2005": lowveg_2005,
+    "lowveg_2010": lowveg_2010,
+    "lowveg_2015": lowveg_2015,
+    "lowveg_2020": lowveg_2020
+};
+
+var highveg =
+{
+    "highveg_1985": highveg_1985,
+    "highveg_1990": highveg_1990,
+    "highveg_1995": highveg_1995,
+    "highveg_2000": highveg_2000,
+    "highveg_2005": highveg_2005,
+    "highveg_2010": highveg_2010,
+    "highveg_2015": highveg_2015,
+    "highveg_2020": highveg_2020
+};
+
+var slider = document.getElementById('slider');
+
+slider.addEventListener('input', function(e)
+{
+    var v_1985 = ( e.target.value == 1985 ) ? 1 : 0;
+    var v_1990 = ( e.target.value == 1990 ) ? 1 : 0;
+    var v_1995 = ( e.target.value == 1995 ) ? 1 : 0;
+    var v_2000 = ( e.target.value == 2000 ) ? 1 : 0;
+    var v_2005 = ( e.target.value == 2005 ) ? 1 : 0;
+    var v_2010 = ( e.target.value == 2010 ) ? 1 : 0;
+    var v_2015 = ( e.target.value == 2015 ) ? 1 : 0;
+    var v_2020 = ( e.target.value == 2020 ) ? 1 : 0;
+
+    artificial_1985.setOpacity(v_1985);
+    artificial_1990.setOpacity(v_1990);
+    artificial_1995.setOpacity(v_1995);
+    artificial_2000.setOpacity(v_2000);
+    artificial_2005.setOpacity(v_2005);
+    artificial_2010.setOpacity(v_2010);
+    artificial_2015.setOpacity(v_2015);
+    artificial_2020.setOpacity(v_2020);
+
+    water_1985.setOpacity(v_1985);
+    water_1990.setOpacity(v_1990);
+    water_1995.setOpacity(v_1995);
+    water_2000.setOpacity(v_2000);
+    water_2005.setOpacity(v_2005);
+    water_2010.setOpacity(v_2010);
+    water_2015.setOpacity(v_2015);
+    water_2020.setOpacity(v_2020);
+
+    bare_1985.setOpacity(v_1985);
+    bare_1990.setOpacity(v_1990);
+    bare_1995.setOpacity(v_1995);
+    bare_2000.setOpacity(v_2000);
+    bare_2005.setOpacity(v_2005);
+    bare_2010.setOpacity(v_2010);
+    bare_2015.setOpacity(v_2015);
+    bare_2020.setOpacity(v_2020);
+
+    lowveg_1985.setOpacity(v_1985);
+    lowveg_1990.setOpacity(v_1990);
+    lowveg_1995.setOpacity(v_1995);
+    lowveg_2000.setOpacity(v_2000);
+    lowveg_2005.setOpacity(v_2005);
+    lowveg_2010.setOpacity(v_2010);
+    lowveg_2015.setOpacity(v_2015);
+    lowveg_2020.setOpacity(v_2020);
+
+    highveg_1985.setOpacity(v_1985);
+    highveg_1990.setOpacity(v_1990);
+    highveg_1995.setOpacity(v_1995);
+    highveg_2000.setOpacity(v_2000);
+    highveg_2005.setOpacity(v_2005);
+    highveg_2010.setOpacity(v_2010);
+    highveg_2015.setOpacity(v_2015);
+    highveg_2020.setOpacity(v_2020);
+
+    document.getElementById('slider-value').textContent = e.target.value;
+} );
+
+function toggleOverlay(name)
+{
+    map.removeLayer(artificial_1985);
+    map.removeLayer(artificial_1990);
+    map.removeLayer(artificial_1995);
+    map.removeLayer(artificial_2000);
+    map.removeLayer(artificial_2005);
+    map.removeLayer(artificial_2010);
+    map.removeLayer(artificial_2015);
+    map.removeLayer(artificial_2020);
+
+    map.removeLayer(water_1985);
+    map.removeLayer(water_1990);
+    map.removeLayer(water_1995);
+    map.removeLayer(water_2000);
+    map.removeLayer(water_2005);
+    map.removeLayer(water_2010);
+    map.removeLayer(water_2015);
+    map.removeLayer(water_2020);
+
+    map.removeLayer(bare_1985);
+    map.removeLayer(bare_1990);
+    map.removeLayer(bare_1995);
+    map.removeLayer(bare_2000);
+    map.removeLayer(bare_2005);
+    map.removeLayer(bare_2010);
+    map.removeLayer(bare_2015);
+    map.removeLayer(bare_2020);
+
+    map.removeLayer(lowveg_1985);
+    map.removeLayer(lowveg_1990);
+    map.removeLayer(lowveg_1995);
+    map.removeLayer(lowveg_2000);
+    map.removeLayer(lowveg_2005);
+    map.removeLayer(lowveg_2010);
+    map.removeLayer(lowveg_2015);
+    map.removeLayer(lowveg_2020);
+
+    map.removeLayer(highveg_1985);
+    map.removeLayer(highveg_1990);
+    map.removeLayer(highveg_1995);
+    map.removeLayer(highveg_2000);
+    map.removeLayer(highveg_2005);
+    map.removeLayer(highveg_2010);
+    map.removeLayer(highveg_2015);
+    map.removeLayer(highveg_2020);
+
+    if ( name == "artificial" )
+    {
+        map.addLayer(artificial_1985);
+        map.addLayer(artificial_1990);
+        map.addLayer(artificial_1995);
+        map.addLayer(artificial_2000);
+        map.addLayer(artificial_2005);
+        map.addLayer(artificial_2010);
+        map.addLayer(artificial_2015);
+        map.addLayer(artificial_2020);
+    }
+    else if ( name == "water" )
+    {
+        map.addLayer(water_1985);
+        map.addLayer(water_1990);
+        map.addLayer(water_1995);
+        map.addLayer(water_2000);
+        map.addLayer(water_2005);
+        map.addLayer(water_2010);
+        map.addLayer(water_2015);
+        map.addLayer(water_2020);
+    }
+    else if ( name == "bare" )
+    {
+        map.addLayer(bare_1985);
+        map.addLayer(bare_1990);
+        map.addLayer(bare_1995);
+        map.addLayer(bare_2000);
+        map.addLayer(bare_2005);
+        map.addLayer(bare_2010);
+        map.addLayer(bare_2015);
+        map.addLayer(bare_2020);
+    }
+    else if ( name == "lowveg" )
+    {
+        map.addLayer(lowveg_1985);
+        map.addLayer(lowveg_1990);
+        map.addLayer(lowveg_1995);
+        map.addLayer(lowveg_2000);
+        map.addLayer(lowveg_2005);
+        map.addLayer(lowveg_2010);
+        map.addLayer(lowveg_2015);
+        map.addLayer(lowveg_2020);
+    }
+    else if ( name == "highveg" )
+    {
+        map.addLayer(highveg_1985);
+        map.addLayer(highveg_1990);
+        map.addLayer(highveg_1995);
+        map.addLayer(highveg_2000);
+        map.addLayer(highveg_2005);
+        map.addLayer(highveg_2010);
+        map.addLayer(highveg_2015);
+        map.addLayer(highveg_2020);
+    }
+}
+
 </script>
