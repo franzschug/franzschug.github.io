@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h2><u>The correlation between access to urban green and wealth distribution in the metropolitan districts of Lima</u></h2>
+                <h3> by Nicolas Leon and Justus Mennerich <h3>
+
+                <h2 class="Data and Methodology"> Data and Methodology </h2>
+                <ul><li> Sentinel 2B image (Level 2A) dated 17th of March 2019 </li>
+                <li> dataset from a study by the United Nations Development Programme (UNDP) with HDI values and median income for most of Limas districts (2018)   </li></ul>
+
+                <img src="https://nicolasleonri.github.io/pictures/workflow.jpeg" alt="workflow" width="350" height="457">
+
+                <h2 class="Results & Discussion"> Results</h2>
+                <u><b>Vegetation per Person</b></u>
+                <table>
+                  <tr>
+                    <th>Predictor Variable(s)</th>
+                    <th>NDVI 0.3</th>
+                    <th>NDVI 0.4</th>
+                    <th>NDVI 0.5</th>
+                    <th>NDVI 0.6</th>
+                  </tr>
+                  <tr>
+                    <td>Median Income</td>
+                    <td>-0.04845</td>
+                    <td>-0.04883</td>
+                    <td>-0.05138</td>
+                    <td>-0.03861</td>
+                  </tr>
+                  <tr>
+                    <td>HDI</td>
+                    <td>-0.04381</td>
+                    <td>-0.04241</td>
+                    <td>-0.03833</td>
+                    <td>-0.05294</td>
+                  </tr>
+                  <tr>
+                    <td>Income + HDI</td>
+                    <td>0.4169</td>
+                    <td>0.4393</td>
+                    <td>0.4359</td>
+                    <td>0.3576</td>
+                  </tr>
+                </table>
+
+                <u><b>Proportion of district area covered with vegetation</b></u>
+                <table>
+                  <tr>
+                    <th>Predictor Variable(s)</th>
+                    <th>NDVI 0.3</th>
+                    <th>NDVI 0.4</th>
+                    <th>NDVI 0.5</th>
+                    <th>NDVI 0.6</th>
+                  </tr>
+                  <tr>
+                    <td>Income</td>
+                    <td>-0.04482</td>
+                    <td>-0.0414</td>
+                    <td>-0.03679</td>
+                    <td>-0.05306</td>
+                  </tr>
+                  <tr>
+                    <td>HDI</td>
+                    <td>0.01415</td>
+                    <td>0.02178</td>
+                    <td>0.02886</td>
+                    <td>-0.01504</td>
+                  </tr>
+                  <tr>
+                    <td>Income + HDI</td>
+                    <td>0.2892</td>
+                    <td>0.2894</td>
+                    <td>0.2711</td>
+                    <td>0.229</td>
+                  </tr>
+                </table>
+                <small class="table">*R²-Values range from -1 to 1. A value of 1 means that 100% of the variance of one variable is explained by the other variable. A perfect positive correlation.</small>
+
+                <p class="Results & Discussion">The best single predictor model used the HDI values and the percentage of the total district area higher than a NDVI value of 0.5.</p>
+                <img src="https://nicolasleonri.github.io/pictures/HDI-medianincome.jpeg" alt="HDI ~ veg area %" width="350" height="216">
+                <p> The R²-value of this model is 0.029, which is much lower than we expected our models to perform. Overall HDI proved slightly better than median income to predict vegetation cover. Vegetation cover in percent "correlated" more with our predictor variables than vegetation per person did. As expected, the combination of HDI and income to predict vegetation cover both in percent and per person resulted in higher R²-values. The best performing multiple regression model used Income and HDI to predict vegetation per person in m² above NDVI 0.4. Its R²-value is 0.4393.</p>
+
+                <p class="Results & Discussion"> <b>For Comparison:</b> The R²-Value of the test model using income and HDI is 0.9238, which means that about 92% of the variance of HDI values can be explained by the income values. There is a strong correlation between the two variables. Not at all surprising considering that income is one of the variables used to calculate the Human Development Index.</p>
+                <img src="https://nicolasleonri.github.io/pictures/HDI-vegetationarea.jpeg" height="216">
+
+                <h2 class="Conclusion"> Conclusion </h2>
+                <p class="Conclusion"> Overall the results were much poorer than we expected them to be. A different process to estimate vegetation cover, like a Random Forest Classifier, would probably perform better, although we think the main reason for our results ist the lack of input into our models. Not all of the 39 districts received HDI values and median income from the study by the UNDP.
+                Only 19 districts were input for our regression models. This study most likely would have profited from additional data. Another possible conclusion is that there just is no strong relationship between urban vegetation access and wealth distribution in Lima. Although, this goes against a study from 2019 were researchers from the University of British Columbia found a correlation between wealth and urban vegetation in ten US cities. Nevertheless, it is a possible scenario that the case is different in Lima. </p>
+
+
+</html>
