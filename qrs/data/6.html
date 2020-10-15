@@ -176,14 +176,18 @@
 
 map.setView([10.704, -61.577], 12);
 
+function unloadContent() {
+	map.removeLayer(ttTiles)
+}
+
 document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slider-value'>100%</span></label> <input id='slider' type='range' min='0' max='100' step='0' value='100' />"
 
-    ttTiles = L.tileLayer('data/topic6/zz_extileschangemapmasked/{z}/{x}/{y}.png', {tms:true});
-    map.addLayer(ttTiles);
+ttTiles = L.tileLayer('data/topic6/zz_extileschangemapmasked/{z}/{x}/{y}.png', {tms:true});
+map.addLayer(ttTiles);
 
-    ttTiles.bringToFront();
+ttTiles.bringToFront();
 	
-	var slider = document.getElementById('slider');
+var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
 
 slider.addEventListener('input', function(e) {
