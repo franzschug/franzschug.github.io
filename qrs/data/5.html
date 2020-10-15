@@ -21,6 +21,12 @@
 
 map.setView([1.316373, 103.715038], 11);
 
+function unloadContent() {
+	map.removeLayer(t2009)
+	map.removeLayer(t2019)
+	map.removeLayer(c)
+}
+
 var t2009 = L.tileLayer('data/topic5/2009/{z}/{x}/{y}.png', {tms:true});
 var t2019 = L.tileLayer('data/topic5/2019/{z}/{x}/{y}.png', {tms:true});
 var c = L.tileLayer('data/topic5/Change/{z}/{x}/{y}.png', {tms:true});
