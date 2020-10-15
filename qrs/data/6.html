@@ -195,6 +195,23 @@ ttTiles.setOpacity(parseInt(e.target.value, 10) / 100)
 sliderValue.textContent = e.target.value + '%';
 });
 
+/*Legend specific*/
+var legend = L.control({ position: "bottomright" });
+
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "legend");
+  div.innerHTML += "<h4>Legend</h4>";
+  div.innerHTML += '<i style="background: #e8830b"></i><span>Stable built-up</span><br>';
+  div.innerHTML += '<i style="background: #81b624"></i><span>Stable vegetation</span><br>';
+  div.innerHTML += '<i style="background: #2464b6"></i><span>Stable water</span><br>';
+  div.innerHTML += '<i style="background: #e02c1e"></i><span>Urban Expansion 1997- 2020</span><br>';
+  div.innerHTML += '<i style="background: #c5bcbb"></i><span>Other dynamics</span><br>';;
+  return div;
+};
+
+legend.addTo(map);
+
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
