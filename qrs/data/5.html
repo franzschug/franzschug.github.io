@@ -31,13 +31,14 @@ var rad = document.y.year;
         rad[i].onclick = function () {
 			console.log(rad[i])
 			console.log(i)
+			console.log(this.value)
 			map.removeLayer(t2009)
 			map.removeLayer(t2019)
 			map.removeLayer(c)
 		
             if(prev === 1) {
 			  t2009.addTo(map)
-              console.log(this.value)  
+
             }
 			if(prev === 2) {
 			  t2019.addTo(map)
@@ -48,7 +49,7 @@ var rad = document.y.year;
 			  c.bringToFront()
 			}
 			
-            console.log(this.value)
+            
         };
     }
 
