@@ -56,6 +56,11 @@
                     <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
 
+				<div class="topic" onclick="loadContent(0)" onmouseover="hover(0)" onmouseout="out(0)">
+					<b>Show all Project Locations</b>
+					<p>Zoom to Globe</p>				
+				</div>
+				
 				<div class="topic" onclick="loadContent(1)" onmouseover="hover(1)" onmouseout="out(1)">
 					<b>Ranking Urban Environments by Street Greenery</b>
 					<p>A comparison of Sentinel-2 and Google Street for Green View Index assessment across 10 cities</p>
@@ -144,8 +149,13 @@ function loadContent(id) {
 
 	unloadContent()
 	
+	if(id === 0) {
+		map.setView([0, 0], 2);
+		sb = document.GetElementById("mr").innerHTML = ""
+	} else {
 	$("#mr").load("data/" + id + ".html");
 	sidebar.open('description');
+	}
 }
 
 function hover(id) {
