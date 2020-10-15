@@ -150,7 +150,7 @@ function loadContent(id) {
 	
 	if(id === 0) {
 		map.setView([0, 0], 2);
-		sb = document.GetElementById("mr").innerHTML = ""
+		sb = document.getElementById("mr").innerHTML = ""
 	} else {
 	$("#mr").load("data/" + id + ".html");
 	sidebar.open('description');
