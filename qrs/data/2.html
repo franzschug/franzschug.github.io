@@ -364,6 +364,50 @@ function toggleOverlay(name)
 
 map.setView([9,38.6], 11);
 
+function unloadContent() {
+	map.removeLayer(artificial_1985)
+	map.removeLayer(artificial_1990)
+	map.removeLayer(artificial_1995)
+	map.removeLayer(artificial_2000)
+	map.removeLayer(artificial_2005)
+	map.removeLayer(artificial_2010)
+	map.removeLayer(artificial_2015)
+	map.removeLayer(artificial_2020)
+	map.removeLayer(water_1985)
+	map.removeLayer(water_1990)
+	map.removeLayer(water_1995)
+	map.removeLayer(water_2000)
+	map.removeLayer(water_2005)
+	map.removeLayer(water_2010)
+	map.removeLayer(water_2015)
+	map.removeLayer(water_2020)
+	map.removeLayer(bare_1985)
+	map.removeLayer(bare_1990)
+	map.removeLayer(bare_1995)
+	map.removeLayer(bare_2000)
+	map.removeLayer(bare_2005)
+	map.removeLayer(bare_2010)
+	map.removeLayer(bare_2015)
+	map.removeLayer(bare_2020)
+	map.removeLayer(lowveg_1985)
+	map.removeLayer(lowveg_1990)
+	map.removeLayer(lowveg_1995)
+	map.removeLayer(lowveg_2000)
+	map.removeLayer(lowveg_2005)
+	map.removeLayer(lowveg_2010)
+	map.removeLayer(lowveg_2015)
+	map.removeLayer(lowveg_2020)
+	map.removeLayer(highveg_1985)
+	map.removeLayer(highveg_1990)
+	map.removeLayer(highveg_1995)
+	map.removeLayer(highveg_2000)
+	map.removeLayer(highveg_2005)
+	map.removeLayer(highveg_2010)
+	map.removeLayer(highveg_2015)
+	map.removeLayer(highveg_2020)
+}
+
+
 var artificial_1985 = L.tileLayer('data/topic2/tiles/artificial/1985/{z}/{x}/{y}.png', {tms:true});
 var artificial_1990 = L.tileLayer('data/topic2/tiles/artificial/1990/{z}/{x}/{y}.png', {tms:true});
 var artificial_1995 = L.tileLayer('data/topic2/tiles/artificial/1995/{z}/{x}/{y}.png', {tms:true});
