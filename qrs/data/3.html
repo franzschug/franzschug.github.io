@@ -1000,6 +1000,10 @@ document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slide
 
 map.setView([25.10, 55.30], 10);
 
+function unloadContent() {
+	unloadTiles()
+}
+
 	tileLayer2020 = L.tileLayer('data/topic3/tiles/class2020/{z}/{x}/{y}.png', {tms:true});
 	tileLayer2015 = L.tileLayer('data/topic3/tiles/class2015/{z}/{x}/{y}.png', {tms:true});
 	tileLayer2010 = L.tileLayer('data/topic3/tiles/class2010/{z}/{x}/{y}.png', {tms:true});
