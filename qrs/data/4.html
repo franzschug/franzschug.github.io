@@ -115,6 +115,9 @@
 map.setView([-12, -77], 12);
 
 function unloadContent() {
+	map.removeLayer(vector)
+	map.removeLayer(tileLayer06)
+	map.removeLayer(tileLayer03)
 }
 
 document.getElementById("in").innerHTML = 'Switch NDVI layers here <label class="switch"> <input id = "toggle" class="switch-input" type="checkbox" /> <span class="switch-label" data-off="0.6" data-on="0.3"></span> <span class="switch-handle"></span> </label>'
