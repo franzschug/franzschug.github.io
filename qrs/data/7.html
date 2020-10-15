@@ -107,6 +107,10 @@ URBANNET (2019): Infographics: Urbanisation and Urban Development in Mexico, [on
 
 map.setView([19.395, -99.139], 11);
 
+function unloadContent() {
+	map.removeLayer(mexicoTile)
+}
+
 mexicoTile = L.tileLayer('data/topic7/tiles/{z}/{x}/{y}.png', {tms:true});
 map.addLayer(mexicoTile);
 mexicoTile.bringToFront()
