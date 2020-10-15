@@ -212,6 +212,7 @@ map.setView([10.704, -61.8], 12);
 
 function unloadContent() {
 	map.removeLayer(ttTiles)
+	map.removeControl(legend)
 }
 
 document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slider-value'>100%</span></label> <input id='slider' type='range' min='0' max='100' step='0' value='100' />"
