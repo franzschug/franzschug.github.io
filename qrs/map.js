@@ -58,21 +58,6 @@ var streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
 		ar.bringToFront()
 		//ar.setStyle(regularStyle);
 	}.bind(this));
-	
-	tiles01Ams = L.tileLayer('data/topic1/AMSTERDAM/{z}/{x}/{y}.png', {tms:true});
-	tiles01Bos = L.tileLayer('data/topic1/BOSTON/{z}/{x}/{y}.png', {tms:true});
-	tiles01Fra = L.tileLayer('data/topic1/FRANKFURT/{z}/{x}/{y}.png', {tms:true});
-	tiles01Gen = L.tileLayer('data/topic1/GENEVA/{z}/{x}/{y}.png', {tms:true});
-	tiles01Kob = L.tileLayer('data/topic1/KOBE/{z}/{x}/{y}.png', {tms:true});
-	tiles01Osl = L.tileLayer('data/topic1/OSLO/{z}/{x}/{y}.png', {tms:true});
-	tiles01Par = L.tileLayer('data/topic1/PARIS/{z}/{x}/{y}.png', {tms:true});
-	tiles01Tel = L.tileLayer('data/topic1/TEL_AVIV/{z}/{x}/{y}.png', {tms:true});
-	tiles01Tur = L.tileLayer('data/topic1/TURIN/{z}/{x}/{y}.png', {tms:true});
-	tiles01Van = L.tileLayer('data/topic1/VANCOUVER/{z}/{x}/{y}.png', {tms:true});
-	
-	tileCollection  = [tiles01Ams, tiles01Bos, tiles01Fra, tiles01Gen, tiles01Kob, tiles01Osl, tiles01Par, tiles01Tel, tiles01Tur, tiles01Van]
-	
-	names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", "Tel Aviv", "Turin", "Vancouver"]
 }
 
 
