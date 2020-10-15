@@ -27,7 +27,7 @@ var c = L.tileLayer('data/topic5/Change/{z}/{x}/{y}.png', {tms:true});
 
 var rad = document.y.year;
     var prev = null;
-
+    for(var i = 0; i < rad.length; i++) {
         rad[i].onclick = function () {
 			console.log(rad[i])
 			console.log(i)
@@ -36,22 +36,18 @@ var rad = document.y.year;
 			map.removeLayer(t2019)
 			map.removeLayer(c)
 		
-            if(prev === 1) {
+            if(this.value === 2009) {
 			  t2009.addTo(map)
-
+			  t2009.bringToFront()
             }
-			if(prev === 2) {
+			if(this.value === 2019) {
 			  t2019.addTo(map)
 			  t2019.bringToFront()
 			}
-			if(prev === 3) {
+			if(this.value === "Change") {
 			  c.addTo(map)
 			  c.bringToFront()
 			}
-			
-            
         };
-    
-
-
+    }
 </script>
