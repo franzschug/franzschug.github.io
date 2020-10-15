@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<p><b> Case Study of Fast Urbanization in Mexico City </b></p>
 
 <p><b> Mapping Fast Urbanization using remote sensing methods: A Case Study of Fast Urbanization in Mexico City </b></p>
 <p><i> Lysianne Wolf & Christina Himmelsbach </i></p>
@@ -109,11 +108,23 @@ map.setView([19.395, -99.139], 11);
 
 function unloadContent() {
 	map.removeLayer(mexicoTile)
+	document.getElementById("in").innerHTML = "Q-Team Remote Sensing for Settlement Mapping, 2020, HU Berlin"
 }
+
+document.getElementById("in").innerHTML = "<label>Layer Opacity: <span id='slider-value'>100%</span></label> <input id='slider' type='range' min='0' max='100' step='0' value='100' />"
+
 
 mexicoTile = L.tileLayer('data/topic7/tiles/{z}/{x}/{y}.png', {tms:true});
 map.addLayer(mexicoTile);
 mexicoTile.bringToFront()
+
+var slider = document.getElementById('slider');
+var sliderValue = document.getElementById('slider-value');
+
+slider.addEventListener('input', function(e) {
+mexicoTile.setOpacity(parseInt(e.target.value, 10) / 100)
+sliderValue.textContent = e.target.value + '%';
+});
 
 function unloadContent() {
 	map.removeLayer(mexicoTile)

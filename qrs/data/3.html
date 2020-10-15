@@ -1007,6 +1007,7 @@ map.setView([25.10, 55.30], 10);
 
 function unloadContent() {
 	unloadTiles()
+	document.getElementById("in").innerHTML = "Q-Team Remote Sensing for Settlement Mapping, 2020, HU Berlin"
 }
 
 	tileLayer2020 = L.tileLayer('data/topic3/tiles/class2020/{z}/{x}/{y}.png', {tms:true});
