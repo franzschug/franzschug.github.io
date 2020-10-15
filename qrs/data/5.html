@@ -38,20 +38,20 @@ var rad = document.y.year;
 			console.log(rad[i])
 			console.log(i)
 			console.log(this.value)
-			console.log(this.value === 2009)
+			console.log(this.value == 2009)
 			map.removeLayer(t2009)
 			map.removeLayer(t2019)
 			map.removeLayer(c)
 		
-            if(this.value === 2009) {
+            if(this.value == 2009) {
 			  t2009.addTo(map)
 			  t2009.bringToFront()
             }
-			if(this.value === 2019) {
+			if(this.value == 2019) {
 			  t2019.addTo(map)
 			  t2019.bringToFront()
 			}
-			if(this.value === "Change") {
+			if(this.value == "Change") {
 			  c.addTo(map)
 			  c.bringToFront()
 			}
