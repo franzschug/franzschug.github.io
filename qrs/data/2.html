@@ -109,8 +109,8 @@ function toggleOverlay(name)
 
 <html lang="en">
 
-<h3 class="title">Urban Form in Addis Abbaba</h3>
-                <p><b>Mapping fractional build-up, vegetation, soil and water from 1985-2020 in Addis Ababa.</b></p>
+<h3 class="title">Urban Form in Addis Ababa</h3>
+                <p><b>Mapping fractional build-up, vegetation, soil and water surfaces from 1985 to 2020 in Addis Ababa.</b></p>
                 <p>
                     <i>
                         Leon Nill, Simon Spengler, Vincent Hanuschik
@@ -131,47 +131,50 @@ function toggleOverlay(name)
 				<div style="text-align: justify">
                 <h4 class="title">Introduction</h4>
                 <p>
-                The population of sub-Saharan Africa is projected to double by 2050 (99%). 
-            	Ethiopia is among the nine countries that will make up more than 
-            	half the projected population growth between 2019 and 2050 (United
-            	Nations, 2019). The capital city Addis Ababa  has experienced significant 
-            	changes in land cover in recent history. 
-            	Most importantly, the capital city of Ethiopia 
-            	has increased in area extent due to the pressure of population increase.
-            	Through analyzing the changes in land cover  fractions over time we aimed to 
-				characterize the surface dynamics of Addis Ababa since 1985, in 
-				particular the urban expansion process with regards to urban area and 
-				structure density. Furthermore, our goal was to relate the suspected area 
-				increase with the population increase of Addis Ababa.               
+                The population of sub-Saharan Africa is projected to double by 2050 
+                ( United Nations). Ethiopia is among the nine countries that will make 
+                up more than half the projected population growth between 2019 and 2050 
+                (United Nations, 2019). The capital city Addis Ababa has experienced 
+                widespread changes in land cover in recent history. Most importantly, 
+                the capital city of Ethiopia has increased in area extent due to the 
+                pressure of population increase. Through analysing the changes in land 
+                cover fractions over time we aimed at characterizing land surface dynamics
+                of Addis Ababa since 1985, in particular the urban expansion process with
+                a particular focus on urban area and density. Furthermore, our goal was 
+                to relate the suspected area increase with the population increase of 
+                Addis Ababa.                     
                 </p>
                 
                 <h4 class="title">Methods</h4>
                 <p> 	
-                In this study we defined five classes of land cover that characterize the 
-				urban form of Addis Ababa: Artificial surface cover, high vegetation, 
-				low vegetation, soil and water. 
-                Multitemporal remotely sensed imagery between 1985 and 2020 was used for
-                this study within the Google Earth Engine (Gorelick et al., 2017).
-                For each target period in a five year  interval we created spatially 
-                and temporally consistent spectral- temporal metrics (STMs) derived 
-                from all available Landsat-5, -7 and -8 data which served as 
-                predictor variables of fraction cover. Mapping fraction cover was
+                In this study we defined five types of land cover that characterize the 
+                urban form of Addis Ababa: Artificial surface cover, high vegetation, 
+                low vegetation, soil and water. Multitemporal remotely sensed imagery 
+                between 1985 and 2020 was used for this study within the Google Earth 
+                Engine (Gorelick et al., 2017). For each target year (in five year steps) 
+                we created spatially and temporally consistent spectral-temporal metrics 
+                (STMs) derived from all available Landsat-5, -7 and -8 data which served 
+                as predictor variables of fraction cover. Mapping fraction cover was 
                 achieved through a regression based spectral unmixing approach which 
                 relies on creating synthetic training data from homogenous land cover 
-                pixels. This approach has been widely used in various contexts 
-                including urban studies and has  shown to be very efficient and accurate 
-                (Okujeni et al., 2013, Okujeni et al., 2014, Schug et al., 2018, 
-                Schug et al., 2020, Cooper et al., 2020). The homogenous training data was
-                sampled in an expert-based fashion relying on very-high resolution imagery 
-                and the interpretation of STMs over time. After splitting the data into a
-				train/test set the mapping was performed using Support Vector Regression. 
-				We analysed results based on the application of the trained model on the 
-				test set. 
+                pixels. This approach has been widely used in various contexts including 
+                urban studies and has shown to be very efficient and accurate (Okujeni et 
+                al., 2013, Okujeni et al., 2014, Schug et al., 2018, Schug et al., 2020, 
+                Cooper et al., 2020). The homogenous training data was sampled in an 
+                expert-based fashion relying on very-high resolution imagery and the 
+                interpretation of STMs over time. Here we searched for pixels with a 
+                stable signal over time. These stable and pure reference pixels were then 
+                randomly mixed into artificial training data of different fractions of 
+                the land cover types. We then split this in theory infinitely large 
+                dataset into a training set to build the Support Vector regression 
+                models for each land cover type as well as a test set to validate the 
+                performance on unseen data. This allowed us to finally predict fraction 
+                cover for the entire study area.
                 </p>
                 <h4 class = "title">Results</h4>
                 In Figure 1 the population increase is depicted along with the increase 
                 of artificial surfaces during the study period. Both show a similar 
-                trajectory over time.                 
+                trajectory over time.   
                 <figure>
                     <img src="data/topic2/plots/pop_art.png" alt="pop_art" width="100%" height="100%">
                     <figcaption style="font-size:12px;">Figure 1: Observed vs. Predicted 
@@ -223,6 +226,25 @@ function toggleOverlay(name)
                     <figcaption style="font-size:12px;">Figure 3: Observed vs. Predicted fractions: Artificial, 
                     Bare soil, High vegetation, low vegetation and water.</figcaption>
                 </figure>
+				
+				<h4 class="title">Discussion</h4>
+                <p> Although model performance on the test set seems to be rather strong, 
+                there are limitations to the predictive accuracy when evaluating the 
+                fraction cover estimates in space: For instance, the comparison to census 
+                data revealed little to no change among the fractions over time. 
+                Furthermore, built-up is generally too dominant in rural parts of the 
+                study area and gets confused with bare surfaces. Although, both land cover 
+                types share similar characteristics spectrally, there is also a lot of 
+                variance over time as well as visible artifacts (e.g. Landsat-7 SLC-off) 
+                that suggest a great influence of the input features. Potentially the 
+                noise in the data in combination with few training points representing a 
+                large feature space oppose severe limitations to the predictive 
+                performance of the model. One would need a truly ground-truth based test 
+                set to assess whether the error is due to the variance or the bias of the 
+                models, but most likely more training data as well as a richer set of 
+                predictor variables (e.g. seasonal STMs) are required to increase model 
+                performance.</p>
+				
                 <h4 class="title">References</h4>
                 <p style="font-size:12px;">
                 Cooper et al. (2020): Disentangling fractional vegetation cover: 
