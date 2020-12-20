@@ -76,7 +76,7 @@ To calculate the area around streets we obtained the street networks by using th
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Results</strong></span></p>
 
-<table style="border-color: Black; background-color: lightblue;" cellspacing="12"><caption>&nbsp;</caption>
+<table style="border-color: Black; background-color: lightblue;" cellspacing="5"><caption>&nbsp;</caption>
 
 <tbody>
 
@@ -286,7 +286,7 @@ To calculate the area around streets we obtained the street networks by using th
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Conclusion</strong></span></p>
 
-<p><span style="font-weight: 400; color: #003366;">Results of our approach show a strong correlation with the results by Treepedia. It suggests that our methodology has a high potential to accurately quantify urban street greenery. Therefore, it can be presumed that Remote Sensing imagery represents a reasonable alternative to the Green View Index in mapping urban street greenery. Yet to verify which approach is more accurate, ground truth data would be necessary.</span></p>
+<p><span style="font-weight: 400; color: #003366;">Results of our approach show a strong correlation between A and B. Therefore, it can be presumed that Remote Sensing imagery represents a reasonable and fee-free alternative to the Green View Index in mapping urban street greenery. Yet to verify is the actual accuracy of the remote sensing approach. Therefore, ground truth data to validate the results against actual green fractions would be necessary.</span></p>
 
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>References</strong></span></p>
@@ -328,7 +328,8 @@ names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", 
 /*Legend specific*/
 var legend = L.control({ position: "bottomright" });
 
-legend.onAdd = function(map) {
+legend.onAdd = function(map) {	
+  console.log("t")
   var div = L.DomUtil.create("div", "legend");
   document.getElementById("legend").style.width="30%";
   div.innerHTML += "<h4>Legend (TCGreen)</h4>";  
