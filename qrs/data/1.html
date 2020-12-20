@@ -51,27 +51,28 @@
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Introduction</strong></span></p>
 
-<p><span style="font-weight: 400; color: #003366;">Urban vegetation is an important contributor to the quality of urban environments. It has a positive effect on biodiversity and air quality and provides recreation for citizens. This is why we were interested in developing an approach to measure urban greenness.</span></p>
-
-<p><span style="font-weight: 400; color: #003366;">There is a promising method called "<a style="color: #003366;" href="http://senseable.mit.edu/treepedia" target="_blank" rel="noopener">Treepedia</a>" [1] that derives the greenness of cities from Google Street View imagery data. The authors made the code available to the public but the required Google Street View data recently got a payment fee. Hence our goal was to develop a fee-free method using remote sensing data.</span></p>
+<p><span style="font-weight: 400; color: #003366;">Urban vegetation is an important contributor to the quality of urban environments. It has a positive effect on biodiversity and air quality and provides recreation for citizens (Dobbs et al., 2014). There is a promising method presented on the website "<a style="color: #003366;" href="http://senseable.mit.edu/treepedia" target="_blank" rel="noopener">Treepedia</a>" [1] that derives the greenness of street networks in cities from Google Street View imagery data. The authors made the code available to the public but the required Google Street View data are no longer freely available. This is why this study examined an approach to approximate urban street greenness using fee-free Sentinel-2 satellite data and compared it to Treepedia results.
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Research question</strong></span></p>
 
-<p><span style="font-weight: 400; color: #003366;">As the method of Treepedia is now too costly for our purpose, we didn't carry it out ourselves. But as the ranking of 30 cities is still online, we can use it to compare it with the results of our approach.</span></p>
+<p><span style="font-weight: 400; color: #003366;">Our results were compared to a ranking of 30 cities mapped by the Treepedia approach.</span></p>
 
 <p><span style="font-weight: 400; color: #003366;">Our research questions are:</span></p>
 
 <ol>
 
-<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">Is freely available Remote Sensing imagery a reasonable alternative to the Green View Index in mapping urban street greenery in multiple cities?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">Is freely available Sentinel-2 Remote Sensing imagery a reasonable alternative to the Green View Index in mapping urban street greenery in multiple cities?</span></li>
 
-<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">Can the product be compared to existing Green View Index maps from ground-sampled imagery (Street View)?</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #003366;">How do Sentinel-2-derived results compare to existing Green View Index maps from ground-sampled imagery (Street View)?</span></li>
 
 </ol>
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Methodology</strong></span></p>
 
-<p><span style="color: #003366;"><span style="font-weight: 400;">For acquiring the Sentinel 2 data, the library </span><a style="color: #003366;" href="https://github.com/ranghetti/sen2r"><span style="font-weight: 400;">Sen2r</span></a><span style="font-weight: 400;"> [2] was used. To quantify city greenness we used Tasseled Cap Greenness (TCG).&nbsp; Depending on the climate zone of the city we obtained satellite images in summer periods from 2018 to 2020. Usually multiple Satellite images could be obtained. From these, we took the images with the highest average TCG values. To calculate the area around streets we obtained the street networks by using the </span><a style="color: #003366;" href="https://github.com/gboeing/osmnx"><span style="font-weight: 400;">OSMnx</span></a><span style="font-weight: 400;"> package [3]. Depending on the street level we calculated a buffer of 15 meters additional to the estimated street width. The Sentinel image was then masked with the buffered street network. The final score of each city represents the average GVI value of the masked Sentinel image.</span></span></p>
+<p><span style="color: #003366;"><span style="font-weight: 400;">For acquiring the Sentinel 2 data, the R library Sen2r [2] was used. We quantified urban greenness using the Tasseled Cap Greenness (TCG) as a proxy (Sheng et al. 2011). 
+Depending on the climate zone of the city we obtained satellite images in summer periods from 2018 to 2020. Usually multiple Satellite images could be obtained. From these, we took the images with the highest average TCG values to make sure that peak pheneology is compared instead of varying vegetation cover due to changing seasons. 
+To calculate the area around streets we obtained the street networks by using the OSMnx package [3]. Depending on the street type we calculated a buffer of 15 meters additional to the estimated street width. The Sentinel image was then masked with the buffered street network. The final score of each city represents the average GVI value of the masked Sentinel image.
+</span></span></p>
 
 <p><span style="text-decoration: underline; color: #003366;"><strong>Results</strong></span></p>
 
