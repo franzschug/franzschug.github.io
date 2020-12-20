@@ -329,10 +329,10 @@ names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", 
 var legend = L.control({ position: "bottomright" });
 console.log("zz")
 legend.onAdd = function(map) {	
-  //console.log("t")
+  console.log("t")
   var div = L.DomUtil.create("div", "legend");
   //div.style.width="30%";
-  //div.innerHTML += "<h4>Legend (TCGreen)</h4>";  
+  div.innerHTML = "<h4>Legend (TCGreen)</h4>";  
   //div.innerHTML += '<img src="data/topic1/legend.png" alt="legend" width="100%">';
   //return div;
 };
