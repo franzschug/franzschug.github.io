@@ -126,8 +126,7 @@
 
                 <p class="lorem"><b><u>Introduction</u></b></p>
                 
-                <p>Urban expansion refers to the rapid geographical extension of agglomerations which is in part caused by rising urban populations and the increased need for housing to facilitate people. Urban expansion can affect conditions for surrounding areas putting pressure on the natural environment and biodiversity.
-                The city of Port of Spain and its surrounding serve as the retail, administrative and political centre of the country of Trinidad and Tobago (Interplan 2010). During the last 40 years Greater Port of Spain, which extends into the neighbouring regional corporations of Diego Martin and San Juan/Laventille, experience an increase in population (Interplan 2010).Still, a detailed examination of land cover processes of urban expansion between the late 1990 and nowadays is missing.</p>
+                <p>Urban expansion refers to the geographical extension of agglomerations which is in part caused by rising urban populations and the increased need for housing to facilitate people. Urban expansion can affect conditions for surrounding areas putting pressure on the natural environment and biodiversity. The city of Port of Spain and its surrounding serve as the retail, administrative and political centre of the country of Trinidad and Tobago (Interplan 2010). During the last 40 years Greater Port of Spain, which extends into the neighbouring regional corporations of Diego Martin and San Juan/Laventille, experienced an increase in population (Interplan 2010).Still, a detailed examination of land cover processes of urban expansion between the late 1990 and nowadays is missing.</p>
 
                 <p class="lorem"><i>Research Goal:</i></p>
                 
@@ -136,15 +135,14 @@
                 <p class="lorem"><i>Research Question:</i></p>
                 <p class="lorem"> By how much did urban extend grow in Greater Port of Spain between 1997 and 2020?</p>
                 
-                <p class="lorem">For that purpose, we create land cover change maps to map urban expansion between 1997 and 2020 with the land cover classes: built-up, vegetation and water.</p>
+                <p class="lorem">For that purpose, we created land cover change maps to map urban expansion between 1997 and 2020 with the land cover classes built-up, vegetation and water.</p>
 
 
                 <p class="lorem"><b><u>Methods and Data</u></b></p>
                 
                 <p class="lorem"><i>Data</i></p>
 
-                <p class="lorem">We created Landsat composite images for the years 1997 and 2020. The following table gives an overview with the corresponding images used wtihin each time frame. </p>
-                
+                <p class="lorem">We created Landsat composite images for the years 1997 and 2020. The following table gives an overview with the corresponding images used within each time frame. We created the Landsat composite using a composite function within the software environment R (R Core Team, 2020).</p>
 
                 <table style="width:90%">
                 <tr>
@@ -161,35 +159,36 @@
                 </tr>
                 </table> 
                 
-                <p class="lorem">The study area comprises the two regions Port of Spain and San Juan–Laventille, where big urban agglomerations are located. </p>
+                <p class="lorem">The study area comprises the two regions Port of Spain and San Juan–Laventille, where big urban agglomerations are located. The study area do not cover the whole area of Port of Spain and San Juan–Laventille due to limited availably of Landsat imagery in that region.</p>
+
 
                 <p class="lorem"><i>Methods</i></p>
 
-                <p class="lorem">To create the land cover change maps, we used the approach of post-classification change detection, where first two land cover maps are produced independently. Then a land cover change map is created. The random forest (RF) algorithm is used to produce the land cover maps. The RF classifier is an ensemble classifier that uses a set of classification trees (CART) to make a prediction. Essentially, the classifier learns characteristics of the target class from training samples and identifies these characteristics in unclassified data. Training and validation data will be derived via GoogleEarth data from 1997 and 2020. </p>
+                <p class="lorem">To create the land cover change maps, we used the approach of post-classification change detection, where first two land cover maps are produced independently. Then a land cover change map is created. The random forest (RF) algorithm is used to produce the land cover maps. The RF classifier is an ensemble classifier that uses a set of classification trees (CART) to make a prediction. Essentially, the classifier learns characteristics of the target class from training samples and identifies these characteristics in unclassified data. We collected 250 training data points and 195 validation points via GoogleEarth data. For validating, we created a confusion matrix and calculated the user’s and producer’s accuracies for all classes. </p>
                 
                 <p class="lorem">Workflow</p>
 
-                <p><img id="myImg", src="data/topic6/img/Folie1.png" alt="Workflow" width="100%"></p>
+                <p><img id="myImg", src="img/Folie1.jpeg" alt="Workflow" width="100%"></p>
                 
                 <p class="lorem"><b><u>Results</u></b></p>
 
                 <p class="lorem">Accuracy Assesement</p>
 
-                <p><img id="myImg2", src="data/topic6/img/acc_ass.png" alt="Acc. Assesment" width="100%"></p>
+                <p><img id="myImg", src="img/acc_ass.png" alt="Acc. Assesment" width="100%"></p>
                 
-                <p class="lorem">Overall Accuracy: 67.2%</p>
+                <p class="lorem">Overall Accuracy: 67.2% (non area-adjusted)</p>
 
                 <p class="lorem"><b><u>Conclusion</u></b></p>
-                As a small nation, Trinidad and Tobago only has only a single official area that is considered a “city,” this is the country’s capital of Port of Spain. Thus, Port of Spain and its environs is one of the most densely populated areas on the island. In 1997, Trinidad and Tobago had a population of approximately 1.26 million however, in 2020 current demographic data suggests the island has closer to 1.4 million individuals. 
-                
-                As expected, there has been an increase in urban areas due to an increase in population in the Port of Spain area. According to our map, the areas in which the population is highest and consequently, the areas where the urban population has expanded the most are highlighted in red. These areas where urban expansion is greatest include Diego Martin, Belmont/ East Downtown Port of Spain, Point Cumana, Carenage and Chaguaramas.
-                
+                As a small nation, Trinidad and Tobago only has only a single official area that is considered a “city,” this is the country’s capital of Port of Spain. Thus, Port of Spain and its environs is one of the most densely populated areas on the island. In 1997, Trinidad and Tobago had a population of approximately 1.26 million however, in 2020 current demographic data suggests the island has closer to 1.4 million individuals. As expected, there has been an increase in urban areas due to an increase in population in the Port of Spain area. The total area of urban expansion comprises 10.43 km2. According to our map, the areas in which the population is highest and consequently, the areas where the urban population has expanded the most are highlighted in red. These areas where urban expansion is greatest include Diego Martin, Belmont/ East Downtown Port of Spain, Point Cumana, Carenage and Chaguaramas. 
+                In this study, we used a rather simple but effective approach of mapping urban expansion. The user’s and producer’s accuracies are for most classes sufficient. However, some classes, including the urban expansion class, are not accurate enough. The user’s accuracy of the urban expansion class (32,5 %) is comparably low. One explanation could be mixed pixels, where a single Landsat pixel could contain more than one land cover class information, which makes the classification process within urban environments often complicated. A higher amount of training data or an unmixing approach could possibly solve this issue. 
+                Nevertheless, our study proposes an easy repeatable method to map urban expansion in a highly dynamic region like Port of Spain. The resulting map information could be used as basis for further studies like vulnerability mapping of natural hazards (e.g. flooding). 
                 
                 <p class="lorem"><b><u>Reference</u></b></p>
 
 <p class="lorem">Beard, T. (2012): Sustainable Cities: The Case of Greater Port of Spain, Trinidad. 48th ISOCARP Congress 2012</p>
 <p class="lorem">Interplan. (2010): Port of Spain City Corporation Implementation Plan. Online access: https://afraraymond.files.wordpress.com/2011/10/pos_may18.pdf </p>
 <p class="lorem">Inter-American Development Bank (2015): SUSTAINABLE PORT OF SPAIN. Online access:https://webimages.iadb.org/PDF/Port+of+Spain+Action+Plan.pdf </p>
+                <p class="lorem">R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. URL https://www.R-project.org/.</p>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
