@@ -332,12 +332,12 @@ legend.onAdd = function(map) {
   console.log("t")
   var div = L.DomUtil.create("div", "legend");
   //div.style.width="30%";
-  div.innerHTML = "<h4>Legend (TCGreen)</h4>";  
+  //div.innerHTML = "<h4>Legend (TCGreen)</h4>";  
   //div.innerHTML += '<img src="data/topic1/legend.png" alt="legend" width="100%">';
   return div;
 };
 
-//legend.addTo(map);
+legend.addTo(map);
 
 function nextTour(id) {
 	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 13)
