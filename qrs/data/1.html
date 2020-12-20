@@ -327,9 +327,9 @@ names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", 
 
 /*Legend specific*/
 var legend = L.control({ position: "bottomright" });
-
+console.log("zz")
 legend.onAdd = function(map) {	
-  console.log("t")
+  //console.log("t")
   var div = L.DomUtil.create("div", "legend");
   //div.style.width="30%";
   //div.innerHTML += "<h4>Legend (TCGreen)</h4>";  
@@ -337,7 +337,7 @@ legend.onAdd = function(map) {
   //return div;
 };
 
-legend.addTo(map);
+//legend.addTo(map);
 
 function nextTour(id) {
 	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 13)
