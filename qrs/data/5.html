@@ -30,11 +30,11 @@ Specifically we addressed two questions: First, how did the land-cover and -use 
 The remotely sensed images were already pre-processed under consideration of the heavy cloud cover in Singapore throughout the whole year. The used data was the cloud-free images computed from Landsat (4,5,7,8) imagery from 2008/2009 and 2018/2019.               
 </p>
 
- <figure>
+
     <img src="data/topic5/workflow.png" alt="workflow" 
     width="100%" height="100%">
     <figcaption style="font-size:12px;">Figure 1: Workflow</figcaption>
-</figure>
+
 
 <p>
 Random forest algorithm was adopted to sort the pre-processed Landsat images into four land-use and -cover classes. The study employed the stratified random sampling tool in QGIS to select 50 validation points for accuracy assessment. If the accuracy rate is lower than 85% (Anderson et al., 1976), which indicates an unsatisfied classification result, the amount of training samples would increase to repeat the classification process. For the final supervised classification results, 231 and 105 training samples were manually selected and applied respectively for 2009 and 2019.
