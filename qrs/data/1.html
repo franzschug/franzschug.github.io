@@ -9,6 +9,7 @@
   background: rgba(255, 255, 255, 0.8);
   /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
   /*border-radius: 5px;*/
+  width: 300px;
   line-height: 24px;
   color: #555;
 }
@@ -306,8 +307,9 @@ map.setView([0, 0], 2);
 cityIterator = 0
 
 function unloadContent() {
+	console.log("unload")
 	map.removeLayer(tileCollection[cityIterator])
-	map.removeControl(legend)
+	map.removeControl(legend2)
 }
 
 tiles01Ams = L.tileLayer('data/topic1/AMSTERDAM/{z}/{x}/{y}.png', {tms:true});
@@ -325,19 +327,17 @@ tileCollection  = [tiles01Ams, tiles01Bos, tiles01Fra, tiles01Gen, tiles01Kob, t
 
 names = ["Amsterdam", "Boston", "Frankfurt", "Geneva", "Kobe", "Oslo", "Paris", "Tel Aviv", "Turin", "Vancouver"]
 
-/*Legend specific*/
-var legend = L.control({ position: "bottomright" });
-console.log("zz")
-legend.onAdd = function(map) {	
-  console.log("t")
-  var div = L.DomUtil.create("div", "legend");
-  div.style.width="30%";
-  //div.innerHTML = "<h4>Legend (TCGreen)</h4>";  
-  //div.innerHTML += '<img src="data/topic1/legend.png" alt="legend" width="100%">';
-  return div;
-};
 
-legend.addTo(map);
+/*Legend specific*/
+var legend2 = L.control({ position: "bottomright" });
+legend2.onAdd = function(map) {
+  var div2 = L.DomUtil.create("div", "legend");
+  div2.innerHTML += "<h4>Legend (TCGreen)</h4>"; 
+  div2.innerHTML += '<img src="data/topic1/legend.png" alt="legend" width="100%">';
+  return div2;
+};
+legend2.addTo(map);
+
 
 function nextTour(id) {
 	map.setView([yCoords[cityIterator], xCoords[cityIterator]], 13)

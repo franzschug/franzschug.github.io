@@ -1,10 +1,59 @@
 <!DOCTYPE html>
+
+<style>
+/*Legend specific*/
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);*/
+  /*border-radius: 5px;*/
+  width: 200px;
+  line-height: 24px;
+  color: #555;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+  bottom: 3px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}
+</style>
+
 <html lang="en">
 
 <p><b>Mapping Temporal Development of Land in Singapore using Landsat Images - A change detection of land cover and use in Singapore using Landsat Data for the years 2009 and 2019</b></p>
 <p><i>Sabrina Blatz & Gongmingyue Tang</i></p>
 					
 <p class="lorem"><span class="font_bk">Discover the LU/LC changes between 2009 and 2019 by changing the map layers from the top-right layers botton.</span></p>
+
+<form name="y">
+<input type="radio" id="t2009" name="year" value="2009">
+<label for="t2009">2009</label><br>
+<input type="radio" id="t2019" name="year" value="2019">
+<label for="t2019">2019</label><br>
+<input type="radio" id="tChange" name="year" value="change">
+<label for="tChange">Change</label> 
+</form>
 
 <h4 class="title">Abstract</h4>
 <p>
@@ -68,15 +117,7 @@ Anderson, R., Hardy, E. E., Roach, J. T., & Witmer, R. E. (1976).A land use and 
  
 </p>
 
-			
-<form name="y">
-<input type="radio" id="t2009" name="year" value="2009">
-<label for="t2009">2009</label><br>
-<input type="radio" id="t2019" name="year" value="2019">
-<label for="t2019">2019</label><br>
-<input type="radio" id="tChange" name="year" value="change">
-<label for="tChange">Change</label> 
-</form>
+		
 
 </html>
 
@@ -85,37 +126,52 @@ Anderson, R., Hardy, E. E., Roach, J. T., & Witmer, R. E. (1976).A land use and 
 map.setView([1.316373, 103.715038], 11);
 
 function unloadContent() {
-	map.removeLayer(t2009)
-	map.removeLayer(t2019)
-	map.removeLayer(c)
+	map.removeControl(legend3);
+	map.removeLayer(t2009);
+	map.removeLayer(t2019);
+	map.removeLayer(c);
 }
 
 var t2009 = L.tileLayer('data/topic5/2009/{z}/{x}/{y}.png', {tms:true});
 var t2019 = L.tileLayer('data/topic5/2019/{z}/{x}/{y}.png', {tms:true});
 var c = L.tileLayer('data/topic5/Change/{z}/{x}/{y}.png', {tms:true});
 
+
+/*Legend specific*/
+var legend3 = L.control({ position: "bottomright" });
+legend3.onAdd = function(map) {
+  var div2 = L.DomUtil.create("div", "legend");
+  div2.id = "lg"
+  div2.innerHTML = '<img src="data/topic5/legend_class.png" alt="legend" width="100%">';
+  return div2;
+};
+legend3.addTo(map);
+
+
 var rad = document.y.year;
     var prev = null;
     for(var i = 0; i < rad.length; i++) {
         rad[i].onclick = function () {
-			console.log(rad[i])
-			console.log(i)
-			console.log(this.value)
-			console.log(this.value == 2009)
 			map.removeLayer(t2009)
 			map.removeLayer(t2019)
 			map.removeLayer(c)
 		
             if(this.value == 2009) {
 			  t2009.addTo(map)
+			  div2 = document.getElementById("lg") 
+			  div2.innerHTML = '<img src="data/topic5/legend_class.png" alt="legend" width="100%">';
 			  t2009.bringToFront()
             }
 			if(this.value == 2019) {
 			  t2019.addTo(map)
+			  div2 = document.getElementById("lg") 
+			  div2.innerHTML = '<img src="data/topic5/legend_class.png" alt="legend" width="100%">';
 			  t2019.bringToFront()
 			}
 			if(this.value == "change") {
 			  c.addTo(map)
+			  div2 = document.getElementById("lg") 
+			  div2.innerHTML = '<img src="data/topic5/legend_change.png" alt="legend" width="100%">';
 			  c.bringToFront()
 			}
         };

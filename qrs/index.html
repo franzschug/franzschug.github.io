@@ -141,19 +141,23 @@
 xCoords = [4.8936, -71.05829, 8.68209, 6.14392, 135.19438, 10.77573, 2.32004, 34.78053, 7.68249, -123.11395]
 yCoords = [52.37276, 42.36025, 50.11064, 46.22565, 34.69324, 59.9724, 48.85889, 32.08048, 45.06776, 49.26087]
 
-function unloadContent() {
-}
+disp = 0;
 
 function loadContent(id) {
-
-	unloadContent()
+	
+	if(disp === 1) {
+	console.log(unloadContent())
+		unloadContent()
+	}
 	
 	if(id === 0) {
+		disp = 0
 		map.setView([0, 0], 2);
 		sb = document.getElementById("mr").innerHTML = ""
 	} else {
-	$("#mr").load("data/" + id + ".html");
-	sidebar.open('description');
+		disp = 1		
+		$("#mr").load("data/" + id + ".html");
+		sidebar.open('description');
 	}
 }
 
