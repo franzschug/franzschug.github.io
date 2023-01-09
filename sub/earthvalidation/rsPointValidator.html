@@ -1,0 +1,58 @@
+
+<html lang="en">
+<head>
+  <title>Remote Sensing Point Labeler</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Franz Schug">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- General Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <!--<script src="js/bootstrap.min.js"></script>-->
+
+  <!-- Map Scripts-->
+  <!--<script src='js/mapbox.js'></script>-->
+  <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+
+  <script src="js/leaflet.ajax.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/styles.js"></script>
+<!--<script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+<script src="https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js"></script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+  <script src="js/jquery.visible.js"></script>
+</head>
+
+<body>
+  <div class="mapper col-md-12 col-sm-12 col-12 col-lg-12 no-padding">
+      <div id="map" class="map">
+
+	    <div class="btn-group" style="z-index: 1001"> <!-- Use 401 to be between map and controls -->
+
+			<!--<button type="buttons" class="btn btn-primary" onclick="selectRegion('dago')">Europe</button>-->
+		</div>
+	  </div>
+
+    <div class='map-overlay top'>
+            <div id="infoText" class="infohidden">Web: franz.schug@geo.hu-berlin.de</br>
+                                                  Last Update: 14 Mar 2018</div>
+			<input type="text" id="myText" value="Go to plot ID..."></input>
+		<button onclick="plotFromInput()">Do not save results and go!</button>
+    </div>
+
+    <div id="legend"></div>
+    <div id="showLegend">
+        Legend
+    </div>
+  </div>
+
+<script src="js/validationMap.js"></script>
+
+</body>
+</html>
